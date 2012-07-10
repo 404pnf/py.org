@@ -1,0 +1,23 @@
+# 使用git拉入另一个repo中的文件
+
+git pull prod prouction
+
+prod是repo的名字 
+production是branch的名字
+prod是一个别名，它具体的url在repo的.git/config中设定
+
+比如我这个项目的就是 
+
+
+       [core]
+               repositoryformatversion = 0
+               filemode = true
+               bare = false
+               logallrefupdates = true
+       [remote "origin"]
+               url = git@github.com:username/repo.git
+               fetch = +refs/heads/*:refs/remotes/origin/*
+       [remote "prod"]
+               url = /var/www/html/mywebsite/
+               fetch = +refs/heads/*:refs/remotes/origin/*
+       config (END)

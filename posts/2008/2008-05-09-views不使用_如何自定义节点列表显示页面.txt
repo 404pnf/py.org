@@ -1,0 +1,6 @@
+# views不使用 如何自定义节点列表显示页面
+
+## views不使用，如何自定义节点列表显示页面
+
+不使用views，如何自定义节点列表显示页面
+http://drupalchina.org/node/4311

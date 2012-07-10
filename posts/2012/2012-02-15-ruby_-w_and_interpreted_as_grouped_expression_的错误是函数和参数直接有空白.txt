@@ -1,0 +1,23 @@
+# ruby -w and interpreted as grouped expression 的错误是函数和参数直接有空白字符造成的
+
+uby -w ruby.rb
+ruby.rb:8: warning: (...) interpreted as grouped expression
+ruby.rb:9: warning: (...) interpreted as grouped expression
+1
+210
+
+我的代码是
+
+File Edit Options Buffers Tools Help                      
+def jia(n)
+ if n == 1
+   1
+ else
+   n + jia(n - 1)
+ end
+end
+
+puts(jia 1).to_s
+puts(jia 20).to_s
+
+直接 puts 和 (jia 1) 直接有个空格。

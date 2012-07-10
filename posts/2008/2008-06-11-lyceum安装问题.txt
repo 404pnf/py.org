@@ -1,0 +1,15 @@
+# lyceum安装问题
+
+lyceum安装问题
+
+private.php
+
+define('CONFIGPATH', ABSPATH . './' . 'config/');
+原始是 ../ 是错误的
+
+define('PRIVATE_REL_PATH', './');
+原始是 ../ 是错误的
+
+/nfsn/content/rijiben-lyceum/public/wp-content/blogs/
+http://www.rijiben.org/wp-content/blogs/
+必须有trailing slash 不然上传的东西都直接放到 blogs 跟目录下了 没法用，比如照片显示不出来

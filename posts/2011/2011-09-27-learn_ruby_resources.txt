@@ -1,0 +1,4 @@
+# learn ruby resources
+
+[tags] ruby [/tags]
+http://humblelittlerubybook.com/book/

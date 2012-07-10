@@ -1,0 +1,17 @@
+# latex参考
+
+## latex参考
+http://www.ctan.org/
+
+emacs其他latex包 http://www.kronto.org/thesis/tips/best-editor.html
+http://www.gnu.org/software/auctex/
+
+kile http://kile.sourceforge.net/
+
+tex live http://tug.org/texlive/
+> To the best of our knowledge, all the software in TeX Live meets the requirements of the Free Software Foundation's definition of free software, and the Debian Free Software Guidelines. Where the two conflict, we generally follow the FSF.
+> http://tug.org/texlive/copying.html
+
+tex on mac http://ii2.sourceforge.net/tex-index.html
+
+wang yue: tex live with cjk http://mailboxpublic.googlepages.com/texlive2007cjkchinesehowto

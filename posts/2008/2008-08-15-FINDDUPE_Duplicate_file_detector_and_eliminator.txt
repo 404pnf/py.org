@@ -1,0 +1,6 @@
+# FINDDUPE Duplicate file detector and eliminator
+
+FINDDUPE: Duplicate file detector and eliminator
+
+FINDDUPE: Duplicate file detector and eliminator
+http://www.sentex.net/~mwandel/finddupe/

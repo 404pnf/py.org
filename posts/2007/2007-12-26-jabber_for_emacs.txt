@@ -1,0 +1,4 @@
+# jabber for emacs
+
+## jabber for emacs
+http://emacs-jabber.sourceforge.net/

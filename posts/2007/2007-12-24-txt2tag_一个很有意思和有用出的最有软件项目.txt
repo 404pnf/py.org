@@ -1,0 +1,19 @@
+# txt2tag 一个很有意思和有用出的最有软件项目
+
+Looks very promising~
+http://txt2tags.sourceforge.net/
+
+类似于mardown之类方便边书写源文件可读性强的文本，并能帮助你把文件转换成符合各种标准的格式。
+
+Features
+Many supported formats
+
+    * HTML document
+    * XHTML document
+    * SGML document
+    * LaTeX document
+    * Lout document
+    * UNIX manual page (man)
+    * MoinMoin page (wiki)
+    * MagicPoint presentation (mgp)
+    * PageMaker document

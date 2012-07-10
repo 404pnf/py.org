@@ -1,0 +1,5 @@
+# ANSI是windows一个文本 编码组的别名
+
+http://stackoverflow.com/questions/2800890/converting-a-file-to-utf8-format-using-perl
+
+Installing bindings to the iconv library such as Text::Iconv is not necessary because Perl already comes with a character encoding library on its own: Encode. Part of it is piconv, an iconv(1) workalike. Use it to batch convert files to UTF-8. ANSI is just a stupid name for the group of windows-125? encodings. You most likely have files encoded in windows-1252. Example:

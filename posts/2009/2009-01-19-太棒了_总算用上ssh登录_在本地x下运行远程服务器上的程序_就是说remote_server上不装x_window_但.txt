@@ -1,0 +1,26 @@
+# 太棒了 总算用上ssh登录 在本地x下运行远程服务器上的程序 就是说remote server上不装x window 但我用本机 x window 跑remote server的firefox 就相当于一个vpn
+
+简单说，命令就是
+
+      ssh -X 服务器ip地址 -p端口号
+
+-X 就是 x window 链接。
+
+服务器端需要允许转发x流量，就是 X forwarding。
+
+更好的方式是：
+
+      ssh -X 服务器 firefox -no-remote &
+
+这样就启动了服务器上的firefox，从服务器上网。
+
+具体以后写。不难。
+
+登录后，还是字符界面。但我在服务器端安装了firefox。如果不用 ssh -X 登录，输入firefox会告诉你 
+
+      (firefox-bin:9695): Gtk-WARNING **: cannot open display:  
+
+通过 ssh -X 登录。输入firefox，直接启动并用本地的x windows启动。但你的ip地址是远端服务器的。
+
+## 问题：
+似乎还是运行我本地的firefox。但这样运行是通过服务器在上网么？相当于隐身了一下？

@@ -1,0 +1,65 @@
+# 在markdown中需要用连续5个反斜扛 \\\\\ 表示连续两个反斜杠 \\
+
+先说一下，drupal我启用了markdown，文章正文输入格式是markdown，题目中无法用markdown，这也好，要不我怎么表示连续5个backslash呀。
+
+## 发现的现象
+
+在markdown中需要用连续5个反斜扛 
+
+        \\\\\ 
+表示连续两个反斜杠 
+
+         \\
+
+写[这篇文章](http://pengyou.rijiben.org/node/1686)的时候我用到了    
+
+       \\character
+
+这种格式。就是两个英文反斜杠后面跟一段字符。才发现在markdown中要正确显示两个反斜杠需要在用5个back slash!!
+
+原因？我还不清楚。但我测试结果是5个一下back slash最后都被解析为1个back slash。
+
+## 我猜想的原因
+
+2个\ 第一个\用来escape第2个\，所以最后剩下1个\
+
+3个\ 第一个\用来escape第2个了，前两个生成的\用来escape第3个\，最后剩下一个\
+
+4个\ 第一个\用来escape第2个了，前两个生成的\用来escape第3个\， 前3个生成的\用来escape第4个\，最后剩下一个\ 更有可能是前2个\变成1个\，后2个\变成1个\ 生成的这2个\，前一个escape后面的\，最后1个\。
+
+4个\ 第一个\用来escape第2个了，前两个生成的\用来escape第3个\， 前3个生成的\用来escape第4个\，这个\就不去escape第5个\，所以最后剩下2个！也有可能4个\变成1个，这个和第5个一起组成2个\。
+
+这个现象似乎在哪里看到过。是grep中也是这样么？
+
+***谁能解释一下！***
+
+反正今天我才知道。
+
+我搜索了一下，[markdown官方文档](http://daringfireball.net/projects/markdown/syntax#backslash)没有说如何表示两个\连在一起，但有人在邮件列表说到这个情况，提议
+
+
+> As an aside, this makes me think that there's a small integration
+problem when using Markdown with SmartyPants that makes it necessary
+in many cases to double-escape a litteral character so that
+SmartyPants ignores it:
+
+	\\\\\ two backslashes
+	\\\`` two backticks
+	\\-- two hyphens
+	\\... three dots
+
+> Maybe Markdown should convert escaped characters to their numerical
+entity equivalent (like SmartyPants does) so that the escape
+propagates to SmartyPants too without requiring two more backslashes. 
+> http://six.pairlist.net/pipermail/markdown-discuss/2007-January/000464.html
+
+我这页中都把含有 \ 的行另起一段，并在前面加6个空格，这在markdown中是说这行是代码，不要做任何解释，启用相当于这里是代码
+
+
+
+## 我最后问一个问题
+
+你们看如何表示5个连续反斜刚，10个呢？：）谁找到规律了。
+
+## 我特别喜欢markdown
+markown是我不可缺少的工具。我用它写标准文章，最后生成标准的html页面。特好！这里说它一个不方便的地方希望不要打击大家去试用markdown的热情。我感觉它比wiki输入法都方便。

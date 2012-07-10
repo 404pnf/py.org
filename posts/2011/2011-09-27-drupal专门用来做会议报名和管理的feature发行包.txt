@@ -1,0 +1,6 @@
+# drupal专门用来做会议报名和管理的feature发行包
+
+http://usecod.com/
+
+hobo - tramp: a disreputable vagrant; "a homeless tramp"; "he tried to help the really down-and-out bums"
+wordnetweb.princeton.edu/perl/webwn

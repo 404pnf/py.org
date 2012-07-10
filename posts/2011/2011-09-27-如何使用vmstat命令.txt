@@ -1,0 +1,7 @@
+# 如何使用vmstat命令
+
+$ vmstat -S M 2 5
+
+以MB为单位。每2秒刷新一次。5显示5次。
+
+参数解释： http://www.cyberciti.biz/tips/linux-resource-utilization-to-detect-system-bottlenecks.html

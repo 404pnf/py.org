@@ -1,0 +1,8 @@
+# 不想用 alias 时 可在该 alias 的命令前加 \
+
+不想用 alias 时，可在该 alias 的命令前加 \。 
+
+> zhuqin：
+> 不想用 alias 时，可在该 alias 的命令前加 \。 
+> 比如上面的rm=rm -i，每次执行都要按回车确认，如果只是一次还好，多了你就知道难受了。这时就可以用\rm来避免不必要的麻烦。
+> http://linuxtoy.org/archives/10-bash-alias.html#comment-89202

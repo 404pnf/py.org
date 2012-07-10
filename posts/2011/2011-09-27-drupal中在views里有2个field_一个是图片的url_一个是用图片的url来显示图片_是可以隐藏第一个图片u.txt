@@ -1,0 +1,21 @@
+# drupal中在views里有2个field 一个是图片的url 一个是用图片的url来显示图片 是可以隐藏第一个图片url且正常显示图片的
+
+方法是
+
+加入2个filed
+Fields1: field_book_fengmian_url field_book_fengmian_url
+Fields12: 用nid这个filed来显示封面图片因为custom text不支持img标签 
+
+第一个就是图片的url，比如 http://img.org/img.jpg
+第而个用用节点：nid这个fields，不要用global custom text（因为它不允许出现img标签）
+
+Fields1隐藏。而且必须勾选"strip html tag"，另外也不要输出任何css和html的标签
+
+Field2选Rewrite the output of this field ,，然后填入文本 
+![]([entity_id_2]) 就可以了。 entity_id_2根据你自己情况修改，就是那个url的token
+
+总结。要注意几个问题：
+
+1 global cusom text即使改写也不行，因为不支持img标签
+2 用节点：nid这个field改写好
+3 一定要对url field启用strip tags，否则不行！！！

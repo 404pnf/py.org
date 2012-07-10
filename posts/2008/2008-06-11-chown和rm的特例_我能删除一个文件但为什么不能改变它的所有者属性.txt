@@ -1,0 +1,6 @@
+# chown和rm的特例 我能删除一个文件但为什么不能改变它的所有者属性
+
+chown和rm的特例：我能删除一个文件但为什么不能改变它的所有者属性？
+
+> To delete a file, you need write permission on the directory that contains it, not on the file itself. 
+> [source](https://members.nearlyfreespeech.net/forums/viewtopic.php?t=2396&highlight=chown+operation+permitted)
