@@ -1,0 +1,1 @@
+# must cd to mysql directory to issue the command from erealtive path

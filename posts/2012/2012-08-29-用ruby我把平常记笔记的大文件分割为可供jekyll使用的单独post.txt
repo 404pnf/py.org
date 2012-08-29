@@ -1,0 +1,55 @@
+# 用ruby我把平常记笔记的大文件分割为可供jekyll使用的单独post
+
+## 我笔记的文件格式
+就是个文本文件，markdown格式
+
+        # 一篇文章标题
+        正文正文正文正文正文正文正文正文正文
+        # 又一篇文章
+        正文正文正文正文正文正文正文正文
+        
+好处是我随时想写打开这个文本文件可就可以了。现在我需要让程序把它切分为每篇文章一个文件。使用ruby。
+
+## 思路：
+1. 打开整个文件
+1.  /^# / 作为分割符 把整个文本差分成数组。遍历数组，每个写成一个文件。
+  
+## 注意问题：
+1. split方法后，分割符本身从文本中消失了！！！ 因此不能再通过 /^# / 来判断文章标题。因此改用该文件的第一行作为题目。因为之前的 /^# /  这行就是题目，就是第一行
+1. 分割整个文本的数组第一个元素会是 "\n" 。为什么我也不知道。但我现在明白了之前lg给我用php写同样的东西，为什么也总会有一个空文章。可以先用 array.shift 去除它。
+
+
+## 代码主要片段：
+
+        str = IO.read("/home/404/Desktop/xin-biji.txt") # 如果不把文件按字符串一口气读进来，我就不知道如何使用split方法了。
+        
+        posts = str.split(/^# /)
+        
+        >> posts[0]
+        => "\n
+        
+        >> posts.shift
+         => "\n
+        
+        >> posts[0]
+        => "在jekyll中自定义yaml frontmatter然后在模板中收集这些信息\n\n例子给的是自定义了一个 image: value 的头信息\n---\nlayout: portfolio_entry\ntitle: Road and Curb\nimage: /img/road.jpg\n---\n\n<ul class=\"entries\">\n  {% for post in site.posts %}\n\n  <li>\n    <a href=\"{{ post.url }}\">\n      <img src=\"{{ post.image }}\" />\n      <h3>{{ post.title }}</h3>\n    </a>\n  </li>\n\n  {% endfor %}\n  \nhttp://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/\n\n"
+        
+我的问题        
+我如何把posts[0]这个字符传分成两部分？
+title = 该字符串的第一行，或者说从第一个字符到第一个\n
+body = 剩下的那些行
+然后我会把它们写成文件：
+
+  filename = "#{date}-#{counter}.markdown"
+  File.open("#{filename}", "w") do |f|
+    f.puts "---"
+    f.puts title
+    f.puts body
+  end
+
+        
+        
+## 完整代码：
+
+         
+

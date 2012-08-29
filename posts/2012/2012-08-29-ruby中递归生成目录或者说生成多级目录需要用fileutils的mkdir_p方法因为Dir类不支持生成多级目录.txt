@@ -1,0 +1,26 @@
+# ruby中递归生成目录或者说生成多级目录需要用fileutils的mkdir_p方法因为Dir类不支持生成多级目录
+
+    FileUtils.mkdir_p("#{year}/#{output}") if !Fi\
+le.exist?("#{year}/#{output}")
+    # Dir.mkdir 不能生成recursive目录，如 Dir..mk\
+dir('1/2/3') 不行的！
+
+参见文档：
+http://ruby-doc.org/core-1.9.3/Dir.html#method-c-mkdir
+
+fileutils
+http://ruby-doc.org/stdlib-1.9.3/
+> mkdir_p(list, options = {}) click to toggle source
+> Options: mode noop verbose
+> 
+> Creates a directory and all its parent directories. For example,
+> 
+> FileUtils.mkdir_p '/usr/local/lib/ruby'
+> causes to make following directories, if it does not exist.
+> 
+> * /usr
+> * /usr/local
+> * /usr/local/lib
+> * /usr/local/lib/ruby
+> You can pass several directories at a time in a list.
+

@@ -1,0 +1,115 @@
+# 初学者使用python的repetitions容易出现的错误
+
+The Pitfalls of Repetitions
+
+In our previous examples we applied the repetition operator on strings and flat lists. We can apply it to nested lists as well:
+>>> x = ["a","b","c"]
+>>> y = [x] * 4
+>>> y
+[['a', 'b', 'c'], ['a', 'b', 'c'], ['a', 'b', 'c'], ['a', 'b', 'c']]
+>>> y[0][0] = "p"
+>>> y
+[['p', 'b', 'c'], ['p', 'b', 'c'], ['p', 'b', 'c'], ['p', 'b', 'c']]
+>>> 
+This result is quite astonishing for beginners of Python programming. We have assigned a new value to the first element of the first sublist of y, i.e. y[0][0] and we have "automatically" changed the first elements of all the sublists in y, i.e. y[1][0], y[2][0], y[3][0] 
+The reason is, that the repetition operator "* 4" creates 4 references to the list x: and so it's clear that every element of y is changed, if we apply a new value to y[0][0].
+
+source : http://www.python-course.eu/python3_sequential_data_types.php
+
+
+
+## 还有 list 中的赋值和复制
+
+>>> colours1 = ["red", "green"]
+>>> colours2 = colours1
+>>> print(id(colours1),id(colours2))
+14603760 14603760
+>>> colours2[1] = "blue"
+>>> print(id(colours1),id(colours2))
+14603760 14603760
+>>> print(colours1)
+['red', 'blue']
+>>> print(colours2)
+['red', 'blue']
+>>> 
+Now we have to examine, what will happen, if we change just one element of the list of colours2 or colours1? 
+
+In the example above, we assign a new value to the second element of colours2, i.e. the element with the index 1. Lots of beginners will be stunned, that the list of colours1 has been "automatically" changed as well. 
+
+The explanation is, that there has been no new assignment to colours2, only to one of its elements. Both variables still point to the same list object.
+
+
+opy with the Slice Operator
+
+It's possible to completely copy shallow list structures with the slice operator without having any of the side effects, which we have described above:
+
+>>> list1 = ['a','b','c','d']
+>>> list2 = list1[:]
+>>> list2[1] = 'x'
+>>> print(list2)
+['a', 'x', 'c', 'd']
+>>> print(list1)
+['a', 'b', 'c', 'd']
+>>> 
+But as soon as a list contains sublists, we have the same difficulty, i.e. just pointers to the sublists.
+>>> lst1 = ['a','b',['ab','ba']]
+>>> lst2 = lst1[:]
+
+This behaviour is depicted in the following diagram: 
+
+
+
+
+
+
+
+
+
+
+
+If you assign a new value to the 0th Element of one of the two lists, there will be no side effect. Problems arise, if you change one of the elements of the sublist.
+>>> lst1 = ['a','b',['ab','ba']]
+>>> lst2 = lst1[:]
+>>> lst2[0] = 'c'
+>>> lst2[2][0] = 'd' 
+>>> print(lst1)
+['a', 'b', ['d', 'ba']]
+
+
+The following diagram depicts what happens, if one of the elements of a sublist will be changed: Both the content of lst1 and lst2 are changed. 
+
+
+
+
+
+
+
+
+
+
+
+Using the Method deepcopy from the Module copy
+
+A solution to the described problems provides the module "copy". This module provides the method "copy", which allows a complet copy of a arbitrary list, i.e. shallow and other lists. 
+
+The following script uses our example above and this method: 
+from copy import deepcopy
+
+lst1 = ['a','b',['ab','ba']]
+
+lst2 = deepcopy(lst1)
+
+lst2[2][1] = "d"
+lst2[0] = "c";
+
+print(lst2)
+print(lst1)
+If we save this script under the name of deep_copy.py ab and if we call ist with "python deep_copy.py", we will receive the following output:
+$ python deep_copy.py 
+['c', 'b', ['ab', 'd']]
+['a', 'b', ['ab', 'ba']]
+
+
+source: http://www.python-course.eu/python3_deep_copy.php
+
+

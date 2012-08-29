@@ -1,0 +1,10 @@
+# ruby在一个文件开头添加一行内容如何做
+
+http://www.ruby-forum.com/topic/122564
+
+
+我刚才用的方法是先File.open建立一个文件，写第一行。关闭文件。
+
+再File.open同样的文件添加后面的行。
+
+

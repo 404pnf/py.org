@@ -1,0 +1,5 @@
+# 用ruby解析json
+http://developer.yahoo.com/ruby/ruby-json.html
+http://ruby.about.com/od/tasks/a/The-Json-Gem.htm
+
+

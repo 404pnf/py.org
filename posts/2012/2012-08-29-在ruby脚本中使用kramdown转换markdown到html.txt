@@ -1,0 +1,12 @@
+# 在ruby脚本中使用kramdown转换markdown到html
+
+> require 'kramdown'
+> 
+> puts Kramdown::Document.new(text).to_html
+> The second parameter to the new call is an options hash for (de)activating certain features. For example, to disable automatic header ID generation, you can do the following:
+> 
+> puts Kramdown::Document.new(text, :auto_ids => false).to_html
+> The default parser used is kramdown, however, you can select a different one with the :input option:
+
+http://kramdown.rubyforge.org/documentation.html
+

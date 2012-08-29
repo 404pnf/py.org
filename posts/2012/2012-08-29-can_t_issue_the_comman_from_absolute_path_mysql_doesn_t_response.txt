@@ -1,0 +1,4 @@
+# can't issue the comman from absolute path, mysql doesn't response
+cd /home/apache/apps/mysql/
+./bin/mysqladmin shut -uroot -p9dccf462d245f55ac3e0cdb0e5401f5b -S tmp/mysql.sock
+sleep 10 

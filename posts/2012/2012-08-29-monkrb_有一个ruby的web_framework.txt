@@ -1,0 +1,7 @@
+# monkrb: 有一个ruby的web framework
+http://monkrb.com/
+
+monk是取爵士音乐家 Thelonious monk 的名字。
+我喜欢。
+是大师啊。  come rain, come shine;  misty 都是他演奏的名曲啊。
+

@@ -1,0 +1,11 @@
+# 自动重新命名所有文件，用随机的文件名，且不重复
+$ for i in *.txt; do j=`mktemp | awk -F. '{print $2".txt"}'`; mv "$i" "$j"; done
+A simple way to rename a set of files to a unique, randomized file name.
+
+http://www.commandlinefu.com/commands/view/10621/rename-files-with-unique-randomly-generated-file-names
+
+mktemp是一个工具， mktemp - create a temporary file or directory
+
+mktemp的文档并不保证不重复。只是数据量小的时候，且是同一次运行的时候，不太容易出现重复吧。
+
+
