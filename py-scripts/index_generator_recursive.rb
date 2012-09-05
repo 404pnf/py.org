@@ -15,7 +15,8 @@ def remove_index
   end
 end
 def remove_date_str str
-  str.gsub(/[0-9]{4}-[0-9]{2}-[0-9]{2}-/,'') # remove yyy-mm-dd at the beginning of filename
+  str = str.gsub(/[0-9]{4}-[0-9]{2}-[0-9]{2}-/,'') # remove yyy-mm-dd at the beginning of filename
+  str = str.gsub(/\.html$/,'') # remove file suffix
 end
 def r_index_generator(dir)
   dir = File.expand_path($inputdir)
