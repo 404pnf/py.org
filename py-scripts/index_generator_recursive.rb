@@ -14,6 +14,9 @@ def remove_index
     File.unlink path
   end
 end
+def remove_date_str str
+  str.gsub(/[0-9]{4}-[0-9]{2}-[0-9]{2}-/,'') # remove yyy-mm-dd at the beginning of filename
+end
 def r_index_generator(dir)
   dir = File.expand_path($inputdir)
   # get all path
@@ -29,11 +32,12 @@ def r_index_generator(dir)
     filelist.each do |filename|
       url = CGI::escape(filename)
       # url = URI::encode(fn)  在ruby 1.9中会报 URI.escape is obsolete 过时啦
-      articleTitle = filename
+      articleTitle = remove_date_str(filename)
       link = "<li><a href=\"#{url}\">#{articleTitle}</a></li>\n"
       links << link
       links = links.sort.reverse # new posts on top
       links.join("\n")
+
     end
     folder = d.to_s.split('/').last
     p "generating #{d}/index.html"
