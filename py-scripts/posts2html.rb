@@ -2,8 +2,11 @@
 require 'fileutils'
 require 'kramdown'
 
-# usage script.rb inputfolder outputfolder
+# USAGE script.rb inputfolder outputfolder
+
 # convert \.txt files in inputfolder to html files in outputfolder
+
+# TODO: if I use OO, then I can use erb templete?
 
 $input = ARGV[0] # input folder
 $output = ARGV[1] # output folder
@@ -17,7 +20,7 @@ files.each do |fn|
   mytitle = content.split(/\n/)[0].sub(/^# /, '') # 第一行是题目
   newfn = File.basename(fn, '.txt')
   newfn = newfn + '.html'
-#  p newfn
+  #  p newfn
   html_content = Kramdown::Document.new(content, :auto_ids => false).to_html
   html_header = <<EOF
 <!DOCTYPE html>
@@ -47,6 +50,7 @@ EOF
   html_footer = <<EOF
     </body>
     <footer>
+    <a href="../">Up    </a>
     <a href="/">Home</a>
     </footer>
 </html>

@@ -1,25 +1,12 @@
 # -*- coding: utf-8 -*-
 
-# 使用方法 ruby script.rb inputfile output-folder
-# 笔记是用markdown格式写的。每一个h1标题代表一篇文章
-# 本脚本分割笔记文件到每篇文章一个文件
+require_relative 'sanitize_title.rb'
 
+# 使用方法 ruby script.rb inputfile output-folder
+# inputfile, 笔记是用markdown格式写的。每一个h1标题代表一篇文章
+# 本脚本分割笔记文件到每篇文章一个文件
 $file = ARGV[0]
-$output_folder = ARGV[1]
-def sanitize(title)
-  # 不要空格
-  # 所有键盘上可以按出来的标点符号，中文和英文的我都替换掉
-  # 中文标点所有 http://zh.wikipedia.org/zh/%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7
-  # http://www.ruanyifeng.com/blog/2007/07/english_punctuation.html
-  
-  
-  # 不要用 tr! 和 gsub! 因为如果没有任何替换的话 他们会返回 nil 而不是原字符串！！！
-  title = title.tr( ' `~!@#$%^&*()_+=\|][{}"\';:/?.>,<', '_')
-  title = title.tr('·～！@#￥%……&*（）——+、|】』【『‘“；：/？。》，《', '_')
-  title = title.gsub(/_+/, '_')
-  title = title.gsub(/^_+/, '') #如果前几个字符是下划线，去除
-  title = title.gsub(/_+$/, '') #如果最后几个字符是下划线，去除
-end
+$output_folder = File.expand_path ARGV[1]
 def split_markdown_notes
   str = IO.read($file)
   arr = str.split(/^# /)
@@ -39,5 +26,4 @@ def split_markdown_notes
     end
   end
 end
-
 split_markdown_notes
