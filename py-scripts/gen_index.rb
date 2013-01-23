@@ -30,8 +30,9 @@ Find.find(dir) do |f|
   next unless File.directory?(f)
   # filelist is an array holds filename
   filelist = Dir.entries(f) # filelist is an array with all files include '.' and '..'
-    .reject! {|i| i == '.' or i == '..'}
-    .sort!
+    .reject {|i| i == '.' or i == '..'}
+    .sort
+    .reverse # recent entry on top
 
   # pretty filenames without date prefix and file suffix
   filename_pretty = filelist.map { |file| remove_date_and_suffix(file) }
