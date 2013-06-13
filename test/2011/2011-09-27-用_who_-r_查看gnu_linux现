@@ -1,0 +1,5 @@
+# 用 who -r 查看gnu linux现在的运行级数 run level
+
+[tags]gnu/linux[/tags]
+	$ who -r
+            run-level 3  Aug 16 12:07                   last=S

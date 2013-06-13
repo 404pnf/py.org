@@ -1,0 +1,27 @@
+# 静态相册生成程序lazygal的使用心得
+
+
+## 安装
+源码或者apt
+[项目主页](http://sousmonlit.dyndns.org/~niol/playa/oss/projects/lazygal/)
+
+## 我现在使用的命令行参数
+
+      lazygal -o output-folder/ photo-folder/ --orig-symlink -s smal=800x600 --clean-destination 
+
+-o 是输出文件夹，就是静态相册的目录，后面跟的是原始照片存放的目录
+--orig-symlink 不复制原始照片文件，因为很大的。我们生成静态相册给别人看，让他们看缩略图就好了
+-s small=800x600 设定我需要的生成所路图的大小。 如果不加这个参数，默认lazygal会生成两组缩略图，一个是small为80x600一个是mediu为1024x768。我个人认为没有意义，我只是给朋友看一个比较大的图片就好了。这样节省时间和空间
+--clean-destination 如果重新生成相册，那么完成后删除之前output-folder已经没有用的文件。这个似乎不太工作
+
+## 其它疑问
+lazygal写道如果在 ~/.lazygal/theme下放自己的目录，就可以使用。比如我复制源码中的theme文件夹到那个目录，然后复制default目录到404文件夹，修改后就可以调用新主题
+
+     lazygal -o output/ photo/ -t 404
+
+这样就会运用文件夹名为404的theme。可我修改后，css乱了。jquery也不起作用了，于是作罢，先不细研究
+
+lazygal在如何设置生成缩略图参数，如何指定生成几组缩略图方面的文档不详细。我是碰巧试出来的。因为我不希望有两组缩略图。但有的朋友希望生成多组说不定。
+
+lazygal支持生成相册打包zip提供下载，具体参数看man。
+

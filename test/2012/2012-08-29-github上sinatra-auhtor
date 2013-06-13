@@ -1,0 +1,15 @@
+# github上sinatra-auhtorization库中的一个没有更新造成的错误
+
+这个gem的标准地址在 
+http://rubygems.org/gems/sinatra-authorization
+
+       # From you app, call set :authorization_realm, "my app" to set this
+          # or define a #authorization_realm method in your helpers block.
+          def authorization_realm
+            Sinatra::Default.authorization_realm
+          end
+      https://github.com/integrity/sinatra-authorization/blob/master/lib/sinatra/authorization.rb
+> It's solves the problem because Sinatra doesn't have Default class anymore. And if you want to access some settings defined with :set you should use settings. for this.
+> http://stackoverflow.com/questions/6436652/sinatra-authorization-extension-nameerror
+
+

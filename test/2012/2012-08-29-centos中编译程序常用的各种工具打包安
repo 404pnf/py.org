@@ -1,0 +1,13 @@
+# centos中编译程序常用的各种工具打包安装的名字是Development Tools不是build-essential
+
+>       sudo yum groupinstall "Development Tools"
+> There is no build-essential package in redhat distros !!
+> http://forums.fedoraforum.org/showthread.php?t=184578
+
+习惯了debian流派的打包了。使用centos流派还需要经常查yum怎么用。而且程序名字区别有时候比较误导人。
+
+我搜索 yum search ruby|grep 1.9 竟然没有结果！我想不可能没有ruby1.9的包啊。 yum search ruby直接用肉眼过滤结果，发现在centos中叫 ruby19这种，没有中间的点。
+
+
+但是，都是好自由软件系统。。^_^
+

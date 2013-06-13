@@ -1,0 +1,4 @@
+# semantic fileds帮你定制drupal中field输出的html格式
+
+http://drupal.org/project/semantic_fields 
+就不用一次次复写fields.tpl.php了

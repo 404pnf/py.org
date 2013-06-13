@@ -1,0 +1,7 @@
+# erc的手册
+
+http://www.emacswiki.org/emacs/ERC
+http://mwolson.org/static/doc/erc.html
+半年前研究的muse的手册也在nwolson.org上。
+
+irc聊天工具很重要滴～！ ：）

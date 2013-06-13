@@ -1,0 +1,28 @@
+# 在苹果电脑10系统下使用emacs并正确显示和输入中文
+
+在苹果电脑10系统下使用emacs并正确显示和输入中文：
+
+##  (set-keyboard-coding-system ‘utf-8)
+> http://www.emacswiki.org/cgi-bin/emacs-en/CarbonEmacsPackage
+> If you like your encoding to be based on unicode instead of any of the Chinese-only standard, do (set-keyboard-coding-system ‘utf-8)
+
+Yes, this is what i want instead of Chinese-GB.
+更改了。应该没问题吧。刚才老出现emacs内置的中文输入法。我不想用。只想用scim。环境全部在utf-8下就是好啊。
+
+> If you use Dec. ‘05 version or later, please examine the japanese setting file (carbon-emacs-japanese-init.el) in the site-start directory.
+
+> How do I input and display Simplified Chinese characters?
+
+> To use a Simplified Chinese input method provided by Mac OS X, add some lines in your InitFile. For March 2006 (v2) version, the below setting works (ref: macemacsjp-english 527).
+
+   (set-language-environment "Chinese-GB")
+    (set-default-coding-systems 'utf-8)
+     (set-keyboard-coding-system 'utf-8)
+      (set-clipboard-coding-system 'utf-8)
+       (set-terminal-coding-system 'utf-8)
+        (prefer-coding-system 'utf-8)
+
+第一行到底是用'utf-8还是Chinese-GB，自己选择。其他行都一样。
+
+
+## 在苹果mac os x下可以选择emacs包有

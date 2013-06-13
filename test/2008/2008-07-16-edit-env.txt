@@ -1,0 +1,30 @@
+# edit-env
+
+edit-env
+
+> File: emacs-goodies-el,  Node: edit-env,  Next: egocentric,  Prev: dirvars,  Up: Top
+> 
+> 24 edit-env - display and edit environment variables
+> ****************************************************
+> 
+> Author: Benjamin Rutt 
+> 
+>    This file uses the widget library to display, edit, delete and add
+> environment variables.  Inspired by 
+in a gnus *Group* buffer.
+> Bug reports or patches are welcome, please use the above email address.
+> 
+> To use it, do:
+> 
+>      M-x edit-env
+> 
+>    to enter the environment editor.  To change variables, simply edit
+> their values in place.  To delete variables, delete their values.  To
+> add variables, add a new rows to the list at the bottom by pressing
+> 
+; then, add a new name/value pair of the form VAR=VALUE (e.g.
+> FOO=BAR).  After changing and/or deleting and/or adding environment
+> variables, press the 
+button at the top.  Note that environment
+> variable changes will only be visible to your current emacs session or
+> child processes thereof.

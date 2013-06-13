@@ -1,0 +1,12 @@
+# 计算机中的xor是什么意思
+
+>   0011   (3)
+> + 0011   (3)
+> ------------
+>   
+> You might not see the pattern, but look at the above closely and consider it with respect to what we've learned about logic gates. On a per-column basis, we have two inputs and a single output. Forget about the carryover for a second. When the two inputs are 0, the output is 0. When either input is 1, the output is 1. When both inputs are 1, the output is 0. Remind you of anything? That's exactly how an xor gate behaves. What about that carry bit? Well, the only time we carry 1 is when both inputs are 1. That's an and gate.
+> 
+> source: http://openmymind.net/2012/5/7/Lets-Increment-I-Logic-Gate-Style
+
+
+

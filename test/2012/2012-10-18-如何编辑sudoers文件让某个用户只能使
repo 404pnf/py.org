@@ -1,0 +1,17 @@
+# 如何编辑sudoers文件让某个用户只能使用几个命令
+
+> sudo, restrcited a user to certain commands
+> 
+> The syntax for the user lines in the sudoers file follows this syntax:
+> who host=(accounts) commands
+> Broken down, that means:
+> who: the account that is having its ability to use sudo privileges modified
+> host: the system that the account is able to run these sudo commands on (the sudoers file can be shared across multiple computers, so that’s when this would come into play)
+> accounts: what other accounts on the machine the user running sudo can act as
+> commands: the commands that the account represented by who can run as sudo
+> 
+> backupuser ALL=(ALL) NOPASSWD: /usr/bin/backuptool
+> And that is how I restricted an account’s ability to use one single command as root using sudo without a password.
+> 
+> http://thenubbyadmin.com/2012/04/11/how-to-restrict-a-users-sudo-rights-to-only-specific-commands/
+

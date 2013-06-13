@@ -1,0 +1,7 @@
+# 取消git库中所有为登入的修改
+
+        git checkout -- .
+
+两个横线后面跟一个空格跟一个点
+参考： http://stackoverflow.com/questions/52704/how-do-you-discard-unstaged-changes-in-git
+

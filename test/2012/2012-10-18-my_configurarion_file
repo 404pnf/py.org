@@ -1,0 +1,13 @@
+# my configurarion file reading precidence
+
+> On Unix, Linux and Mac OS X, MySQL programs read startup options from the following files, in the specified order (top items are used first).
+> 
+> File Name      Purpose
+> /etc/my.cnf    Global options
+> SYSCONFDIR/my.cnf     Global options
+> $MYSQL_HOME/my.cnf    Server-specific options
+> defaults-extra-file   The file specified with --defaults-extra-file=path, if any
+> ~/.my.cnf	      User-specific optionsg
+
+http://dev.mysql.com/doc/refman/5.0/en/option-files.html
+

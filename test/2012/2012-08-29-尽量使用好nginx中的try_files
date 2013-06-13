@@ -1,0 +1,27 @@
+# 尽量使用好nginx中的try_files而不是rewrite
+
+有人问：
+
+> i want to rewrite:
+> 
+> http://a.com/abcde.jpg
+> to
+> http://a.com/ab/cde.jpg
+> 
+> here is my nginx config:
+> rewrite "^/([a-z]{2})([a-z]{3})\.jpg$" /$1/$2.jpg last;
+> 
+> but it not works
+
+我上来的思路就是检查他的命令是否正确。也就是假设这种情况用rewrite是合适的。
+
+但下面这个回答没有假设这里需要用rewrite而是建议用try_files。应该说这才是正解。
+
+> Avoid rewrite's:
+> 
+> location ~ ^/([a-z][a-z])([a-z][a-z][a-z])\.jpg$ {
+>      try_files /$1/$2.jpg $uri;
+> }
+> 
+> Andrejs
+

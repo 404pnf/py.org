@@ -1,0 +1,12 @@
+# lyceum优化的了数据库 这个优化应该是必须的
+
+lyceum优化的了数据库。这个优化应该是必须的！
+
+由于现有数据库post2cat表中少了一个索引，造成数据量大的时候查询還慢。解决方法是在数据库中运行这条命令
+
+      ALTER TABLE post2cat ADD UNIQUE INDEX category_id (category_id,post_id);
+
+我升级了。现在一切正常。
+
+作者是如何找到和解决这个问题的过程，请看他写的文章
+http://lyceum.ibiblio.org/2007/03/02/last-night-a-b-tree-saved-my-life-or-how-to-do-a-simple-index-audit-to-fix-a-slow-query/

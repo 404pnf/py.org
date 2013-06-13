@@ -1,0 +1,7 @@
+# 用bash递归复制文件夹结构但不复制文件
+
+       cd /new/dir
+      (cd /old/dir; find -type d ! -name .) | xargs mkdir
+
+http://www.linuxquestions.org/questions/linux-newbie-8/copy-directory-structure-only-208796/
+

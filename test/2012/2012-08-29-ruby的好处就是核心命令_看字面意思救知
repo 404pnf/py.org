@@ -1,0 +1,13 @@
+# ruby的好处就是核心命令，看字面意思救知道是干什么的。
+
+通过 s.method.sort 来找寻s都可以使用哪些方法。
+>> s
+=> {"jack"=>16, "jill"=>12, "bob"=>14}
+>> s.sort
+=> [["bob", 14], ["jack", 16], ["jill", 12]]
+>> s.sort_by {|k, v| v}
+=> [["jill", 12], ["bob", 14], ["jack", 16]]
+>> (s.sort_by {|k, v| v}).reverse
+=> [["jack", 16], ["bob", 14], ["jill", 12]]
+
+

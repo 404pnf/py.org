@@ -1,0 +1,9 @@
+# 在根据sicp这本书学习编程 用到mit-scheme
+
+启动edwin的方法是
+
+To use Edwin, start Scheme with the following command-line options:
+
+     mit-scheme --edit
+
+参考：http://www.gnu.org/software/mit-scheme/documentation/mit-scheme-user/Starting-Edwin.html#Starting-Edwin

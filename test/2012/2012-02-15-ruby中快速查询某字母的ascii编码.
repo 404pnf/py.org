@@ -1,0 +1,12 @@
+# ruby中快速查询某字母的ascii编码
+
+>> puts ?A
+65
+=> nil
+>> puts ?a
+97
+=> nil
+>> 88.chr
+=> "X"
+>> 97.chr
+=> "a"

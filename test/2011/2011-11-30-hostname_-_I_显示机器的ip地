@@ -1,0 +1,3 @@
+# hostname - I 显示机器的ip地址
+
+hostname  -I

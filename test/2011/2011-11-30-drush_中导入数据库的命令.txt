@@ -1,0 +1,3 @@
+# drush 中导入数据库的命令
+
+$ drush sqlc

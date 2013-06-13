@@ -1,0 +1,17 @@
+# emacs中用退格键删除选中区域的方法
+
+## emacs中用退格键删除选中区域的方法
+
+emacs默认情况下你选中一个区域，按退格键不是删除这个选中文字，而是退格。如果你习惯了windows中的用法，参考下面的方法。emacs中一般删除用ctrl-w就是了。用ctrl-w的好处是，区块删除了，而且区块的内容被保存在剪贴板里面（kill-ring），随时可以调出来再使用。**你用退格键删除可就再调不出来了！**
+
+
+所以，真的不建议用这种方法。而是习惯用C-w。
+
+
+> http://www.emacswiki.org/cgi-bin/wiki/DeleteSelectionMode
+> 
+> Delete Selection mode lets you treat an Emacs region like a Windows selection: You can replace the region just by typing text, and delete it just by typing the Backspace key (DEL).
+> 
+> Put the following in your ~/.emacs file: (delete-selection-mode 1)
+> 
+> Emacs calls this delete-selection-mode, XEmacs calls it pending-delete-mode. Both have an alias for the other name, however, so it doesn’t really matter.

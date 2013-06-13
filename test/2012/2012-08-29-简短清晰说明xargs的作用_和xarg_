@@ -1,0 +1,37 @@
+# 简短清晰说明xargs的作用；和xarg -0 以及 find -print0 是什么意思
+
+> To better understand this, let's look at something that won't work. Say you wanted to delete all markdown files. You might be tempted to try:
+> 
+>     find . -iname "*.md" | rm
+>  
+> The first part does what we expect it to do, it finds all files with a markdown extension. However, piping find's output to rm doesn't do anything other than display the help message for rm. Why is that? Remember, pipe redirects a program's output to another program's input. rm however does not work via standard input. It works via the command-line. In C#, that's the difference between Console.ReadLine() and using the args[] parameter.
+>   
+> The solution to this problem is to use a special utility which converts standard input into a command-line. This is what xargs does. Unfortunately, xargs can be quite different from platform to platform, but all we need right now is the simplest thing:
+>   
+>     find . -iname "*.md" | xargs rm
+> 
+> If you've been following along, you can guess that xargs takes data from the standard input (hence data can be piped to it) and converts that to command-line parameters for whatever program you specify (rm in this case).
+> 	
+> How do you know if a program takes data from standard input vs the command-line? Well, if you look at the help message from grep, you'll see that it takes its input from [FILE], whereas rm takes it from file. It's a subtle difference.
+> 
+souce: http://openmymind.net/2012/4/13/Piping-Basics
+
+另外根据man page：
+
+       --arg-file=file
+       -a file
+              Read items from file instead of standard  input.   If  you  use
+              this  option,  stdin  remains  unchanged when commands are run.
+              Otherwise, stdin is redirected from /dev/null.
+
+       --null
+       -0     Input items are terminated by a null character  instead  of  by
+              whitespace, and the quotes and backslash are not special (every
+              character is  taken  literally).   Disables  the  end  of  file
+              string,  which is treated like any other argument.  Useful when
+              input items might contain white space, quote  marks,  or  back‐
+              slashes.   The  GNU find -print0 option produces input suitable
+              for this mode.
+
+这里说明那个 -0 (阿拉伯数字0)的意思是，默认xarg根据空格来分割文件名，因此如果前面命令传入的文件名可能是有空格，就会出现错误，这时用 -0 就好了，会忽略空格，反斜杠和引号。同样，要让前面传入的文件名符合要求，可用 gnu find -print0 。
+

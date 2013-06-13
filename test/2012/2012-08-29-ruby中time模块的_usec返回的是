@@ -1,0 +1,15 @@
+# ruby中time模块的.usec返回的是一个时间毫秒部分的值
+
+      >> start = Time.parse('01:11:22,123')=> 2012-07-19 01:11:22 +0800
+      >> start.usec
+      => 123000
+      >> start.min
+      => 11
+      >> start.hour
+      => 1
+      >> start.sec
+      => 22
+
+参考：
+https://github.com/felipeelias/shift_subtitle
+

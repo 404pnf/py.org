@@ -1,0 +1,38 @@
+# 有新界面主题供大家选择
+
+新放开了几个界面主题。现在默认的是antique_morden。还有一个新的叫gunmetal，是我特别修改给自己用的 ；）加上之前的spreadfirefox，共有3个主题
+
+更换主体方法是，去我的账户，编辑，然后往下浏览，下面有主题照片，喜欢那个就选用。
+
+![drupal anti modern theme preview](http://cvs.drupal.org/viewcvs/*checkout*/drupal/contributions/themes/antique_modern/screenshot-drupal.org.png) ![drupal gunmetal theme preview](http://cvs.drupal.org/viewcvs/*checkout*/drupal/contributions/themes/gunmetal/screenshot-drupal.org.png) ![drupal spreadfirefox theme previwe](http://cvs.drupal.org/viewcvs/*checkout*/drupal/contributions/themes/spreadfirefox/screenshot-drupal.org.png)
+以后争取一个月来几个。
+
+使用IE的朋友，真心希望你们请尽快改用[firefox](http://www.mozilla.org.cn/)。或者使用其他的支持国际标准css的浏览器。比如，[opera](http://www.opera.com/download/), safari(macosx默认的), [camino](http://www.caminobrowser.org/)，换个浏览器，[开开心心地网上冲浪](http://browsehappy.com/)。
+
+
+管理员们继续看，下面是我做的修改和我发现如何修改主题。
+
+
+break
+
+问题
+
+我有一个问题现在输入的框，就是form，底色都是白色，太刺眼，我没找到style.css中哪个是调整这些框，比如登陆框，写文章的正文框，在哪里调整颜色。
+
+
+关于修改
+
+read the source, read the soource ya
+代码里面写得比较清楚了
+一边改一边在浏览器中刷新看结果就基本知道是改动的是什么
+
+我从我喜欢又正巧style.css简单的gunmetal开始：）
+我做了如下修改
+
+去掉comment标题 在comment.tpl.php中去掉print $title 什么的。你自己看英文然后尝试一下就可以了。修改原因是我觉得评论有标题反而影响阅读速度。
+
+调整postadata一些项目的位置，主要是把tag等挑到文章后面。这个在node.tpl.php中。这个的目的人家看完了文章才会想去看相干文章，如果tag在标题下面等于人家看完了文章还要翻页上去看tag才能点到。所以放在上面不科学。：）
+
+调整 postdata字号 这个是 文章作者姓名，发布日起，作者blog，发表评论的链接的字号
+
+在style.css中改字号，边改边看结果直到改的是哪些字号。标题的字号由tpl.php中标题的templete php 代码是在h3还是h2中框着决定。我主要是加大字体。

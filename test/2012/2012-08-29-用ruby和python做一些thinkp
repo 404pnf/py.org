@@ -1,0 +1,104 @@
+# 用ruby和python做一些thinkpython的习题
+
+
+## 反转单词
+
+     >> 'answer'.reverse
+     => "rewsna"
+     >> def rev(word)
+     >> word.split('').reverse.join('')
+     >> end
+     => nil
+     >> rev('wrod')
+     => "dorw"
+     >> 'word'.length
+     => 4
+     >> def rev(word)
+     >> for i in (0..word.length-1)
+     >> print word[word.length - 1 - i]
+     >> end
+     >> end
+     => nil
+     >> rev('word')
+     drow=> 0..3
+
+ruby的字符串有reverse方法。让后我用arr的reverse方法实现字符串reverse方法。但还是不够原始，最后用循环实现。
+
+## 检查输入字符串是否还有字母'e'
+
+''' ruby
+>> def has_e?(word)
+>> rst = 'false'
+>> word.each_char {|c| rst = 'true' if c == 'e'}
+>> rst
+>> end
+=> nil
+>> has_e?('word')
+=> "false"
+>> has_e?('worde')
+=> "true"
+
+''' python
+>>> def has_no_e(word):
+...     for c in word:
+...             if c == 'e':
+...                     return True;
+...     return False;
+... 
+>>> has_no_e('word')
+False
+>>> has_no_e('worde')
+True
+
+## 查找单词中是否出现某个字母并给出位置
+
+     def find(str, letter)
+         return (0..str.length-1).each {|i| p i if str[i] == letter}
+         return -1
+     end
+
+ruby中也是遇到return就跳出函数。
+这里根据ruby函数是根据最后求值的表达式来作为结果。
+因此如果第一个return没有跳出，就会到了return -1，因此就是输出-1了。
+
+开始时候我不知到如何在找不到的时候输出-1啦！！？？
+
+
+上面的ruby方法和下面的python有很大不同。ptyhon是找到第一个就跳出了，而ruby会遍历所有字母并找出所有符合的index。
+
+>> find('iiiii', 'i')
+0
+1
+2
+3
+4
+=> 0..4
+
+必须写成和python一样的形式？！
+
+     >> def find2(w, c)
+     >> for i in (0..w.length-1)
+     >> if w[i] == c
+     >> return i
+     >> end
+     >> return -1
+     >> end
+     >> end
+     => nil
+     >> find2('iiii', 'i')
+     => 0
+
+python的方法
+
+      def find(word, letter):
+          for i in range(0, len(word)):
+                  if word[i] == letter:
+                          return i;
+          return -1;
+     
+>>> find('friiiiuit', 'i')
+2
+
+
+注意： ruby中的range是inclusive，就是包含后面的那个数字，而ptyhon3中是不包括的！
+

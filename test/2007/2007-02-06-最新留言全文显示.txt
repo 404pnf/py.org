@@ -1,0 +1,16 @@
+# 最新留言全文显示
+
+这是一段php snippet。它不遵守drupal的规则，所以即使是没有被批准的留言，也会显示出来。这样对防止spam很不利，所以我暂时unpulish它。
+
+
+$max = 100;
+$query = 'SELECT nid,cid,comment FROM {comments} order by timestamp desc ';
+$result = db_query_range($query, 0, $max);
+$items = array ();
+while ($comment = db_fetch_object($result)) {
+    $items[] = l($comment-comment, "node/$comment->nid", NULL, NULL, "comment-$comment->cid");
+}
+if (count($items)) {
+    return theme('item_list', $items);
+}
+?>

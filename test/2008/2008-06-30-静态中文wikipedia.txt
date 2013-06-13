@@ -1,0 +1,5 @@
+# 静态中文wikipedia
+
+静态中文wikipedia
+
+http://static.wikipedia.org

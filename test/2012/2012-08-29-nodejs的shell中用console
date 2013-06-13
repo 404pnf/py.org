@@ -1,0 +1,16 @@
+# nodejs的shell中用console.log("字符串") 来打印到屏幕
+
+> s = 'haha'
+'haha'
+> console.log(s)
+haha
+> console.log("haha")
+haha
+undefined
+
+如果要打印的是json
+
+console.log("Session: %j", session);
+参考：http://stackoverflow.com/questions/7428235/how-to-print-json-object-content-in-node-js
+
+

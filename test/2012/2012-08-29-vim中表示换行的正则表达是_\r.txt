@@ -1,0 +1,14 @@
+# vim中表示换行的正则表达是 \r 
+
+vim中替换dos/windwos回车 到unix换行的命令是：
+
+        %s/ctrl-v ctrl-m//g
+        
+看起来很奇怪。因为ctrl-v是quote后一个字符，ctrl-m就是dos的回车，但是替换成空就可以么？我很怀疑。认为是错的。
+
+实际上是对的。
+
+参考： http://stackoverflow.com/questions/71323/how-to-replace-a-character-for-a-newline-in-vim
+
+相关， :set ff? 查看本文用什么格式存。  :set fileytpe=unix 设定为unix格式存（不会自动改dos的^M回车）
+

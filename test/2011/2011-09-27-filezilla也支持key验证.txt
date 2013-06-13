@@ -1,0 +1,5 @@
+# filezilla也支持key验证
+
+[tags] 工具 [/tags]
+Starting with version 3.0.8, FileZilla has a built-in key management page in the settings dialog. 
+http://wiki.filezilla-project.org/Howto

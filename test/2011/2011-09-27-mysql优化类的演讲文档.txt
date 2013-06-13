@@ -1,0 +1,3 @@
+# mysql优化类的演讲文档
+
+http://www.mysqlperformanceblog.com/mysql-performance-presentations/

@@ -1,0 +1,7 @@
+# ruby中根据输入字符串生成图片的程序 适合自动生成用户头像
+
+最初是一个php程序实现的。
+ruby的gem
+http://rubygems.org/gems/monster_id
+https://github.com/dira/monsterid
+![a monster avatar](https://github.com/dira/monsterid/raw/master/examples/angry.png)
