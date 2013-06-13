@@ -1,0 +1,17 @@
+# more resources on scheme language
+<http://www.reddit.com/r/scheme/comments/jzlto/what_flavor_of_scheme_do_you_use_and_why/>
+
+chez scheme, recommended by author of programmming praxis. 
+<http://www.scheme.com/>
+online book for chez scheme <http://www.scheme.com/csug8/>
+
+book: how to design programs
+<http://www.htdp.org/>
+book: teach yourself scheme in fixnum days
+<http://www.ccs.neu.edu/home/dorai/t-y-scheme/t-y-scheme.html>
+
+misc
+<http://www.reddit.com/r/scheme/comments/fw20j/what_are_some_benefits_of_using_scheme_instead_of/>
+<http://www.reddit.com/r/scheme/comments/ft2q5/using_scheme_for_practical_projects/>
+<http://www.reddit.com/r/scheme/comments/uc5l2/best_way_to_learn_scheme/>
+

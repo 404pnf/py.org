@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ruby中的两个连续小于号有特殊意义</title>
+    <link href="/css/local.css" rel="stylesheet">
+
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+    </script>
+
+    </head>
+    <body>
+<h1>ruby中的两个连续小于号有特殊意义</h1>
+
+<pre><code>&gt; 1&lt;&lt;0
+=&gt; 1
+&gt; 1&lt;&lt;1
+=&gt; 2
+&gt; 1&lt;&lt;2
+=&gt; 4
+&gt; 1&lt;&lt;3
+=&gt; 8
+&gt; 1&lt;&lt;4
+=&gt; 16
+&gt; 1&lt;&lt;10
+=&gt; 1024
+&gt; 1&lt;&lt;64
+=&gt; 18446744073709551616
+&gt; 1&lt;&lt;640
+=&gt; 4562440617622195218641171605700291324893228507248559930579192517899275167208677386505912811317371399778642309573594407310688704721375437998252661319722214188251994674360264950082874192246603776
+</code></pre>
+
+<p>表示2的次方！这个应该是位移的符号？就是2进制的数左移动？</p>
+
+<p>我的32位操作系统下，python和haskell也可以同样计算如此大的数，64位计算机“能表示的最大的数”。内部自动切换数据类型了。</p>
+
+<p>其实可以表示更大的，只要语言的实现支持，比如 1«640。可自行实验一下。更大仍然可以。不过haskell在很大的时候不去计算了，直接返回一个infiinity。</p>
+
+<p>php同学就。。。</p>
+
+<pre><code>php&gt; print 1&lt;&lt;30
+1073741824
+php&gt; print 1&lt;&lt;31
+-2147483648
+php&gt; print 1&lt;&lt;32
+1
+php&gt; print 1&lt;&lt;33
+2
+php&gt; print 1&lt;&lt;34
+4
+</code></pre>
+
+<p>我也不看好java同学！但我不会用，不知道如何测试。请lvcha测试一下？</p>
+
+    </body>
+    <footer>
+    <a href="/">Home</a>
+    </footer>
+</html>

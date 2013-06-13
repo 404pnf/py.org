@@ -1,0 +1,4 @@
+# centos上安装python2.7
+<http://toomuchdata.com/2012/06/25/how-to-install-python-2-7-3-on-centos-6-2/>
+我不喜欢centos。我更不喜欢有些ibm服务器无法安装debian和ubuntu gnu/linux。因为上述两个版本无法支持这些服务器的硬盘控制器，我猜测是这样。总是出现情况：格式化硬盘和安装都正常，安装完毕后重启，硬盘上什么都没有了。
+
