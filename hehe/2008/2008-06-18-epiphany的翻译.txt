@@ -1,0 +1,10 @@
+# epiphany的翻译
+
+epiphany的翻译
+
+这里参与
+http://www.gnome.org/projects/epiphany/development/translations.html
+
+简体中文 http://l10n.gnome.org/teams/zh_CN
+
+我是想翻译它的手册和使用指南

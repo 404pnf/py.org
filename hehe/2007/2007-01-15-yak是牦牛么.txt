@@ -1,0 +1,6 @@
+# yak是牦牛么
+
+> define:yak - Google Search
+> "The yak (Bos grunniens) is a long-haired humped domestic bovine found in Tibet and throughout the Himalayan region of south central Asia. The word yak refers to the male of the species; a female is a dri or nak.
+> http://en.wikipedia.org/wiki/Yak"
+> http://www.google.com/search?q=define%3Ayak&start=0&ie=utf-8&oe=utf-8&client=firefox-a&rls=org.mozilla:en-US:official

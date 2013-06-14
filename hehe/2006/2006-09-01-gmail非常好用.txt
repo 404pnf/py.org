@@ -1,0 +1,32 @@
+# gmail非常好用
+
+需要gmail得找我我要请你们。
+
+gmail非常好用 特别是你使用
+[快捷键](http://mail.google.com/support/bin/answer.py?answer=6594&query=shortcut&topic=&type=f&ctx=search)的时候。几个tips: 
+
+
+break
+
+j 下一个主题 
+k 上一个主题
+
+用j和k这两个键来导航有很久的历史了。因为你他们由右手的食指和中指来控制，所以特别方便。所以应该没有缩写。
+
+下面的shortcut keys为了方便大家记忆，我把它从何而来，就是括号内那个词的字母
+
+n  一个主题中的下一封信 （你会看到信标题前面的一个大于号似的东西走到下一封的标题）(N)ext
+
+p 同一主题中的上一封信        (P)revious
+
+enter 展开信件看全文 展开前面有大于号的那个信
+
+r  回复    (R)eply
+
+a  恢复全部 reply to (A)ll
+
+f  转发     (F)orward
+
+u  回到主题浏览模式 ret(U)rn to converstaions 这是我的猜想：）
+
+这几个键基本够了。

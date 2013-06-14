@@ -1,0 +1,11 @@
+# 想使用 Hash.from_xml 方法需要 require active_support all
+
+irb(main):016:0> xml = File.new('xml.txt')
+=> #<File:xml.txt>
+irb(main):017:0> Hash.from_xml xml
+NoMethodError: undefined method `from_xml' for Hash:Class
+	       from (irb):17
+	       from /usr/bin/irb:12:in `<main>'
+irb(main):018:0> require 'active_support/all'
+=> true
+

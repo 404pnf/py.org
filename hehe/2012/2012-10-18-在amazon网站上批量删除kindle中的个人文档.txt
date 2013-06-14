@@ -1,0 +1,24 @@
+# 在amazon网站上批量删除kindle中的个人文档
+
+默认是一本一本点删除，太慢了。
+
+search amazon kindle mass delete personal documents
+
+the one i chose
+<http://massdestroykindleitems.com/>
+在personal document管理页面直接点书签，它会根据你输入的文字自动匹配所有的含有该文字文档。如果我想删除全部，就输入一个字母，然后删除掉，这样所有该页文件都变红了，就是都等待确认删除。
+
+确认删除。
+
+干净啦。
+
+tried but failed
+<http://pepa.info/check-and-delete/>
+
+didin't try the following
+
+somebody posted some js code
+<http://www.amazon.com/forum/kindle?_encoding=UTF8&cdForum=Fx1D7SY3BVSESG&cdThread=Tx1NTIGX6GSG007>
+more ways to acheive the same
+<http://hackerue.com/2012/05/17/bulk-delete-books-from-manage-my-kindle-page/>
+

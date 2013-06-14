@@ -1,0 +1,9 @@
+# 用ls -i或者stat查看文件的inode
+
+如果查看某个文件的inode呢。使用：
+
+	ls -i
+有时你想操作一个文件但它文件名很特殊bash下无法直接输入，此时可用通过其inode对其操作。inode都是数字，不会有无法输入的问题。
+
+参考： http://www.cyberciti.biz/faq/linux-bsd-appleosx-unix-find-file-inode/
+

@@ -1,0 +1,5 @@
+# 渐进学习vim
+> % : Go to the corresponding (, {, [.
+> * (resp. #) : go to next (resp. previous) occurrence of the word under the cursor
+http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
+

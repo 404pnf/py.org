@@ -1,0 +1,7 @@
+# 虚拟主机服务 linode
+
+虚拟主机服务 linode
+
+比较有特色的是 Clone a Linode to another。就是你配置好一台虚拟主机了，但你需要更多的计算能力，或者就是需要两台web proxy，克隆那个节点到另外一个节点就了。
+
+http://www.linode.com/

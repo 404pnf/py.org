@@ -1,0 +1,5 @@
+# tinyproxy 可以用做正向代理和反响代理的小程序
+
+是自由软件。
+
+项目地址： https://banu.com/tinyproxy/

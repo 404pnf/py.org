@@ -1,0 +1,38 @@
+# ido
+
+ido
+
+> File: emacs-goodies-el,  Node: ido,  Next: joc-toggle-buffer,  Prev: ibuffer,  Up: Top
+> 
+> 37 ido - interactively do things with buffers and files.
+> 
+> 
+> Author: Kim F. Storm 
+Based on: iswitchb by Stephen Eglen
+> 
+> 
+>    There is a different version of the package in Emacs 22 so it will
+> eventually be removed.
+> 
+>    This package features a faster way to switch buffers and get new
+> files.  To get the alternative switch-to-buffer and find-file functions
+> in this package bound to keys, do
+> 
+>       (ido-mode t)
+>    or `M-x ido-mode'.
+> 
+>    As you type in a substring, the list of buffers or files currently
+> matching the substring are displayed as you type.  The list is ordered
+> so that the most recent buffers or files visited come at the start of
+> the list.
+> 
+>    The buffer or file at the start of the list will be the one visited
+> when you press return.  By typing more of the substring, the list is
+> narrowed down so that gradually the buffer or file you want will be at
+> the top of the list.  Alternatively, you can use 
+and 
+(or the
+> right and left arrow keys) to rotate buffer or file names in the list
+> until the one you want is at the top of the list.  Completion is also
+> available so that you can see what is common to all of the matching
+> buffers or files as you type.

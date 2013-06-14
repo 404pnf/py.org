@@ -1,0 +1,11 @@
+# 学会了用chattr和lsattr
+
+[tags]bash,linux[/tags]
+       chattr -RV =A *
+让目录下所有文件增加 A 的属性。这样该文件被访问，不会更新该文件的access time，节省i/o。极端tweak用。也适合在笔记本上用。 -R 是recursively的意思。-V是verbose的意思，它会告诉你正在改变了哪些文件的属性。
+
+      lsattr * 
+查看文件的attribute属性
+
+> For heavy I/O in a file server and Web server environment, you can also disable the atime. atime basically stores the information of when is the last time the file has been accessed. You can update your /etc/fstab to reflect this. 
+> http://www.ibm.com/developerworks/wikis/display/LinuxP/Performance+Tuning#PerformanceTuning-Filesystemtuning

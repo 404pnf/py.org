@@ -1,0 +1,3 @@
+# see if the time stamp is right
+
+sudo date mmddhhmm

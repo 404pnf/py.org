@@ -1,0 +1,6 @@
+# kramdown --help 查看命令行中kramdown如何设定参数
+
+      kramdown --help
+
+我要用的是 kramdown --no-auto-ids file.txt >file.html
+

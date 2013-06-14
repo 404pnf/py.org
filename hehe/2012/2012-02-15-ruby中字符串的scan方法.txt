@@ -1,0 +1,22 @@
+# ruby中字符串的scan方法
+
+.scan(//)
+//中是正则表达式
+
+>> fish = "red fish, blue fish"
+=> "red fish, blue fish"
+
+>> fish.scan(/./)
+=> ["r", "e", "d", " ", "f", "i", "s", "h", ",", " ", "b", "l", "u", "e", " ", "f", "i", "s", "h"]
+
+一个字母且分一下
+
+>> fish.scan(/../)
+=> ["re", "d ", "fi", "sh", ", ", "bl", "ue", " f", "is"]
+
+每两个字母切分
+
+>> fish.scan(/b.* /)
+=> ["blue "]
+
+所所b开头的单词

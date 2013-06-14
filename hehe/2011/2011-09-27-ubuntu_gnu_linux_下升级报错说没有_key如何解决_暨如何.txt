@@ -1,0 +1,11 @@
+# ubuntu gnu linux 下升级报错说没有 key如何解决 暨如何添加key
+
+运行一下 
+
+	sudo  apt-get update
+
+它会报错说你缺什么key。把key的值复制下来用下面命令添加。
+
+
+	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F1773AF13B1510FD
+	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 75CFD31C9E5DB0C8

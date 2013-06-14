@@ -1,0 +1,18 @@
+# bash下的rev命令是把一行文字的顺序反过来输出
+  
+    $ echo -n "the answer is" |rev
+    si rewsna eht
+
+NAME
+     rev — reverse lines of a file or files
+
+SYNOPSIS
+     rev [-V] [-h] [file ...]
+
+DESCRIPTION
+     The rev utility copies the specified files
+     to standard output, reversing the order of
+     characters in every line.  If no files are
+     specified, standard input is read.
+
+

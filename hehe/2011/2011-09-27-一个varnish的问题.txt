@@ -1,0 +1,55 @@
+# 一个varnish的问题
+
+下面的问题我一直没能解决。也没研究。改用nginx了。nginx配置上似乎更简单。：）
+
+有一些文件，浏览器只能下载一部分。比如一个mp3实际是26mb，但浏览器只能下到600多k。chrome倒是能够下全。
+
+当绕过varnish直接从apache获取。每个浏览器都能下载正确的问题件。
+
+从http header看，varnish实际返回给了用户该mp3的正确大小（Content-Length: 26886896），但不知道为什么传输一会儿就断了。
+
+      http://example.com/disney/mp3/FindingNemo.mp3
+      
+      GET /disney/mp3/FindingNemo.mp3 HTTP/1.1
+      Host: cdn1.2u4u.com.cn
+      User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.3) Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3
+      Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+      Accept-Language: en-us,en;q=0.5
+      Accept-Encoding: gzip,deflate
+      Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Keep-Alive: 115
+      Connection: keep-alive
+      
+      HTTP/1.1 200 OK
+      Server: Apache
+      Cache-Control: public, no-transform
+      Expires: Thu, 15 Apr 2012 20:00:00 GMT
+      Content-Type: audio/mpeg
+      Content-Length: 26886896
+      Date: Thu, 01 Jul 2010 07:16:13 GMT
+      X-Varnish: 1641609202
+      Age: 0
+      Via: 1.1 varnish
+      Connection: keep-alive
+      
+我的varnish配置文件全部内容
+      
+      backend default {
+      .host = "127.0.0.1";
+      .port = "8080";
+      .connect_timeout = 600s;
+      .first_byte_timeout = 600s;
+      .between_bytes_timeout = 600s;
+      }
+      
+      sub vcl_recv {
+       if (req.url ~ "\.(png|gif|jpg|swf|css|js)$") {
+          lookup;
+       }
+      }
+      
+      sub vcl_fetch {
+       if (req.url ~ "\.(png|gif|jpg|swf|css|js)$") {
+        remove obj.http.Set-Cookie;
+       }
+      }

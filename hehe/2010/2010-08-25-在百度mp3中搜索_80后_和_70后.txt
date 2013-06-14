@@ -1,0 +1,6 @@
+# 在百度mp3中搜索 80后 和 70后
+
+70后 http://zhangmen.baidu.com/search.jsp?word=70%BA%F3&type=0&orderby=relative&page=2
+80后 http://zhangmen.baidu.com/search.jsp?word=80%BA%F3&type=0&orderby=relative&page=3
+
+某用户整理的：  http://zhangmen.baidu.com/MP3%D2%F4%C0%D6%D7%A8%CC%E2?page=6

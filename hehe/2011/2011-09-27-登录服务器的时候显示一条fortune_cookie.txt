@@ -1,0 +1,7 @@
+# 登录服务器的时候显示一条fortune cookie
+
+编辑 ～/.bash_profile，添加
+
+	echo -e "\n\n`fortune`\n\n"
+
+http://www.walkernews.net/2011/02/08/how-to-display-random-quotes-or-ascii-art-as-linux-login-message/

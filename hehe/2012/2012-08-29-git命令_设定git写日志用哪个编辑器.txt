@@ -1,0 +1,6 @@
+# git命令： 设定git写日志用哪个编辑器
+
+      git config --global core.editor "emacs"
+
+我这里选用emacs。自己替换成你喜欢的。
+

@@ -1,0 +1,134 @@
+# 计算机科学理论方面的书，可在线阅读，可amazon上购买
+
+购买的价格是很贵的。但作者给了免费网上阅读的途径。
+
+http://www.amazon.com/Books-available-for-free-download/lm/1MZYM25XRWG5V
+
+	
+1.  Concurrency Control and Recovery in Database Systems by Philip A. Bernstein
+The list author says:
+ 	 "http://research.microsoft.com/pubs/ccontrol/"
+Used & New from: $2.12
+    (2 customer reviews)	
+	
+2.  Structure and Interpretation of Computer Programs (MIT Electrical Engineering and Computer Science) by Harold Abelson
+The list author says:
+ 	 "http://mitpress.mit.edu/sicp/"
+Used & New from: $3.40
+3 customer discussions	
+	
+3.  Database Design (Mcgraw Hill Computer Science Series) by Gio Wiederhold
+The list author says:
+ 	 "http://www-db.stanford.edu/pub/gio/dbd/acm/toc.html"
+Used & New from: $0.01
+
+	
+4.  Information Theory, Inference and Learning Algorithms by David J. C. MacKay
+The list author says:
+ 	 "http://www.inference.phy.cam.ac.uk/mackay/itprnn/book.html"
+$48.00   Used & New from: $39.86
+    (15 customer reviews)	
+
+	
+5.  Handbook of Applied Cryptography (Discrete Mathematics and Its Applications) by Alfred J. Menezes
+The list author says:
+ 	 "http://www.cacr.math.uwaterloo.ca/hac/"
+$71.91   Used & New from: $37.34
+    (17 customer reviews)	
+
+	
+6.  Algorithms and Complexity by Herbert S. Wilf
+The list author says:
+ 	 "http://www.cis.upenn.edu/~wilf/AlgComp3.html"
+$41.46   Used & New from: $41.00
+    (1 customer review)	
+
+	
+7.  How to Design Programs: An Introduction to Programming and Computing by Matthias Felleisen
+The list author says:
+ 	 "http://www.htdp.org/"
+$66.66   Used & New from: $24.97
+    (14 customer reviews) | 2 customer discussions	
+
+	
+8.  Rethinking Public Key Infrastructures and Digital Certificates: Building in Privacy by Stefan A. Brands
+The list author says:
+ 	 "http://www.credentica.com/the_mit_pressbook.php"
+$38.89   Used & New from: $3.37
+    (5 customer reviews)	
+
+	
+9.  Libro del estilo ''El Pais'' (2002) (Spanish Edition) by Alex Grijelmo
+The list author says:
+ 	 "http://www.estudiantes.elpais.es/EPE2002/libroestilo/inicio.htm"
+$34.99   Used & New from: $29.20
+    (2 customer reviews)	
+
+	
+10.  Libro de Estilo (Spanish Edition) by El Pais
+The list author says:
+ 	 "http://www.estudiantes.elpais.es/EPE2002/libroestilo/inicio.htm"
+Used & New from: $8.00
+
+	
+11.  Price Theory by David D. Friedman
+The list author says:
+ 	 "http://www.daviddfriedman.com/Academic/Price_Theory/PThy_ToC.html"
+Used & New from: $19.96
+    (1 customer review)	
+	
+12.  Structure and Interpretation of Classical Mechanics by Gerald Jay Sussman
+The list author says:
+ 	 "http://mitpress.mit.edu/SICM/"
+$56.42   Used & New from: $34.07
+    (5 customer reviews)	
+
+	
+13.  The TeXbook by Donald E. Knuth
+The list author says:
+ 	 "http://www.ctan.org/tex-archive/systems/knuth/tex/"
+$33.74   Used & New from: $3.79
+    (10 customer reviews)	
+
+	
+14.  The METAFONTbook by Donald E. Knuth
+The list author says:
+ 	 "http://www.ctan.org/tex-archive/systems/knuth/mf/"
+$40.04   Used & New from: $7.50
+    (2 customer reviews)	
+
+	
+15.  Probability and Algorithms by Panel on Probability and Algorithms
+The list author says:
+ 	 "http://www.nap.edu/books/0309047765/html/"
+$38.51   Used & New from: $13.99
+
+
+	
+16.  Compliers and Compiler Generators: An Introduction With C++ (Itcp-UK Computer Science Series) by Patrick D. Terry
+The list author says:
+ 	 "http://scifac.ru.ac.za/compilers/"
+Used & New from: $48.49
+
+	
+17.  An Introduction to the Theory of Computation (Principles of Computer Science Series) by Eitan Gurari
+The list author says:
+ 	 "http://www.cse.ohio-state.edu/~gurari/theory-bk/theory-bk.html"
+Used & New from: $4.75
+
+	
+18.  PVM: Parallel Virtual Machine: A Users' Guide and Tutorial for Network Parallel Computing (Scientific and Engineering Computation) by Jack Dongarra
+The list author says:
+ 	 "http://www.netlib.org/pvm3/book/pvm-book.html"
+$38.00   Used & New from: $0.07
+    (2 customer reviews)	
+
+	
+19.  Communicating Sequential Processes (Prentice Hall International Series in Computing Science) by C. A. R. Hoare
+The list author says:
+ 	 "http://www.usingcsp.com/"
+Used & New from: $45.00
+    (1 customer review)
+
+
+

@@ -1,0 +1,20 @@
+# 翻译音频录音和编辑的自由软件audacity
+
+翻译音频录音和编辑的自由软件audacity
+
+重新开始。几年前开始的工作一直没有收尾。
+这次要来真的。
+audacity我一直在用。
+内的算得上一把好手，而且对它在内的的推广，早期做了些贡献。
+让我非常高兴 ：）
+
+这回是翻译网站和文档。
+全部内容！！
+
+网站内容的po文件在这里
+http://audacity.cvs.sourceforge.net/audacity/htdocs/locale/
+
+软件汉化的po文件在这里
+http://audacity.cvs.sourceforge.net/audacity/audacity-src/locale/
+
+也想参与的看这里： http://audacity.sourceforge.net/community/translation
