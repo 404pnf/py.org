@@ -1,0 +1,22 @@
+# freemind使用
+
+freemind使用
+
+## freemind是自由软件
+http://freemind.sourceforge.net/wiki/index.php/Main_Page
+
+## freemind简介
+http://blog.chinaunix.net/u/24474/showart_416154.html
+
+## 中文有乱码是jvm字体的问题
+http://blog.chinaunix.net/u/25081/showart_1073868.html
+http://blog.chinaunix.net/u1/55011/showart_460737.html
+
+提醒注意！
+1. **安装字体的位置在** /usr/share/fonts/X11/misc/wenquanyi_ 我找了半天！！！！！
+2. jre的字体在我机器上也不再文章说的位置！！！我找不着。
+## 安装wqy
+http://wiki.guoshuang.com/Ubuntu%E5%AE%89%E8%A3%85wqy%E5%AE%8B%E4%BD%93
+	sudo apt-get install xfonts-wqy
+
+**安装字体的位置在** /usr/share/fonts/X11/misc/wenquanyi_ 我找了半天！！！！！

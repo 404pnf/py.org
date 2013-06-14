@@ -1,0 +1,6 @@
+# Backuping and restoring a single table using mysqldump
+
+Backuping a single table from a database
+mysqldump -u -p database_one table_name > /var/www/backups/table_name.sql
+
+我只前以为是 databasename.tablename。看来应该是空格？

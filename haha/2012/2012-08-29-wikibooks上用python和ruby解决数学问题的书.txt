@@ -1,0 +1,3 @@
+# wikibooks上用python和ruby解决数学问题的书
+http://en.wikibooks.org/wiki/Mathematics_with_Python_and_Ruby
+好书！

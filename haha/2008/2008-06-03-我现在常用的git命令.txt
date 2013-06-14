@@ -1,0 +1,93 @@
+# 我现在常用的git命令
+
+## 我现在常用的git命令
+
+## 实际例子
+
+
+进入文件夹，里面是我要版本控制的文件
+
+404:~/project/feh$ git init
+Initialized empty Git repository in .git/
+
+
+创建了一个新的git库
+
+
+	404:~/project/feh$ git add AUTHORS README TODO
+
+我把3个文件加入到那个库里。如果你想把当前目录下所有文件都加入，直接 git add . 最后那个英文句号表示当前目录
+
+       404:~/project/feh$ vim TODO 
+
+随便找个文件做了修改
+
+	404:~/project/feh$ git commit -a
+
+修改好后用 commit -a 提交修改 -a是all的意思，让git自己去找我修改了哪些文件吧。
+
+这时会有个
+
+      # Please enter the commit message for your changes.
+      # (Comment lines starting with '#' will not be included)
+      # On branch master
+      #
+      # Initial commit
+      #
+      # Changes to be committed:
+      #   (use "git rm --cached 
+..." to unstage)
+      #
+      #       new file: AUTHORS
+      #       new file: README
+      #       new file: TODO
+      #
+      # Untracked files:
+      #   (use "git add 
+..." to include in what will be committed)
+      #
+      #       COPYING
+      #       feh-1.3.4.tar.gz
+      #       feh-1.3.4/
+
+
+这是让你写点你都做了什么修改。git会默认让你用vim编辑这个文件。vim中按i进入编辑模式。按Esc进入命令模式。有什么不多就多按几下Esc。然后:w存盘。然后:q，退出。你随便做个修改，一般我是把这次更新的文件前面#删除。存盘退出后，
+      
+      reated initial commit c1040c1: 	new file: AUTHORS
+      3 files changed, 96 insertions(+), 0 deletions(-)
+      create mode 100644 AUTHORS
+      create mode 100644 README
+      create mode 100644 TODO
+
+如果你不写commit mesage，git会退出提交。这点开始让我浪费了好多时间，摸不着头脑为什么不提交。其实提示写的明白。所以随便写点设呢么。
+
+      fatal: no commit message?  aborting commit.
+
+以后每次修改文件，甚至删除了文件，直接git commit -a 就是提交全部（all）了。如果有新文件件要提交，用 git add 再来一个文件吧.txt 就好了。随便更改文件名，git自动聪明地处理好。
+
+
+在任何一个文件夹中都可以用上述方法！太方便了！
+
+## 如何把本地的git库推到远端服务器的库中。
+
+
+比如我刚提交了一个w3m文档翻译
+
+> #  Push url: git@gitorious.org:w3m-zh/mainline.git  More info…
+> You can run "git push git@gitorious.org:w3m-zh/mainline.git", or you can setup a remote by doing the following:
+> 
+> git remote add origin git@gitorious.org:w3m-zh/mainline.git
+> # to push the master branch to the origin remote we added above:
+> git push origin master 
+> # after that you can just do:
+> git push
+
+
+看明白了么。很简单。日后提交到本地库后只要git push就好了。
+
+
+## 这些只花了我1个小时时间
+
+就能开动干活了。而且是长期受益。一直享用版本控制来协助翻译和写作。
+
+svn我几次折腾了几个小时都没成功。关键还不是入门难度，是git的功能啊～！！ ：）

@@ -1,0 +1,14 @@
+# bbc opml
+
+> http://www.bbc.co.uk/blogs/radiolabs/2008/04/opml_feed_of_podcasts.shtml
+> [Oh, and if you are a device manufacturer who is looking to have a chat about our IP delivered content - don't hesitate to email me direct on the usual bbc email style - firstname.lastname@bbc.co.uk]
+> 
+> It's in a generic OPML, and I don't think I need to go through this with you as I think it's relatively self-explanatory (shout if you need me to).
+> 
+> 
+> http://www.bbc.co.uk/radio/opml/bbc_podcast_opml.xml
+> 
+> Or (as someone needed on the Backstage list) one with an .opml extension:
+> 
+> 
+> http://www.bbc.co.uk/radio/opml/bbc_podcast_opml.opml

@@ -1,0 +1,10 @@
+#  python中的docstring或者说 __doc__
+
+def Hello(name="everybody"):
+    """ Greets a person """
+    print("Hello " + name + "!")
+
+print("The docstring of the function Hello: " + Hello.__doc__)
+The output:
+The docstring of the function Hello:  Greets a person 
+

@@ -1,0 +1,32 @@
+# jekyll处理大量内容时候时间估算
+
+A site with 57000+ posts as sample
+
+cmd used:
+
+      jekyll --server --kramdown --no-auto --limit_posts=num
+
+All aggreated pages are disabled, yaml frontmatter has only layout and title.
+	  
+number of posts | elapsed time | RES RAM  | VIRT RAM | CPU  | load average
+2000   	  	| <  10 mins   | 317m	  | 354m     | 100% |  1.6 - 3
+10000  	  	| =~ 90 mins   | 463m	  | 493m     | 100% |  1.6 - 3
+20000   	| =~ 4 hrs     | 494m	  | 522m     | 100% |  1.6 - 3
+30000   	| 6hrs already | 513m     | 606m     | 100% |  1.6 - 3
+50000   	| didn't try   | 	  |          |      |  
+
+I think eventually the 30K one will finnish sucessfully.
+
+Machine spec:  
+RAM: 32GB
+CPU: 16 cores
+
+
+
+Conclusion? 
+
+Huge ram desn't help since the memory usage is predicatable less than three times of the size of all posts.
+
+Multi-core cpu doesn't help since ruby only uses on core.
+
+

@@ -1,0 +1,3 @@
+# swftools转pdf时一些参数
+
+http://code.google.com/p/flexpaper/wiki/Converting_Documents

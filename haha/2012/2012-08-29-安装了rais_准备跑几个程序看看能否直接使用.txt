@@ -1,0 +1,6 @@
+# 安装了rais，准备跑几个程序看看能否直接使用
+
+看看spree到底怎么样。
+https://github.com/spree/spree
+http://spreecommerce.com/tour
+

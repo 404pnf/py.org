@@ -1,0 +1,4 @@
+# Redis 命令参考 中文完整版本
+http://redis.readthedocs.org/en/latest/index.html
+
+

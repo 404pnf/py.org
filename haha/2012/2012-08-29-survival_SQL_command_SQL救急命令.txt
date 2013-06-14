@@ -1,0 +1,8 @@
+# survival SQL command; SQL救急命令
+
+SELECT name, email FROM users WHERE last_name = 'Smith'
+
+INSERT INTO product (product_cd, name) VALUES ('cd', 'certificate of depysit')
+
+UPDATE product SET name = 'certificate of deposit' WHERE product_cd = 'cd'
+

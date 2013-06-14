@@ -1,0 +1,10 @@
+# 在xmonad下如何使用U盘； how to mount usb drive in xmonad
+
+put it simply:
+
+        nautilus --no-desktop 
+
+参考： http://superuser.com/questions/277639/how-do-i-mount-a-usb-in-plain-xmonad
+
+会开一个nautius文件管理器，但是不会显示gnome桌面。
+

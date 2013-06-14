@@ -1,0 +1,8 @@
+# gnu linux中录制屏幕的软件
+
+## gnu/linux中录制屏幕的软件
+>屏幕录制
+>
+>屏幕录制可以使用 xvidcap ，非常方便，在这里可以下载到 deb 包，装上就可以用了。选中一个屏幕区域，然后就可以录制了。
+>
+>http://pluskid.lifegoo.com/wiki/Linux.html

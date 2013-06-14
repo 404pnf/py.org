@@ -1,0 +1,23 @@
+# ruhoh rocks
+
+ruhoh titleize doesn't work well with languages other than English?
+
+       title	     	    	 filename			score
+       nouvel année	         nouvel-anne.md			good
+       sérieux è_é	   	 srieux-_.md			bad
+       안녕하세요	    .md				wrong, in fact there isn't a file .md in _posts
+       三只熊		    .md				wrongin fact there isn't a file .md in _posts
+       غة يابانية	    .md				wrongin fact there isn't a file .md in _posts
+       
+My file system can handle all these files.  Jekyll can render all of them correctly.
+
+find . -type f 
+./30/غةيابانية/index.html
+./31/绿色/index.html
+./31/sérieux_è_é/index.html
+./31/안녕하세요/index.html
+
+
+
+
+

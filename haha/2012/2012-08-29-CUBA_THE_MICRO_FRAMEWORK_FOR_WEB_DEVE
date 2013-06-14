@@ -1,0 +1,8 @@
+# CUBA THE MICRO FRAMEWORK FOR WEB DEVELOPMENT
+
+While most of the web development in Ruby is done with Rails and Sinatra, there's an unknown tiny framework that provides a significant advantage. It was inspired by Rum, a mapper by Rack's creator Christian Neukirchen.
+Have you ever heard of Cuba? I bet you haven't, it's kind of a secret weapon. We use it for the Redis website and for OpenRedis.
+http://cuba.is/
+
+https://github.com/antirez/redis-io
+

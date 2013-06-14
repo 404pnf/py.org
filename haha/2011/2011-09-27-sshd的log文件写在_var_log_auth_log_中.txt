@@ -1,0 +1,3 @@
+# sshd的log文件写在 var log auth log 中
+
+其实sshd的配置文件写了 auth。但开始还是不知道找哪个文件。

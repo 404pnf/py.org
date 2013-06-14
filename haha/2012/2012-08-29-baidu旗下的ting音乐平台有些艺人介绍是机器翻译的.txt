@@ -1,0 +1,52 @@
+# baidu旗下的ting音乐平台有些艺人介绍是机器翻译的
+
+> Ok Go是来自芝加哥的一个摇滚乐队,现在居住在洛杉矶。乐队成员有Kulash （牵头的嗓音和吉他） ,Nordwind （低音吉他和支持声） ,丹科诺普卡（鼓和打击乐）和安迪罗斯（键盘,吉他和支持声） ,加入他们在2005年更换邓肯的安迪。 1998年,发行了两个专辑。乐队其意义不同寻常是衣服和他们精力充沛的音乐,尤其是他们的两个最成功的单曲“百万途径”和“在这里不用再” 。后者获得了格莱美奖“最佳短篇音乐录影带”是在2007年。
+http://ting.baidu.com/artist/219444/introduction
+
+上面的中文能看懂但很不通顺且又不少机器或者翻译人员根本不在乎翻译结果而产生的错误。如：
+
+牵头的嗓音 leanding voice
+支持声	   supporting oice
+
+不通顺的地方倒是不影响理解就是读着费劲。
+
+我觉得机器翻译后就猜想原文是否是维基百科。查了一下，和我猜想差不多吧。
+
+> OK Go is an American alternative rock band originally from Chicago, Illinois, but now residing in Los Angeles, California. The band is composed of Damian Kulash (lead vocals, guitar and car), Tim Nordwind (bass guitar and vocals), Dan Konopka (drums and percussion) and Andy Ross (guitar, keyboards and vocals), who joined them in 2005, replacing Andy Duncan. They are perhaps best known for their often elaborate and quirky music videos.
+http://en.wikipedia.org/wiki/OK_Go
+
+维基百科中文该乐队条目：
+
+> OK Go摇滚乐队最初在美国伊利诺伊州芝加哥组建，目前在洛杉矶。乐队有Damian Kulash司职主唱和吉它，Tim Nordwind司职(電貝斯 和 和声), Dan Konopka(鼓 和 打击乐器) 和 Andy Ross(主音吉它, 键盘和和声), 他在2005年取代了Andy Duncan。OK Go乐队以他们鲜明有特色的音乐视频出名。在2007年，OK Go乐队的视频Here It Goes Again赢得葛萊美獎的最佳短片音乐录音带
+http://zh.wikipedia.org/wiki/OK_Go
+
+这个就通顺多了。
+
+## baidu没有直接使用wikiepdia中文条目对于baidu来说是个小小的进步
+
+不再像biadu百科开始那样抄过来东西然后说是自己的。就是很有中国企业民族风的做法。该行为受到了知情人在文字和道义上的谴责，也有维基百科热心人员（两个台湾人，一男一女）在欧洲技术展会上还是sbsw上争取到机会把此事公开并向百度海外潜在投资人投诉，希望他们不要投资这家公司，投了的也卖了算了。
+
+## 现在这个机器翻译难道不是wikepdia英文的衍生作品么
+
+我觉得非常像。当然也可以说介绍一个乐队简介就那些信息，大家写的差不多。因此虽然百度的翻译很像是从wikipedia英文条目翻译过来，但其实是从与该条目写的很相似的其它来源翻译的。这是合理的。虽然我们不知道是什么来源。作为一个“xxxx的”公司，应该会告诉大家的。除非它是“xxxx的”公司。
+
+可以肯定的是，这里明显是翻译，如果baidu企图说ting音乐平台的文字版权归属baidu的话，那么请问
+
+1、乐队和艺人介绍的原文版权持有人是否授权给你了
+2、如果原文是维基百科，那么你的中文衍生是否也应该在gfdl下发布呢
+
+如果baidu不准备声明对该平台上的文字拥有版权，或说其拥有无线可能的使用权因为这些文字是网友自行上传编辑的，那它就继续最绚民族风吧。
+
+我看baidu目前的做法是先都抓过来自动翻译，然后如果某艺人比较热门，安排人工去完善翻译或者重写。
+
+## baidu没有直接或间接使用wikipedia中文条目对中文音乐社区来说是个退步
+
+其实ting平台的特点是它歌曲挺全，浏览起来也很方便，速度还快。这些都和艺人介绍文字没有关系。如果艺人介绍文字更好，会让平台更有价值但永远不会用户使用目的，
+
+如果百度直接使用维基百科内容并允许其会员编辑改进，那么这些改进又可以反馈回维基百科。中文社区的在音乐方面的艺人介绍上会有一定提高。假设参与编辑的会员都是爱好音乐且愿意为他们喜爱的艺人写简介，而不是廉价雇佣的实习生。毕竟这是个不错的音乐平台。应该能吸引些喜欢音乐的人。比如我。我是否参与，还看在哪里参与效果更好。
+
+## 合作一下很有搞头的
+虽然有些人不屑于和有些人合作。因为有些人没有真诚合作过。
+
+真诚点，合作一下很有搞头的。
+

@@ -1,0 +1,19 @@
+# 开始玩起来了po4a
+
+po4a是Po  4 Anything的意思。把任意格式文本准成po，方便你翻译和追踪翻译。
+
+安装 apt-get install po4a
+
+转一个文件
+
+     po4a-gettextize -M UTF-8 -f text -m stock.operator.txt -p foo.pot 
+
+命令行解释：
+
+-M 后面跟字符集，可以先尝试不要这个参数，报错非让你添加的时候再田间。当然文本最好是utf-8啦。
+
+-f 后面跟输出样式（format）。有不少样式供选择。用下面命令查看：    po4a-gettextize --help-format  我这里选text，就不是普通文本，如果你翻译短文和小说，用这个吧。
+
+-m 后面跟要转换俄主文档（Master document）。一般来说，你就当它是输入文件好了。高级用法中除主文档外还能加入其它。
+
+-p 是输出文件。

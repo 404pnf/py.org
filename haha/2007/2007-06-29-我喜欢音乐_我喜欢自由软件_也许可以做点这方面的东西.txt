@@ -1,0 +1,10 @@
+# 我喜欢音乐 我喜欢自由软件 也许可以做点这方面的东西
+
+比如类似吉他普的wiki
+http://www.tabwiki.com/index.php/Main_Page
+
+或者帮助个人、组织和出版社用自由软件编制乐谱。
+http://en.wikipedia.org/wiki/GNU_LilyPond
+
+宣传参与类似项目
+http://en.wikipedia.org/wiki/Mutopia_project

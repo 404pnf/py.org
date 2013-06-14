@@ -1,0 +1,37 @@
+# retext; python markdown; python markdown extension
+
+## install python markdown
+   $ sudo pip install markdown
+   [sudo] password for 404: 
+   Requirement already satisfied (use --upgrade to upgrade): markdown in /usr/local/lib/python2.7/dist-packages/Markdown-2.1.1-py2.7.egg
+
+## download retext source code
+retext in apt source will not load python markdown extension correctly.
+
+download the source, untar it; 
+
+mkdir retext
+mv Retext-version.tar.gz retext
+tar xvzf Retext-version.tar.gz
+
+now you can run retext.py.
+
+if successful, quit retext and edit configuration file
+
+<http://sourceforge.net/p/retext/wiki/Configuration%20file/>
+
+currently my conf
+
+	less ~/.config/ReText\ project/ReText.conf
+	[General]
+	fontSize=10
+	mdExtensions=extra,toc
+	styleSheet=/home/bai/iyangcong/lina-jiaoan/markdown-friendly.css
+	useWebKit=true
+	font=Sans Serif
+
+extra will load many markdown extension, i.e, footnotes, tables.  table of contents(toc) is not in extra, so specify it here.  You can set your own css.  WebKit engine is more compatible with css.
+
+
+## edit retext configure file
+

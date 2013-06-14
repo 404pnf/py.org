@@ -1,0 +1,8 @@
+# 将已经转移的html entities转回去，在ruby中可使用 htmlentities
+
+require 'htmlentities'
+
+content = content.HTMLEntities.new.decode content
+
+http://htmlentities.rubyforge.org/
+

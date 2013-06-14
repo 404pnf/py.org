@@ -1,0 +1,13 @@
+# 如何卸载rvm
+
+> There's a simple command built-in that will pull it:
+> 
+> rvm implode
+> This will remove the rvm/ directory and all the rubies built within it. In order to remove the final trace of rvm, you need to remove the rvm gem, too:
+> 
+> gem uninstall rvm
+> If you've made modifications to your PATH you might want to pull those, too. Check your .bashrc, .profile and .bash_profile files, among other things.
+> 
+> You may also have an /etc/rvmrc file, or one in your home directory ~/.rvmrc that may need to be removed as well.
+> http://stackoverflow.com/questions/3558656/how-to-remove-rvm-ruby-version-manager-from-my-system
+

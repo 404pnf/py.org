@@ -1,0 +1,5 @@
+# 通过gnu guile语言发现了几个项目
+
+都是用guile写的
+http://texmacs.org/  所见己所得的tex编辑器，主要为科学工作者使用
+http://www.nongnu.org/skribilo/
