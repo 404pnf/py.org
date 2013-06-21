@@ -10,11 +10,11 @@ require 'erubis'
 
 DEBUG = true
 DOMAIN = 'http://pengyou.rijiben.org/'
-INPUTDIR = File.expand_path ARGV[0] || '../posts'
-INDEX_TPL = '../index.eruby.html'
+INPUTDIR = File.expand_path ARGV[0] || '../site'
+INDEX_TPL = '../views/index.eruby.html'
 
 def remove_index
-  Find.find(File.expand_path($inputdir)) do |path|
+  Find.find(File.expand_path(INPUTDIR)) do |path|
     next unless File.basename(path) == 'index.html'
     p "remove #{path}"
     File.unlink path
@@ -62,7 +62,7 @@ def gen_index(dir, domain=DOMAIN, tpl=INDEX_TPL)
 
     # same old file writing
     p "generating #{f}/index.html"
-    File.open("#{f}/index.html", index_html)
+    File.write("#{f}/index.html", index_html)
   end
 end
 
