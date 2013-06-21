@@ -38,7 +38,8 @@ articles_tuple = rss.items.map do |item|
   #    content = content.gsub(/^* /,'# ')
   #    content =content.gsub(/^** /, '## ') #把之前emacs org中的标题格式替换为markdown的
   # 有些早期文章有html标签
-  content_md = ReverseMarkdown.parse content_raw
+  #content_md = ReverseMarkdown.parse content_raw
+  content_md = content_raw
   # 结尾加上个空行和撰写时间
   content = "#{title_md}\n\n#{content_md}\n\n#{pubdate}"
   
