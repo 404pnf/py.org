@@ -1,0 +1,10 @@
+# css剧中html的body元素
+参考:
+http://bluerobot.com/web/css/
+
+我最后选用方案：
+
+body {margin;auto; max-width:700px;}
+
+完毕！不考虑那些不符合标准的浏览器！！
+

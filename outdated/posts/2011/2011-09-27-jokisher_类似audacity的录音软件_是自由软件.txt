@@ -1,0 +1,3 @@
+# jokisher 类似audacity的录音软件 是自由软件
+
+http://www.jokosher.org/

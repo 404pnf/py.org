@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>how do i do a so-called podcast show</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>how do i do a so-called podcast show</h1>
+
+<p>i have figured out most of stuff for niuniu-jianggushi at http://niuniu.rijiben.org</p>
+
+<p>here’s a note to myself and like minded:</p>
+
+<p>microphone: shure 58, less then 900rmb gonna buy a shure 57 or small wireless</p>
+
+<p>mix board: behringer, ub100b or sth, 6 tracks less then 800rmb</p>
+
+<p>we use audacity for recording, export to wave file</p>
+
+<p>an iriver t10 or ifp890 is always on recording mode at the desk, so even if the computer recording failed, iriver will save the day.</p>
+
+<p>use lame to encode to mp3s</p>
+
+<blockquote>
+  <p>lame -b 64 –resample 44 –tt “niuniu-jianggushi” –ta “niuniu” –tl “http://niuniu.rijiben.org” –ty 2007 –tc “released under creative commons attribution-sharealike license; go to http://niuniu.rijiben.org for more information” –tg “speech”</p>
+</blockquote>
+
+<p>use http://archive.org to store the files. i trust archive.org, their integrity and service. it’s free, as in zero cost, by the way :)</p>
+
+<p>from LI xin</p>
+
+<p>how to encode all wav files in a dir</p>
+
+<pre><code>  ls *.wav | xargs -n 1 lame ....
+</code></pre>
+
+<p>that’s number one after -n, not an L .</p>
+
+<p>how do batch change file names in a dir, e.g</p>
+
+<p>change 1.wav.mp3 2.wav.mp3 etc to 1.mp3 2.mp3</p>
+
+<pre><code>  ls *.wav.mp3 | sed -e 's/^\(.*\).wav.mp3$/mv \1.wav.mp3 \1.mp3/g' | sh
+</code></pre>
+
+<p>i don’t understand these commands and regular expression but they got the work done :)</p>
+
+<p>thanks li xin, i know him as a freebsd committer, visit his website: http://www.delphij.net </p>
+
+<p>please support <a href="http://www.freebsd.org/">freebsd</a>, a free (speech) operating system.</p>
+
+<p>if you wonder how can i get individual support from him, here’s the deal: </p>
+
+<p>donate to freebsd project, then he is willing to help you, too :) </p>
+
+<p>show some love, y’all</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:04 +0800 -->
+    </footer>
+</html>
+

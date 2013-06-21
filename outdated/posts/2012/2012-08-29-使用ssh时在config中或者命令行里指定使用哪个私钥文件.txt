@@ -1,0 +1,18 @@
+# 使用ssh时在config中或者命令行里指定使用哪个私钥文件
+
+> ssh -i /backup/home/user/.ssh/id_dsa user@unixserver1.nixcraft.com
+> ~/.ssh/config SSH Client Configuration
+> 
+> You can set identity file in ~/.ssh/config as follows:
+> vi ~/.ssh/config
+> 
+> Add both host names and their identity file as follows:
+> 
+> Host server1.nixcraft.com
+>  IdentityFile ~/backups/.ssh/id_dsa
+> Host server2.nixcraft.com
+>  IdentityFile /backup/home/userName/.ssh/id_rsa
+> 
+> 参考
+> http://www.cyberciti.biz/faq/force-ssh-client-to-use-given-private-key-identity-file/
+

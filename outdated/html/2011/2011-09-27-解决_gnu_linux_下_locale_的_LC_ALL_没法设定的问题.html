@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>解决 gnu linux 下 locale 的 LC ALL 没法设定的问题</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>解决 gnu linux 下 locale 的 LC ALL 没法设定的问题</h1>
+
+<p>不知道什么时候自己捣鼓设定locale后，LC_ALL这个设定没了，而且不知道在哪里设定了。后果就是在bash中每次tab补全都报错误信息，很干扰视觉。</p>
+
+<p>后来查了半天，干脆在自己的 ~/.bashrc 加了一个行</p>
+
+<pre><code>  # set locale
+  export set LC_ALL=C
+</code></pre>
+
+<p>开始想设置为 zh_CN.UTF-8 但不行，干脆用 C 了。现在在bash中tab补全就不会报错了。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:03 +0800 -->
+    </footer>
+</html>
+

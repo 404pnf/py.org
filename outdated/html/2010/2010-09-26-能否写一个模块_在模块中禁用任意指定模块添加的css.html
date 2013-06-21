@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>能否写一个模块 在模块中禁用任意指定模块添加的css</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>能否写一个模块 在模块中禁用任意指定模块添加的css</h1>
+
+<p>在启动drupal的时候添加其他模块添加css的方法可能是</p>
+
+<pre><code>    /**
+ * Implementation of hook_init
+ */
+function tagadelic_init() {
+  drupal_add_css(drupal_get_path('module', 'tagadelic') .'/tagadelic.css');
+}
+</code></pre>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:13 +0800 -->
+    </footer>
+</html>
+

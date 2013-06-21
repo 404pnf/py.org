@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>安装和使用sshfs</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>安装和使用sshfs</h1>
+
+<h2>i didn’t succeed in dogint this</h2>
+
+<h2>帮助在这里：</h2>
+<p>https://help.ubuntu.com/community/SSHFS
+http://fuse.sourceforge.net/sshfs.html</p>
+
+<blockquote>
+  <p>Installation and Setup
+Simply install the following package: sshfs, then add yourself to the fuse group:</p>
+
+  <p>sudo gpasswd -a $USER fuse
+Alternatively, GNOME users can go to System -&gt; Administration -&gt; Users and Groups -&gt; (your user) -&gt; Properties -&gt; User Privileges, then tick the following option:</p>
+
+  <p>Allow use of fuse filesystems like LTSP Thin Client blockdevices
+Adding yourself to the fuse group lets you use the fusermount command, which is needed by the FUSE userland filesystem utility.</p>
+
+  <p>Once you have added yourself to the fuse group, you should log out and log back in again for the change to take effect.</p>
+
+  <p>Usage
+Now, assuming that you have an SSH server running on a remote machine, simply run the SSHFS command to mount the remote directory. In this example, the remote directory is /projects on remote host far. The local mount point is ~/far_projects.</p>
+
+  <p>mkdir ~/far_projects
+sshfs -o idmap=user $USER@far:/projects ~/far_projects
+To unmount,</p>
+
+  <p>fusermount -u ~/far_projects
+To add it to your /etc/fstab,</p>
+
+  <p>sshfs#$USER@far:/projects /home/$USER/far_projects fuse defaults,idmap=user 0 0
+Note that you have to change $USER to your login name when editing fstab, but it is not necessary when typing commands (the shell does it for you in that case).</p>
+
+  <p>Keep Alive
+Your ssh session will automatically log out if it is idle. To keep the connection active (alive) add this to ~/.ssh/config or to /etc/ssh/ssh_config on the client.</p>
+
+  <p>ServerAliveInterval 5</p>
+
+  <p>This will send a “keep alive” signal to the server every 5 seconds. You can usually increase this interval,</p>
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:12 +0800 -->
+    </footer>
+</html>
+

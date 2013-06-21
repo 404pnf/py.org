@@ -1,0 +1,29 @@
+# ruby中的transliteraton功能，特别是处理中文的有个gem叫 chinese_pinyin
+这个gem看着非常好：
+https://github.com/flyerhzm/chinese_pinyin
+Install
+sudo gem install chinese_pinyin
+Usage
+require 'rubygems'
+require 'chinese_pinyin'
+
+Pinyin.t('中国')  => "zhong guo"
+Pinyin.t('中国', '-') => "zhong-guo"
+Pinyin.t('中国', '') => "zhongguo"
+Pinyin.t('你好world') => "ni hao world"
+
+我实际测试
+
+irb(main):001:0> require 'chinese_pinyin'
+=> true
+irb(main):002:0> Pinyin.t('这种形式的题目才好')
+=> "zhe zhong xing shi de ti mu cai hao"
+irb(main):003:0> Pinyin.t('这种？形式//的：题！目，才好', '-')
+=> "zhe-zhong-？-xing-shi-//-de-：-ti-！-mu-，-cai-hao"
+
+看来不处理中文和英文的标点符号。需要自己再次gsub掉这些？
+
+简单地回答就是没有很好的
+http://stackoverflow.com/questions/9570000/any-ruby-gems-to-do-chinese-transliterate-romanization-especially-for-url
+
+

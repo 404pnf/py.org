@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>drupal theme中禁止某页或者某种内容类型显示页面标题</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>drupal theme中禁止某页或者某种内容类型显示页面标题</h1>
+
+<p>http://drupal.org/book/export/html/426482</p>
+
+<p>function THEMENAME_preprocess_page(&amp;$vars) {</p>
+
+<pre><code>    // Titles are ignored by content type when they are not desired in the design.
+    $vars['original_title'] = $vars['title'];
+    if (!empty($vars['node']) &amp;&amp; in_array($vars['node']-type, array('page', 'story'))) {
+      $vars['title'] = '';
+    }
+  
+  }
+  ?&gt;
+</code></pre>
+
+<p>function THEMENAME_preprocess_page(&amp;$vars) {</p>
+
+<pre><code>    // Titles are ignored on the front page.
+    $vars['original_title'] = $vars['title'];
+    if ($vars['is_front']) {
+      $vars['title'] = '';
+    }
+  
+  }
+  ?
+</code></pre>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:13 +0800 -->
+    </footer>
+</html>
+

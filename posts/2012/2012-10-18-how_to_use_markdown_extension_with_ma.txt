@@ -1,0 +1,6 @@
+# how to use markdown extension with markdown_py
+
+currently I am using follwoing extensions
+
+      markdown_py -x tables -x toc -x footnotes -x latex t.md >tt.html
+

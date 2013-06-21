@@ -1,0 +1,4 @@
+# drupal 7 中管理多媒体文件 看来要转到使用media模块啦
+
+tt drupal tt
+http://drupal.org/project/media

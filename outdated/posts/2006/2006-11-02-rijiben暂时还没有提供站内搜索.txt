@@ -1,0 +1,13 @@
+# rijiben暂时还没有提供站内搜索
+
+lvcha wrote:
+> rijiben怎么search文章
+> 
+> 我想找那篇泰国餐厅的
+
+现在没有提供
+因为牵扯到中文切词我没有好好看呢
+你研究一下好不？
+http://drupal.org/node/53886
+
+我准备用google搜索

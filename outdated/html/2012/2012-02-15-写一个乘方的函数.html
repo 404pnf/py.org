@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>写一个乘方的函数</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>写一个乘方的函数</h1>
+
+<p>例子：</p>
+
+<p>(define (expt base n)</p>
+
+<p>(if (= n 0)</p>
+
+<p>1</p>
+
+<p>(* base (expt base (- n 1)))))</p>
+
+<p>This definition is given in Lisp. However, the same function can be written in any language that supports recursion. First, the function has to test for the exit condition, which in our case happens if n = 0. Then, our function multiplies the base times the exponent of the base to the original power minus 1. This parallels the mathematical definition of exponentiation.
+http://www.ehow.com/how_8794882_use-recursion-exponential-powers.html</p>
+
+<p>我参考上面的，在ruby中写了对应的；</p>
+
+<blockquote>
+  <blockquote>
+    <p>def jc(n, m)
+if m == 0
+1
+else
+?&gt; n * jc(n, (m-1))
+end
+end
+=&gt; nil
+jc(2,4)
+=&gt; 16
+jc(2,3)
+=&gt; 8
+jc(3,9)
+=&gt; 19683</p>
+  </blockquote>
+</blockquote>
+
+<p>可惜，我是看了lisp的参考后才写出来。开始自己写的都有问题！</p>
+
+<p>我开始代码思路大致如下</p>
+
+<blockquote>
+  <blockquote>
+    <p>def jc(n, m)
+if m == 1
+n
+else
+?&gt; until m == 1
+n * jc(n, (m-1))
+end
+end
+end
+=&gt; nil</p>
+  </blockquote>
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:54 +0800 -->
+    </footer>
+</html>
+

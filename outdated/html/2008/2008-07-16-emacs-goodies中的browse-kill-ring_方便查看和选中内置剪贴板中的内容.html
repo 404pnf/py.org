@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>emacs-goodies中的browse-kill-ring 方便查看和选中内置剪贴板中的内容</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>emacs-goodies中的browse-kill-ring 方便查看和选中内置剪贴板中的内容</h1>
+
+<p>emacs-goodies中的browse-kill-ring：方便查看和选中内置剪贴板中的内容</p>
+
+<blockquote>
+  <p>File: emacs-goodies-el,  Node: browse-kill-ring,  Next: cfengine,  Prev: browse-huge-tar,  Up: Top</p>
+
+  <p>9 browse-kill-ring.el -  interactively insert items from kill-ring.
+<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>*</p>
+
+  <p>Ever feel that `C-y M-y M-y M-y …’ is not a great way of trying to
+find that piece of text you know you killed a while back?  Then
+browse-kill-ring.el is for you.</p>
+
+  <p>To use, type <code>M-x browse-kill-ring'.  You can bind
+</code>browse-kill-ring’ to a key, like:</p>
+
+  <pre><code> (global-set-key (kbd "C-c k") 'browse-kill-ring)
+</code></pre>
+
+  <p>Even better than doing that, though, is to set up <code>M-y' such that it
+invokes </code>browse-kill-ring’ if the last command wasn’t a yank.  This
+great idea is from Michael Slass 
+.  Here is code (from
+him) to do this:</p>
+
+  <pre><code> (defadvice yank-pop (around kill-ring-browse-maybe (arg))
+   "If last action was not a yank, run `browse-kill-ring' instead."
+   (if (not (eq last-command 'yank))
+       (browse-kill-ring)
+     ad-do-it))
+
+ (ad-activate 'yank-pop)
+</code></pre>
+
+  <p>(The emacs-goodies-el package could add a customizable variable to
+set this up.  Ask if this would be useful. - 
+)</p>
+
+  <p>Note that the command keeps track of the last window displayed to
+handle insertion of chosen text; this might have unexpected
+consequences if you do <code>M-x browse-kill-ring', then switch your window
+configuration, and try to use the same </code><em>Kill Ring</em>’ buffer again.</p>
+
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:44 +0800 -->
+    </footer>
+</html>
+

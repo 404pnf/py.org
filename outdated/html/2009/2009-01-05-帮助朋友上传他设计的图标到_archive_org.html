@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>帮助朋友上传他设计的图标到 archive org</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>帮助朋友上传他设计的图标到 archive org</h1>
+
+<p>好处： http://www.archive.org 致力于存档事业。常年来服务稳定。</p>
+
+<p>方法，提示自己。登录后，点upload，选择多余10个文件，或者大于100mb等，这样可以不用web界面传，而用ftp传。建立一个item的名字，这个名字是出现在 archive.org/details/项目名字。所以，我用gaolewen，传完后，地址就应该是 http://www.archive.org/details/gaolewen 。网站给了我ftp的地址。用lftp登录。本地到我要上传的目录。lftp下命令前加英文惊叹好表示在本地执行该命令。所以改变本地目录是 !cd，浏览本地目录是!ls。到了要上传的目录，用 </p>
+
+<pre><code>																    mirror -R . 
+</code></pre>
+
+<p>就可以了。这是我2年前读lftp的man的收获。：） mirror就是镜像。通常都是镜像远端服务器到本地，参数 -R 是说 Reverse，就是反过来。那么它会镜像本地目录到远端服务器。英文句号 . 表示是镜像当前目录到远端。</p>
+
+<p>似乎今天上传速度很慢。</p>
+
+<p>以前都能达到200k以上，开多个lftp，能达到数个200k以上。现在单位对网速做了限制。：（</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:58 +0800 -->
+    </footer>
+</html>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ruby中encode url的方法在open-url库中</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>ruby中encode url的方法在open-url库中</h1>
+
+<blockquote>
+  <p>require ‘open-uri’
+str = “\x12\x34\x56\x78\x9a\xbc\xde\xf1\x23\x45\x67\x89\xab\xcd\xef\x12\x34\x56\x78\x9a”.force_encoding(‘ASCII-8BIT’)
+puts URI::encode(str)
+http://stackoverflow.com/questions/6714196/ruby-url-encoding-string</p>
+</blockquote>
+
+<pre><code>  url = URI::encode('中文 空格 ？ 符号')
+  =&gt; "%E4%B8%AD%E6%96%87%20%E7%A9%BA%E6%A0%BC%20%EF%BC%9F%20%E7%AC%A6%E5%8F%B7"
+</code></pre>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:55 +0800 -->
+    </footer>
+</html>
+

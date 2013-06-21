@@ -1,0 +1,8 @@
+# 使用shotgun协助开发：它会自动重新载入代码
+
+> Shotgun
+> This is an automatic reloading version of the rackup command that’s shipped with Rack. It can be used as an alternative to the complex reloading logic provided by web frameworks or in environments that don’t support application reloading.
+> 
+> shotgun --server=thin --port=6000 config.ru
+
+

@@ -1,0 +1,10 @@
+# nginx决定由哪个配置文件来处理域名的匹配规则
+
+>The names are tested in the following order:
+
+>exact names;
+>wildcard names starting with an asterisk: *.nginx.org;
+>wildcard names ending with an asterisk: mail.*;
+>and regular expressions in the order listed in the configuration file.
+>The first match stops the search.
+>http://nginx.org/en/docs/http/server_names.html

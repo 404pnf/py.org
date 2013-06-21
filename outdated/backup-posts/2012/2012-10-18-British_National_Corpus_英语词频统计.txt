@@ -1,0 +1,6 @@
+# British National Corpus 英语词频统计
+
+BNC database and word frequency lists
+Adam Kilgarriff
+<http://www.kilgarriff.co.uk/bnc-readme.html>
+

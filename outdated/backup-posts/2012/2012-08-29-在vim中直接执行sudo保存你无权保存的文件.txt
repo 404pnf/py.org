@@ -1,0 +1,5 @@
+# 在vim中直接执行sudo保存你无权保存的文件
+
+    :w !sudo tee %
+http://www.commandlinefu.com/commands/view/1204/save-a-file-you-edited-in-vim-without-the-needed-permissions
+

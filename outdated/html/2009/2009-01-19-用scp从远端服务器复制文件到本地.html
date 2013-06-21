@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>用scp从远端服务器复制文件到本地</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>用scp从远端服务器复制文件到本地</h1>
+
+<p>用scp从远端服务器复制文件到本地</p>
+
+<p>发现以前写了使用scp的文章，更详细： http://pengyou.rijiben.org/node/1816</p>
+
+<pre><code>  scp -P端口号 服务器地址:/home/404/podcast/*.mp3 .
+</code></pre>
+
+<p>比较容易混淆的是用ssh时候，指定端口号用小写字母 -p ，scp时要用大写字母。
+服务器地址后（通常是ip）加英文冒号，冒号后面是你要复制的目录和文件名字。
+我这里用了通配符复制所有mp3文件。</p>
+
+<p>其它没什么可说的。</p>
+
+<p>如果是复制目录 -r
+如果只复制更新了的文件 -u </p>
+
+<p>一般来说， -u 是应该加上的。否则以前复制过的也复制一遍。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:59 +0800 -->
+    </footer>
+</html>
+

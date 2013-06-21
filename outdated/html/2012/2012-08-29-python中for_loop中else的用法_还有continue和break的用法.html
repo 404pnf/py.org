@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>python中for loop中else的用法，还有continue和break的用法</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>python中for loop中else的用法，还有continue和break的用法</h1>
+
+<p>很能说明问题的例子：</p>
+
+<p>for <variable> in <sequence>:
+	<statements>
+else:
+	<statements>
+The items of the sequence object are assigned one after the other to the loop variable; to be precise the variable points to the items. For each item the loop body is executed. </statements></statements></sequence></variable></p>
+
+<p>Example of a simple for loop in Python:
+»&gt; languages = [“C”, “C++”, “Perl”, “Python”] 
+»&gt; for x in languages:
+…     print x
+… 
+C
+C++
+Perl
+Python
+»&gt; </p>
+
+<p>The else block is special; while Perl programmer are familiar with it, it’s an unknown concept to C and C++ programmers. Semantically, it works exactly as the optional else of a while loop. It will be executed only if the loop, if the loop hasn’t been “broken” by a break statement. So it will only be executed, after all the items of the sequence in the header have been used. </p>
+
+<p>If a break statement has to be executed in the programm flow of the for loop, the loop will be exited and the program flow will continue with the first statement following the for loop, if there is any at all. Usually break statements are wrapped into conditional statements, e.g. 
+edibles = [“ham”, “spam”,”eggs”,”nuts”]
+for food in edibles:
+    if food == “spam”:
+        print(“No more spam please!”)
+        break
+    print(“Great, delicious “ + food)
+else:
+    print(“I am so glad: No spam!”)
+print(“Finally, I finished stuffing myself”)
+If we call this script, we get the following result: 
+$ python for.py 
+Great, delicious ham
+No more spam please!
+Finally, I finished stuffing myself
+$ 
+Removing “spam” from our list of edibles, we will gain the following output:
+$ python for.py 
+Great, delicious ham
+Great, delicious eggs
+Great, delicious nuts
+I am so glad: No spam!
+Finally, I finished stuffing myself
+$
+Maybe, our disgust with spam is not so high, that we want to stop consuming the other food. Now, this calls into play the continue statement. In the following little script we use the continue statement to go on with our list of edibles, when we have encountered a spam item. So continue prevents us from eating spam!
+edibles = [“ham”, “spam”, “eggs”,”nuts”]
+for food in edibles:
+    if food == “spam”:
+        print(“No more spam please!”)
+        continue
+    print(“Great, delicious “ + food)
+    # here can be the code for enjoying our food :-)
+else:
+    print(“I am so glad: No spam!”)
+print(“Finally, I finished stuffing myself”)
+The output looks as follows:
+$ python for.py 
+Great, delicious ham
+No more spam please!
+Great, delicious eggs
+Great, delicious nuts
+I am so glad: No spam!
+Finally, I finished stuffing myself
+$</p>
+
+<p>http://www.python-course.eu/python3_for_loop.php</p>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:55 +0800 -->
+    </footer>
+</html>
+

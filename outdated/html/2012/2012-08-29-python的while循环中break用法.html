@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>python的while循环中break用法</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>python的while循环中break用法</h1>
+
+<p>下面给出的代码例子，如果用户猜的数字是负数，就直接跳出了。</p>
+
+<p>说白了就是break跳出整个while循环，包括其else的部分。</p>
+
+<p>Premature Termination of a while Loop</p>
+
+<p>So far, a while loop only ends, if the condition in the loop head is fulfilled. With the help of a break statement a while loop can be left prematurely, i.e. as soon as the control flow of the program comes to a break inside of a while loop (or other loops) the loop will be immediately left. “break” shouldn’t be confused with the continue statement. “continue” doesn’t stops the current iteration of the loop and starts the next iteration by checking the condition. 
+Now comes the crucial point: If a loop is left by break, the else part is not executed. </p>
+
+<p>This behaviour will be illustrated in the following example, a little guessing number game. A human player has to guess a number between a range of 1 to n. The player inputs his guess. The program informs the player, if this number is larger, smaller or equal to the secret number, i.e. the number which the program has randomly created. If the player wants to gives up, he or she can input a 0 or a negative number. 
+Hint: The program needs to create a random number. Therefore it’s necessary to include the module “random”.</p>
+
+<p>import random
+n = 20
+to_be_guessed = int(n * random.random()) + 1
+guess = 0
+while guess != to_be_guessed:
+    guess = int(input(“New number: “))
+    if guess &gt; 0:
+        if guess &gt; to_be_guessed:
+            print(“Number too large”)
+        else:
+            print(“Number too small”)
+    else:
+        print(“Sorry, that you’re giving up!”)
+        break
+else:
+    print(“Congratulation. You made it!”)</p>
+
+<p>The output of a game session might look like this:
+$ python3 number_game.py 
+New number: 12
+Number too small
+New number: 15
+Number too small
+New number: 18
+Number too large
+New number: 17
+Number too small
+Congratulation. You made it!</p>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:54 +0800 -->
+    </footer>
+</html>
+

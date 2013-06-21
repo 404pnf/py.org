@@ -1,0 +1,25 @@
+# Ubuntu Server下配置UTF-8中文/英文环境
+有需要给Ubuntu Server装中文环境的往这看，该加sudo的自己加去，俺是root...
+
+1、安装中文语言包
+
+apt-get install language-pack-zh
+2、用vim配置语言环境变量
+
+vim /etc/environment
+在下面添加如下两行
+
+LANG=”zh_CN.UTF-8″
+LANGUAGE=”zh_CN:zh:en_US:en”
+如果你想用英文环境了，改成这两行就OK
+
+LANG=”en_US.UTF-8″
+LANGUAGE=”en_US:en”
+3、重启Ubuntu Server
+
+reboot
+4、可以用locale查看一下环境变量...
+
+locale
+http://www.slyar.com/blog/ubuntu-server-utf8-zhcn.html
+

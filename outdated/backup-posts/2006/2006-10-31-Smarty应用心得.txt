@@ -1,0 +1,106 @@
+# Smarty应用心得
+
+xiaola请不要虚该这篇文章的格式  
+留着 
+因为我已经报告了bug
+http://drupal.org/node/92111
+维护人员回国来看的
+
+bxy
+
+--
+
+
+Smarty是PHP官方提供的模版引擎，最近研究了一下Smarty的应用，发现确实非常好用，而且通过Smarty也扩展了自己的以模版为引擎的设计思
+
+路。
+这里只谈谈自己的感受和应用心得：
+模版技术的基础就是变量替换，包括纯静态变量的替换和动态变量替换。因此，Smarty中提供了从CONFIG文件中读取的静态方式（类似java的s
+
+truts的资源文件）和从Smarty运行文件中“动态”方式。
+
+Smarty中为了配合这种变量替换方式，提供了流程控制语句（它自己叫做函数，事实上它也确实是成员函数，因为Smarty是一个类）、方法和
+
+属性以满足用户更多的个性化要求。
+
+
+我个人的应用情况是，我希望做一个自动翻页类，通过传递数据对象而自动生成带翻页功能的数据显示。在没有应用Smarty之前，需要自己开
+
+发模版引擎以实现显示方式的多样化或显示方式的可定制化。
+
+现在让我们看看效果
+[img_assist|nid=552|title=smarty|desc=|link=node|align=left|width=200|height=150]
+
+
+
+
+而实现的模版的代码只有几行：
+
+	{include file='showdata.css.tpl'}{section name=sec_titles loop=$titles}
+	
+	
+{$titles[sec_titles]}
+	
+	{/section}
+	
+	{section  name=sec_rs loop=$rs start=$start_pos max=$pagesize}
+	
+	
+{section  name=value loop=$rs[sec_rs]}
+	
+	
+{$rs[sec_rs][value]}
+	
+	{/section}
+	
+	{/section}{$pageDetails}
+	
+{$pageinfo}
+	
+
+其中'showdata.css.tpl'是自定义的CSS模版。
+
+让我们再来看看Smarty中调用该模版的代码：
+
+	<?php 
+	require_once("inc/database.inc.php");
+	require_once("class/turnpage.class.php");
+	
+	$sql="select CustomerID,CompanyName,ContactName,ContactTitle,Address,city from customers order by customerid";
+	$RecordSet=$db->execute($sql);
+	
+	$turnPage=new TurnPage($RecordSet,$_REQUEST["page"],$_SERVER['PHP_SELF');
+	
+	
+	
+	$turnPage->selectTemplate("showdata.tpl");
+	
+	?>
+
+
+看到了吗，就这么短短几行既可实现图片中的效果。当然，你需要自己花些心思在翻页类上。
+注：turnpage.class.php为自定义翻页类，database.inc.php为自定义数据库连接文件
+
+最后看看翻页类中处理的语句吧：
+
+	$titles=array("客户号","公司名称","联系人","职位","地址","城市");
+	$this->smarty->assign(titles,$titles);
+	$this->smarty->assign(pageinfo , $this->pageinfo);
+	$this->smarty->assign(rs,$this->rs->getArray());
+	$this->smarty->assign(start_pos,$this->getStartPosition());
+	$this->smarty->assign(pagesize,$this->getPageSize());
+	 
+	$this->smarty->assign(border_color,$this->border_color);
+	$this->smarty->assign(bg_color,$this->bg_color);
+	$this->smarty->assign(bg_color2,$this->bg_color2);
+	$this->smarty->assign(tb_font_size,$this->tb_font_size);
+	$this->smarty->assign(tb_font_color,$this->tb_font_color);
+	$this->smarty->assign(tb_title_size,$this->tb_title_size);
+	$this->smarty->assign(tb_title_color,$this->tb_title_color);
+	$this->smarty->assign(title_bg_color,$this->title_bg_color);
+	$this->smarty->assign(tb_title_weight,$this->tb_title_weight);
+	 
+	$this->smarty->display($template_name);
+		 
+
+是的，全部都是变量替换的命令！简单吧:)

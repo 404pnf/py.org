@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>drupal网站动态内容和静态内容分离</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>drupal网站动态内容和静态内容分离</h1>
+
+<h2>我现在直接使用nginx就可以做到</h2>
+
+<p>nginx的conf中写好了，静态文件包括boost cache直接给nginx处理。php相关的给后台的php-cgi。
+## lightttpd的例子，使用两个域名！</p>
+
+<p>下面是挺早的一个例子了。有参考价值。现在大部分情况不需要这么搞了吧。</p>
+
+<blockquote>
+  <p>http://www.lullabot.com/articles/using-lighttpd-static-file-server 
+Simpler approach
+I use a much simpler approach.
+(1) Set up a fast http server on a different port or different server (I wrote my own).
+(2) Redirect requests to static files (like files in the /files folder or images) via mod_rewrite to this server.
+But anyway, think it’s a very useful idea to have different servers here!</p>
+
+  <p>Mod_Rewrite to pass requests to Lighttpd
+I use this little mod_rewrite gem on a non-drupal install to force all “static” file extensions to lighttpd.
+Enable mod_rewrite and mod_proxy and put this into your apache.conf
+RewriteEngine On
+RewriteRule “^/(.*).(jpg|jpeg|gif|png|swf|pdf|avi|mpeg|mpg|mp3)$” “http://127.0.0.1:81/$1.$2” [P]
+ProxyPassReverse / http://127.0.0.1:81/</p>
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:02 +0800 -->
+    </footer>
+</html>
+

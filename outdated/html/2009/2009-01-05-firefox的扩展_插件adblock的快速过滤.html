@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>firefox的扩展 插件adblock的快速过滤</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>firefox的扩展 插件adblock的快速过滤</h1>
+
+<p>以前都是选取某个振(frame)或某张图片来过滤。很麻烦。</p>
+
+<p>今天发现了更快速的方法。</p>
+
+<h2>目标</h2>
+
+<p>过滤所有gif图片。过滤所有样式表(style)</p>
+
+<h2>例子</h2>
+
+<p>因为人民网提供rss输出，所以我常浏览文章标题并点击阅读（当然是在后台新
+标签页打开。这样可以一下点击20篇。然后读一篇ctrl-w关上该tab）。</p>
+
+<p>人民网有很多二级站点， 二级站点.people.com.cn。用新方法全面过滤所有二
+级站点。</p>
+
+<ol>
+  <li>在firefox中选择 “查看 － adblock plus 可过滤项目”。</li>
+  <li>fiefox界面下方会出adblock对话框，在搜索栏中搜索“.css”。就是样式表</li>
+  <li>出现匹配的样式表。如
+news.people.com.cn/…/..text20070508.css，politics.people.com.cn/…/..text20070508.css，
+等</li>
+  <li>
+    <p>随便点一个样式表。出现对话框。选择自定义过滤，输入</p>
+
+    <pre><code> “http://*.people.com.cn/*.css”。
+</code></pre>
+  </li>
+</ol>
+
+<p>这样，所有css样式表都过滤了，不管是哪个自站点的。</p>
+
+<p>过滤gif图片一样。自定义过滤 “http://<em>.people.com.cn/</em>.gif”就可以了。</p>
+
+<h2>为什么这么做</h2>
+
+<p>过滤图片大家都明白，图片太干扰阅读，gif图好多还都是广告。过滤css可能有
+不少人不理解。我建议大家试验一下。：）我过滤css原因是，因为我只是看新
+闻内容，不需要测栏那些其他新闻和广告的干扰。过滤掉css，能够提高阅读速
+度，不止一点点。</p>
+
+<p>过滤掉乱七八糟的东西，再按F11全屏显示，你的阅读速度更快。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:58 +0800 -->
+    </footer>
+</html>
+

@@ -1,0 +1,2 @@
+# mass convert file to utf-8 encoding on windows with powershell
+http://www.ehow.com/how_8456833_convert-file-utf8.html

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>mysql的innodb时间日志会让drupal 7非常非常慢 特别是在cron的时候</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>mysql的innodb时间日志会让drupal 7非常非常慢 特别是在cron的时候</h1>
+
+<h2>长话短说：</h2>
+
+<p>d7默认安装数据库类型是innodb。如果你的mysql默认设定是“每一次事务提交或事务外的指令都需要把日志写入（flush）硬盘”，也就是</p>
+
+<pre><code>innodb_flush_log_at_trx_commit=1
+</code></pre>
+
+<p>你会觉得drupal慢疯的。而且机器负载下不来。运行cron的时候，一执行就好几分钟，或者根本不成功。</p>
+
+<p>这时你关闭事件日志或者让它每秒写一次，会快很多很多很多很多很多！！！</p>
+
+<p>几个参数设置参考： http://swachian.iteye.com/blog/193788</p>
+
+<blockquote>
+  <p>innodb_buffer_pool_size
+如 果用Innodb，那么这是一个重要变量。相对于MyISAM来说，Innodb对于buffer size更敏感。MySIAM可能对于大数据量使用默认的key_buffer_size也还好，但Innodb在大数据量时用默认值就感觉在爬了。 Innodb的缓冲池会缓存数据和索引，所以不需要给系统的缓存留空间，如果只用Innodb，可以把这个值设为内存的70%-80%。和 key_buffer相同，如果数据量比较小也不怎么增加，那么不要把这个值设太高也可以提高内存的使用率。
+innodb_additional_pool_size 
+这个的效果不是很明显，至少是当操作系统能合理分配内存时。但你可能仍需要设成20M或更多一点以看Innodb会分配多少内存做其他用途。
+innodb_log_file_size
+对于写很多尤其是大数据量时非常重要。要注意，大的文件提供更高的性能，但数据库恢复时会用更多的时间。我一般用64M-512M，具体取决于服务器的空间。
+innodb_log_buffer_size 
+默认值对于多数中等写操作和事务短的运用都是可以的。如 果经常做更新或者使用了很多blob数据，应该增大这个值。但太大了也是浪费内存，因为1秒钟总会 flush（这个词的中文怎么说呢？）一次，所以不需要设到超过1秒的需求。8M-16M一般应该够了。小的运用可以设更小一点。
+innodb_flush_log_at_trx_commit  （这个很管用） 
+抱怨Innodb比MyISAM慢 100倍？那么你大概是忘了调整这个值。默认值1的意思是每一次事务提交或事务外的指令都需要把日志写入（flush）硬盘，这是很费时的。特别是使用电 池供电缓存（Battery backed up cache）时。设成2对于很多运用，特别是从MyISAM表转过来的是可以的，它的意思是不写入硬盘而是写入系统缓存。日志仍然会每秒flush到硬 盘，所以你一般不会丢失超过1-2秒的更新。设成0会更快一点，但安全方面比较差，即使MySQL挂了也可能会丢失事务的数据。而值2只会在整个操作系统 挂了时才可能丢数据。
+来源： http://swachian.iteye.com/blog/193788</p>
+</blockquote>
+
+<p>在drupal.org上也有人给出了这个答案，但很难搜索到的： http://drupal.org/node/1034578#comment-4054290</p>
+
+<p>下面是我的猜测：因为drupal在运行cron的时候，特别是建立search索引，放数据库中写数据的量是惊人的。如果每写一条mysql都往硬盘里写一下做了什么，然后再处理下一个请求。自然会很慢，频繁i/o会让机器负载高。而且你从top上看不出来。</p>
+
+<h2>详细的经历</h2>
+
+<p>最近一些d7站点太慢了。</p>
+
+<p>cron执行最快也20秒。基本在50-200秒之间。报了几个issues。开始认为是feeds或者core，后逐渐排除。清缓存都需要执行30秒以上。</p>
+
+<p>这一段一直在排查。一个一个站点从服务器A迁移到服务器B。A、B两台机器基本是相同配置相同程序。找不出来原因。在B上快一点。但不明想。</p>
+
+<p>今天再次找原因，通过将d7代码迁移到服务器A，将php-cgi交个服务器B，将mysql放在服务器C。发现那台运行mysql的机器，cpu和内存占用很小，但整体机器负载就是在2徘徊。这太高了。我的机器非常不错。在零点几才正常。</p>
+
+<p>用phpmyadmin检查mysql运行状态。发现有几条数据很可以</p>
+
+<blockquote>
+  <p>Innodb_row_lock_time	0	 等待获得行锁的总时间 (单位：毫秒)。
+Innodb_row_lock_time_avg	0	 等待获得行锁的平均时间 (单位：毫秒)。
+Innodb_row_lock_time_max	0	 等待获得行锁的最大时间 (单位：毫秒)。
+Innodb_row_lock_waits	0	 等待行锁的次数</p>
+</blockquote>
+
+<p>现在你看到的我已经修改mysql配置文件后重启的结果。之前，那个Innodb_row_lock_time_avg要1000多毫秒。就是每次写一条记录要等1秒中么？！虽然我对参数理解可能不对，但差不多这个意思。</p>
+
+<p>如果有回滚机制，那么数据库没不正常的时候，会恢复到之前某个状态。这也验证了为什么我们在排查原因的时候，直接从db中删除过记录。过一天那条记录又出来了。很可能是因为我们经常运行cron来测试速度如何，太慢了我们就强制中断cron，这是与mysql突然断开让mysql数据回滚了。</p>
+
+<h2>更多mysql参考：</h2>
+<p>http://dev.mysql.com/doc/refman/5.0/en/server-status-variables.html</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:00 +0800 -->
+    </footer>
+</html>
+

@@ -1,0 +1,5 @@
+# jekyll中使用其它theme，除了在_layout中修改theme名字还要修改引用theme的路径
+
+就是这行。defaul post page  .html 都需要修改。否则生成站点的theme目录下没有那新建立的目录，还是之前那个目录，因为这里引用的是之前的目录啊。
+{% include themes/404twitter/page.html %}
+

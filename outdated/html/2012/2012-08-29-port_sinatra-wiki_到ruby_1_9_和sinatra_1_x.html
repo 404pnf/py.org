@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>port sinatra-wiki 到ruby 1.9 和sinatra 1.x</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>port sinatra-wiki 到ruby 1.9 和sinatra 1.x</h1>
+
+<p>Using Sinatra.default_options to set base configuration items is obsolete; use Sinatra::Base.set(key, value) instead.</p>
+
+<p>YAML</p>
+
+<p>to_hash()
+Converts the contents of the database to an in-memory Hash object, and returns it.</p>
+
+<p>现在使用yaml的方法是</p>
+
+<blockquote>
+  <blockquote>
+    <p>a = YAML.load_file(‘./config.yml’)
+=&gt; {:use_auth=&gt;false, :username=&gt;”foo”, :password=&gt;”62cdb7020ff920e5aa642c3d4066950dd1f01f4d”}
+a.to_hash
+=&gt; {:use_auth=&gt;false, :username=&gt;”foo”, :password=&gt;”62cdb7020ff920e5aa642c3d4066950dd1f01f4d”}</p>
+  </blockquote>
+</blockquote>
+
+<p>直接load_file进来已经是hash啦？！</p>
+
+<p>是的！</p>
+
+<blockquote>
+  <blockquote>
+    <p>YAML.load_file(‘./config.yml’).each do |k,v|
+?&gt; p “#{k} is #{v}”
+end
+“use_auth is false”
+“username is foo”
+“password is 62cdb7020ff920e5aa642c3d4066950dd1f01f4d”</p>
+  </blockquote>
+</blockquote>
+
+<p>因此之前代码减少了很多！</p>
+
+<h2>自己重写slugalizer</h2>
+
+<p>sluglizer是可用的，但需要ruby on rails</p>
+
+<p>自己写的，简单替换url中不应该出现(/)和不好看的字符</p>
+
+<blockquote>
+  <blockquote>
+    <table>
+      <tbody>
+        <tr>
+          <td>ugly = %w(= , / \ : &lt; &gt; ? “ ‘ ; ~ ` ! @ # $ % ^ &amp; * ( ) - _ + =  ， 《 》 ？ ： ； ” ’ “ ‘ 』 『 】 【 、</td>
+          <td>+ = —— - ） （ * &amp; …… % ￥ # @ ！ ～ · .)</td>
+        </tr>
+      </tbody>
+    </table>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>s = u.to_s
+=&gt; “["=", ",", "/", " :", "&lt;", "&gt;", "?", "\"", "’", ";", "~", "`", "!", "@", "#", "$", "%", "^", "&amp;", "<em>", "(", ")", "-", "_", "+", "=", "，", "《", "》", "？", "：", "；", "”", "’", "“", "‘", "』", "『", "】", "【", "、", "|", "+", "=", "——", "-", "）", "（", "</em>", "&amp;", "……", "%", "￥", "#", "@", "！", "～", "·", "."]”</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>‘http://g.cn’.tr(s, ‘-‘)=&gt; “http—g-cn”</p>
+  </blockquote>
+</blockquote>
+
+<p>使用了ruby的tr，tranlsate方法。</p>
+
+<p>tr(‘aeiou’, ‘*’) 
+a e i o u 五个字符会变为 *</p>
+
+<p>可参考这里写成String类下面的方法</p>
+
+<p>https://github.com/bomberstudios/bliki/blob/12f8c96a873a778359b3c53f7b58977b46a24212/lib/slugalizer.rb</p>
+
+<p>require “iconv”
+class String
+  def slugalize(separator=’-‘)
+    re_separator = Regexp.escape(separator)
+    result = self.downcase
+    # result = Iconv.iconv(‘ascii//ignore//translit’, ‘utf-8’, self).to_s.downcase
+    # result.gsub!(/(~n|~N)/,’n’)
+    result.gsub!(/(ñ|Ñ)/,’n’)
+    result.gsub!(/(á|Á)/,’a’)
+    result.gsub!(/(é|É)/,’e’)
+    result.gsub!(/(í|Í)/,’i’)
+    result.gsub!(/(ó|Ó)/,’o’)
+    result.gsub!(/(ú|Ú)/,’u’)
+    result.gsub!(/(ä|Ä)/,’ae’)
+    result.gsub!(/(ö|Ö)/,’oe’)
+    result.gsub!(/(ü|Ü)/,’ue’)
+    result.gsub!(/ß/,’ss’)  <br />
+    result.gsub!(/[¡¿!?’:”]/,’’)
+    result.gsub!(/+/,’’)
+    # result.gsub!(/[^\x00-\x7F]+/, ‘’)                      # Remove non-ASCII (e.g. diacritics).
+    result.gsub!(/[^a-z0-9-_+]+/i, separator)            # Turn non-slug chars into the separator.
+    result.gsub!(/#{re_separator}{2,}/, separator)         # No more than one of the separator in a row.
+    result.gsub!(/^#{re_separator}|#{re_separator}$/, ‘’)  # Remove leading/trailing separator.
+    result
+  end
+end</p>
+
+<h2>用 sinatra-authorization 进行用户认证</h2>
+
+<h2>用 r18n 进行国际化</h2>
+<p>http://r18n.rubyforge.org/</p>
+
+<h2>trivals</h2>
+
+<p>编辑文章 A ，修改它的题目到 B，内容不动，就等于在服务器上复制了这篇文章，文章题目是 B ，内容和A一样，这样就有了2篇文章，A和B。</p>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:57 +0800 -->
+    </footer>
+</html>
+

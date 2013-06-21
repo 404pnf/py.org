@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>在ubuntu gnu linux 6 06中如何编译lame最新版本</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>在ubuntu gnu linux 6 06中如何编译lame最新版本</h1>
+
+<h2>在ubuntu gnu/linux 6.06中如何编译lame最新版本</h2>
+
+<h2>简单说就是编译软件需要先装 sudo apt-get install build-essential</h2>
+
+<p>装了这个其它的基本都是 
+./configure
+sudo make
+sudo make install</p>
+
+<h2>很奇怪在ubuntu gnu/linux 6.06中不能用apt安装lame</h2>
+<p>我办公室的机器记得是用apt装的。但家里说源里没有lame。所以只能自己编译。编译的好出是一般可以用最新版本。源里的不一定是最新的。</p>
+
+<h2>我走的弯路</h2>
+
+<p>编译lame。报错。</p>
+
+<p>装gcc  sudo apt-get install gcc</p>
+
+<p>再次  ./configure</p>
+
+<p>还是报错 failed sainity check，不能装</p>
+
+<p>上网查 ubuntu compile lame。发现6.06应该有lame可以装。但不知道我为什么不能直接用apt安装。看到一篇提到ubuntu wiki上教你如何编译的。提到要装build-essential。</p>
+
+<p>对呀。就是这个东西。不过我想不起名字。</p>
+
+<p>装 sudo apt-get install build-enssential</p>
+
+<p>再次编译 ./configure 成功</p>
+
+<p>安装 先 sudo make 完成后再 sudo make install</p>
+
+<p>lame装好了</p>
+
+<p>进入audacity，export一个文件到mp3，提示我要找lame的库，点查找
+audacity带你进入的默认文件夹是/lib/ 里面没有这个文件</p>
+
+<p>寻找那个需要的 libmp3lame.so在哪里，在bash中用 $ whereis libmp3lame</p>
+
+<pre><code>  libmp3lame: /usr/local/lib/libmp3lame.so /usr/local/lib/libmp3lame.la /usr/local/lib/libmp3lame.a
+</code></pre>
+
+<p>找到了，原来在 /usr/local/lib 中。也对，因为是user自己编译安装的吧，所以放在 /usr/local 中
+再次选导出成mp3，让找libmp3lame.so，进入 /user/local/lib 选中，确定。
+可以导mp3了</p>
+
+<p>似乎很麻烦。因为没有用apt装嘛
+不过搞明白就好了。而且装好后一年半载也不需要动的。</p>
+
+<h2>如果你非要用apt-get 安装现在最新的lame 3.9.6版本</h2>
+<p>参考这篇，在你的source.list中加一个deb源就好了。
+http://ubuntuforums.org/archive/index.php/t-131405.html</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:06 +0800 -->
+    </footer>
+</html>
+

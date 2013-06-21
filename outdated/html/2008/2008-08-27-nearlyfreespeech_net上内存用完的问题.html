@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>nearlyfreespeech net上内存用完的问题</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>nearlyfreespeech net上内存用完的问题</h1>
+
+<p>Fatal error: Allowed memory size of 33554432 bytes exhausted (tried to allocate 2048 bytes) in /data/f4/content/ziyouwenhua/public/includes/theme.inc on line 724</p>
+
+<p>I have this error msg on my site:</p>
+
+<p>Fatal error: Allowed memory size of 33554432 bytes exhausted (tried to allocate 2048 bytes) in /data/f4/content/ziyouwenhua/public/includes/theme.inc on line 724</p>
+
+<p>I am running 5 sites out of a single drupal code base. The traffic is very light, less then 50mb for all sites. </p>
+
+<p>This is line 724</p>
+
+<pre><code>   	     function drupal_find_theme_functions($cache, $prefixes) {
+             $templates = array();
+	             $functions = get_defined_functions();
+</code></pre>
+
+<p><strong>line 724</strong>      foreach ($cache as $hook =&gt; $info) {
+               foreach ($prefixes as $prefix) {
+     	              if (!empty($info[‘pattern’])) {
+		            	$matches = preg_grep(‘/^’. $prefix .’_’. $info[‘pattern’] .’/’, $functions[‘user’]);
+                    if ($matches) {</p>
+
+<p>I didn’t enable much modules. I always try to keep site as lean as possible. I also enabled cache in drupal, both page catch, block catch, css/js aggregation and compress.</p>
+
+<p>What seems to be the problem?</p>
+
+<p>还没有解决。</p>
+
+<p>TIA.</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:48 +0800 -->
+    </footer>
+</html>
+

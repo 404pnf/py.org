@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>关于分析统计中的参数解释</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>关于分析统计中的参数解释</h1>
+
+<p>受BXY指示，让我简单解释一下我们现在用的访问的分析统计中sites和visits参数之间数值关系的问题。
+按BXY说法，sites是独立访问IP数，而visits则是实际访问用户数。
+大家可能发现有时候sites比visits数多些，有时少些，是什么原因呢。
+sites由于记录的是独立访问IP数，因此，一个ADSL用户在断网后下次连接时，由于电信运营商的DHCP服务器在给你的机器分配IP地址时有TTL（time to live）这个参数控制，而时下ADSL用户比较多，导致一般TTL的数值会设置的比较短，这样才能保证有限的IP池中的IP地址能够随时分配给连接上网的用户。这就造成了同一用户访问同一网站时使用了不同的IP地址。
+而visits则记录的用户访问次数，一用户可能1天之内参观多次，所以按一定时间内（比如：1个小时），不重复的IP数统计参观者的访问次数。
+因此导致visits与sites之间并没有特别的对应关系。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:35 +0800 -->
+    </footer>
+</html>
+

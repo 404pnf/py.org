@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>install lazygal from source</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>install lazygal from source</h1>
+
+<h2>run setup test</h2>
+
+<pre><code>./setup test
+</code></pre>
+
+<h2>lack dependency, so install python image module</h2>
+
+<p>sudo apt-get install python-imaging</p>
+
+<h2>run setup test again, still lack dependency</h2>
+
+<p>install it</p>
+
+<p>sudo apt-get install python-pyexiv2</p>
+
+<h2>run setup test, still has a minor fail</h2>
+
+<pre><code>  FAIL: test_lens (lazygaltest.test_metadata.TestFileMetadata)
+  ----------------------------------------------------------------------
+  Traceback (most recent call last):
+    File "/home/404/lazygal-0.7.4/lazygaltest/test_metadata.py", line 150, in test_lens
+    self.assertEqual(im_md.get_lens_name(), 'smc PENTAX-DA 18-55mm F3.5-5.6 AL WR')
+    AssertionError: '7 218 0 0' != 'smc PENTAX-DA 18-55mm F3.5-5.6 AL WR' ignore it!
+</code></pre>
+
+<h2>run setup build</h2>
+
+<pre><code>./setup.py build
+</code></pre>
+
+<p>some mistake about msgfmt not found.  Search it, it’s part of gettext.  Install gettext.</p>
+
+<p>re-reun setup build.  Everything is fine.</p>
+
+<h2>install it</h2>
+
+<pre><code>sudo ./setup.py install
+</code></pre>
+
+<p>done!</p>
+
+<h2>run it</h2>
+
+<p>ftatl error: unsupported locale</p>
+
+<h2>google a lot</h2>
+
+<p>comment out the lines in /etc/default/locale</p>
+
+<pre><code>#LANG="zh_CN.UTF-8"
+#LANGUAGE="zh_CN:zh"	
+</code></pre>
+
+<h2>done!</h2>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:56 +0800 -->
+    </footer>
+</html>
+

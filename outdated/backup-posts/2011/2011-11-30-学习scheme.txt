@@ -1,0 +1,42 @@
+# 学习scheme
+
+## The Scheme Programming Language 
+Fourth Edition
+R. Kent Dybvig
+Illustrations by Jean-Pierre Hébert
+http://www.scheme.com/tspl4/
+
+## 安装scheme
+
+apt-get install mit-scheme
+然后输入 scheme 就进入交互模式。我在ubuntu下竟然左箭头无法使用，造成不能出现输入错误，因为无法删除！！
+
+apt-get install guile1.8
+
+我选择了下载guile最新的代码编译。遇到了不少问题。最关键的是
+
+checking for BDW_GC... configure: error: Package requirements (bdw-gc) were
+not met:
+
+No package 'bdw-gc' found
+
+解决方法：
+
+BDW_GC_CFLAGS=-L/usr/lib BDW_GC_LIBS=-lgc ./configure
+
+http://fred.oracle1.com/weblog/2011/02/17/%E7%BC%96%E8%AF%91guile-2-0-0%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/
+http://web.archiveorange.com/archive/v/acia2Zx4GRWVP4sIkbmy
+
+但我没搞定。
+
+最后将就用了1.8版本的guile，apt安装。也不支持编辑命令行。
+
+再装scm
+http://people.csail.mit.edu/jaffer/scm/Installing-SCM.html#Installing-SCM
+
+   apt-get install scm
+   
+这个支持命令行编辑和历史。输入scm开始编程。
+   
+## 很多scheme的实现
+http://community.schemewiki.org/?scheme-faq-standards#implementations

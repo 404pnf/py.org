@@ -1,0 +1,8 @@
+# windows装机找不着驱动可以尝试驱动精灵这个程序包含了很多驱动
+
+专门负责维护windows的同事推荐。
+
+http://www.drivergenius.com/
+
+离开windows的世界有7年了。一旦离开，再不想回去的。：）
+

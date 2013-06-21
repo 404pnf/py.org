@@ -1,0 +1,6 @@
+# Dump an aspell dictionary as a word list
+$ aspell -d en dump master | aspell -l en expand > words
+http://www.commandlinefu.com/commands/view/10619/dump-an-aspell-dictionary-as-a-word-list
+
+文件竟然有13万8千行！
+

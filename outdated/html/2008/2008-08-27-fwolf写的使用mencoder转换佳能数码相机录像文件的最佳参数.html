@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>fwolf写的使用mencoder转换佳能数码相机录像文件的最佳参数</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>fwolf写的使用mencoder转换佳能数码相机录像文件的最佳参数</h1>
+
+<p>fwolf写的使用mencoder转换佳能数码相机录像文件的最佳参数
+http://www.fwolf.com/blog/post/277</p>
+
+<p>好文章啊。精华就是</p>
+
+<pre><code>  mencoder 要转换的文件.avi -o 导出文件的名字.avi -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=800 -oac mp3lame -srate 11025 -channels 1 -af-adv force=1 -lameopts preset=medium -mc 0
+
+
+   mencoder 要转换的文件.avi -o 导出文件的名字.avi -ovc xvid -xvidencopts bitrate=800 -oac mp3lame -srate 11025 -lameopts preset=medium -mc 0 
+</code></pre>
+
+<p>尝试了半天用ffmpeg都报错。还是用fwolf这个一把过了。具体这些参数什么意思大家自己去man吧。</p>
+
+<p>例子中的参数都可以调的。我感觉bitrate=800太模糊了。出来效果不好。我最后用了2000。还是不是特别好。但考虑文件大小问题。最后用3000了。源文件是mjpeg格式，都是640x480的图片连在一起。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:44 +0800 -->
+    </footer>
+</html>
+

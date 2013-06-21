@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>boblog安装 迁移 填写数据库信息的文件在 data config php中</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>boblog安装 迁移 填写数据库信息的文件在 data config php中</h1>
+
+<h2>问题：</h2>
+<p>新安装可以通过图形界面填写，但我这个情况属于帮朋友把他站点从一台服务器换到另一台，不能再安装了吧。直接修改一下数据库信息就好。</p>
+
+<p>想很简单的事情，就是找不着答案。</p>
+
+<h2>解决方法：</h2>
+
+<pre><code>   find ./ |grep config
+
+   cat /data/config.php|grep db 
+</code></pre>
+
+<p>这就是和我一样情况的朋友们要的答案。</p>
+
+<h2>其他</h2>
+
+<p>不要问我boblog如何，我也无法解答其它相关问题。因为我不知道。</p>
+
+<p>我tmd看<a href="http://www.bo-blog.com/doc/">boblog官方网站文档</a>和浏览目录花了20多分钟，愣是没有一个说如何手工修改数据库信息的。顺便说一句要看这个文档竟然要求浏览器打开JS！！！！临时允许了一下。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:51 +0800 -->
+    </footer>
+</html>
+

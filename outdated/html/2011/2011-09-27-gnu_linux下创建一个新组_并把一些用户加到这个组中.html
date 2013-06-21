@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>gnu linux下创建一个新组 并把一些用户加到这个组中</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>gnu linux下创建一个新组 并把一些用户加到这个组中</h1>
+
+<h1>groupadd developer</h1>
+
+<p>创建一个叫developer的组</p>
+
+<pre><code>  # usermod -a -G developer user1
+</code></pre>
+
+<p>修改(usermod)用户user1的组，给该用户添加（-a : append）到developer组中</p>
+
+<p>source: http://www.cyberciti.biz/faq/howto-linux-add-user-to-group/
+&gt; Howto: Linux Add User To Group
+&gt; 
+&gt; usermod example - Add a existing user to existing group
+&gt; 
+&gt; Add existing user tony to ftp supplementary/secondary group with usermod command using -a option ~ i.e. add the user to the supplemental group(s). Use only with -G option :
+&gt;     # usermod -a -G ftp tony
+&gt; 
+&gt; Change existing user tony primary group to www:
+&gt; 	 # usermod -g www tony
+&gt; 
+&gt; 
+&gt; In this example, create a new user called vivek and add it to group called developers. First login as a root user (make sure group developers exists), enter:
+&gt;    # grep developers /etc/group
+&gt; 
+&gt; Output:
+&gt; 
+&gt; developers:x:1124:
+&gt; If you do not see any output then you need to add group developers using groupadd command:
+&gt;    # groupadd developers</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:01 +0800 -->
+    </footer>
+</html>
+

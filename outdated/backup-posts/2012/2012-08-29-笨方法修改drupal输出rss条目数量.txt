@@ -1,0 +1,29 @@
+# 笨方法修改drupal输出rss条目数量
+
+这是drupal 6
+
+sudo vim +1461 modules/system/system.admin.inc 
+
+function system_rss_feeds_settings() {
+
+  $form['feed_default_items'] = array(
+    '#type' => 'select',
+    '#title' => t('Number of items in each feed'),
+    '#default_value' => variable_get('feed_default_items', 10),
+    '#options' => drupal_map_assoc(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 3000)),
+    '#description' => t('Default number of items to include in each feed.')
+  );
+
+我是如何搜索到的呢？
+
+1、我记得在system模块中有这些管理设定的代码，于是在该目录搜索
+        grep -r rss * -n
+2、发现了控制代码的函数，再搜索
+        grep -r system_rss_feeds * -n
+
+
+hack core是很愚蠢的做法。应该在你的模块中复写掉上面的函数。但我不会。我只是需要用一下，把2个drupal站点转到jekyll。
+
+得罪了！ ：）
+
+

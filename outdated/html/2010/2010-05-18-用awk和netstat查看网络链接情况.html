@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>用awk和netstat查看网络链接情况</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>用awk和netstat查看网络链接情况</h1>
+
+<h2>最佳答案：</h2>
+<p>http://www.cyberciti.biz/tips/netstat-command-tutorial-examples.html</p>
+
+<hr />
+
+<h2>中文资源：</h2>
+
+<pre><code>  netstat -an | awk '/^tcp/{ A[$NF]++} END{ for (a in A) print a, A[a]}'
+  netstat -an |awk '/LISTEN/{next};/^tcp/{s=split($5, N,":"); A[N[s-1]]++} END{ for (a in A) print a, A[a]}'   参考和参数详细解释： http://hi.baidu.com/thinkinginlamp/blog/item/afbcab64b1ad81f3f6365453.html
+</code></pre>
+
+<blockquote>
+  <p>先来看看netstat：</p>
+
+  <p>netstat -n</p>
+
+  <p>Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 123.123.123.123:80      234.234.234.234:12345   TIME_WAIT</p>
+
+  <p>你实际执行这条命令的时候，可能会得到成千上万条类似上面的记录，不过我们就拿其中的一条就足够了。</p>
+
+  <hr />
+
+  <p>再来看看awk：</p>
+
+  <p>/^tcp/
+滤出tcp开头的记录，屏蔽udp, socket等无关记录。</p>
+
+  <p>state[]
+相当于定义了一个名叫state的数组</p>
+
+  <p>NF
+表示记录的字段数，如上所示的记录，NF等于6</p>
+
+  <p>$NF
+表示某个字段的值，如上所示的记录，$NF也就是$6，表示第6个字段的值，也就是TIME_WAIT</p>
+
+  <p>state[$NF]
+表示数组元素的值，如上所示的记录，就是state[TIME_WAIT]状态的连接数</p>
+
+  <p>++state[$NF]
+表示把某个数加一，如上所示的记录，就是把state[TIME_WAIT]状态的连接数加一</p>
+
+  <p>END
+表示在最后阶段要执行的命令</p>
+
+  <p>for(key in state)
+遍历数组</p>
+
+  <p>print key,”\t”,state[key]
+先来看看netstat：</p>
+
+  <p>netstat -n</p>
+
+  <p>Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 123.123.123.123:80      234.234.234.234:12345   TIME_WAIT</p>
+
+  <p>你实际执行这条命令的时候，可能会得到成千上万条类似上面的记录，不过我们就拿其中的一条就足够了。</p>
+
+  <hr />
+
+  <p>再来看看awk：</p>
+
+  <p>/^tcp/
+滤出tcp开头的记录，屏蔽udp, socket等无关记录。</p>
+
+  <p>state[]
+相当于定义了一个名叫state的数组</p>
+
+  <p>NF
+表示记录的字段数，如上所示的记录，NF等于6</p>
+
+  <p>$NF
+表示某个字段的值，如上所示的记录，$NF也就是$6，表示第6个字段的值，也就是TIME_WAIT</p>
+
+  <p>state[$NF]
+表示数组元素的值，如上所示的记录，就是state[TIME_WAIT]状态的连接数</p>
+
+  <p>++state[$NF]
+表示把某个数加一，如上所示的记录，就是把state[TIME_WAIT]状态的连接数加一</p>
+
+  <p>END
+表示在最后阶段要执行的命令</p>
+
+  <p>for(key in state)
+遍历数组</p>
+
+  <p>print key,”\t”,state[key]
+打印数组的键和值，中间用\t制表符分割，美化一下。</p>
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:13 +0800 -->
+    </footer>
+</html>
+

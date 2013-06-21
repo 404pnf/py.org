@@ -1,0 +1,5 @@
+# 所有远端gem源中的软件
+
+        gem search feedzirra --remote
+
+

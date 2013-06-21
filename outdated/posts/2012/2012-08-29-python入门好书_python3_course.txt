@@ -1,0 +1,2 @@
+# python入门好书 python3 course
+http://www.python-course.eu/python3_course.php

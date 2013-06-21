@@ -1,0 +1,4 @@
+# sicp的练习答案 在schemewiki org上
+
+http://community.schemewiki.org/?sicp-solutions
+直接搜索sicp还可以看到不少其它人的答案。

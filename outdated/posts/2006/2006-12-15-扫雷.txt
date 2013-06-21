@@ -1,0 +1,48 @@
+# 扫雷
+
+扫雷的纪录
+
+
+      目前的纪录：标准小地图1秒（点击后直接开了），标准中地图10秒，标准大地图38秒。
+
+
+      中大地图的纪录都是带比赛录像确认。目前的纪录保持者1987年出生的，这儿是他的 介绍
+
+* 目前的世界扫雷排名http://www.planet-minesweeper.com/bestever.php?p=ranking
+
+下载视频
+
+* http://www.geocities.com/kaminwx/
+
+
+    * http://metanoodle.com/minesweeper/
+
+目前已经有的一些变种版本
+
+* MineSweeper3D
+
+
+    * 3DMinesweeper - Another 3D version of the game. (commercial, trial version available for download)
+
+
+    * Mines3D - A 3D version of the game. (commercial, demo version available for download)
+
+
+    * Minesweeper 3D - Yet another 3D version of the game. (open source, public domain)
+
+曾有人搞签名活动禁这个游戏，理由是，这个游戏冒犯了被地雷炸伤的人
+
+* 详细报道
+
+
+    * International Campaign to Ban Winmine
+
+还有一些严肃研究
+
+* Ian Stewart on Minesweeper - Article by a lecturer in pure mathematics.
+
+
+    * Richard Kaye's Minesweeper Pages - Proof of NP-completeness.
+
+
+    * Martin HEINRICH's Minesweeper Page - Complexity and Variants

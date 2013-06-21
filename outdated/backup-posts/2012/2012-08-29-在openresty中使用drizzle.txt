@@ -1,0 +1,36 @@
+# 在openresty中使用drizzle
+> This ngx_drizzle module is not enabled by default. You should specify the --with-http_drizzle_module optiotn while configuring OpenResty.
+> 
+> The libdrizzle C library is no longer bundled by OpenResty. You need to download the drizzle server tarball from https://launchpad.net/drizzle.
+> 
+> Latest drizzle7 release does not support building libdrizzle 1.0 separately and requires a lot of external dependencies like Boost and Protobuf which are painful to install. The last version supporting building libdrizzle 1.0 separately is 2011.07.21. You can download it from here:
+> 
+> http://agentzh.org/misc/nginx/drizzle7-2011.07.21.tar.gz
+
+make install-libdrizzle-1.0
+注意： install-lib... 中间的dash必须有，不是敲错了。必须有那个连线。
+
+When you get the drizzle7 2011.07.21 release tarball, you can install libdrizzle-1.0 like this:
+tar xzvf drizzle7-2011.07.21.tar.gz
+cd drizzle7-2011.07.21/
+./configure --without-server
+make libdrizzle-1.0
+make install-libdrizzle-1.0
+
+Please ensure that you have the python command point to a python2 interpreter. It's known that on recent Arch Linux distribution, python is linked to python3 by default, and while running make libdrizzle-1.0 will yield the following error:
+  File "config/pandora-plugin", line 185
+    print "Dependency loop detected with %s" % plugin['name']
+                                           ^
+SyntaxError: invalid syntax
+make: *** [.plugin.scan] Error 1
+You can fix this by pointing python temporarily to python2.
+
+When you install the libdrizzle-1.0 library to a custom path prefix, you can specify the libdrizzle prefix to OpenResty like this:
+cd /path/to/ngx_openresty-VERSION/
+./configure --with-libdrizzle=/path/to/drizzle --with-http_drizzle_module
+
+Documentation page: http://wiki.nginx.org/HttpDrizzleModule
+
+Project page: https://github.com/chaoslawful/drizzle-nginx-module
+
+http://openresty.org

@@ -1,0 +1,18 @@
+# flickr需要学习的
+
+小q你看看这些
+我现在没有时间也不记得自己的账号了。不过应该可以从flickr直接发布你那些照片到日记本来，而且配着文字。这样极大地方便你photoblogging了 ：） 否则重新贴照片注释文字很麻烦。
+http://www.flickr.com/help/blogging/#55
+http://www.flickr.com/help/blogging/#152
+
+other stuff worth noticing
+http://www.flickr.com/help/photos/#68
+http://www.flickr.com/help/photos/#87
+use CC as much as possible plz
+http://www.flickr.com/help/limits/#73
+seems once we are on pro, we got to pay it every year. 25 dollars, shared by several guys, fine by me :) 
+
+to 小拉 和 lvcha
+
+我需要一个替换的js代码
+把 .jpg的url替换成 div 修饰的有一定大小的图片框。div的语法和相关的css应该能够很方便找到。看看能否按delicous mp2 player tag那种方式替换一下。以后贴照片直接贴url地址就可以了。这样方便。

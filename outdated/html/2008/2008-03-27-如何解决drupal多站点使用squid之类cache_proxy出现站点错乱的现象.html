@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>如何解决drupal多站点使用squid之类cache proxy出现站点错乱的现象</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>如何解决drupal多站点使用squid之类cache proxy出现站点错乱的现象</h1>
+
+<h2>如何解决drupal多站点使用squid之类cache/proxy出现站点错乱的现象</h2>
+
+<blockquote>
+  <p>Multi-site hosting with Drupal</p>
+</blockquote>
+
+<blockquote>
+  <p>Drupal has a feature that allows multiple sites to be served from a single installation. This feature can be used at NearlyFreeSpeech.NET, but by default it will run afoul of the distributed caching network. To make this feature work properly, add the following line to your .htaccess file:</p>
+</blockquote>
+
+<blockquote>
+  <pre><code>  Header append Vary Host
+</code></pre>
+</blockquote>
+
+<blockquote>
+  <p>This will indicate to web caches that the responses you send may depend on the Host: header, which contains the name of the site being requested. </p>
+</blockquote>
+
+<blockquote>
+  <p>https://members.nearlyfreespeech.net/wiki/Applications/Drupal</p>
+</blockquote>
+
+<p>我的站点都在nearlyfreespeech，上面一套drupal代码跑多个站点确实出现了类似问题。按照说明，在.htaccess文件加上 Header appen Vary Host，就好了。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:44 +0800 -->
+    </footer>
+</html>
+

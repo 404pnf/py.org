@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>32位系统的linux二进制文件无法在64位的操作系统下运行</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>32位系统的linux二进制文件无法在64位的操作系统下运行</h1>
+
+<p>我参考了： http://serverfault.com/questions/49852/bash-cant-start-a-programme-thats-there-and-has-all-the-right-permissions</p>
+
+<p>在64位的gnu/linux上</p>
+
+<p># ls -l md5linux 
+ -rwxr-xr-x 1 root root 18384 2011-12-15 10:17 md5linux</p>
+
+<p># ./md5linux 
+ bash: ./md5linux: No such file or directory</p>
+
+<p>在32位的机器上
+ $ ls -l md5linux 
+ -rwxr-xr-x 1 tufu tufu 18384 Dec 15 10:39 md5linux</p>
+
+<p>$ ./md5linux “1234” 1234
+ 7b43300d83a6fc4b79b750acb2332fe0t</p>
+
+<p>在64位的机器上仔细查看该文件
+ # ls -lh md5linux 
+-rwxr-xr-x 1 root root 18K 2011-12-15 10:17 md5linux
+ # ./md5linux 
+ bash: ./md5linux: No such file or directory
+ # strace ./md5linux 
+ execve(“./md5linux”, [”./md5linux”], [/* 18 vars */]) = -1 ENOENT (No such file or   directory)
+ dup(2)                                  = 3
+ fcntl(3, F_GETFL)                       = 0x8002 (flags O_RDWR|O_LARGEFILE)
+ fstat(3, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 2), …}) = 0
+ mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1,  0) = 0x7f057e351000
+ lseek(3, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ write(3, “strace: exec: No such file or di”…, 40strace: exec: No such file or directory
+ ) = 40
+ close(3)                                = 0
+ munmap(0x7f057e351000, 4096)            = 0
+ exit_group(1)                           = ?</p>
+
+<p># file md5linux 
+ md5linux: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically l inked (uses shared libs), for GNU/Linux 2.0.0, not stripped</p>
+
+<p>注意这里程序可能动态的用了操作系统的库。因此是无法执行的。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:57 +0800 -->
+    </footer>
+</html>
+

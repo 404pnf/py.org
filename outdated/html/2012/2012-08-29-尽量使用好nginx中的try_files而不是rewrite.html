@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>尽量使用好nginx中的try_files而不是rewrite</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>尽量使用好nginx中的try_files而不是rewrite</h1>
+
+<p>有人问：</p>
+
+<blockquote>
+  <p>i want to rewrite:</p>
+
+  <p>http://a.com/abcde.jpg
+to
+http://a.com/ab/cde.jpg</p>
+
+  <p>here is my nginx config:
+rewrite “^/([a-z]{2})([a-z]{3}).jpg$” /$1/$2.jpg last;</p>
+
+  <p>but it not works</p>
+</blockquote>
+
+<p>我上来的思路就是检查他的命令是否正确。也就是假设这种情况用rewrite是合适的。</p>
+
+<p>但下面这个回答没有假设这里需要用rewrite而是建议用try_files。应该说这才是正解。</p>
+
+<blockquote>
+  <p>Avoid rewrite’s:</p>
+
+  <p>location ~ ^/([a-z][a-z])([a-z][a-z][a-z]).jpg$ {
+     try_files /$1/$2.jpg $uri;
+}</p>
+
+  <p>Andrejs</p>
+</blockquote>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:57 +0800 -->
+    </footer>
+</html>
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>gnu linux bash下批量重名文件</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>gnu linux bash下批量重名文件</h1>
+
+<blockquote>
+  <pre><code>  for FILE in * ; do NEWFILE=`echo $FILE | sed 's/-//g'` ; mv "$FILE" $NEWFILE ; done http://snipplr.com/view/3679/batch-rename-files/
+</code></pre>
+</blockquote>
+
+<p>for i in *.avi
+do
+j=<code>echo $i | sed 's/find/replace/g'</code>
+mv “$i” “$j”
+done</p>
+
+<p>Can also be written on a single line as</p>
+
+<p>for i in *.avi; do j=<code>echo $i | sed 's/find/replace/g'</code>; mv “$i” “$j”; done
+http://snipplr.com/view/2736/rename-multiple-files-in-bash-using-regular-expressions/</p>
+
+<p>ls foo*.jpg | awk ‘{print(“mv “$1” “$1)}’ | sed ‘s/foo/bar/2’ | /bin/sh
+http://snipplr.com/view/3648/batch-file-rename-with-awk-and-sed/</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:00 +0800 -->
+    </footer>
+</html>
+

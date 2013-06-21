@@ -1,0 +1,8 @@
+# 知道了用 chkconfig 来查看和设定系统哪些deamon在什么run level运行
+
+[tags]gnu/linux[/tags]
+我现在主要是查看：
+
+      chkconfig --list|grep 3:on|less
+
+我用这个命令，看看 runlevel 3上都开了什么服务

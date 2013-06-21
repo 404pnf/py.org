@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>刻盘速度慢和DMA没有启用有关</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>刻盘速度慢和DMA没有启用有关</h1>
+
+<p>今天刻盘k3b提示我：</p>
+
+<blockquote>
+  <p>DMA disabled on device SONY - DVD RW DW-G120A
+With most modern CD/DVD devices enabling DMA highly increases read/write performance. If you experience very low writing speeds this is probably the cause.
+Solution: Enable DMA temporarily as root with ‘hdparm -d 1 /dev/hdd’</p>
+</blockquote>
+
+<p>就是说光驱的的DMA没有启用。这个DMA如果启用的话会加快光驱的读写性能。我可以用 </p>
+
+<pre><code>  sudo 'hdparm -d 1 /dev/hdd'
+</code></pre>
+
+<p>来启用光驱的DMA。DMA是<a href="http://www.google.com/search?q=define%3Adma&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=com.ubuntu:en-US:official&amp;client=firefox-a">direct memory access</a>的意思。</p>
+
+<p>我虽既启用了。</p>
+
+<p>我的sony光驱确实在前一段时间出现过刻盘很慢，一张d5要半个多小时，的情况。看看照这个提示能否解决？</p>
+
+<p>我感觉没有解决！ ：）</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:10 +0800 -->
+    </footer>
+</html>
+

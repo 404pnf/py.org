@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>启用nginx statci gzip配合boost压缩的gizp缓存</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>启用nginx statci gzip配合boost压缩的gizp缓存</h1>
+
+<blockquote>
+  <p>So it seems we are already fully compatible with Boost with enabled pre-gzipping if the Nginx version used has gzip_static available and enabled. Thanks!
+http://groups.drupal.org/node/84519#comment-263069</p>
+
+  <p>http://wiki.nginx.org/NginxHttpGzipStaticModule. It needs to be enabled on server build by using ./configure –with-http_gzip_static_module and then by using gzip_static on; in the Nginx configuration file. In fact, I have always used this in my config, just didn’t test it with my rewrites for Boost, contributed initially by Brian Mercer. Or maybe Brain tested it already and I overlooked that? Brian?
+http://groups.drupal.org/node/84519#comment-262899</p>
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:13 +0800 -->
+    </footer>
+</html>
+

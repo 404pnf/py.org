@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>drupal的survey模块是帮你创建和维护调查问卷的模块</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>drupal的survey模块是帮你创建和维护调查问卷的模块</h1>
+
+<p>drupal的survey模块 http://drupal.org/project/survey
+drupal的survey模块是帮你创建和维护调查问卷的模块。</p>
+
+<p>更详细的内容</p>
+
+<p>break
+安装的时候需要装它和form模块。两个模块放入modules目录（改变相应文件权限）后启动模块。</p>
+
+<p>创建问卷分两步</p>
+
+<p>1、创建问卷的总题目，问卷介绍，用户答必提交后会被带到哪个页面（一个是你自己写一个感谢的页面），答案如果通过email发送的话发给谁。这些写好了提交。</p>
+
+<p>2、提交问卷后再此编辑问卷。选择题目下面edit右边的form进行真正的问卷题目编辑。题目可有一下属性。</p>
+
+<p>radios 展开的单选题而且只能单选。我查不到英文单词radios这个用法啊。
+select 单选时需要浏览器点击打开的下拉框才能查看的单选 多选是选项展开在下拉框中
+checkbox 在题目前面打勾。我理解的意思就是此类问题只有题干或者说题目本身而没有答案，因为题目本身就是用户要打勾看是不是合适自己的。和checkboxes功能一样，但呈现上本选项的字体字号和显示方式会和其他提干的字体字号和显示方式相同，而checkboxes的选项是题目选项的字体字号和显示方式。
+file 给用户通过浏览器上传文件的功能
+checkboxes 多选 在选择项前面打勾
+textfiled 给用户一个输入文字的输入条，单行的。
+password 用户输入的是密码 #可能后面记录处理的时候记录加密方法和其他普通text不同
+textarea 给用户输入文字的输入框，多行的。如果预计用户输入内容较多，用这个。</p>
+
+<p>选择题目，选择项目之间用英文的分号分开就可以了。</p>
+
+<p>比如，题目：你来自哪里？ 选项：中国;英国;美国;苏丹 
+注意是英文分号。分号后面可以有空格，就是说你如果觉得看的舒服，下面这种方式也可以
+         中国;	英国;	美国;	苏丹 
+你要是觉得选项多了空格分开也不明显，可以分段</p>
+
+<pre><code>中国;
+英国;
+美国;
+苏丹 
+</code></pre>
+
+<p>反正只要是因为分号分开就好了。</p>
+
+<p>一个问题，如果选项文字当中有英文分号怎么办？初步答案是暂时没有好的办法，请您把哪个英文分号用其他标点代替吧。理论上，应该可以通过字符转意来解决这个问题。如果你确实有这个需要，请关注本页，我们解决了会及时更新。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:11 +0800 -->
+    </footer>
+</html>
+

@@ -1,0 +1,35 @@
+# git恢复到之前的一个版本
+
+
+## 全库回到之前状态
+> git rm -r .
+> git checkout HEAD~3 .
+> git commit
+> After the commit, files in the new HEAD will be the same as they were in the revision HEAD~3.
+http://stackoverflow.com/questions/3380805/git-checkout-old-commit-and-make-it-a-new-commit
+
+英文逗号点是需要的。HEAD后面是英文撇号 ~ 。
+
+## 单个文件
+
+> You can quickly review the changes made to a file using the diff command:
+> 
+> git diff <commit hash> <filename>
+> Then to revert a specific file to that commit use the reset command:
+> 
+> git reset <commit hash> <filename>
+> You may need to use the --hard option if you have local modifications.
+> 
+> A good workflow for managaging waypoints is to use tags to cleanly mark points in your timeline. I can't quite understand your last sentence but what you may want is diverge a branch from a previous point in time. To do this, use the handy checkout command:
+> 
+> git checkout <commit hash>
+> git checkout -b <new branch name>
+> You can then rebase that against your mainline when you are ready to merge those changes:
+> 
+> git checkout <my branch>
+> git rebase master
+> git checkout master
+> git merge <my branch>
+
+http://stackoverflow.com/questions/373812/rollback-file-to-much-earlier-version
+

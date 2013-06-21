@@ -1,0 +1,21 @@
+# change html files to htm
+
+for file in *.html ; do mv $file `echo $file | sed 's/\(.*\.\)html/\1htm/'` ; done
+
+#change .html files to .shtml
+for file in *.html ; do mv $file `echo $file | sed 's/\(.*\.\)html/\1shtml/'` ; done
+
+#change .html files to php
+for file in *.html ; do mv $file `echo $file | sed 's/\(.*\.\)html/\1php/'` ; done
+
+
+http://lab.artlung.com/unix-batch-file-rename/
+
+
+#!/bin/bash
+
+for f in *.txt; 
+do 
+mv ./"$f" "${f%txt}htm"; 
+done
+http://ubuntuforums.org/archive/index.php/t-356681.html

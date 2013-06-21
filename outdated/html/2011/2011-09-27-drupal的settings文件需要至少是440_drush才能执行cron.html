@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>drupal的settings文件需要至少是440 drush才能执行cron</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>drupal的settings文件需要至少是440 drush才能执行cron</h1>
+
+<p>比如运行drush的用户是 user/user。settings文件的所有者是 www-data/www-data 。那么，如果settgings文件权限设为 400，则drush无法执行cron。此时会报错</p>
+
+<pre><code>Command core-cron needs a higher bootstrap level to run - you will    [error] need invoke drush from a more functional Drupal environment to run this command
+</code></pre>
+
+<p>改为440就可以了。这样，不属于www-data组的人仍然不能查看settings.php。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:01 +0800 -->
+    </footer>
+</html>
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>awk example 200808</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>awk example 200808</h1>
+
+<p>awk example 200808</p>
+
+<blockquote>
+  <p>Remove first 3 lines in a file:
+$cat bearish.htm | awk ‘NR&gt;3’</p>
+
+  <p>Rounding Number:
+Need to be able to round numbers in bash to the nearest whole number? You can use a single line of code in AWK to do the job. For example, the following code will make the number 29.498398 round up to 29.50:</p>
+
+  <p>$ echo 29.498398 | awk ‘{ rounded = sprintf(“%.2f”, $1); print rounded }’
+29.50
+http://codespec.blogspot.com/2007/10/awk-examples.html</p>
+
+  <p>For example I just used awk to find out how much data I was serving to image leechers (websites which directly link to your images) from my sites. I used the simple script below to get the data (in bytes) from my log files.</p>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>egrep ‘gif</td>
+        <td>jpg</td>
+        <td>png’ /var/log/httpd/access_log*</td>
+        <td>grep -v taragana</td>
+        <td>cut -f10 -d’ ‘</td>
+        <td>awk ‘{if($0 != “-“) sum = sum + $0} END {print sum}’</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>http://blog.taragana.com/index.php/archive/comprehensive-awk-manual-awk-example/</p>
+
+  <p>Regular Expressions for grep, sed, awk
+http://crossonline.blogspot.com/2008/07/brief-introduction-to-regular.html</p>
+
+  <p>awk examples
+By alejandro.vargas on January 1, 2007 7:29 AM
+awk is a most useful command in unix, here some simple sintax examples
+http://blogs.oracle.com/AlejandroVargas/2007/01/awk_examples.html</p>
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:51 +0800 -->
+    </footer>
+</html>
+

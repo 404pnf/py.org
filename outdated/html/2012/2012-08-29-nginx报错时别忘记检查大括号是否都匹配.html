@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>nginx报错时别忘记检查大括号是否都匹配</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>nginx报错时别忘记检查大括号是否都匹配</h1>
+<p>今天为了一个小问题浪费了20分钟</p>
+
+<p>sudo /usr/local/nginx/sbin/nginx  -t
+nginx: [emerg] “server” directive is not allowed here in /usr/local/nginx/conf/sites-list.conf:10</p>
+
+<p>怎么看都没有错误。最后发现是大括号没匹配。</p>
+
+<p>第二个错误
+sudo /usr/local/nginx/sbin/nginx  -t
+nginx: [emerg] the INET6 sockets are not supported on this platform in “[::]:80” of the “listen” directive in /usr/local/nginx/conf/sites-list.conf:12</p>
+
+<p>这个简单。该机器不支持ipv6地址。改 [::]:80 为 80 就好了。</p>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:56 +0800 -->
+    </footer>
+</html>
+

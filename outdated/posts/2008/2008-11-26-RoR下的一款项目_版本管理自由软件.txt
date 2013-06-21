@@ -1,0 +1,4 @@
+# RoR下的一款项目 版本管理自由软件
+
+> Redmine is a flexible project management web application written using Ruby on Rails framework.
+>

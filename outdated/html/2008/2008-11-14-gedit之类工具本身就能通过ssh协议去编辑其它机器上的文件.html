@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>gedit之类工具本身就能通过ssh协议去编辑其它机器上的文件</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>gedit之类工具本身就能通过ssh协议去编辑其它机器上的文件</h1>
+
+<p>简单解决了直接ssh到服务器编辑文件无法输入中文的问题。还没有试验呢。因为很少上去。服务很稳啊。：）</p>
+
+<blockquote>
+  <p>Comment by andresj: (1 day ago)
+You don’t need X11 forwarding to edit the files in Gedit nor Kate.</p>
+
+  <p>For Gedit, just click on “Places &gt; Connect to server…”, select SSH
+from the list, write in the information, and click on Connect. Add a
+bookmark if you want, it will appear in the same list as Home folder,
+Pictures, etc. Double click on your files or File &gt; Open inside
+Gedit. </p>
+
+  <p>Comment by freedom: (6 weeks ago)
+While i’m not against this feature i will not vote for it as i believe
+that it can be accomplished easier. On GNU/Linux systems you can
+already mount the ssh partition and then edit files with the local
+graphical editor if you so wish. On Gnome nautilus allows you to do
+that even if you don’t really know what you are doing, if you aren’t
+using gnome look at sshfs package.</p>
+
+  <p>https://members.nearlyfreespeech.net/jsmith/support/voting?issue=28163#prop28163</p>
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:42 +0800 -->
+    </footer>
+</html>
+

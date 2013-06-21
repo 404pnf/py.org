@@ -1,0 +1,7 @@
+# 在线播放音频和视频的代码
+
+小拉和lvcha看一下如何应用这些
+音频现在基本解决了
+视频还不行
+http://www.xyforever.org/ash/post/flash-down-html.html
+http://cit.ucsf.edu/embedmedia/step1.php

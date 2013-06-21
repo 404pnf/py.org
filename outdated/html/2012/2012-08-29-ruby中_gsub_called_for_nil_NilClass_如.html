@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ruby中 gsub called for nil:NilClass 如</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>ruby中 gsub called for nil:NilClass 如</h1>
+<p>何解决</p>
+
+<p>请仔细读
+http://stackoverflow.com/questions/2660470/sinatra-title-slugs</p>
+
+<p>这个人回答的太好了。我前一段就经常遇到这个问题</p>
+
+<p>What exactly is going wrong?”</p>
+
+<p>Well, the error message is kinda self-explanatory. You called this method with title variable set to nil. To reproduce the error, try calling:</p>
+
+<p>slugify(nil)
+I suppose that it failed on this line:</p>
+
+<p>title = title.gsub(s, rep)
+To avoid this, you can either check for nil title at the beginning of the method:</p>
+
+<p>raise “wrong input!” if title.nil?
+or (IMHO more elegant) always convert title to string, which converts eventual nil to empty string:</p>
+
+<p>title = title.to_s # “any string” =&gt; “any string”, nil =&gt; “”
+BTW your code could use some serious refactoring. For a start, try replacing:</p>
+
+<p>title = title.gsub(/a/,/b/)
+with</p>
+
+<p>title.gsub!(/a/,/b/)
+or use tr method instead of gsub for character-to_character replacement:</p>
+
+<p>“woot”.tr(“wt”,”WT”) # =&gt; “WooT”
+http://stackoverflow.com/a/2757733</p>
+
+<p>我当时的解决方法是</p>
+
+<p>if title.nil?
+    title = ‘no-titlee’
+ end</p>
+
+<p>但我不是特别明白为什么会出现nil?</p>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:58 +0800 -->
+    </footer>
+</html>
+

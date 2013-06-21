@@ -1,0 +1,7 @@
+# 30个好用的bash命令别名
+http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html
+
+说实话，我自己并没有怎么使用。虽然我看到类似文章都会浏览和收集一下。
+
+我的目标还是尽量少用电脑。哈哈！
+

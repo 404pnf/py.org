@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>如何用scp指定端口号用大写字母P并且要放在复制文件和复制文件目的地的前面</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>如何用scp指定端口号用大写字母P并且要放在复制文件和复制文件目的地的前面</h1>
+
+<h2>如何用scp指定端口号用大写字母P并且要放在复制文件和复制文件目的地的前面。</h2>
+
+<p>我要把本地文件复制到其他机器，该机器的ssh不是运行在标准的22端口</p>
+
+<h2>简单说就是 $ scp -P 端口号 本地文件  服务器文件</h2>
+
+<pre><code>  $ scp -P 3000 trial_a.jpg  404@myip:/home/404
+</code></pre>
+
+<h2>我走的弯路</h2>
+
+<h3>scp中指定远端服务器端口号是大写的P因为小写的已经有其他意思了</h3>
+
+<blockquote>
+  <p>-P port
+             Specifies the port to connect to on the remote host.  Note that
+             this option is written with a capital ‘P’, because -p is already
+             reserved for preserving the times and modes of the file in
+             rcp(1).</p>
+</blockquote>
+
+<p>在man里面写的。</p>
+
+<p>但我还是不会用scp把本地文件复制到其他机器，该机器的ssh不是运行在标准的22端口。比如我的服务器运行在3000端口。</p>
+
+<p>我登录时候用 ssh 404@myip -p 3000
+我用rsync的时候可以 
+       rsync -avz -e “ssh -p 3000” 404@myip:/home/404/backup-all/ /home/beifen/</p>
+
+<p>但我scp怎么都无法成功!!!!!!!!!!!
+      scp localfile 404@myip:/home/404 -P 2519
+      scp localfile 404@myip:/home/404 -e “-P 2519”
+都不行。</p>
+
+<h3>我会了。还是rtfm。</h3>
+
+<pre><code>  SYNOPSIS
+       scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 [...] [[user@]host2:]file2
+</code></pre>
+
+<p>可以看到端口号指定-P放在了复制文件的前面。我开始一直把端口指定放到这这两个参数后面。      </p>
+
+<pre><code>  $ scp -P 3000 trial_a.jpg  404@myip:/home/404
+  404@myip's password: 
+  trial_a.jpg                                   100%   89KB  88.8KB/s   00:00   
+</code></pre>
+
+<p>成功了：）</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:07 +0800 -->
+    </footer>
+</html>
+

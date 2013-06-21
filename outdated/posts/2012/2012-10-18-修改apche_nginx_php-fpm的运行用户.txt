@@ -1,0 +1,14 @@
+# 修改apche nginx php-fpm的运行用户
+在ubunt gnu/linux server上分别修改
+
+它们默认都是www-data用户和组
+所以，搜索它们的配置文件目录就可以找到哪里修改
+
+      grep -r 'www-data' *
+	  
+/etc/apache2/envvars
+
+/etc/php5/fpm/pool.d/www-conf
+
+/usr/local/nginx/conf/nginx.conf
+

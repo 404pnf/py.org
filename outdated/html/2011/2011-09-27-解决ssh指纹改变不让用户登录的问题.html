@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>解决ssh指纹改变不让用户登录的问题</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>解决ssh指纹改变不让用户登录的问题</h1>
+
+<p>将服务器A上的所有东西转移到服务器B。并且复制A的用户.ssh到B上。这样，之前的密钥都可以使用。但出现了个小问题。</p>
+
+<p>404@matrix:~/.ssh$ ssh wxkj
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that the RSA host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+35:b1:ef:37:c7:28:6c:15:66:9c:73:61:c7:c8:a2:8a.
+Please contact your system administrator.
+Add correct host key in /home/404/.ssh/known_hosts to get rid of this message.
+Offending key in /home/404/.ssh/known_hosts:4
+RSA host key for [129.0.0.223]:2519 has changed and you have requested strict checking.
+Host key verification failed.</p>
+
+<p>查了一下。需要手动删除之前的服务器的指纹。但是哪行呢？网上说找到该服务器的域名，我搜索了一下ip和主机名，都未果。</p>
+
+<p>猜测一下 ：  Offending key in /home/404/.ssh/known_hosts:4 就尝试删除第4行吧。成功了。</p>
+
+<p>我记得之前的我都是把整个know_host清空了。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:00 +0800 -->
+    </footer>
+</html>
+

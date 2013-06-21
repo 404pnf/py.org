@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>script这个tag放在html xhtml文档什么位置是有限制的 监察我管理站点是否符合w3c规范</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>script这个tag放在html xhtml文档什么位置是有限制的 监察我管理站点是否符合w3c规范</h1>
+
+<p>script这个tag放在html/xhtml文档什么位置是有限制的？监察我管理站点是否符合w3c规范。</p>
+
+<p>我管理的一个站点在w3c markup validator检查时报错：</p>
+
+<blockquote>
+  <p>Validation Output:  1 Error</p>
+
+  <ol>
+    <li>
+      <p>Error Line 251, Column 86: document type does not allow element “script” here.</p>
+
+      <p>….del.icio.us/static/js/playtagger.js”&gt;</p>
+
+      <p>✉</p>
+
+      <p>The element named above was found in a context where it is not allowed. This could mean that you have incorrectly nested elements – such as a “style” element in the “body” section instead of inside “head” – or two elements that overlap (which is not allowed).</p>
+
+      <p>One common cause for this error is the use of XHTML syntax in HTML documents. Due to HTML’s rules of implicitly closed elements, this error can create cascading effects. For instance, using XHTML’s “self-closing” tags for “meta” and “link” in the “head” section of a HTML document may cause the parser to infer the end of the “head” section and the beginning of the “body” section (where “link” and “meta” are not allowed; hence the reported error).</p>
+    </li>
+  </ol>
+</blockquote>
+
+<p>根据提示，可能是script这行放错了地方。我现在是放在文档最最后。
+应该放在header中还是body中还是footer中呢？
+我没有查相关规定呢？</p>
+
+<h2>rijiben.org的错误</h2>
+
+<blockquote>
+  <ol>
+    <li>Error  Line 48, Column 16: value of attribute “clear” cannot be “both”; must be one of “left”, “all”, “right”, “none”.</li>
+  </ol>
+
+</blockquote>
+
+<blockquote>
+
+  <pre><code>  ✉
+
+  The value of the attribute is defined to be one of a list of possible values but in the document it contained something that is not allowed for that type of attribute. For instance, the “selected” attribute must be either minimized as “selected” or spelled out in full as “selected="selected"”; a value like “selected="true"” is not allowed.
+</code></pre>
+</blockquote>
+
+<p>再次检查： http://validator.w3.org/check?uri=http%3A%2F%2Fwww.rijiben.org%2F&amp;charset=(detect+automatically)&amp;doctype=Inline&amp;group=0</p>
+
+<h2>所有drupal站点都表现很好</h2>
+
+<p>除了用那个播放mp3的script的模板我没放对位置，其余全部没有一个错误。drupal的theme质量高呀。也许是我幸运。更高兴的是，有些模板我说修改过的，竟然没有引入错误！ ：）</p>
+
+<h2>gaolewen站点错误很多</h2>
+
+<p>http://validator.w3.org/check?uri=http%3A%2F%2Fwww.gaolewen.com&amp;charset=(detect+automatically)&amp;doctype=Inline&amp;group=0</p>
+
+<p>但由于该软件和模板都不是我负责，所以我也不准备费心去修改了。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:45 +0800 -->
+    </footer>
+</html>
+

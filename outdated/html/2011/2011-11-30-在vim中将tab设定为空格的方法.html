@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>在vim中将tab设定为空格的方法</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>在vim中将tab设定为空格的方法</h1>
+
+<p>For example, to get the following coding style,
+No tabs in the source file.
+All tab characters are 4 space characters.
+use the following set of options:
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
+参考： http://vim.wikia.com/wiki/Converting_tabs_to_spaces</p>
+
+<p>After the ‘expandtab’ option is set, all the new tab characters entered will be changed to spaces. This will not affect the existing tab characters. To change all the existing tab characters to match the current tab settings, use:
+:retab</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:01 +0800 -->
+    </footer>
+</html>
+

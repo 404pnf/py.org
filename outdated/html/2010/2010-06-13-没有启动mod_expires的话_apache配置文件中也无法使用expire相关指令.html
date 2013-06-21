@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>没有启动mod expires的话 apache配置文件中也无法使用expire相关指令</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>没有启动mod expires的话 apache配置文件中也无法使用expire相关指令</h1>
+
+<p>sudo a2enmod expires
+Enabling module expires.
+Run ‘/etc/init.d/apache2 restart’ to activate new configuration!</p>
+
+<p>害的我浪费半天时间检查自己的cache设置为什么没有作用</p>
+
+<p>参考： http://www.electrictoolbox.com/apache-mod-expires-browser-caching/</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:13 +0800 -->
+    </footer>
+</html>
+

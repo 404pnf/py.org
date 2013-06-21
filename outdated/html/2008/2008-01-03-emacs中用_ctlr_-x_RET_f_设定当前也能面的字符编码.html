@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>emacs中用 ctlr -x RET f 设定当前也能面的字符编码</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>emacs中用 ctlr -x RET f 设定当前也能面的字符编码</h1>
+
+<h2>emacs中用 ctlr -x RET f 设定当前也能面的字符编码</h2>
+
+<pre><code>  M-x set-buffer-file-coding-system utf-8-unix 
+</code></pre>
+
+<p>快捷键是 ctrl -x RET f 。 RET是回车的意思。
+图形界面在哪个菜单下啊？我没找着。肯定应该有。
+和utf-8相关的选项还有，用tab补齐查看utf-8-
+我参考这个页面最后的内容</p>
+
+<blockquote>
+  <p>http://www.emacswiki.org/cgi-bin/wiki/SeijiZenitaniDotEmacs
+“Encoding Menu.”
+ ‘(“Change File Encoding”
+   [“UTF8 - Unix (LF)” (set-buffer-file-coding-system ‘utf-8-unix) t]
+   [“UTF8 - Mac (CR)” (set-buffer-file-coding-system ‘utf-8-mac) t]
+   [“UTF8 - Win (CR+LF)” (set-buffer-file-coding-system ‘utf-8-dos) t]
+   [”–” nil nil]</p>
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:45 +0800 -->
+    </footer>
+</html>
+

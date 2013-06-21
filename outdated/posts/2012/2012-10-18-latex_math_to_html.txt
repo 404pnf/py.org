@@ -1,0 +1,9 @@
+# latex math to html
+
+dvipng - convert DVI files to PNG graphics
+preview-latex-style - extraction of elements from LaTeX documents as graphics
+tex4ht - LaTeX and TeX for Hypertext (HTML) - executables
+tex4ht-common - LaTeX and TeX for Hypertext (HTML) - support files
+imgtex - provides yet another math-on-the-web solution
+
+

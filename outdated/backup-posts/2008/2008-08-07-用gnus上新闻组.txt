@@ -1,0 +1,8 @@
+# 用gnus上新闻组
+
+用gnus上新闻组
+http://learn.tsinghua.edu.cn:8080/2002315162/gnus_tutorial.html
+然后启动gnus
+按 AA 连续两个大写A
+google groups上也可以订阅
+cn.bbs.* 的组

@@ -1,0 +1,3 @@
+# 获取picasa相册照片的真是地址
+<http://blog.yesmryang.net/picasa-batch-url/>
+

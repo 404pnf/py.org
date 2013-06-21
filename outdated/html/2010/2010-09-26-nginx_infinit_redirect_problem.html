@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>nginx infinit redirect problem</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>nginx infinit redirect problem</h1>
+
+<blockquote>
+  <p>Igor Sysoev to nginx
+show details 4:04 AM (4 hours ago)
+On Mon, Aug 02, 2010 at 10:01:26PM +0200, Fernando Perez wrote:</p>
+
+  <blockquote>
+    <p>Sorry for the typos, trialing should read trailing.</p>
+
+    <p>Here is the complete thing for those interested, your mileage may vary
+depending how you want the backend app to handle /blog/uri or just /uri</p>
+
+    <p>location ^~ /blog/ {
+  rewrite                  /blog/(.+) $1 break;
+  proxy_set_header         Host $http_host;
+  root                     /optional/root;
+  proxy_pass               http://127.0.0.1:3000/$1;
+}</p>
+  </blockquote>
+
+  <p>location ^~ /blog/ {
+  proxy_pass               http://127.0.0.1:3000/;
+  proxy_set_header         Host $http_host;
+}</p>
+
+  <p>–
+Igor Sysoev
+http://sysoev.ru/en/</p>
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:13 +0800 -->
+    </footer>
+</html>
+

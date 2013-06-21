@@ -1,0 +1,4 @@
+# 几计算机科学教学的在线书 主要是scheme相关
+
+How to Design Programs, Second Edition
+http://www.ccs.neu.edu/home/matthias/HtDP2e/

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>nfs中数据库授权的问题</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>nfs中数据库授权的问题</h1>
+
+<p>nfs中数据库授权的问题</p>
+
+<h2>first support request</h2>
+
+<p>Default mysql account can’t grant privilege</p>
+
+<ol>
+  <li>jsmith is my account name </li>
+  <li>jsmith is the default database user I got, using same passwd with login</li>
+  <li>jsmith created a database: pantao.</li>
+  <li>jsmith created a user: pantao</li>
+  <li>jsmith tried to grant privilege on database panto to user pantao </li>
+  <li>
+    <p>operation failed: </p>
+
+    <p>GRANT SELECT , INSERT , UPDATE , DELETE , CREATE , DROP , INDEX , ALTER ON <code>pantao</code> . * TO ‘pantao’@’%’;</p>
+
+    <p>#1044 - Access denied for user ‘jsmith’@’%’ to database ‘pantao’ </p>
+  </li>
+  <li>
+    <p>jsmith has all privilage on all database(‘jsmith’@’%’ ) except FILE and GRANT.</p>
+  </li>
+  <li>
+    <p>jsmith can’t grant himself FILE and GRANT privilage: </p>
+
+    <p>GRANT ALL PRIVILEGES ON * . * TO ‘jsmith’@’%’ WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0 ;</p>
+
+    <p>#1045 - Access denied for user ‘jsmith’@’%’ (using password: YES)</p>
+  </li>
+</ol>
+
+<p>ref: issue 29381</p>
+
+<p>Jsmith wants to grant user he created the privilage to work on datebase jsmith created. How to do that?</p>
+
+<p>Thank you!</p>
+
+<p>– jsmith</p>
+
+<h2>second support request</h2>
+
+<p>reply:</p>
+
+<blockquote>
+  <p>On our system, whatever method you choose needs to boil down to two SQL commands:</p>
+
+  <ul>
+    <li>
+      <p>CREATE USER ‘username’ IDENTIFIED BY ‘password’;</p>
+    </li>
+    <li>
+      <p>GRANT ALL ON dbname.* TO ‘username’;</p>
+    </li>
+  </ul>
+
+  <p>Do not specify a hostname when creating users; since we use a
+clustered hosting network, you cannot predict from what host a
+connection will originate. Also, attempts to “GRANT ALL ON <em>.</em>” will
+typically fail due to the lack of the FILE permission by default on
+admin users, and it is bad practice to grant administrative privileges
+to a website user. Finally, try to avoid granting ALL if you can;
+security is always enhanced by minimizing the privileges of website
+users.Mark set</p>
+</blockquote>
+
+<p>yonghu01/XUKj3xm8TTddwuvj
+yonghu02/XUKj3xm8TTddwuvj</p>
+
+<p>When create a new user, this is what i filled in: </p>
+
+<pre><code>  user name ; use text filed ; yonghu02
+  host ; any host;
+  passwd ; XUK3jxmT8Tddwuvj
+  re-type; XUK3jxmT8Tddwuvj
+  
+  database for user;
+  None
+
+  Global privilege;
+  Didn't check anything
+</code></pre>
+
+<p>I got error message:</p>
+
+<pre><code>  Error
+  
+  SQL query:
+  
+  CREATE USER 'yonghu02'@'%' IDENTIFIED BY '****************';
+  
+  GRANT USAGE ON * . * TO 'yonghu02'@'%' IDENTIFIED BY
+  '****************' WITH MAX_QUERIES_PER_HOUR 0
+  MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0
+  MAX_USER_CONNECTIONS 0 ;
+  
+  MySQL said: Documentation
+  #1045 - Access denied for user 'jsmith'@'%' (using password: YES) 
+</code></pre>
+
+<p>I only grant 5 privilege for a user, that’s very minimal. I still have the errro.</p>
+
+<pre><code>  Error
+  
+  SQL query: Documentation
+  
+  GRANT SELECT , INSERT , UPDATE , CREATE , INDEX , ALTER ON
+  `pantao` . * TO 'pantao'@'%';
+  
+  MySQL said: Documentation
+  #1044 - Access denied for user 'jsmith'@'%' to database 'pantao' 
+</code></pre>
+
+<h2>third support request</h2>
+
+<ol>
+  <li>
+    <p>I read the related FAQ again.</p>
+  </li>
+  <li>
+    <p>That entry was updated after I asked this question (issue 29381).</p>
+  </li>
+  <li>
+    <p>By repeating what the FAQ said over 10 times, I think I know how to properly create a user and a database. And I succeed over 10 times.</p>
+  </li>
+  <li>
+    <p>What I’ve been failing from the beginning is to <strong>grant</strong> privilege to other database users. I didn’t grant all privileges, just 5 of them</p>
+
+    <p>GRANT SELECT , INSERT , UPDATE , CREATE , INDEX , ALTER ON
+   <code>pantao</code> . * TO ‘pantao’@’%’;</p>
+  </li>
+  <li>
+    <p>I think I know why: my default mysql account doesn’t have the right of GRANT for any database it created: </p>
+
+    <p>User  	Host  	Type  	Privileges  	Grant  	Action
+   jsmith 	% 	global 	ALL PRIVILEGES 	No 	Edit Privileges</p>
+  </li>
+  <li>
+    <p>That is the privilege page of any database jsmith created.</p>
+  </li>
+  <li>
+    <p>Would you please, read item 5 and 6 in the original question in this issue again?</p>
+  </li>
+  <li>
+    <p>If, again, that particular entry is the answer. Would you please guess where could i possibly go wrong in doing that 2 simple tasks? What kind of info should I provide. Something like this helpful?</p>
+  </li>
+</ol>
+
+<p>When create a new user, this is what i filled in: </p>
+
+<pre><code>  user name ; use text filed ; yonghu02
+  host ; any host;
+  passwd ; XUK3jxmT8Tddwuvj
+  re-type; XUK3jxmT8Tddwuvj
+  
+  database for user;
+  None
+
+  Global privilege;
+  Didn't check anything
+</code></pre>
+
+<p>I got error message, but the user is created neverthless:</p>
+
+<pre><code>  Error
+  
+  SQL query:
+  
+  CREATE USER 'yonghu02'@'%' IDENTIFIED BY '****************';
+  
+  GRANT USAGE ON * . * TO 'yonghu02'@'%' IDENTIFIED BY
+  '****************' WITH MAX_QUERIES_PER_HOUR 0
+  MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0
+  MAX_USER_CONNECTIONS 0 ;
+  
+  MySQL said: Documentation
+  #1045 - Access denied for user 'jsmith'@'%' (using password: YES) 
+</code></pre>
+
+<ol>
+  <li>
+    <p>It’s the GRANT part that failed.</p>
+  </li>
+  <li>
+    <p>This ping-pong like support is frustrating.</p>
+  </li>
+</ol>
+
+<h2>问题解决了</h2>
+<p>不知道为什么我默认帐号失去了grant的权力。</p>
+
+<p>nfs的人通过root帐号，只能在localhsot不能远程使用，重新给了我默认帐号grant权力。这就是说他们需要有工程师去机房完成这个工作。谢了！ ：）</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:46 +0800 -->
+    </footer>
+</html>
+

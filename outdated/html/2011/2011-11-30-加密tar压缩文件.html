@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>加密tar压缩文件</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>加密tar压缩文件</h1>
+
+<p>http://ubuntuforums.org/showthread.php?t=1071398</p>
+
+<p>encrypt:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>tar -c directory</td>
+      <td>openssl des3 -salt &gt; encrypted.tarfile</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>decrypt:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>cat encrypted.tarfile</td>
+      <td>openssl des3 -d -salt</td>
+      <td>tar -xv</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>tar时候压缩一下</p>
+
+<p>the -cj will give you better compression
+using -cz will run faster with a bit less compression</p>
+
+<p>为什么要要 -salt</p>
+
+<p>Old post, but here’s what I found about -salt
+http://linux.die.net/man/1/enc</p>
+
+<p>The -salt option should ALWAYS be used if the key is being derived from a password unless you want compatibility with previous versions of OpenSSL and SSLeay.
+Without the -salt option it is possible to perform efficient dictionary attacks on the password and to attack stream cipher encrypted data. The reason for this is that without the salt the same password always generates the same encryption key. When the salt is being used the first eight bytes of the encrypted data are reserved for the salt: it is generated at random when encrypting a file and read from the encrypted file when it is decrypted.</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:01 +0800 -->
+    </footer>
+</html>
+

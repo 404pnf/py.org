@@ -1,0 +1,3 @@
+# 通过视频学习rails的好地方 railscasts com
+
+http://railscasts.com

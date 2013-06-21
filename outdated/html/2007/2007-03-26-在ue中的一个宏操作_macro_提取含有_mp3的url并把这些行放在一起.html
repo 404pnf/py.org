@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>在ue中的一个宏操作 macro 提取含有 mp3的url并把这些行放在一起</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>在ue中的一个宏操作 macro 提取含有 mp3的url并把这些行放在一起</h1>
+
+<p>在ue中的一个宏操作(macro)：提取含有.mp3的url并把这些行放在一起</p>
+
+<p>目的：一个文件都是url，要求把url中含有.mp3的单独提出来访在一起</p>
+
+<p>我问lvcha在ultraedit中如何完成。他没回答前我有了自己的答案。下面是我们的答案。</p>
+
+<p>还有更好的么？</p>
+
+<p>他的方法：</p>
+
+<blockquote>
+  <p>1 find .mp3
+2 choose the line
+3 copy the line to the file’s beginning. use ctrl-home 
+4 run some times. all the line end with mp3 will be the beginning of th file.
+5 del th rest</p>
+</blockquote>
+
+<p>我说明一下，回到文件的开始是先cltr-a然后按home。lvcha用ctrl-home更方便</p>
+
+<p>我开始自己想的方法。现在发现lvcha得更简便</p>
+
+<blockquote>
+  <p>i will try your method
+how do i go to beginning of file?
+cltr-a and presse home?</p>
+
+  <p>that’s a nice one  :) 
+thank you</p>
+
+  <p>this is how i do it
+1 find ..mp3
+2 press home to the beginning of line
+3 press zzzzz
+4 press end go to end of line
+5 repeat 1-4 one time
+6 save macro
+7 run the macro 10000 times
+8 sort file so all lines begin with zzzz at the end of file, or sort file in reverse so they appear in beginning of file
+9 replace zzzz with blank</p>
+
+  <p>your approach is much better
+thank you  ;) </p>
+</blockquote>
+
+<p>还有更好的么？</p>
+
+<p>在nano或gedit中能实现么？
+在emacs和vi中如何实现？
+emacs录制macro是一样的
+vi不懂也没用过</p>
+
+<p>我想听听有无更好的方式
+比如一样perl脚本解决 ：）
+或者用ruby/python等。
+lvcha也可以再想想</p>
+
+<p>多说一句，这是我下在一些podcast用的，</p>
+
+<p>1 到bloglines，察看一个rss的all times信息，
+2 in firefox, right click -this frame - view source
+3 copy source to a text file
+4 in ue, replace http:// with ^phttp://
+5 replace .mp3 with .mp3&amp;p
+6 sort file</p>
+
+<p>^p in ue means new line</p>
+
+<p>发现有些url是重复的。想删除重复的行。search remove duplicated lines。有ue的脚本，太麻烦。</p>
+
+<p>找到了uniq这个bash命令</p>
+
+<p>所以</p>
+
+<p>uniq 1.txt &gt; 2.txt </p>
+
+<p>就可以了 ：）</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:12 +0800 -->
+    </footer>
+</html>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>编译安装swftools</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>编译安装swftools</h1>
+
+<blockquote>
+  <p>http://wiki.alfresco.com/wiki/Installing_Labs_3_Stable_on_Debian_Etch
+Install swftools</p>
+
+  <p>As there is no .deb package for swftools available which fits to the package configuration of Debian you have to compile swftools yourself. Download http://swftools.org/swftools-2009-02-07-1827.tar.gz to your system.</p>
+
+  <p>wget http://swftools.org/swftools-2009-02-07-1827.tar.gz
+After you downloaded the version untar it.</p>
+
+  <p>tar -xzf swftools-2009-02-07-1827.tar.gz
+Before compiling the sources you need a few dev packages:</p>
+
+  <p>apt-get install libjpeg62-dev libfreetype6-dev libpng3-dev libt1-dev libungif4-dev
+If you are running Red Hat based distros its:</p>
+
+  <p>sudo yum install install libjpeg-devel libfreetype-devel libpng-devel libt-devel libungif-devel
+After you installed these packages cd into the swftools directory and run</p>
+
+  <p>./configure
+Please take a closer look at the protocol. This protocol will state if there is any library missing. If you are missing one or more libraries take the name of it and search for this library</p>
+
+  <p>apt-cache search lib name
+If you found the library install the -dev package of this library and re-run the configure script. Take a look at the protocol once again. If there is no missing file continue compiling and installing the package.</p>
+
+  <p>make
+make install
+After that you should be able to run pdf2swf by typing</p>
+
+  <p>pdf2swf -V</p>
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:13 +0800 -->
+    </footer>
+</html>
+

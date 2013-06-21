@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>开始玩起来了po4a</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>开始玩起来了po4a</h1>
+
+<p>po4a是Po  4 Anything的意思。把任意格式文本准成po，方便你翻译和追踪翻译。</p>
+
+<p>安装 apt-get install po4a</p>
+
+<p>转一个文件</p>
+
+<pre><code> po4a-gettextize -M UTF-8 -f text -m stock.operator.txt -p foo.pot 
+</code></pre>
+
+<p>命令行解释：</p>
+
+<p>-M 后面跟字符集，可以先尝试不要这个参数，报错非让你添加的时候再田间。当然文本最好是utf-8啦。</p>
+
+<p>-f 后面跟输出样式（format）。有不少样式供选择。用下面命令查看：    po4a-gettextize –help-format  我这里选text，就不是普通文本，如果你翻译短文和小说，用这个吧。</p>
+
+<p>-m 后面跟要转换俄主文档（Master document）。一般来说，你就当它是输入文件好了。高级用法中除主文档外还能加入其它。</p>
+
+<p>-p 是输出文件。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:02 +0800 -->
+    </footer>
+</html>
+

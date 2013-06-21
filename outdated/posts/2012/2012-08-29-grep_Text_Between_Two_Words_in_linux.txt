@@ -1,0 +1,6 @@
+# grep Text Between Two Words in linux
+> The grep command is not suitable for this kind of work. I suggest that you use sed command. The syntax is:
+>      sed -n "/START-WORD-HERE/,/END-WORD-HERE/p" input
+>      sed -n "/START-WORD-HERE/,/END-WORD-HERE/p" input > output
+http://www.cyberciti.biz/faq/howto-grep-text-between-two-words-in-unix-linux/
+

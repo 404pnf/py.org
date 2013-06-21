@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>安装和配置xcache的帮助 为drupal用户写俄</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>安装和配置xcache的帮助 为drupal用户写俄</h1>
+
+<p>http://www.mysqlperformancetuning.com/how-to-speed-up-drupal-php-with-xcache</p>
+
+<p>我的说活是 在 /var/www 中直接软链接到xcache的管理程序</p>
+
+<pre><code> ln -s /usr/share/xcache/admin/ xcache
+</code></pre>
+
+<p>之后访问 xcache 这个目录就好了。</p>
+
+<p>我现在因为机器跑着apache和php-cgi两个因此我两个软链接</p>
+
+<pre><code> ln -s /usr/share/xcache/admin/ xcache
+ ln -s /usr/share/xcache/admin/ xcachecgi
+</code></pre>
+
+<p>在ngixn把两个地址分别proxy给apache和php-cgi，这样分别查看apache和php-cgi对xcache的利用情况</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:01 +0800 -->
+    </footer>
+</html>
+

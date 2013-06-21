@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>nginx cache content even there s is set-cookie</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>nginx cache content even there s is set-cookie</h1>
+
+<blockquote>
+  <p>Hello!</p>
+
+  <p>On Thu, Jul 08, 2010 at 07:24:55PM -0400, icqheretic wrote:</p>
+
+  <blockquote>
+    <h2>Igor Sysoev Wrote:</h2>
+    <blockquote>
+      <pre><code>*) Change: now nginx does not cache by default backend responses, if
+   they have a "Set-Cookie" header line.
+</code></pre>
+    </blockquote>
+
+    <p>What’s the recommended method to cache even with the Set-Cookie header
+present?</p>
+  </blockquote>
+
+  <p>proxy_ignore_headers Set-Cookie;
+proxy_hide_header Set-Cookie;</p>
+
+  <p>Note that Set-Cookie header no longer hidden by default so you
+have to explicitly hide it via proxy_hide_header if it’s not
+intended to be sent to all users.</p>
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:00 +0800 -->
+    </footer>
+</html>
+

@@ -1,0 +1,46 @@
+# google view image with w3m
+
+网上说有个叫 w3m-img 的程序可以解决这个问题。
+
+w3m-img provides some utilities to support inline images for w3m on terminal emulator in X Window System environments and Linux framebuffer
+
+安装后，默认在终端下用w3m浏览网页就是显示图片的。哇塞。
+
+其实我不想要默认就显示图片。我希望默认是关闭的，然后，选择查看某个图片。
+
+先看如何设置为默认不显示图片。
+
+1 进入w3m
+2 按 o ，进入option选择
+3 搜索images， 看到有个选项是 automatically load images, 用 tab 选到 no, 然后按 enter 确认。
+4 到页面最下面选 OK
+
+就好了。
+
+我现在想知道的是如果页面上有个图片我想查看，或者有个快捷键切换当前页是否显示图片。这时候怎么办。
+
+
+## emacs下的w3m了功能更全些
+  Emacs-w3m also comes with nifty features that let you zoom an image
+ in or out, save it to a file, or view it in a external viewer.  See also
+  Moving in a page for instructions on how to move from image to
+ image in an emacs-w3m buffer.
+ 
+ `T'
+      Toggle displaying of inline images in this buffer and buffers
+      created from this buffer, later on (`w3m-toggle-inline-images').
+ 
+ `I'
+      View the image under point in an external viewer
+      (`w3m-view-image').
+ 
+ `M-i'
+      Save the image under point to an external file.  The default name
+      will be the original name of the image, so most of the time `M-i
+      RET' will save the image with the right name (`w3m-save-image').
+ 
+ `M-['
+      Zoom out the image under point (`w3m-zoom-out-image').
+ 
+ `M-]'
+      Zoom in the image under point (`w3m-zoom-in-image').

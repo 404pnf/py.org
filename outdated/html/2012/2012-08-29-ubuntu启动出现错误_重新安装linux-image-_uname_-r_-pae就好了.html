@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ubuntu启动出现错误，重新安装linux-image-{uname -r}-pae就好了</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>ubuntu启动出现错误，重新安装linux-image-{uname -r}-pae就好了</h1>
+
+<p>重启后grub的错误信息：</p>
+
+<p>error: cannot read linux header
+error: you need to load the kernal first</p>
+
+<p>我上网查了该错误信息，给出的解决方法有不少，但操作起来很麻烦，因此我没有尝试，因为需要livecd启动等。</p>
+
+<p>看到一篇cybiz上面说的如何安装linux header文件的。因此尝试安装。发现该有的header文件都有了。</p>
+
+<p>我加装了 -pae 那个header文件，因为 /boot/grub下面的cfg也出现了这个文件的名字。</p>
+
+<p>装上之后重启就好了</p>
+
+<p>uname -r 给出你机器内核的名字</p>
+
+<p>sudo apt-get install linxu-image-versionNUmber-pae</p>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:57 +0800 -->
+    </footer>
+</html>
+

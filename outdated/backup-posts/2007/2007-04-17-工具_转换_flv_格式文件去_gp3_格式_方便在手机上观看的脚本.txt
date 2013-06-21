@@ -1,0 +1,6 @@
+# 工具 转换 flv 格式文件去 gp3 格式 方便在手机上观看的脚本
+
+脚本在：
+http://blog.mypapit.net/2007/04/ffmpeg-based-batch-flv-to-3gp-converter-scripts.html
+
+使用ffmpeg

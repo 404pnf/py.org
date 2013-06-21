@@ -1,0 +1,3 @@
+# drush中如何建立remote site的别名
+
+http://groups.drupal.org/node/150494#comment-513874

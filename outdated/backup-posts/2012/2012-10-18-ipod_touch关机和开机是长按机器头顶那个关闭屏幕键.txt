@@ -1,0 +1,19 @@
+# ipod touch关机和开机是长按机器头顶那个关闭屏幕键
+
+> iPhone, iPad, iPod touch: Turning off and on (restarting) and resetting
+> Summary
+> Learn how to turn off and on (restart) and reset your iOS device. 
+> 
+> Products Affected
+> iPad, iPhone, iPod touch
+> 
+> Restarting your device
+> Press and hold the Sleep/Wake button for a few seconds until the red "slide to power off" slider appears, and then slide the slider.
+> Press and hold the Sleep/Wake button until the Apple logo appears.
+> Follow these steps to reset your device
+> Note: Reset your device only if it is no longer responding and the steps above do not work.
+> 
+> Press and hold the Sleep/Wake button and the Home button together for at least ten seconds, until the Apple logo appears.
+> 
+> http://support.apple.com/kb/ht1430
+

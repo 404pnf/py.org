@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>开启和关闭root帐号其实就是用passwd的 -l lock 命令啊</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>开启和关闭root帐号其实就是用passwd的 -l lock 命令啊</h1>
+
+<p>有的时候我需要打开root帐号用root来做事情。比如我的备份脚本。是把/etc/下，/usr/local/ 下一些配置和程序都先备份到本地，然后rsycn到其他机器。这时候如果不用root帐号，普通用户无法复制一些需要备份俄你的文件</p>
+
+<p>启用root帐号就是重新设定root密码</p>
+
+<pre><code>sudo passwd root
+</code></pre>
+
+<p>锁住root帐号就是lock它的密码</p>
+
+<pre><code>sudo passwd -l root
+</code></pre>
+
+<p>https://help.ubuntu.com/community/RootSudo
+http://www.ducea.com/2006/06/21/ubuntu-how-to-enable-the-root-account/</p>
+
+<p>http://www.debianadmin.com/enable-and-disable-ubuntu-root-password.html</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:01 +0800 -->
+    </footer>
+</html>
+

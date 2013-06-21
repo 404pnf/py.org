@@ -1,0 +1,5 @@
+# 一些2009年的redis应用
+A Collection Of Redis Use Cases
+http://www.paperplanes.de/2010/2/16/a_collection_of_redis_use_cases.html
+http://www.paperplanes.de/tags/redis.html
+

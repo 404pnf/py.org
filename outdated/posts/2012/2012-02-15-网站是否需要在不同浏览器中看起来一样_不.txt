@@ -1,0 +1,3 @@
+# 网站是否需要在不同浏览器中看起来一样 不
+
+http://dowebsitesneedtolookexactlythesameineverybrowser.com/

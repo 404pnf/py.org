@@ -1,0 +1,5 @@
+# 如何验证信用卡号码 isbn 等
+http://www.skorks.com/2011/08/even-boring-form-data-can-be-interesting-for-a-developer/
+http://en.wikipedia.org/wiki/Check_digit
+http://en.wikipedia.org/wiki/Luhn_algorithm
+

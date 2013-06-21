@@ -1,0 +1,5 @@
+# 对mp3 乱码问题的分析和解决
+
+> http://www.osxcn.com/ubuntu/mp3-tag-encoding.html
+
+好文章。

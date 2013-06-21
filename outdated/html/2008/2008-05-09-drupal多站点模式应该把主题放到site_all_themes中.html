@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>drupal多站点模式应该把主题放到site all themes中</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>drupal多站点模式应该把主题放到site all themes中</h1>
+
+<h2>drupal多站点模式应该把主题放到site/all/themes中</h2>
+
+<p>而不是根目录下的themes。</p>
+
+<blockquote>
+  <p>/home/htdocs/themes]$ less README.txt 
+This directory is reserved for core theme files. Custom or contributed
+themes should be placed in their own subdirectory of the sites/all/themes
+directory. For multisite installations, they can also be placed in a subdirectory
+under /sites/{sitename}/themes/, where {sitename} is the name of your site
+(e.g., www.example.com). This will allow you to more easily update Drupal core files.</p>
+
+  <p>For more details, see: http://drupal.org/node/176043</p>
+</blockquote>
+
+<p>今天才参考该目录的README.txt，把我用的theme移动到了正确地位置。</p>
+
+<p>同样，根据上面的链接，我用的contributed modules也应该放到sites/all/modules中而不是durpal core的modules。</p>
+
+<p>虽然我以前的做法到现在还没给我带来过任何问题。升级core的时候直接覆盖就好了。再下载相应的contributed modules的新版本覆盖。</p>
+
+<p>但既然这样写了并提醒我们，我还是准备以后按轨范地做。按规范地好处是可以很方便地集中管理contributed modules并且很方便地通过放到不同文件夹就解决了某个站点专用的或者定制的module只在该站点出现和使用的问题。</p>
+
+<p>移动好了。：）</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:47 +0800 -->
+    </footer>
+</html>
+

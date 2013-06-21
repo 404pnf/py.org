@@ -1,0 +1,17 @@
+# xunlie离线可以下载archive org上的东西 因此可以下载lbirivox org的书
+
+http://www.archive.org/details/mostwanted_1012_librivox
+http://www.archive.org/download/mostwanted_1012_librivox/mostwanted_1012_librivox_64kb_mp3.zip
+
+http://ia700701.us.archive.org/31/items/MaxKeiserRadio-TheTruthAboutMarkets-29October2011/TaM291011.mp3
+http://ia700707.us.archive.org/28/items/MaxKeiserRadio-TheTruthAboutMarkets-24September2011/TaM-240911.mp3
+http://ia600600.us.archive.org/33/items/MaxKeiserOnRadioFiveLive-11September2011/Keiser-5Live-110911.mp3
+http://ia600707.us.archive.org/15/items/MaxKeiserRadio-TheTruthAboutMarkets-03September2011/TaM-030911.mp3
+http://ia700703.us.archive.org/32/items/MaxKeiserRadio-TheTruthAboutMarkets-27August2011/TaM-270811.mp3
+http://ia600700.us.archive.org/33/items/TheTruthAboutMarkets-13August2011/TaM130811.mp3
+http://ia700503.us.archive.org/30/items/MaxKeiserRadio-TheTruthAboutMarkets-16July2011/TaM-160711.mp3
+http://ia700602.us.archive.org/22/items/MaxKeiserRadio-TheTruthAboutMarkets-09July2011/TaM090711.mp3
+http://ia600606.us.archive.org/6/items/MaxKeiserRadio-TheTruthAboutMarkets-02July2011/TaM-020711.mp3
+http://ia600604.us.archive.org/30/items/MaxKeiserRadio-TheTruthAboutMarkets-25June2011/TaM-250611.mp3
+http://ia600500.us.archive.org/25/items/MaxKeiserRadio-TheTruthAboutMarkets-18June2011/TaM-180611.mp3
+http://ia700607.us.archive.org/6/items/MaxKeiserRadio-TheTruthAboutMarkets-11June2011/TaM110611.mp3

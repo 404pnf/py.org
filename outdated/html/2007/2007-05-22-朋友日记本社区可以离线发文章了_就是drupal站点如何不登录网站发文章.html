@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>朋友日记本社区可以离线发文章了 就是drupal站点如何不登录网站发文章</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>朋友日记本社区可以离线发文章了 就是drupal站点如何不登录网站发文章</h1>
+
+<p>lvcha要求离线发文章。现在可以了。</p>
+
+<p>参考 http://drupal.org/node/6315</p>
+
+<p>方法是，打开module中的blogapi，在 settings &gt; blogapi中设置一下 我就直接用默认的blogger，下面发文类型选择blog。开始我根本就没修改这些也能用。也许要支持w.blogger什么的得设置为metablog之类。</p>
+
+<p>然后你找个离线写blog的程序。比如我用的是drivel，这是gnu/linux下的。</p>
+
+<p>填好用户名和密码。服务器类型选择movable type。地址写</p>
+
+<blockquote>
+  <p><a href="http://pengyou.rijiben.org/xmlrpc.php">http://pengyou.rijiben.org/xmlrpc.php</a></p>
+</blockquote>
+
+<p>写好了登录就可以直接在你自己的桌面上写文章，保存文章和发布文章了。</p>
+
+<p>lvcha你找好在windows上的发文工具写篇文章介绍给大家吧。drupal上说的是这个<a href="http://www.wbloggar.com/faq.php">wblogger </a></p>
+
+<p>苹果上用什么有朋友知道也告诉我。</p>
+
+<p>这里有各个平台可以用的发文章工具
+http://codex.wordpress.org/Weblog_Client</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:09 +0800 -->
+    </footer>
+</html>
+

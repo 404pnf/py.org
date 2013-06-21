@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>刚明白在bash中如何创建一个永久的别名</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>刚明白在bash中如何创建一个永久的别名</h1>
+
+<p>刚明白在bash中如何创建一个永久的别名 </p>
+
+<h2>分两步</h2>
+
+<ol>
+  <li>创建 ~/.bash_aliases 在文件中给出你需要的命令别名</li>
+  <li>
+    <p>编辑 ~/.bashrc，在文件中搜索alias，找到下面这段。把if那己行前面的#都去掉。下面是我已经去掉后的例子</p>
+
+    <p># Alias definitions.
+   # You may want to put all your additions into a separate file like
+   # ~/.bash_aliases, instead of adding them here directly.
+   # See /usr/share/doc/bash-doc/examples in the bash-doc package.</p>
+
+    <p>if [ -f ~/.bash_aliases ]; then
+       . ~/.bash_aliase
+   fi</p>
+  </li>
+</ol>
+
+<p>这里是说用户不应直接在.bashrc添加别名，而应该在自己目录下创建.bash_aliases这个文件。如果你创建了该文件，还需要将下面从if开头的3行前注释符号去掉才行。</p>
+
+<p>我开始就是没有做第2步，所以老不成功。</p>
+
+<p>现在明白了：）</p>
+
+<p>参考了
+http://forum.freespire.org/showthread.php?t=13163
+http://www.logicalpoetry.com/bashalias/</p>
+
+<h2>我 .bash_aliases文件中有</h2>
+
+<p>举个例子</p>
+
+<pre><code>  alias ssh129='ssh 404@129.0.0.25 -p 3512'
+  alias sshrjb='ssh 404@xxx.xxx.x.xx'
+  alias sshpy='ssh 404@xxx.xxx.x.xx'
+  alias lsmy='ls -ahl'
+  alias dumy='du -h'
+  alias em='emacs-snapshot'
+  alias v='vim
+</code></pre>
+
+<p>其中my是my就是英文“我的”的意思。</p>
+
+<p>编辑好这两个文件需要退出一下终端，<em>退出编辑了.bash_aliases的终端</em>。用exit命令就可以。否则新加入的alias无法直接生效。应为.bashrc还没有读入它们的吧。我是这么理解的。
+## gnu文档中的描述</p>
+
+<p>http://www.gnu.org/software/bash/manual/html_node/Aliases.html#Aliases</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:53 +0800 -->
+    </footer>
+</html>
+

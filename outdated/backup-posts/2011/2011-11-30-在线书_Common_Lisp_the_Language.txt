@@ -1,0 +1,8 @@
+# 在线书 Common Lisp the Language
+
+Common Lisp the Language, 2nd edition
+   by Guy L. Steele, Thinking Machines, Inc.
+   Digital Press
+   1990 paperbound
+   1029 pages
+   ISBN 1-55558-041-6  $39.95

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>mysql的超时让我们的模块无法正常工作</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>mysql的超时让我们的模块无法正常工作</h1>
+
+<p>有一个程序，是导入pdf并转换成swf，运行在drupal上。production上导导就断了。testing上一开始导好几个小时都没事。</p>
+
+<p>我们从模块检查，php超时检查，php错误检查，apache超时检查，怎么都不行。最后我偶然想到是Mysql超时的问题。</p>
+
+<p>正解！：） </p>
+
+<p>production</p>
+
+<p>mysql&gt; show global variables like ‘wait_timeout’;
++—————+——-+
+| Variable_name | Value |
++—————+——-+
+| wait_timeout  | 60    |</p>
+
+<p>因为程序牵扯到往mysql中写数据，而60秒就超时太短了。因为程序会先告诉drupal我要导入一本书，写入书的题目，此时mysql链接就打开了。然后程序会去转换pdf，转换完了，再把生成文件的地址写入node的字段。如果转换超过60秒，就超时了。就停了。就是这个原因。</p>
+
+<p>testing</p>
+
+<p>Variable_name | Value |
++—————+——-+
+| wait_timeout  | 28800 |
++—————+——-+</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:13 +0800 -->
+    </footer>
+</html>
+

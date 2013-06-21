@@ -1,0 +1,94 @@
+# port sinatra-wiki 到ruby 1.9 和sinatra 1.x
+
+Using Sinatra.default_options to set base configuration items is obsolete; use Sinatra::Base.set(key, value) instead.
+
+
+YAML
+
+to_hash()
+Converts the contents of the database to an in-memory Hash object, and returns it.
+
+现在使用yaml的方法是
+
+>> a = YAML.load_file('./config.yml')
+=> {:use_auth=>false, :username=>"foo", :password=>"62cdb7020ff920e5aa642c3d4066950dd1f01f4d"}
+>> a.to_hash
+=> {:use_auth=>false, :username=>"foo", :password=>"62cdb7020ff920e5aa642c3d4066950dd1f01f4d"}
+
+直接load_file进来已经是hash啦？！
+
+是的！
+
+>> YAML.load_file('./config.yml').each do |k,v|
+?> p "#{k} is #{v}"
+>> end
+"use_auth is false"
+"username is foo"
+"password is 62cdb7020ff920e5aa642c3d4066950dd1f01f4d"
+
+
+因此之前代码减少了很多！
+
+## 自己重写slugalizer
+
+sluglizer是可用的，但需要ruby on rails
+
+
+自己写的，简单替换url中不应该出现(/)和不好看的字符
+
+>> ugly = %w(= , / \ : < > ? " ' ; ~ ` ! @ # $ % ^ & * ( ) - _ + =  ， 《 》 ？ ： ； ” ’ “ ‘ 』 『 】 【 、 | + = —— - ） （ * & …… % ￥ # @ ！ ～ · .)
+
+>> s = u.to_s
+=> "[\"=\", \",\", \"/\", \" :\", \"<\", \">\", \"?\", \"\\\"\", \"'\", \";\", \"~\", \"`\", \"!\", \"@\", \"#\", \"$\", \"%\", \"^\", \"&\", \"*\", \"(\", \")\", \"-\", \"_\", \"+\", \"=\", \"，\", \"《\", \"》\", \"？\", \"：\", \"；\", \"”\", \"’\", \"“\", \"‘\", \"』\", \"『\", \"】\", \"【\", \"、\", \"|\", \"+\", \"=\", \"——\", \"-\", \"）\", \"（\", \"*\", \"&\", \"……\", \"%\", \"￥\", \"#\", \"@\", \"！\", \"～\", \"·\", \".\"]"
+
+>> 'http://g.cn'.tr(s, '-')=> "http---g-cn"
+
+使用了ruby的tr，tranlsate方法。
+
+tr('aeiou', '*') 
+a e i o u 五个字符会变为 *
+
+可参考这里写成String类下面的方法
+
+https://github.com/bomberstudios/bliki/blob/12f8c96a873a778359b3c53f7b58977b46a24212/lib/slugalizer.rb
+
+require "iconv"
+class String
+  def slugalize(separator='-')
+    re_separator = Regexp.escape(separator)
+    result = self.downcase
+    # result = Iconv.iconv('ascii//ignore//translit', 'utf-8', self).to_s.downcase
+    # result.gsub!(/(~n|~N)/,'n')
+    result.gsub!(/(ñ|Ñ)/,'n')
+    result.gsub!(/(á|Á)/,'a')
+    result.gsub!(/(é|É)/,'e')
+    result.gsub!(/(í|Í)/,'i')
+    result.gsub!(/(ó|Ó)/,'o')
+    result.gsub!(/(ú|Ú)/,'u')
+    result.gsub!(/(ä|Ä)/,'ae')
+    result.gsub!(/(ö|Ö)/,'oe')
+    result.gsub!(/(ü|Ü)/,'ue')
+    result.gsub!(/ß/,'ss')    
+    result.gsub!(/[¡¿!?':"]/,'')
+    result.gsub!(/\+/,'')
+    # result.gsub!(/[^\x00-\x7F]+/, '')                      # Remove non-ASCII (e.g. diacritics).
+    result.gsub!(/[^a-z0-9\-_\+]+/i, separator)            # Turn non-slug chars into the separator.
+    result.gsub!(/#{re_separator}{2,}/, separator)         # No more than one of the separator in a row.
+    result.gsub!(/^#{re_separator}|#{re_separator}$/, '')  # Remove leading/trailing separator.
+    result
+  end
+end
+
+
+## 用 sinatra-authorization 进行用户认证
+
+## 用 r18n 进行国际化
+http://r18n.rubyforge.org/
+
+
+
+## trivals
+
+编辑文章 A ，修改它的题目到 B，内容不动，就等于在服务器上复制了这篇文章，文章题目是 B ，内容和A一样，这样就有了2篇文章，A和B。
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jekyll中使用其它theme，除了在_layout中修改theme名字还要修改引用theme的路径</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>jekyll中使用其它theme，除了在_layout中修改theme名字还要修改引用theme的路径</h1>
+
+<p>就是这行。defaul post page  .html 都需要修改。否则生成站点的theme目录下没有那新建立的目录，还是之前那个目录，因为这里引用的是之前的目录啊。
+{% include themes/404twitter/page.html %}</p>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:55 +0800 -->
+    </footer>
+</html>
+

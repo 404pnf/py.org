@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>在不支持ssh key登录的站点也实现自动登录 就是用户不如输入密码</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>在不支持ssh key登录的站点也实现自动登录 就是用户不如输入密码</h1>
+
+<h2>要解决问题</h2>
+<p>有些站点不提供sshkey登录，只让你用密码登录。因为ssh命令不让在命令行直接明文你给密码，所以每次登录要输入密码很不方便。</p>
+
+<h2>解决方法</h2>
+<p>受到这篇文章启发： http://linuxtoy.org/archives/sshpass.html ， 用sshpass可以解决。请阅读该文行。</p>
+
+<p>更新我 .bash_alias 下面内容</p>
+
+<p>以前是：
+      alias sshsrv01=’ssh 404@某服务器ip -p端口号’
+这样输入 sshsrv01（就是ssh到sever01的简写 ：）,实际运行一个ssh登录命令，但需要输入密码才能登入。因为ssh命令不让你直接在命令行输入密码。</p>
+
+<p>现在该行更新为：</p>
+
+<pre><code>  alias sshsrv01='sshpass -p 'ssh登录密码' ssh 404@某服务器ip -p端口号'
+</code></pre>
+
+<p>sshpass -p 可以让你在后面直接跟登录密码，密码要放在英文单引号中。</p>
+
+<p>现在再次输入 sshsrv01， 直接就登录到server01上了，无须输入密码。和使用sshkey达到的效果一样。</p>
+
+<h2>注意</h2>
+
+<ul>
+  <li>alias命令整体要放在英文单引号中。所以，命令中有2对单引号。**</li>
+  <li>在登录时，sshpass让你觉得和用sshkey登录一样，但安全性上，passwd-based和key-based是不一样的。当然key-based安全！</li>
+  <li>是否能运用到scp和rsync中我还没有试验。谁用了请说明。</li>
+</ul>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:59 +0800 -->
+    </footer>
+</html>
+

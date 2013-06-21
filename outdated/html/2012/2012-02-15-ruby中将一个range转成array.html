@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ruby中将一个range转成array</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>ruby中将一个range转成array</h1>
+
+<p>irb(main):001:0&gt; Array(1..10)
+=&gt; [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+irb(main):002:0&gt; (1..10).to_a
+=&gt; [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</p>
+
+<p>但是，难道range不能从大到小么？</p>
+
+<p>irb(main):003:0&gt; (10..1).to_a
+=&gt; []
+irb(main):004:0&gt; Array(10..1)
+=&gt; []</p>
+
+<p>更多例子</p>
+
+<p>irb(main):007:0&gt; Array(‘a’..’z’)
+=&gt; [“a”, “b”, “c”, “d”, “e”, “f”, “g”, “h”, “i”, “j”, “k”, “l”, “m”, “n”, “o”, “p”, “q”, “r”, “s”, “t”, “u”, “v”, “w”, “x”, “y”, “z”]
+irb(main):008:0&gt; (‘ab’..’bz’).to_a
+=&gt; [“ab”, “ac”, “ad”, “ae”, “af”, “ag”, “ah”, “ai”, “aj”, “ak”, “al”, “am”, “an”, “ao”, “ap”, “aq”, “ar”, “as”, “at”, “au”, “av”, “aw”, “ax”, “ay”, “az”, “ba”, “bb”, “bc”, “bd”, “be”, “bf”, “bg”, “bh”, “bi”, “bj”, “bk”, “bl”, “bm”, “bn”, “bo”, “bp”, “bq”, “br”, “bs”, “bt”, “bu”, “bv”, “bw”, “bx”, “by”, “bz”]</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:54 +0800 -->
+    </footer>
+</html>
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>在jekyll中自定义yaml frontmatter然后在模板中收集这些信息</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>在jekyll中自定义yaml frontmatter然后在模板中收集这些信息</h1>
+
+<h2>例子给的是自定义了一个 image: value 的头信息</h2>
+<p>layout: portfolio_entry
+title: Road and Curb
+image: /img/road.jpg
+—</p>
+
+<ul class="entries">
+  {% for post in site.posts %}
+
+  <li>
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}" />
+      <h3>{{ post.title }}</h3>
+    </a>
+  </li>
+
+  {% endfor %}
+  
+http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/
+
+</ul>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:55 +0800 -->
+    </footer>
+</html>
+

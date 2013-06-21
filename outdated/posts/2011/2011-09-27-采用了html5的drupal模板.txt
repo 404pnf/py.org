@@ -1,0 +1,11 @@
+# 采用了html5的drupal模板
+
+[tags] drupal,html5 [/tags]
+http://drupal.org/project/themes?filters=drupal_core:87&text=html5
+
+http://drupal.org/project/boron
+http://drupal.org/project/html5_base
+http://drupal.org/project/openg
+http://drupal.org/project/five
+http://drupal.org/project/modernbird
+http://drupal.org/project/hi5

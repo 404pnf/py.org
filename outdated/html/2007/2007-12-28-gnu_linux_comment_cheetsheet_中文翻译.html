@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>gnu linux comment cheetsheet 中文翻译</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>gnu linux comment cheetsheet 中文翻译</h1>
+
+<h2><a href="http://www.pixelbeat.org/cmdline_zh_CN.html">gnu/linux comment cheetsheet 中文翻译</a></h2>
+
+<p>其中值得我注意的</p>
+
+ 	recode -l | less 	显示所有有效的字符集及其别名
+  	recode windows-1252.. file_to_change.txt 	转换Windows下的ansi文件到当前的字符集(自动进行回车换行符的转换)
+  	recode utf-8/CRLF.. file_to_change.txt 	转换Windows下的ansi文件到当前的字符集
+  	recode iso-8859-15..utf8 file_to_change.txt 	转换Latin9（西欧）字符集文件到utf8
+
+  	recode ..HTML  file.html 	将文本文件转换成HTML
+ 	recode -lf windows-1252 | grep euro 	在字符表中查找欧元符号
+
+ 	echo -n 0x20AC | recode ucs-2/x2..utf-8/x 	显示utf-8编码
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:07 +0800 -->
+    </footer>
+</html>
+

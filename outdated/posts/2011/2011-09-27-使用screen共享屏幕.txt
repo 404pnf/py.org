@@ -1,0 +1,3 @@
+# 使用screen共享屏幕
+
+http://www.linux.com/learn/tutorials/442418-using-screen-for-remote-interaction

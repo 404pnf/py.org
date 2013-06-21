@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>markdown语法中如何表示嵌套的列表 nested lists 也没有定义列表 definition list</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>markdown语法中如何表示嵌套的列表 nested lists 也没有定义列表 definition list</h1>
+
+<p>markdown语法中如何表示嵌套的列表（nested lists）也没有定义列表（definition list）？</p>
+
+<p>今天需要用到nested lists才发现这个问题。markdown正是网站给的信息里肯定没有： http://daringfireball.net/projects/markdown/syntax</p>
+
+<p>不知道有没有什么work-around呀。</p>
+
+<p>查了一下，nested lists要求下一级的list有4个空格做indent就好了</p>
+
+<p>参阅 
+&gt; http://six.pairlist.net/pipermail/markdown-discuss/2007-July/000709.html
+&gt; There’s no limit to nesting; Markdown just seems to be confused by
+your indentation. Make sure you always indent each successive nesting
+level exactly four spaces, and everything will work fine: </p>
+
+<p>markdown的syntax页面没有提到nest lists，但dingus页面却提到了。markdown项目应该及时更新一下syntx页面了。</p>
+
+<blockquote>
+  <p>http://daringfireball.net/projects/markdown/dingus</p>
+
+  <p>You can nest them:</p>
+
+  <ul>
+    <li>Abacus
+      <ul>
+        <li>answer</li>
+      </ul>
+    </li>
+    <li>Bubbles
+      <ol>
+        <li>bunk</li>
+        <li>bupkis
+          <ul>
+            <li>BELITTLER</li>
+          </ul>
+        </li>
+        <li>burper</li>
+      </ol>
+    </li>
+    <li>Cunning</li>
+  </ul>
+
+</blockquote>
+
+<h2>definition list只是在php markdown extra中才有</h2>
+
+<p>到2008年6月，markdwon和基于markdown的emacs markdwon-mode中还没有相应语法。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:43 +0800 -->
+    </footer>
+</html>
+

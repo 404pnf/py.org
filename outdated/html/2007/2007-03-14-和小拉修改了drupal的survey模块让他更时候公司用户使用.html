@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>和小拉修改了drupal的survey模块让他更时候公司用户使用</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>和小拉修改了drupal的survey模块让他更时候公司用户使用</h1>
+
+<p>和小拉修改了drupal的survey模块让他更时候公司用户使用</p>
+
+<p>目的公司希望调查表页面和公司页面表现形式更一致。也不想暴露是使用了其他程序而不是公司。</p>
+
+<p>我开始有意见。后来想，改好了可以做服务，专门给有这种想法的公司和个人用。</p>
+
+<p>开始修改。我写简单流程。小拉补充</p>
+
+<ul>
+  <li>浏览survey module 的cvs http://cvs.drupal.org/viewcvs/drupal/contributions/modules/survey/</li>
+</ul>
+
+<p>找到 </p>
+
+ 	$form[‘result_page’] = 
+<pre><code>  	array(
+        '#type' =&gt; 'textfield', 
+        '#title' =&gt; t('Path for "thank you" page'), 
+        '#default_value' =&gt;  $node-&gt;result_page, 
+        '#description' =&gt; t("This page is displayed after the form is submitted.  If you are not using clean URLs, specify the part after '?q='.  If unsure, specify nothing."),
+        '#size' =&gt; 70, 
+        '#maxlength' =&gt; 70, 
+</code></pre>
+
+<p>顾名思义result_page应该是结果页</p>
+
+<p>和它有关的行</p>
+
+<ul>
+  <li>
+    <p>找到</p>
+
+    <p>if ($survey-&gt;result_page) {
+    	 drupal_goto($survey-&gt;result_page);
+  		}</p>
+
+  		drupal_set_message(t(‘Thank you for your submission’), ‘success’);
+ 		\这行是说 提交成功
+ 	 	drupal_goto(‘node/’.$survey-&gt;nid);
+    <pre><code>  \\ 这行说提交后返回那个页面 默认看来是留在调查表那个node
+  \\ 我们把它修改为做好的调查提交成功的页面就可以了
+  		drupal\_goto('http://gongsi.com/tijiaochenggong.htm');
+</code></pre>
+  </li>
+  <li>
+    <p>完成</p>
+  </li>
+  <li>
+    <p>你也可以直接去drupal数据库中修改survey这个表。这个表很简单，就3个值：</p>
+  </li>
+</ul>
+
+ 	       nid  	 fid  	 email          result_page
+<pre><code>	      547 	 1 	 1@1.com 	http://www.mougegongsi.com/survey/response.htm
+</code></pre>
+
+<p>修改这里result_page的价值和直接修改代码效果一样。</p>
+
+<p>那么如何实现前台表单是否为空，如果调查的必添项目没有添，告诉用户需要添，而且也不暴露后台用了其他网站的程序？这个小拉一个人做的。我不懂。你快写吧。</p>
+
+<p>现在我准备建一个站点给公司提供网上调查问卷收集和统计的服务。：）</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:06 +0800 -->
+    </footer>
+</html>
+

@@ -1,0 +1,7 @@
+# 开始考察和使用2个css框架
+
+[tags] drupal,css [/tags]
+http://www.1kbgrid.com/
+http://code.google.com/p/malo/
+
+1kb还不错。malo就算了。忘了为什么算了。1kb很简单。适合追求极度简洁的人。用它替代960.gs。

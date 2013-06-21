@@ -1,0 +1,12 @@
+# 我感觉到合作翻译写文章或者一个组织经常发布消息的话 有一个style guide是非常重要的
+
+我感觉到合作翻译写文章或者一个组织经常发布消息的话，有一个style guide是非常重要的
+
+今天随便看看发现了这页面。
+
+Ubuntu Documentation Style Guide
+http://doc.ubuntu.com/ubuntu/styleguide/en/index.html
+
+开始总听[grammar girl](http://grammar.quickanddirtytips.com/)回答别人问题，很多问题答案不确定，比如单词怎么拼写才更合适，有些词和语法是否应该这么用，引号的用法等，这些与其说是完全的对错，不如说需要你去找找对你该篇文章有没有做style guide的要求。
+
+有style guide，大家为一件事（或者为同一家网站）写的文章，在语法和用词方面就会比较统一。

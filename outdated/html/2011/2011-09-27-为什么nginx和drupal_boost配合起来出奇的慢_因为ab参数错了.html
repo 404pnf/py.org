@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>为什么nginx和drupal boost配合起来出奇的慢 因为ab参数错了</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>为什么nginx和drupal boost配合起来出奇的慢 因为ab参数错了</h1>
+
+<p>我开始用
+      ab -c10 -n 1000 http://example.com/node/60854/</p>
+
+<p>非常慢。后来发现boost没配置。加上boost还是上面命令，一样特别特别慢。每秒才送出10几个页面。</p>
+
+<p>搞来搞去搞不定。后来突然又一次很快，用这个</p>
+
+<pre><code> http://ebook.2u4u.com.cn/ebook/60854
+</code></pre>
+
+<p>看到区别了？</p>
+
+<p>就是不要最后加那个’/’。不要 / 后，同样参数的ab，每秒送出6000多页面。这还差不多。</p>
+
+<p>烦人啊。因为ab要求如果发放问一个域名的话，必须最后加 / 否则不工作。比如</p>
+
+<pre><code>  ab -c10 -n 1000 http://example.com/node/60854
+  这是错误的，ab不工作
+
+  ab -c10 -n 1000 http://example.com/node/60854/
+  加上 / 就工作了 
+</code></pre>
+
+<p>因为这个缘故，我脑海中老认为任何url放到ab中都应该加 / 。结果就。。。。。。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:03 +0800 -->
+    </footer>
+</html>
+

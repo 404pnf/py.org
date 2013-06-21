@@ -1,0 +1,3 @@
+# change htm files to html
+
+for file in *.htm ; do mv $file `echo $file | sed 's/\(.*\.\)htm/\1html/'` ; done

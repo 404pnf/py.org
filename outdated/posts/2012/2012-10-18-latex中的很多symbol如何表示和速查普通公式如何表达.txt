@@ -1,0 +1,8 @@
+# latex中的很多symbol如何表示和速查普通公式如何表达
+
+<http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Symbols>
+
+<http://www.thestudentroom.co.uk/wiki/LaTeX>
+
+打印出来看很方便。
+

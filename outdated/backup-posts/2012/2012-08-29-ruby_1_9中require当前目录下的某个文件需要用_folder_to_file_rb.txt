@@ -1,0 +1,7 @@
+# ruby 1.9中require当前目录下的某个文件需要用 ./folder/to/file.rb
+
+If you're running on ruby 1.9, you might want to try require './haiku.rb', or appending the current directory to your load path ($:.append(File.dirname(__FILE__))) and then doing `require 'haiku'. – Frost Oct 9 '11 at 11:04
+参考： http://stackoverflow.com/questions/7702980/rack-error-loaderror-cannot-load-such-file
+
+
+

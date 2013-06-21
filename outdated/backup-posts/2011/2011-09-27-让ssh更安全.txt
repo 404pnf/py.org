@@ -1,0 +1,5 @@
+# 让ssh更安全
+
+http://www.debian-administration.org/articles/87
+
+我现在的做法是只可以密钥登录。不在标准端口运行sshd。

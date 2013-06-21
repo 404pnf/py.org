@@ -1,0 +1,6 @@
+# gedit和vi不能查看编码gb2312的解决办法
+
+gedit解决方法：
+
+> 在命令行中运行 gconf-editor，在/apps/gedit-2/preferences/encodings中的自动探测编码设置，加入 GB2312，并将GB2312 放在ISO-8859-15之前。
+> http://kongjian.baidu.com/howlwolf/blog/item/7c2c79f0aa7e8bc37931aac8.html

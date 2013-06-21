@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>现实场景使用cut一例 ：）</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>现实场景使用cut一例 ：）</h1>
+
+<p>这个bash工具自己没直接用过。</p>
+
+<p>今天想重新安装所有gems。不想手工输入，想ls已经安装的出来作为列表给gem install就好了。但安装的是带版本号的。我不需要版本号，因此想到cut。</p>
+
+<p>看了看man</p>
+
+<p>$ ls |cut -f 1
+albino-1.3.3
+classifier-1.3.3
+curb-0.8.0
+directory_watcher-1.4.1</p>
+
+<p>$ ls |cut -f 1 -d ‘-‘
+albino
+classifier
+curb
+directory_watcher</p>
+
+<p>我省略了很多gem目录。  -d 是 deliminater  -f 是要显示的 field</p>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:57 +0800 -->
+    </footer>
+</html>
+

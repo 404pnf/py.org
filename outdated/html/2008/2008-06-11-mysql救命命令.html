@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>mysql救命命令</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>mysql救命命令</h1>
+
+<p>mysql救命命令</p>
+
+<p>实用的</p>
+
+<blockquote>
+  <pre><code>  mysql -h10.0.0.1 -uroot -p123 
+</code></pre>
+</blockquote>
+
+<blockquote>
+  <pre><code> （注：u与root可以不用加空格，其它也一样） 
+</code></pre>
+</blockquote>
+
+<blockquote>
+  <p>http://kb.discuz.net/index.php?title=MySQL%E5%AE%9E%E7%94%A8%E5%91%BD%E4%BB%A4</p>
+</blockquote>
+
+<p>每次都忘。如果不直接在-p后给密码，而是等提示再输入，我这里出现“Access denied for user ‘root’@’localhost’ (using password: YES)”的错误。按上面的方法直接把密码写在命令行就不会。</p>
+
+<p>上面的例子是登录ip地址为10.0.0.1的数据库，-h的h是host的意思，可以理解为主机。</p>
+
+<p>如果登录本地的数据库，省略那部分。直接 mysql -u用户名 -p密码</p>
+
+<pre><code>  show databases;
+
+  
+  create database 库名; 
+
+  drop database 库名; 
+
+  7、将表中记录清空：
+
+  delete from 表名; 
+</code></pre>
+
+<blockquote>
+  <p>解决mysql“Access denied for user ‘root’@’localhost’”
+http://blog.chinaunix.net/u1/35320/showart_305024.html</p>
+</blockquote>
+
+<p>命令都需要用英文分号结尾，否则报语法错误。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:43 +0800 -->
+    </footer>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>如何卸载rvm</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>如何卸载rvm</h1>
+
+<blockquote>
+  <p>There’s a simple command built-in that will pull it:</p>
+
+  <p>rvm implode
+This will remove the rvm/ directory and all the rubies built within it. In order to remove the final trace of rvm, you need to remove the rvm gem, too:</p>
+
+  <p>gem uninstall rvm
+If you’ve made modifications to your PATH you might want to pull those, too. Check your .bashrc, .profile and .bash_profile files, among other things.</p>
+
+  <p>You may also have an /etc/rvmrc file, or one in your home directory ~/.rvmrc that may need to be removed as well.
+http://stackoverflow.com/questions/3558656/how-to-remove-rvm-ruby-version-manager-from-my-system</p>
+</blockquote>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:57 +0800 -->
+    </footer>
+</html>
+

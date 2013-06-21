@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jekyll能够增量生成站点么</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>jekyll能够增量生成站点么</h1>
+
+<p>I am not a programmer, so let me paraphrase what you said and see if I get it.  I should write a script to instruct jekyll to generate, e.g 1000 articles, every run.  Which translates to action is: move 1000 articles to _posts and run jekyll, then move another 1000 articles in and re-run jekyll?  I think for individule posts this works, but not for aggregated pages: archive.html categories.html, etc.</p>
+
+<p>According to doc here, jekyll can’t incrementally generate site:</p>
+
+<p>Jekyll collects data. 
+Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.</p>
+
+<p>Jekyll computes data. 
+Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one big site object that holds all the posts, pages, layouts, and respective metadata. At this stage your site is one big computed ruby object.</p>
+
+<p>http://jekyllbootstrap.com/lessons/jekyll-introduction.html</p>
+
+<p>The tricky thing is about categoires and tags.  Since it has to collect all posts to know a category has X many posts.</p>
+
+<p>How to go about that?</p>
+
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:56 +0800 -->
+    </footer>
+</html>
+

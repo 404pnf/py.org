@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>如何启动php-cgi</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>如何启动php-cgi</h1>
+
+<h2>开始我用的就脚本</h2>
+<pre><code>   /usr/local/bin/spawn-fcgi -a 127.0.0.1 -p 9000 -u www-data -g www-data -C 10 -f /usr/bin/php5-cgi -P /var/run/fastcgi-php.pid
+</code></pre>
+
+<h2>其实还是自己编译安装spawn-fcgi然后填写参数就不用这么麻烦了</h2>
+
+<p>那些参数都可以直接写在 spawn-php脚本中。之后启动php-cgi就简单到</p>
+
+<pre><code>  ./spawn-php
+</code></pre>
+
+<h2>spawn-php的脚本代码</h2>
+
+<pre><code>  #!/bin/bash
+  
+  # ref: http://www.ourlinux.net/operation-tips/spawn-fcgi/
+  # 404
+  # spawn-fcig installed by compliation
+  # http://redmine.lighttpd.net/projects/spawn-fcgi/wiki/Build
+  # 404 use  ./configure --prefix=/usr/local
+  
+  ## ABSOLUTE path to the spawn-fcgi binary
+  SPAWNFCGI="/usr/local/bin/spawn-fcgi"
+  ## ABSOLUTE path to the PHP binary
+  FCGIPROGRAM="/home/apache/apps/fcgi/bin/php-cgi"
+  ## TCP port to which to bind on localhost
+  FCGIPORT="9000"
+  ## number of PHP children to spawn
+  PHP_FCGI_CHILDREN=30
+  ## maximum number of requests a single PHP process can serve before it is restarted
+  PHP_FCGI_MAX_REQUESTS=1000
+  ## IP addresses from which PHP should access server connections
+  FCGI_WEB_SERVER_ADDRS="127.0.0.1"
+  # ux.net"
+  # allowed environment variables, separated by spaces
+  # ALLOWED_ENV="pripath PATH USER"
+  ## if this script is run as root, switch to the following user
+  USERID=apache
+  GROUPID=apache
+  ################## no config below this line
+  if test x$PHP_FCGI_CHILDREN = x; then
+  PHP_FCGI_CHILDREN=5
+  fi
+  export PHP_FCGI_MAX_REQUESTS
+  export FCGI_WEB_SERVER_ADDRS
+  ALLOWED_ENV="$ALLOWED_ENV PHP_FCGI_MAX_REQUESTS FCGI_WEB_SERVER_ADDRS"
+  if test x$UID = x0; then
+  EX="$SPAWNFCGI -a $FCGI_WEB_SERVER_ADDRS -p $FCGIPORT -f $FCGIPROGRAM -u $USERID -g $GROUPID -C $PHP_FCGI_CHILDREN"
+  else
+  EX="$SPAWNFCGI -a $FCGI_WEB_SERVER_ADDRS -p $FCGIPORT -f $FCGIPROGRAM -C $PHP_FCGI_CHILDREN"
+  fi
+  # copy the allowed environment variables
+  E=
+  for i in $ALLOWED_ENV; do
+  E="$E $i=${!i}"
+  done
+  # clean the environment and set up a new one
+  env - $E $EX
+</code></pre>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:14 +0800 -->
+    </footer>
+</html>
+

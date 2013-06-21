@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>在openresty中使用drizzle</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>在openresty中使用drizzle</h1>
+<blockquote>
+  <p>This ngx_drizzle module is not enabled by default. You should specify the –with-http_drizzle_module optiotn while configuring OpenResty.</p>
+
+  <p>The libdrizzle C library is no longer bundled by OpenResty. You need to download the drizzle server tarball from https://launchpad.net/drizzle.</p>
+
+  <p>Latest drizzle7 release does not support building libdrizzle 1.0 separately and requires a lot of external dependencies like Boost and Protobuf which are painful to install. The last version supporting building libdrizzle 1.0 separately is 2011.07.21. You can download it from here:</p>
+
+  <p>http://agentzh.org/misc/nginx/drizzle7-2011.07.21.tar.gz</p>
+</blockquote>
+
+<p>make install-libdrizzle-1.0
+注意： install-lib… 中间的dash必须有，不是敲错了。必须有那个连线。</p>
+
+<p>When you get the drizzle7 2011.07.21 release tarball, you can install libdrizzle-1.0 like this:
+tar xzvf drizzle7-2011.07.21.tar.gz
+cd drizzle7-2011.07.21/
+./configure –without-server
+make libdrizzle-1.0
+make install-libdrizzle-1.0</p>
+
+<p>Please ensure that you have the python command point to a python2 interpreter. It’s known that on recent Arch Linux distribution, python is linked to python3 by default, and while running make libdrizzle-1.0 will yield the following error:
+  File “config/pandora-plugin”, line 185
+    print “Dependency loop detected with %s” % plugin[‘name’]
+                                           ^
+SyntaxError: invalid syntax
+make: *** [.plugin.scan] Error 1
+You can fix this by pointing python temporarily to python2.</p>
+
+<p>When you install the libdrizzle-1.0 library to a custom path prefix, you can specify the libdrizzle prefix to OpenResty like this:
+cd /path/to/ngx_openresty-VERSION/
+./configure –with-libdrizzle=/path/to/drizzle –with-http_drizzle_module</p>
+
+<p>Documentation page: http://wiki.nginx.org/HttpDrizzleModule</p>
+
+<p>Project page: https://github.com/chaoslawful/drizzle-nginx-module</p>
+
+<p>http://openresty.org</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:55 +0800 -->
+    </footer>
+</html>
+

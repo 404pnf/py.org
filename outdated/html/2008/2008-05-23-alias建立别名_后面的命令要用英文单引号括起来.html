@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>alias建立别名 后面的命令要用英文单引号括起来</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>alias建立别名 后面的命令要用英文单引号括起来</h1>
+
+<h2>alias建立别名，后面的命令要用英文单引号括起来</h2>
+
+<h2>什么是alias</h2>
+<p>alias命令的作用就如同一个快捷方式，如果你常用的一个命令要输入一大堆东西，你给那个命令建立一个快捷方式，减少按键次数。</p>
+
+<h2>今天第一次用bash中的alias命令。</h2>
+
+<p>本着边学别用，没看文档。直接输入个alias然后按tab补齐，bash给了个例子（准确地说是给出现有别名都有哪些）  </p>
+
+<pre><code>  alias ls='ls --color=auto'
+</code></pre>
+
+<p>我一看，很简单呀。第一个是别名文件，就是缩略名字，后面是这个缩略明代替什么样很长的命令。于是照猫画虎来了一个：</p>
+
+<pre><code>   alias dateiso=date --rfc-3339=date
+</code></pre>
+
+<p>试着运行了一下不对。回去看上一个例子，发现区别。我少了单引号。</p>
+
+<p>正确命令是  alias dateiso=’date –rfc-3339=date’ 。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:50 +0800 -->
+    </footer>
+</html>
+

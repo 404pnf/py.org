@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>mysql授权某用户从一些列ip访问</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>mysql授权某用户从一些列ip访问</h1>
+
+<blockquote>
+  <p>既然你能在Host字段使用IP通配符值(例如，’144.155.166.%’匹配在一个子网上的每台主机)，有可能某人可能企图探究这种能力，通过命名一台主机为144.155.166.somewhere.com。为了阻止这样的企图，MySQL不允许匹配以数字和一个点起始的主机名，这样，如果你用一个命名为类似1.2.foo.com的主机，它的名字决不会匹配授权表中的Host列。只有一个IP数字能匹配IP通配符值。</p>
+</blockquote>
+
+<blockquote>
+  <p>参考： http://dev.mysql.com/doc/refman/5.1/zh/database-administration.html#privilege-system</p>
+</blockquote>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:01 +0800 -->
+    </footer>
+</html>
+

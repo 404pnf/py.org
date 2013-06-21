@@ -1,0 +1,15 @@
+# drupal的cron出现各种问题如何解决
+
+考虑清空一下数据库中记录的conr状态
+
+	drush vdel cron_semaphore
+	drush vdel cron_last
+
+参考：
+权威： http://drupal.org/node/553430
+遇到类似问题的：
+http://drupal.org/node/360836
+http://drupal.org/node/360836
+
+有一个模块帮你更精确地设定何时运行cron中的哪些工作
+http://drupal.org/project/elysia_cron

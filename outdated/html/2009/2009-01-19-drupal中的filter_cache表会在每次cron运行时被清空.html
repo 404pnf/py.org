@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>drupal中的filter cache表会在每次cron运行时被清空</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>drupal中的filter cache表会在每次cron运行时被清空</h1>
+
+<blockquote>
+  <p>Filter Cache</p>
+
+  <p>The filter cache serves cached filtered content to anonymous and authenticated users alike. The more complex your filters are, the greater the performance gain from this cache. (I have been working on a site which does extensive xsl transformations to turn xml in node bodies into html on the page, making filter caching critical.) Cached filtered content gets cleared out on cron</p>
+</blockquote>
+
+<p>http://www.zivtech.com/blog/understanding-input-formats</p>
+
+<p>如果情况属实，站点的cron还不能运行过于频繁，否则每次都需要重新生成filter cache，影响站点反应速度吧。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:59 +0800 -->
+    </footer>
+</html>
+

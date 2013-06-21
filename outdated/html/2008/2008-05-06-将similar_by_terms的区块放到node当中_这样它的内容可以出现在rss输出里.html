@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>将similar by terms的区块放到node当中 这样它的内容可以出现在rss输出里</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>将similar by terms的区块放到node当中 这样它的内容可以出现在rss输出里</h1>
+
+<h2>将similar by terms的区块放到node当中，这样它的内容可以出现在rss输出里</h2>
+
+<h2>如果你的similiar by terms模块是5.x系列有bug的版本</h2>
+
+<p>参考我这篇文章: http://pengyou.rijiben.org/node/2198</p>
+
+<h2>Moving Similar By Terms block onto the node</h2>
+
+<blockquote>
+  <p>Moving Similar By Terms block onto the node
+http://drupal.org/node/183511</p>
+
+  <p>Please see http://drupal.org/node/192611#comment-642390 and close this issue or ask for help in the forums.</p>
+
+  <p>1
+NikLP - November 29, 2007 - 02:42</p>
+
+  <p>Dude you can do that with theming. You should create a node template for the node type that you want to have the similar entries on, then you can easily position a new region in the template and place the block there. Alternatively, you can call a block manually in template file, or in your template.php file you could create a new variable.</p>
+
+  <p>This is all done using a normal block, but just being a bit more flexible with your options. I suggest you get hold of the Pro Drupal book, or read the free theming chapter at that link which might help you out.</p>
+</blockquote>
+
+<p>参照这个做法我的需求就解决了。</p>
+
+<p>现在的问题是我要阅读并学习如何“palce the block there”。</p>
+
+<h2>在drupal的theme（模板）中调用任意block（区块）的方法</h2>
+
+<p>成功了 哈哈哈</p>
+
+<p>搜索call a block in theme</p>
+
+<blockquote>
+  <p>Placing the contents of a block in any location
+http://drupal.org/node/26502</p>
+
+  <p>To specify which block from which module, you simply edit the two following variables in the first line:</p>
+
+  <p>module_name = The name of the module
+The number = Is the $delta of the block</p>
+
+  <p>这2个参数你去/admin/build/block中点你要添加的那个区块，url中就会显示它的模块名和$delta。比如我要调用similarterms的模块，就编辑这个模块，url最后是</p>
+</blockquote>
+
+<pre><code>   similarterms/2
+</code></pre>
+
+<p>那我就用</p>
+
+<p>$block = module_invoke(‘similarterms’, ‘block’, ‘view’, 2);print $block[‘content’];?</p>
+
+<p>好了。实现我要的效果了。：）</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:49 +0800 -->
+    </footer>
+</html>
+

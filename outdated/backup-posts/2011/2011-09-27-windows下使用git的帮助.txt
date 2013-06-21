@@ -1,0 +1,3 @@
+# windows下使用git的帮助
+
+http://nathanj.github.com/gitguide/tour.html

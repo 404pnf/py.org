@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>关于utf-8下form变量传递问题</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>关于utf-8下form变量传递问题</h1>
+
+<p>最近在做的一个网站用的是asp，但是页面采用了utf-8编码，结果出现了一个问题，在提交表单后，如果填写的表单变量中有奇位数中文或中英混录，则读取表单变量会出现乱码。
+后来经过bxy帮助，终于发现了问题所在。
+asp在页头有一行声明codepage，codepage指定了IIS按什么编码读取传递过来的表单提交，地址栏传递等，而我没有声明，默认是按照936既简体中文传递的，因此造成了上面描述的问题。</p>
+
+<p>另外，最近刚看了一点zend framework和.net 2.0，发现他们与java相似性越来越多，看来不光是天下之势，就算是IT界也是有分久必合之势。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:10 +0800 -->
+    </footer>
+</html>
+

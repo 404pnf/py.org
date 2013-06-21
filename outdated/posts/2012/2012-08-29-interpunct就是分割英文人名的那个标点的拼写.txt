@@ -1,0 +1,7 @@
+# interpunct就是分割英文人名的那个标点的拼写
+
+An interpunct ( · ), also called an interpoint,[1] is a punctuation mark consisting of a dot used for interword separation in ancient Latin script and in some modern languages as a stand-alone sign inside a word. It is present in Unicode as code point U+00B7 · middle dot (HTML: &#183; &middot;).
+
+The dot is vertically centered, e.g. "DONA·EIS·REQVIEM", and is therefore also called a middle dot or centered dot (Commonwealth: centred dot). In addition to the round dot form, inscriptions sometimes use a small equilateral triangle for the interpunct, pointing either up or down. Such triangles can be found on inscriptions on buildings in the twentieth century. Ancient Greek, by contrast, had not developed interpuncts; all the letters ran together. The use of spaces for word separation did not appear until much later, some time between 600 and 800 AD.
+
+http://en.wikipedia.org/wiki/Interpunct

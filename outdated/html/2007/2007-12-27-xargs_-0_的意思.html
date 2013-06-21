@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>xargs -0 的意思</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>xargs -0 的意思</h1>
+
+<h2>xargs -0 的意思</h2>
+
+<p>-0 这个是阿拉伯数字零</p>
+
+<p>Find all the .mp3 files in the music folder and pass to the ls command</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>find ./music -name “*.mp3” -print0</td>
+      <td>xargs -0 ls</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>print0是打印全部，而且找到文件的文件名之间没有newline了，都在一行，用空格分开；所有后面xargs用-0，告诉xargs那些文件名虽然中间有空格，但他们是一个参数，不要认为是n个。我是这么理解的。不知道对不对？</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:07 +0800 -->
+    </footer>
+</html>
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>生成网站使用的静态相册</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>生成网站使用的静态相册</h1>
+
+<h2>bins</h2>
+
+<p>http://bins.sautret.org/</p>
+
+<p>也可以用 http://www.nother.net/zoph/ 管理照片，然后让bins去生成静态相册。bins的参数可以设置很多。吸引我的有在复制原始照片到发布目录时，可以选择不复制照片的exif信息。相当于我需要删除照片exif信息的功能。这点文档没有特别明确地说明。需要去信问一下。</p>
+
+<p>但我应该还是只用静态相册，因为我的目的是：我需要用 http://archive.org 来存储照片文件的网上相册。</p>
+
+<p>照片文件很容易就10几gb和几十gb，不用archive怎么能行？！：）</p>
+
+<h2>f-spot</h2>
+
+<p>这是gnu/linux下gnome桌面自带的浏览和处理照片的程序。它可以生成多种静态相册和帮你上传到一些网上相册。相当好用。如果你不需要设定特别细致的参数，那么用这个就好了。</p>
+
+<h2>nagg</h2>
+
+<p>使用sed和bash写的一个程序。全名：not another gallery generator。代码很多。很有启发。值得使用。而且有不少人用。也可以设置不少参数。</p>
+
+<p>缺点：当你要声称一个照片数量较多的相册是，程序会报错。己一种是argument too long之类的错误。应该有懂xargs和bash的人修改一下源代码就能解决。我不会，就没动。：）</p>
+
+<p>我通读了这个工具的源代码，不长。对我学习sed有帮助。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:45 +0800 -->
+    </footer>
+</html>
+

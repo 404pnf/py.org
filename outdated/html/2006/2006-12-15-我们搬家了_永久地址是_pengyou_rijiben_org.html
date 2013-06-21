@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>我们搬家了 永久地址是 pengyou rijiben org</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>我们搬家了 永久地址是 pengyou rijiben org</h1>
+
+<p>我们搬家了 永久地址是 pengyou.rijiben.org</p>
+
+<p>很顺利。暂时没有发现什么问题。</p>
+
+<p>数据库方面只用做如下修改
+update node_revisions set body=replace(body,’oldur.org/rijiben’,’pengyou.rijiben.org’),
+teaser=replace(teaser,’oldur.org/rijiben’,’pengyou.rijiben.org’) 
+where body like ‘%oldur.org/rijiben%’ or teaser like ‘%oldur.org/rijiben%’</p>
+
+<p>上面这条命令是调整文章<strong>正文</strong>和<strong>正文摘要</strong>中连接了<strong>本站文章</strong>的url。因为这些是作者写在他们正文里面的。要不让他们自己一个个改，要不我来改。这些修改不多。因为似乎只有我在文章里连其他朋友和自己在这里发的文章。</p>
+
+<p>然后在apache配置文件设置相应子域名对的目录就好了。</p>
+
+<p>子域名指向我前几天就做好了。所以整个过程，加上在小拉机子上本地测试不超过20分钟。</p>
+
+<p>多说几句。</p>
+
+<p>drupal有一个好处就是它的数据库中不纪录每篇文章每个评论的url,它有base url这个概念。如果你base url留为空，我就是这样，这些地址是根据你如何访问确定的。</p>
+
+<p>比如，我从 pengyou.rijiben.org访问。那么所有文章和留言的url就是 pengyou.rijiben.org/node/4 之类。</p>
+
+<p>我从 129.0.0.22/rijiben访问，那么所有文章和留言的url就是 129.0.0.22/rijiben//node/4 之类。</p>
+
+<p>有些程序，如wordpress之类文章的url是记录在数据库中。</p>
+
+<p>这样的话。如果外网断了。你用内网访问。每访问一个也面都需要手工把外网地址改成内网地址</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:37 +0800 -->
+    </footer>
+</html>
+

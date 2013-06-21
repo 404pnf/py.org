@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>drupal中报cron已经运行因此无法运行cron的问题如何解决</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>drupal中报cron已经运行因此无法运行cron的问题如何解决</h1>
+
+<p>DELETE FROM variable WHERE name=”cron_semaphore”;
+DELETE FROM variable WHERE name = “cron_last”;
+This worked for me. I had to clear my drupal cache after running the sql above. Then I ran cron manually and it worked.
+http://drupal.org/node/791554#comment-4488220</p>
+
+<p>如果有drush</p>
+
+<p>drush @site sqlc 然后运行上面两个sql命令。
+之后马上 drush @site cc all 清除缓存</p>
+
+<p>再 drush @site cron 就可以了</p>
+
+<p>这是drupal 6。</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:55:56 +0800 -->
+    </footer>
+</html>
+

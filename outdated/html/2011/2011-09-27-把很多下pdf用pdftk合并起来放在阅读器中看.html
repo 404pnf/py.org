@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>把很多下pdf用pdftk合并起来放在阅读器中看</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>把很多下pdf用pdftk合并起来放在阅读器中看</h1>
+
+<p>[tags] pdf,工具,gnu/linux  [/tags]
+前一段 Article printed from Frequently Asked Questions About Linux / UNIX: http://www.cyberciti.biz/faq 提供了他们精选的1000多个问题和答案打包下载，都是pdf格式。</p>
+
+<p>我下了。在看。但每一个问题一个pdf在我的iriver电子阅读器中看太麻烦。因为默认pdf字太小，每一个文件，我都需要： 打开，选择段落重排，选择大字体。而每个文件哎你都很小，通常就1-3页。这样太麻烦了。</p>
+
+<p>因此我想干脆把很多小文件合并为一个大pdf。这样设置字体大小只需要一次。翻页总比退出文件选择文件打开再设置字体方便得多。</p>
+
+<p>因此使用pdftk这个工具。tk应该是tookkit的意思</p>
+
+<pre><code>  pdftk `ls *.pdf` output all.pdf
+</code></pre>
+
+<p>可以用 Pdftk –help 来看这个命令如何使用</p>
+
+<p>我这里用的基本命令格式是</p>
+
+<pre><code>pdftk a.pdf b.pdf output all.pdf 其中 a.pdf b.pdf是你要合并的文件，可以是很多个。output后面跟合并后的文件名。我这里用 ls *.pdf 的输出结果作为输入当要合并的pdf文件。包裹起ls命令的是数字1左边那个键。
+</code></pre>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:00 +0800 -->
+    </footer>
+</html>
+

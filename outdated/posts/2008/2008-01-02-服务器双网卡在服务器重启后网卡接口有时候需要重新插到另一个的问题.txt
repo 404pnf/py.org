@@ -1,0 +1,36 @@
+# 服务器双网卡在服务器重启后网卡接口有时候需要重新插到另一个的问题
+
+为日后搞明白这个问题先留一个地方
+
+## 问题：
+
+服务器双网卡，命名为网卡0和网卡1吧。网线插在网卡0上。重新启动后。有时候网卡0无法连通，需要把网线插在网卡1上。反之亦然。
+
+这个问题出现过两次。不过服务器很少重启。过去1年半3次都是由于供电故障和机房搬家。而且暂时服务器离我很近。10分钟就能走到。但这个问题不搞明白，将来会很被动。
+
+## 解决方法： 
+
+今天无意中看到 
+
+      $ less /etc/iftab 
+      # This file assigns persistent names to network interfaces.
+      # See iftab(5) for syntax.
+
+      eth0 mac 00:14:5e:95:45:c4 arp 1
+      eth1 mac 00:14:5e:95:45:c5 arp 1
+
+我 man 5 iftab 看了看 
+
+不太明白。
+
+我感觉两个网卡最后参数都是1是不是有问题。应该一个有1一个没有吧。 
+
+man给的例子是 
+
+EXAMPLE
+          # This is a comment
+          eth0    mac 00:12:79:59:8D:38
+          eth1    mac 00:0B:CD:5C:9E:2A arp 1
+          nveth*  SYSFS{device/vendor} 0x10de
+
+## 有会明白的请帮忙

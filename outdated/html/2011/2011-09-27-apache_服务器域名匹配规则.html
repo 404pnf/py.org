@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>apache 服务器域名匹配规则</title>
+    <link href="/css/local.css" rel="stylesheet">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3301463-1']);
+    _gaq.push(['_trackPageview']);
+   (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    </head>
+    <body>
+      <h1>apache 服务器域名匹配规则</h1>
+
+<p>apache server name wildcard</p>
+
+<p>使用ServerAlias指令：</p>
+
+<p>NameVirtualHost 192.168.1.18:8080</p>
+
+<p>ServerName foo.com
+     ServerAlias *.foo.comServerName bar.com
+     ServerAlias *.bar.com</p>
+
+<p>参考： http://prefetch.net/blog/index.php/2007/01/06/using-wildcards-in-apache-server-aliases/</p>
+
+    </body>
+    <footer>
+    <a href="../">Up    </a>
+    <a href="/">Home</a>
+    <!-- generated on 2013-01-23 09:56:03 +0800 -->
+    </footer>
+</html>
+
