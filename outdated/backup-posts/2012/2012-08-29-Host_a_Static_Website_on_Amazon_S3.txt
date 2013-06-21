@@ -1,3 +1,0 @@
-# Host a Static Website on Amazon S3
-http://www.layouts-the.me/2011/03/16/hosting-on-amazon-s3/
-

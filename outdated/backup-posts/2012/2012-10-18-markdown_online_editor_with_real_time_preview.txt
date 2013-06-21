@@ -1,8 +1,0 @@
-# markdown online editor with real time preview
-
-<http://homepage.univie.ac.at/werner.robitza/markdown/>
-
-With icons to help you format the text and link to images.
-
-via <http://pagesofinterest.net/blog/2011/12/excellent-online-markdown-editor/>
-

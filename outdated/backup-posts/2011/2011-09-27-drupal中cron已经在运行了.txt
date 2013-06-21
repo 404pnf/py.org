@@ -1,9 +1,0 @@
-# drupal中cron已经在运行了
-
->That error is triggered when the cron_semaphore variable is found. It's set when cron starts, and is deleted when cron ends, so if it's still there, cron is presumably still running. Except it wasn't really - the logs show the previous crons ended successfully.
->
-> I dug into it a little further: drush vget cron_semaphore brought up the timestamp value of the last cron, like it was still set. But querying the `variables` table directly for cron_semaphore brought up nothing! That tipped me off to the problem - it was caching the variables array for too long.
->
-> Searching the issue brought up a bunch of posts acknowledging the issue, and suggesting that people clear their whole cache to fix it. I care about performance on the site in question, so clearing the whole cache every 15 minutes to run cron is not an option.
-> 
-> http://benbuckman.net/tech/11/05/workaround-variables-cache-bug-drupal-6

@@ -1,5 +1,0 @@
-# unix高人的站点
-
-http://www.nico.schottelius.org/docs/
-发现他是因为drupal的nginx组上有人推荐一个服务器配置管理软件
-http://www.nico.schottelius.org/software/cconf/

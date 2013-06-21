@@ -1,4 +1,0 @@
-# start mysql
-./bin/mysqld_safe &
-
-

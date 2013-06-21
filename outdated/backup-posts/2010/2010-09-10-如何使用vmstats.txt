@@ -1,3 +1,0 @@
-# 如何使用vmstats
-
-http://www.unix.com/unix-dummies-questions-answers/6538-kicking-users-off.html

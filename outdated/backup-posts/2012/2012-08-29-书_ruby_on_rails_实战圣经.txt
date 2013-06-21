@@ -1,6 +1,0 @@
-# 书 ruby on rails 实战圣经
-
-Ruby on Rails 實戰聖經 使用 Rails 3.2 及 Ruby 1.9.3
-本書尚未完成，如果您有任何意見、鼓勵或勘誤，歡迎來信給我，謝謝。
-http://ihower.tw/rails3/index.html
-

@@ -1,7 +1,0 @@
-# ruby中的元编程 meta programming
-
-> Ruby和元编程的故事 - 第0回: 欲练神功，必先自废武功
-http://ruby-china.org/wiki/ruby-meta
-
-^_^
-

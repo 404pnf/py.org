@@ -1,3 +1,0 @@
-# set opitons to picasa photo when link it
-<http://akr.tw/2012/04/picasa-url-parameters/>
-

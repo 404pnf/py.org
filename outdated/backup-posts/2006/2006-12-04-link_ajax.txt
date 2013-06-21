@@ -1,6 +1,0 @@
-# link ajax
-
-Official Google Blog: Spreading the AJAX love
-
-
-http://googleblog.blogspot.com/2006/11/spreading-ajax-love.html

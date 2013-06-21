@@ -1,3 +1,0 @@
-# github上有另一个sinatra-wiki的fork，最近2个月还更新过
-https://github.com/morganp/sinatra_wiki
-

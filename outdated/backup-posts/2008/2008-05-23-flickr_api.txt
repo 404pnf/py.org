@@ -1,5 +1,0 @@
-# flickr api
-
-## flickr api
-
-http://flickrapi.sourceforge.net/

@@ -1,4 +1,0 @@
-# 一个人写的静态相册生成程序的比较
-
-http://www.nico.schottelius.org/docs/static-image-gallery-generator-comparison/
-比较看好gthumb和llgal

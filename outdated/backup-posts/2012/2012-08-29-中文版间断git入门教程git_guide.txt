@@ -1,3 +1,0 @@
-# 中文版间断git入门教程git guide
-http://rogerdudler.github.com/git-guide/index.zh.html
-

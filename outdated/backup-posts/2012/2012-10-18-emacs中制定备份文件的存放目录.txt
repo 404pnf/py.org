@@ -1,4 +1,0 @@
-# emacs中制定备份文件的存放目录
-> (setq backup-directory-alist `(("." . "~/.saves")))
-> <http://stackoverflow.com/questions/151945/how-do-i-control-how-emacs-makes-backup-files>
-

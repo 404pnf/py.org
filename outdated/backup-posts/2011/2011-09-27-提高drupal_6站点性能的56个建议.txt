@@ -1,3 +1,0 @@
-# 提高drupal 6站点性能的56个建议
-
-http://www.morningtime.com/Drupal-6x-Performance-Guide/513

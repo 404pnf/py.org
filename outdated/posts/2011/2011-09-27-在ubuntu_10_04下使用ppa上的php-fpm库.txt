@@ -1,5 +1,0 @@
-# 在ubuntu 10 04下使用ppa上的php-fpm库
-
-https://launchpad.net/~nginx/+archive/php5
-
-You can update your system with unsupported packages from this untrusted PPA by adding ppa:nginx/php5 to your system's Software Sources. (Read about installing)

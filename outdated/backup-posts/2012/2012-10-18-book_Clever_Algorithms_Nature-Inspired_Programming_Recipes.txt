@@ -1,6 +1,0 @@
-# book Clever Algorithms: Nature-Inspired Programming Recipes
-
-Clever Algorithms: Nature-Inspired Programming Recipes
-read online: <http://www.cleveralgorithms.com/nature-inspired/index.html>
-<http://ikandou.com/book/detail/4564>
-

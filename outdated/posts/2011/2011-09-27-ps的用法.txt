@@ -1,3 +1,0 @@
-# ps的用法
-
-http://procps.sf.net/faq.html

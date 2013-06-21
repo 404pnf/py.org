@@ -1,4 +1,0 @@
-# 一些css3的 技巧
-
-tt css tt
-http://www.catswhocode.com/blog/10-examples-of-futuristic-css3-techniques

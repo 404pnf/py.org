@@ -1,3 +1,0 @@
-# drupal模块 pdf to imagefield
-
-http://drupal.org/project/pdf_to_imagefield

@@ -1,3 +1,0 @@
-# drupal varnish
-
-http://www.lullabot.com/sites/lullabot.com/files/default.vcl_.txt

@@ -1,4 +1,0 @@
-# sinatra实现i18n的gem
-http://r18n.rubyforge.org/sinatra.html
-
-

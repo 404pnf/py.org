@@ -1,3 +1,0 @@
-# drupal 7中在node tpl php中打印某个字段的方法
-
-http://robotlikehuman.com/web/printing-cck-content-field-values-drupal-7

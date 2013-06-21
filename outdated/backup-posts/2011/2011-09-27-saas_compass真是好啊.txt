@@ -1,4 +1,0 @@
-# saas compass真是好啊
-
-tt css, tools tt
-http://compass-style.org/docs/reference/compass/

@@ -1,3 +1,0 @@
-# 贴图的一个模块
-
-http://drupal.org/project/imce

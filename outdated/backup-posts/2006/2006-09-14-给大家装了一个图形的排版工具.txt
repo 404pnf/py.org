@@ -1,3 +1,0 @@
-# 给大家装了一个图形的排版工具
-
-再更新：问题解决了。就是drupal的hmtl filter中加入就可以了。更新:我暂时默认关闭了这个。如果你需要使用，点击正文输入框下面的enable rich-text就可以了给大家装了一个图形的排版工具。看看好用不？有问题及时反一下。谢谢[![](/rijiben/g2/d/417-6/puppy.jpg)](/rijiben/g2/v/bxy/puppy/)

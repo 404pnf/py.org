@@ -1,3 +1,0 @@
-# 采用html5技术生成乐谱
-
-http://www.vexflow.com/

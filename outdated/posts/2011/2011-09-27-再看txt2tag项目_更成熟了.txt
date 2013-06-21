@@ -1,6 +1,0 @@
-# 再看txt2tag项目 更成熟了
-
-tt tools, free.software tt
-http://txt2tags.org/online.php
-
-我用markdown转thml很好，但很难直接生成其它格式。当然可以从html生成其它格式。txt2tag直接支持生成到各种格式。

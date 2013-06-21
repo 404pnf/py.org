@@ -1,7 +1,0 @@
-# 用scan方法提取rss每个item对应的多个category
-
-s.scan(/<category>([^<]+)<\/category>/).join(' ')
-
-## 用 rss library 的 item.category 只能读出第一条记录
-如果该item有多个，后面的就被忽略了
-

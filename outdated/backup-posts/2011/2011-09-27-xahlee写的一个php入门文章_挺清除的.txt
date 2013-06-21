@@ -1,4 +1,0 @@
-# xahlee写的一个php入门文章 挺清除的
-
-[tags] php,翻译, [/tags]
-http://xahlee.org/php/php_basics.html
