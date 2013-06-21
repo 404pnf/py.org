@@ -1,21 +1,5 @@
 # mp3 id3 tag 编辑器
 
-update: 最好的工具还是lame坌身。阅读lame的手册（manual）后，我已经有了[很好的方法](http://pengyou.rijiben.org/node/1355)。
+update: 最好的工具还是lame坌身。阅读lame的手册（manual）后，我已经有了[很好的方法](http://pengyou.rijiben.org/node/1355)。 update:我准备用cowbell，在ubuntu中直接 sudo apt-get install cowbell 就可以安装，搜索软件库也可以 但是它的批量模式是命令行下的，而且功能不是很方便。请大家继续协力找一下。 帮同事的项目录歌。歌曲重新谱词然后唱歌小朋友听。录音我当然使用audacity啦。：） 我把mp3 tag写错了。audacity中无法方便编辑，甚至无法编辑我感觉。所以找其他工具。 找到了。记录一下 寻找方法，搜索[id3 tag editor sf](http://www.google.com/search?hs=Oc0&hl=zh-CN&newwindow=1&client=firefox&rls=org.mozilla%3Azh-CN%3Aofficial&q=id3+tag+editor+sf&btnG=%E6%90%9C%E7%B4%A2&lr=) 准备用的[easy tag](http://easytag.sourceforge.net/)，windows上，需要[gtk runtime](http://www.google.com/search?q=GTK%2B+runtime&ie=utf-8&oe=utf-8&rls=org.mozilla:zh-CN:official&client=firefox) 和[GNOME ID3 Tag Editor](http://sourceforge.net/projects/gid3/) 录音我用[audacity](http://audacity.sourceforge.net/)，我参与了汉化和稳当翻译。现在主要是一个上海的朋友在做。好久没和他联系了。
 
-
-update:我准备用cowbell，在ubuntu中直接 sudo apt-get install cowbell 就可以安装，搜索软件库也可以
-
-但是它的批量模式是命令行下的，而且功能不是很方便。请大家继续协力找一下。
-
-帮同事的项目录歌。歌曲重新谱词然后唱歌小朋友听。录音我当然使用audacity啦。：） 
-
-我把mp3 tag写错了。audacity中无法方便编辑，甚至无法编辑我感觉。所以找其他工具。
-找到了。记录一下
-
-寻找方法，搜索[id3 tag editor sf](http://www.google.com/search?hs=Oc0&hl=zh-CN&newwindow=1&client=firefox&rls=org.mozilla%3Azh-CN%3Aofficial&q=id3+tag+editor+sf&btnG=%E6%90%9C%E7%B4%A2&lr=)
-
-准备用的[easy tag](http://easytag.sourceforge.net/)，windows上，需要[gtk runtime](http://www.google.com/search?q=GTK%2B+runtime&ie=utf-8&oe=utf-8&rls=org.mozilla:zh-CN:official&client=firefox)
-
-和[GNOME ID3 Tag Editor](http://sourceforge.net/projects/gid3/)
-
-录音我用[audacity](http://audacity.sourceforge.net/)，我参与了汉化和稳当翻译。现在主要是一个上海的朋友在做。好久没和他联系了。
+2006-11-16

@@ -1,4 +1,4 @@
-drupal核心主题模板的核心参数
+# drupal核心主题模板的核心参数
 
 drupal核心主题模板的核心参数 http://drupal.org/node/190815 Default templates: These are the default template (.tpl.php) files provided by core. Documentation on the variables and purpose of these templates are located inside the templates. There is a default set of variables available to all templates. The templates handled by PHPTemplate in 5.x were also moved. PHPTemplate no longer handles template files. In order to override these templates, all you need to do is copy them into your theme folder and clear the theme registry.
 

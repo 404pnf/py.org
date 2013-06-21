@@ -1,4 +1,4 @@
-清除drupal的variables表中垃圾数据
+# 清除drupal的variables表中垃圾数据
 
 [tags] drupal [/tags] http://drupal.org/project/variable\_clean
 

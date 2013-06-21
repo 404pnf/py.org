@@ -1,5 +1,0 @@
-tony markdown的link愈发可以正常工作了
-
-例子： 我最喜欢的组织之一自由软件基金会 [free software foundation](http://fsf.org) 这个链接的语法是 [free software foundation](http://fsf.org) 联接描述文字在英文 [] 扩后内 后面紧跟在英文 () 内的url 你刚才发图让我们猜怎么没吐后来文章又删除了呀
-
-2006-10-13

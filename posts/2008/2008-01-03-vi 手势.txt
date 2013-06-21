@@ -1,5 +1,0 @@
-vi 手势
-
-## vi 手势 ![](http://blog.ngedit.com/img/paul-tuckfield-vi-gang-sign.jpg) ![](http://www.viemu.com/why-vi-img/vi-gang-sign.gif) http://blog.ngedit.com/2007/11/19/the-vi-gang-sign/ http://www.homebrew.net/visign/ all you vi gangsterz~ report here :)
-
-2008-01-03

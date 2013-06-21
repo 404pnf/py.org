@@ -1,5 +1,5 @@
 # 显示现在的gnu linux上安装了什么程序
 
-dpkg --get-selections
+dpkg --get-selections 参考： http://www.howtogeek.com/howto/linux/show-the-list-of-installed-packages-on-ubuntu-or-debian/
 
-参考： http://www.howtogeek.com/howto/linux/show-the-list-of-installed-packages-on-ubuntu-or-debian/
+2011-09-27

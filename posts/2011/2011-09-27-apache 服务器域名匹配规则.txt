@@ -1,5 +1,0 @@
-apache 服务器域名匹配规则
-
-apache server name wildcard 使用ServerAlias指令： NameVirtualHost 192.168.1.18:8080 ServerName foo.com ServerAlias \*.foo.com ServerName bar.com ServerAlias \*.bar.com 参考： http://prefetch.net/blog/index.php/2007/01/06/using-wildcards-in-apache-server-aliases/
-
-2011-09-27

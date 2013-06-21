@@ -1,5 +1,0 @@
-服务器出现对某一个用用户登录给出 拒绝我们的私钥 server refused our key
-
-grep whx /var/log/secure Jun 21 15:16:00 2u4u sshd[32713]: Authentication refused: bad ownership or modes for directory /home/whx 错误给的很明显，是 /home/whx 这个目录权限变了。去看了一下 drwxr-xr-x 8 apache apache 4096 Jun 16 18:52 whx chown回whx.whx就好了
-
-2011-09-27

@@ -1,5 +1,0 @@
-在ubnutn gun linux上启动php5-fpm
-
-用apt安装的 sudo /etc/init.d/php5-fpm start debian应该一样。
-
-2011-09-27

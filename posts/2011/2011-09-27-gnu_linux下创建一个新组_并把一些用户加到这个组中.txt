@@ -1,31 +1,5 @@
 # gnu linux下创建一个新组 并把一些用户加到这个组中
 
-# groupadd developer
+# groupadd developer 创建一个叫developer的组 # usermod -a -G developer user1 修改(usermod)用户user1的组，给该用户添加（-a : append）到developer组中 source: http://www.cyberciti.biz/faq/howto-linux-add-user-to-group/ > Howto: Linux Add User To Group > > usermod example - Add a existing user to existing group > > Add existing user tony to ftp supplementary/secondary group with usermod command using -a option ~ i.e. add the user to the supplemental group(s). Use only with -G option : > # usermod -a -G ftp tony > > Change existing user tony primary group to www: > # usermod -g www tony > > > In this example, create a new user called vivek and add it to group called developers. First login as a root user (make sure group developers exists), enter: > # grep developers /etc/group > > Output: > > developers:x:1124: > If you do not see any output then you need to add group developers using groupadd command: > # groupadd developers
 
-创建一个叫developer的组
-
-      # usermod -a -G developer user1
-
-修改(usermod)用户user1的组，给该用户添加（-a : append）到developer组中
-
-
-source: http://www.cyberciti.biz/faq/howto-linux-add-user-to-group/
-> Howto: Linux Add User To Group
-> 
-> usermod example - Add a existing user to existing group
-> 
-> Add existing user tony to ftp supplementary/secondary group with usermod command using -a option ~ i.e. add the user to the supplemental group(s). Use only with -G option :
->     # usermod -a -G ftp tony
-> 
-> Change existing user tony primary group to www:
-> 	 # usermod -g www tony
-> 
-> 
-> In this example, create a new user called vivek and add it to group called developers. First login as a root user (make sure group developers exists), enter:
->    # grep developers /etc/group
-> 
-> Output:
-> 
-> developers:x:1124:
-> If you do not see any output then you need to add group developers using groupadd command:
->    # groupadd developers
+2011-09-27

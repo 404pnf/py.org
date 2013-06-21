@@ -1,4 +1,4 @@
-ruby下一个极简主义的站点发布程序
+# ruby下一个极简主义的站点发布程序
 
 https://github.com/chriseppstein/nanoc http://nanoc.stoneship.org/docs/3-getting-started/ 写这个程序的人在github上还有不少有意思的程序。
 

@@ -1,5 +1,0 @@
-问 怎么回事 高清晰电视和胶片存的信息比起来差距太远了
-
-高清晰电视和胶片存的信息比起来差距太远了 胶片底片存的信息再多，没有媒介（达到相同线数的屏幕）把它呈现出来也没用 from [wikipedia](http://en.wikipedia.org/wiki/Image\_resolution#Resolution\_in\_various\_media) - DVDs encode 720 by 480 (NTSC) pixels or 720 by 576 (PAL) pixels - Blu-ray disks encode 1920 by 1080 pixels - High definition television is 1920 by 1080 pixels or 1280 by 720 pixels - 35 mm film is scanned for release on DVD at 1080 or 2000 lines as of 2005. - 35 mm original camera negative motion picture film can resolve up to 6,000 lines. - 35 mm projection positive motion picture film has about 2,000 lines which results from the analogue printing from the camera negative of an interpositive, and possibly an internegative, then a projection positive. - Sequences from newer films are scanned at 2,000, 4,000 or even 8,000 columns (line measured the other directions), called 2K, 4K and 8K, for quality visual effects editing on computers. lvcha，从这个文章看高清可一点都不高啊。 This might help me have a better understand of digital image resolution http://fred.dsimprove.be/\_\_offSite/pixel/theory.php
-
-2007-07-31

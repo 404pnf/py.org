@@ -1,4 +1,4 @@
-lyceum上传照片出现
+# lyceum上传照片出现
 
 lyceum上传照片出现 > http://lists.ibiblio.org/pipermail/lyceum-users/2007-August/000897.html > > SELECT \*FROM `options` where option\_name = 'uploads\_file\_path' 我的问题是 uploads\_web\_path 出问题了，因为数目不多，我手工改的。 damn～！！ 是bai和xiaola回答的问题！我都忘了！！！！
 

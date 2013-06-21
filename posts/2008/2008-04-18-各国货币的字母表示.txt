@@ -1,4 +1,4 @@
-各国货币的字母表示
+# 各国货币的字母表示
 
 ## 各国货币的字母表示 wikipedia上有很全的例子 http://en.wikipedia.org/wiki/Currency\_sign ![](http://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Currency-Symbol\_Regions\_of\_the\_World\_circa\_2006.png/800px-Currency-Symbol\_Regions\_of\_the\_World\_circa\_2006.png)
 

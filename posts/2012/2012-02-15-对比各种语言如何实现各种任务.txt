@@ -1,6 +1,5 @@
 # 对比各种语言如何实现各种任务
 
-> Rosetta Code is a programming chrestomathy site. The idea is to present solutions to the same task in as many different languages as possible, to demonstrate how languages are similar and different, and to aid a person with a grounding in one approach to a problem in learning another. Rosetta Code currently has 578 tasks, 84 draft tasks, and is aware of 421 languages, though we do not (and cannot) have solutions to every task in every language.
+> Rosetta Code is a programming chrestomathy site. The idea is to present solutions to the same task in as many different languages as possible, to demonstrate how languages are similar and different, and to aid a person with a grounding in one approach to a problem in learning another. Rosetta Code currently has 578 tasks, 84 draft tasks, and is aware of 421 languages, though we do not (and cannot) have solutions to every task in every language. http://rosettacode.org/wiki/Rosetta\_Code
 
-
-http://rosettacode.org/wiki/Rosetta_Code
+2012-02-15

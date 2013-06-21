@@ -1,4 +1,4 @@
-如何从git的历史中删除不应该登入的文件
+# 如何从git的历史中删除不应该登入的文件
 
 http://help.github.com/remove-sensitive-data/ 我还是没搞明白。
 

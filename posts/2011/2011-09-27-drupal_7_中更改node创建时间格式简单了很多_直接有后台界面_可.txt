@@ -1,6 +1,5 @@
 # drupal 7 中更改node创建时间格式简单了很多 直接有后台界面 可以预存多个自定义格式
 
-[tags] drupal [/tags]
-http://drupal.org/node/984762#comment-3770596
-token也让时间显示更灵活
-http://drupal.org/node/983954#comment-3764750
+[tags] drupal [/tags] http://drupal.org/node/984762#comment-3770596 token也让时间显示更灵活 http://drupal.org/node/983954#comment-3764750
+
+2011-09-27

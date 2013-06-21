@@ -1,12 +1,5 @@
 # nginx如果启用proxy cache的情况下 硬盘不足会报错
 
-sudo /usr/local/nginx/sbin/nginx -t
-	nginx: the configuration file /usr/local/nginx/conf/nginx.conf syntax is ok
-	nginx: [alert] mmap(MAP_ANON|MAP_SHARED, 314572800) failed (12: Cannot allocate memory)
-	nginx: configuration file /usr/local/nginx/conf/nginx.conf test failed
+sudo /usr/local/nginx/sbin/nginx -t nginx: the configuration file /usr/local/nginx/conf/nginx.conf syntax is ok nginx: [alert] mmap(MAP\_ANON|MAP\_SHARED, 314572800) failed (12: Cannot allocate memory) nginx: configuration file /usr/local/nginx/conf/nginx.conf test failed 我猜是内存不足，看了一下文件系统还有900多mb。我修改为用300mb的内容和500mb的磁盘做proxy\_cache，还是 报错。 搜索了一下，猜测是对的。 http://forum.nginx.org/read.php?2,4529,4531 再次减少缓存使用的内容和硬盘就可以了。
 
-我猜是内存不足，看了一下文件系统还有900多mb。我修改为用300mb的内容和500mb的磁盘做proxy_cache，还是 报错。
-
-搜索了一下，猜测是对的。 http://forum.nginx.org/read.php?2,4529,4531 
-
-再次减少缓存使用的内容和硬盘就可以了。
+2011-09-27

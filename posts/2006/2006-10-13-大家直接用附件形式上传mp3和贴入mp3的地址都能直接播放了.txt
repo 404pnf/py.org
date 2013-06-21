@@ -1,4 +1,4 @@
-大家直接用附件形式上传mp3和贴入mp3的地址都能直接播放了
+# 大家直接用附件形式上传mp3和贴入mp3的地址都能直接播放了
 
 20061017更新，上传的mp3请完全用拼音或英文命名。比如 guojige.mp3 而不是 国际歌.mp3 或 1\_国际歌.mp3。我正在请朋友们帮忙看看如何绕过这个限制。暂时委屈一下大家吧。 大家直接用附件形式上传mp3和贴入mp3的地址都能直接播放了 比如我贴个mp3的地址 http://wiredset.com/media/colin\_macintyre/How-Bout-I-Love-You-More.mp3 歌曲名字是 Colin MacIntyre - How Bout I Love You More.mp3 这样就好了。
 

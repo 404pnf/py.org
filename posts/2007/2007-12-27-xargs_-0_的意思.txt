@@ -1,11 +1,5 @@
 # xargs -0 的意思
 
-## xargs -0 的意思
+## xargs -0 的意思 -0 这个是阿拉伯数字零 Find all the .mp3 files in the music folder and pass to the ls command find ./music -name "\*.mp3" -print0 | xargs -0 ls print0是打印全部，而且找到文件的文件名之间没有newline了，都在一行，用空格分开；所有后面xargs用-0，告诉xargs那些文件名虽然中间有空格，但他们是一个参数，不要认为是n个。我是这么理解的。不知道对不对？
 
--0 这个是阿拉伯数字零
-
-Find all the .mp3 files in the music folder and pass to the ls command
-
-   find ./music -name "*.mp3" -print0 | xargs -0 ls
-
-print0是打印全部，而且找到文件的文件名之间没有newline了，都在一行，用空格分开；所有后面xargs用-0，告诉xargs那些文件名虽然中间有空格，但他们是一个参数，不要认为是n个。我是这么理解的。不知道对不对？
+2007-12-27

@@ -1,11 +1,12 @@
 # google blog search
 
-咱是不可用。未查明原因。
-
-
-这个不着急
-
-
-参考
-
+咱是不可用。未查明原因。  
+这个不着急  
+参考  
 [Just 平生一笑: Google Blog Search Pinging Service的使用](http://www.thinkjam.org/zoptuno/archives/2006/10/google-blog-search-pinging-service.html)
+
+    
+    
+
+
+2006-11-15

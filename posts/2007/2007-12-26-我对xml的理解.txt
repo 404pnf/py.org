@@ -1,4 +1,4 @@
-我对xml的理解
+# 我对xml的理解
 
 ## 我对xml的理解 xml的目的就是文本格式独立于系统和平台 就是说数据和软件及平台不相关 所以只存在xml数据置标不够详细 不存在无法导入某个系统和在某个平台使用的情况 这点是不是我们理解上差异啊 https://tor-proxy.net/cgi-bin/nph-proxy\_jap.cgi/011010A/http/zh.wikipedia.org/wiki/=25E5=258F=25AF=25E6=2589=25A9=25E5=25B1=2595=25E7=25BD=25AE=25E6=25A0=2587=25E8=25AF=25AD=25E8=25A8=2580 https://tor-proxy.net/cgi-bin/nph-proxy\_jap.cgi/000000A/http/en.wikipedia.org/wiki/XML http://www.w3.org/XML/ http://www.w3schools.com/xml/xml\_usedfor.asp
 

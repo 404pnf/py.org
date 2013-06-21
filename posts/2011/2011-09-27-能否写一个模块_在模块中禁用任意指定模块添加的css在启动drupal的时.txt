@@ -1,10 +1,5 @@
 # 能否写一个模块 在模块中禁用任意指定模块添加的css在启动drupal的时候添加
 
-其他模块添加css的方法可能是
+其他模块添加css的方法可能是 /\*\* \* Implementation of hook\_init \*/ function tagadelic\_init() { drupal\_add\_css(drupal\_get\_path('module', 'tagadelic') .'/tagadelic.css'); }
 
-        /**
-	 * Implementation of hook_init
-	 */
-	function tagadelic_init() {
-	  drupal_add_css(drupal_get_path('module', 'tagadelic') .'/tagadelic.css');
-	}
+2011-09-27

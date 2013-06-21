@@ -1,5 +1,0 @@
-搜索了一些直接在网页中引用flv和swf的代码 真是麻烦
-
-embed flv code source: http://www.mediacollege.com/video/format/mpeg4/streaming/ http://www.mediacollege.com/video/format/mpeg4/streaming/
-
-2009-01-22

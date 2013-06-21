@@ -1,4 +1,4 @@
-如何使用google的dns
+# 如何使用google的dns
 
 gnu/linxu和苹果用户 ： 修改 /etc/resolv.conf 加入3行 # google dns nameserver 8.8.8.8 nameserver 8.8.8.4 windows用户： http://www.walkernews.net/2011/06/20/use-google-public-dns-to-access-blocked-websites/
 

@@ -1,5 +1,0 @@
-如何批量删除空文件夹 小文件夹
-
-有个项目需要删除一批空文件夹。因为文件浏览器默认不直接显示文件夹内所有文件的大小总和，必须以个一个看。这样太慢。找批量方法。 开始享用find，看到max-depth，未果 后来直接du。看手册。发现了方法： du -b --max-depth 1 . 这个命令显示当前文件夹下当前目录的文件和文件夹的大小。不向下继续。只显示每个文件夹的综合。加上 -b 是因为让它都用byte显示大小，方便下一步排序。 排序。sort默认排序是字典模式，这样的话 1111 byte 小于 2 byte。这是不对的。看手册找到方法了。 sort -g empty.folder -g, --general-numeric-sort compare according to general numerical value
-
-2010-09-26

@@ -1,40 +1,5 @@
 # ruby中字符串更多的预制方法
 
->> "ab".sum
-=> 195
->> puts ?a
-97
-=> nil
->> puts ?b
-98
-=> nil
->> 97 + 98
-=> 195
->> puts ?ab
-SyntaxError: compile error
-(irb):109: syntax error, unexpected '\n'
-	from (irb):109
-	from :0
->> "ab".sum
-=> 195
+>> "ab".sum => 195 >> puts ?a 97 => nil >> puts ?b 98 => nil >> 97 + 98 => 195 >> puts ?ab SyntaxError: compile error (irb):109: syntax error, unexpected '\n' from (irb):109 from :0 >> "ab".sum => 195 >> "中".sum => 585 >> "文".sum => 515 >> "？".sum => 586 >> "中文？".sum => 1686 看来 sum 是对所有字母的asii值求和。 >> crazyCase = "cRaZyCaSEs" => "cRaZyCaSEs" >> crazyCase.upcase => "CRAZYCASES" >> crazyCase.downcase => "crazycases" >> crazyCase.swapcase => "CrAzYcAseS"
 
->> "中".sum
-=> 585
->> "文".sum
-=> 515
->> "？".sum
-=> 586
->> "中文？".sum
-=> 1686
-
-
-看来 sum 是对所有字母的asii值求和。
-
->> crazyCase = "cRaZyCaSEs"
-=> "cRaZyCaSEs"
->> crazyCase.upcase
-=> "CRAZYCASES"
->> crazyCase.downcase
-=> "crazycases"
->> crazyCase.swapcase
-=> "CrAzYcAseS"
+2012-02-15

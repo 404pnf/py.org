@@ -1,5 +1,0 @@
-升级lyceum到1 0注意事项
-
-## 升级lyceum到1.0注意事项 > yceum1.0升级记录 > > System Settings > > 以admin登陆后配置网站，发现System Settings根本无法访问。 > 今天才发现是因为修改了lib的位置造成的。 > 把settings.php里的 > > require(’../../lib/taglib.php’); > > 改成 > > require(’../lib/taglib.php’); > http://lyceum.blogwoo.com/archives/679.html lyceum邮件类表也说了这个问题。 我上次升级就没成功。过过再试一下。
-
-2008-05-23

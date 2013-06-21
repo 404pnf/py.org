@@ -1,5 +1,0 @@
-drupal theme中禁止某页或者某种内容类型显示页面标题
-
-http://drupal.org/book/export/html/426482 type, array('page', 'story'))) { $vars['title'] = ''; } } ?>
-
-2010-06-13

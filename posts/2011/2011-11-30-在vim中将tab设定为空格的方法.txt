@@ -1,4 +1,4 @@
-在vim中将tab设定为空格的方法
+# 在vim中将tab设定为空格的方法
 
 For example, to get the following coding style, No tabs in the source file. All tab characters are 4 space characters. use the following set of options: :set tabstop=4 :set shiftwidth=4 :set expandtab 参考： http://vim.wikia.com/wiki/Converting\_tabs\_to\_spaces After the 'expandtab' option is set, all the new tab characters entered will be changed to spaces. This will not affect the existing tab characters. To change all the existing tab characters to match the current tab settings, use: :retab
 

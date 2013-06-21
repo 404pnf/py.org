@@ -1,4 +1,4 @@
-用drush修改站点的默认模板
+# 用drush修改站点的默认模板
 
 $ drush @site vget|grep theme admin\_theme: "seven" node\_admin\_theme: "1" theme\_default: "basic" $ drush @site vset theme\_default garland theme\_default was set to garland. 可解决下面情况启用某默认模板，而且将管理模板也设定为该模板，该模板出现严重错误白屏了。你根本进不了admin去换模板。
 

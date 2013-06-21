@@ -1,4 +1,4 @@
-还是一片说mysql的innodb参数调整的
+# 还是一片说mysql的innodb参数调整的
 
 http://www.bitrixsoft.com/support/training/course/index.php?COURSE\_ID=22&LESSON\_ID=1274
 

@@ -1,11 +1,5 @@
 # drupal 7的feeds模块代码中file mapper有个小问题 需要更新
 
-参考： http://drupal.org/node/1134684
-pathc在： http://drupalcode.org/project/feeds.git/commit/5f9ebac
+参考： http://drupal.org/node/1134684 pathc在： http://drupalcode.org/project/feeds.git/commit/5f9ebac 如果碰到这个问题，报错信息会是类似： Recoverable fatal error: Argument 2 passed to token\_replace() must be an array, object given, called in /var/aegir/drupal7/modules/file/file.field.inc on line 581 and defined in token\_replace() (line 76 of /var/aegir/drupal7/includes/token.inc). 参考： http://drupal.org/node/1146288 feeds-7.x-alpha4中已经修改了。之前的版本会有上面的问题。
 
-如果碰到这个问题，报错信息会是类似：
-
-      Recoverable fatal error: Argument 2 passed to token_replace() must be an array, object given, called in /var/aegir/drupal7/modules/file/file.field.inc on line 581 and defined in token_replace() (line 76 of /var/aegir/drupal7/includes/token.inc).
-参考： http://drupal.org/node/1146288
-
-feeds-7.x-alpha4中已经修改了。之前的版本会有上面的问题。
+2011-09-27

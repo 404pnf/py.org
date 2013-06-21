@@ -1,3 +1,5 @@
 # 某人写的学习ruby的心得
 
 http://www.yangzhiping.com/tech/learn-program-psychology.html
+
+2012-02-15

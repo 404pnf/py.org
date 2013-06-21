@@ -1,5 +1,0 @@
-修改hostname后 需要相应修改 etc hosts 文件 将旧的主机名替换成新的 否则sudo 出现unable to resolve host 解决方法
-
-参考： http://hi.baidu.com/jasey\_wang/blog/item/f13b7e456b08c547500ffe63.html 修改完hostname让它立即生效，debian gnu/linux 上用 service hostanme start 就可以了。如果是terminal登录，需要登出再登入才起作用。
-
-2011-09-27

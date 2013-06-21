@@ -1,6 +1,6 @@
 require 'rss/2.0'
 require 'fileutils'
-require_relative 'sanitize_title.rb'
+require_relative './sanitize_title.rb'
 require 'reverse_markdown'
 
 # USAGE: ruby script.rb RSS-File output-folder
@@ -15,7 +15,8 @@ rss = RSS::Parser.parse(f, false) # false 是说不去validate rss
 articles_tuple = rss.items.map do |item|
   # title and filename
   title_o = item.title.to_s.strip
-  title = sanitize(title_o).gsub(/_/, ' ')
+  title_in_filename = sanitize(title_o)
+  title_md = '# ' + title_in_filename.gsub(/_/, ' ')
 
   # date
   # item.date is a Time Object
@@ -25,7 +26,7 @@ articles_tuple = rss.items.map do |item|
   year, month, day = pubdate.split('-')
   
   # filename
-  filename = "#{pubdate}-#{title}".slice(0,60)
+  filename = "#{pubdate}-#{title_in_filename}".slice(0,48)
   
   # content 
   # 把之前emacs org中的标题格式替换为markdown的
@@ -39,10 +40,10 @@ articles_tuple = rss.items.map do |item|
   # 有些早期文章有html标签
   content_md = ReverseMarkdown.parse content_raw
   # 结尾加上个空行和撰写时间
-  content = "#{title}\n\n#{content_md}\n\n#{pubdate}"
+  content = "#{title_md}\n\n#{content_md}\n\n#{pubdate}"
   
   # final tuple 
-  [title, filename, content, year, month, day]
+  [title_md, filename, content, year, month, day]
 end    
 
 articles_tuple.each do |article|

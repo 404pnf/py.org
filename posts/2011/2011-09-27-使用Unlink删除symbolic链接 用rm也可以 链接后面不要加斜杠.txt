@@ -1,5 +1,0 @@
-使用Unlink删除symbolic链接 用rm也可以 链接后面不要加斜杠
-
-unlink symbolic\_link 是对的 unlink symbolic\_link/ 是错的
-
-2011-09-27

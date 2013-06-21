@@ -1,5 +1,0 @@
-如何快速发文章 drupal如何快速发文章
-
-如何快速写文章。 如果你在本站是自动登录的。那么把下面的地址加入到书签。firefox用户可以直接拖着个地址到地址栏下面的快速书签。 > [http://pengyou.rijiben.org/node/add/blog](http://pengyou.rijiben.org/node/add/blog) firefox直接拖到快速书签栏该书签的名字会显示为 > Submit blog entry | 朋友的日记本 右键点书签选择属性（properties），修改为一个更清楚地名字就好了。比如叫“日记本快速发文”什么的。 今后，你要写文章，点以下这个书签就好了。
-
-2007-05-22

@@ -1,3 +1,5 @@
 # 使用 drush vste maintainance mode 1 将drupal 7站点设定到离线模式
 
-d6下用 drush vste site_offline 1
+d6下用 drush vste site\_offline 1
+
+2011-11-30

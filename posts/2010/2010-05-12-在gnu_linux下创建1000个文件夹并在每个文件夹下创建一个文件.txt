@@ -1,11 +1,5 @@
 # 在gnu linux下创建1000个文件夹并在每个文件夹下创建一个文件
 
-I used this little script to generate 1000 folders, with 100 files each of 100kbyte.
+I used this little script to generate 1000 folders, with 100 files each of 100kbyte. for i in `seq 1 1000`; do mkdir -p files-$i; for j in `seq 1 100`; do dd if=/dev/zero of=files-$i/$j bs=100k count=1 2> /dev/null; done; done http://blog.lighttpd.net/articles/2006/11/12/lighty-1-5-0-and-linux-aio
 
-for i in `seq 1 1000`; do 
-  mkdir -p files-$i; 
-    for j in `seq 1 100`; do 
-        dd if=/dev/zero of=files-$i/$j bs=100k count=1 2> /dev/null; 
-          done; 
-          done
-          http://blog.lighttpd.net/articles/2006/11/12/lighty-1-5-0-and-linux-aio
+2010-05-12

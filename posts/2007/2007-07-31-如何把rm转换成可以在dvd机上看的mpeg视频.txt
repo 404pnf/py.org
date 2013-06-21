@@ -1,4 +1,4 @@
-如何把rm转换成可以在dvd机上看的mpeg视频
+# 如何把rm转换成可以在dvd机上看的mpeg视频
 
 如何把rm转换成可以在dvd机上看的mpeg视频？ ## 批量使用下面的命令 都是用bash的 for, do, done。 比如 for f in \*.rm; do mencoder $f -oac mp3lame -lameopts preset=128 -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1200 -ofps 25 -of avi -o $f-mp4.avi;done 就好了。这是一个循环。先找到特定文件f，这里是\*.rm的都是f。然后循环do那个命令。把我下面的命令中文件名的部分都用文件名参数$f来代替就好。 ## 把rm转成mpeg4 mencoder 01.rm -oac mp3lame -lameopts preset=128 -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1200 -ofps 25 -of avi -o out.avi 这都可以自己调整。比如让画面达到vcd水平就好了，就把bitrate=500k差不多。 这样转出来的号称能播放mp4的dvd机器不能播放！为什么？ 下面是该类型视频具体信息
 

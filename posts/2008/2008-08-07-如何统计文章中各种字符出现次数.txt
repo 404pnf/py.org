@@ -1,4 +1,4 @@
-如何统计文章中各种字符出现次数
+# 如何统计文章中各种字符出现次数
 
 bash for life cat abc.txt |grep -o "a" | wc -l grep -o 的 o 是--only-match的意思 查看a在abc.txt中常现多少次 26遍 ：） 当然不是。不过这是第一个方法。我继续。
 

@@ -1,5 +1,0 @@
-使用iconv把文件编码转为 utf-8
-
-http://lists.debian.org/debian-user/2003/02/msg00898.html iconv -f UTF-8 -f ISO-8859-1 stream.lower.ir > new\_file.txt
-
-2011-09-27

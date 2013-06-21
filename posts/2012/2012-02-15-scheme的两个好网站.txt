@@ -1,4 +1,5 @@
 # scheme的两个好网站
 
-http://www.schemers.org/
-http://community.schemewiki.org/
+http://www.schemers.org/ http://community.schemewiki.org/
+
+2012-02-15

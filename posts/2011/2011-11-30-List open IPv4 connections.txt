@@ -1,5 +1,0 @@
-List open IPv4 connections
-
-lsof -Pnl +M -i4
-
-2011-11-30

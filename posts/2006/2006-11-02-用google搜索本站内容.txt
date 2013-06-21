@@ -1,4 +1,4 @@
-用google搜索本站内容
+# 用google搜索本站内容
 
 用小拉提供的[更多搜索引擎搜索](http://pengyou.rijiben.org/node/592#comment-671)也可以 小拉请整理一下代码，写个报告上来。大家一块看文字编码问题。
 

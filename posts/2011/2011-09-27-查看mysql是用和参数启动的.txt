@@ -1,4 +1,4 @@
-查看mysql是用和参数启动的
+# 查看mysql是用和参数启动的
 
 mysql --print-defaults 参考： http://stackoverflow.com/questions/580331/mysql-how-to-determine-which-config-file-is-being-used
 

@@ -1,5 +1,0 @@
-drupal 7 启动过程详解
-
-tt drupal tt http://becircle.com/drupal\_7\_line\_by\_line\_part\_2\_bootstrap
-
-2011-09-27

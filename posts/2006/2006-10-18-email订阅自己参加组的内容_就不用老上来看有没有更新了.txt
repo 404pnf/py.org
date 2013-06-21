@@ -1,13 +1,5 @@
 # email订阅自己参加组的内容 就不用老上来看有没有更新了
 
-email订阅更新的方法是，查看任一一篇组里文章。如果你是该组组员，在右边组的框里最下面有个
+email订阅更新的方法是，查看任一一篇组里文章。如果你是该组组员，在右边组的框里最下面有个 > manage subscription 点一下，选中下面的enabled。 > Email notification: > enabled > 禁用 以后该组有新文章和评论你就能够通过email收到。email就是你注册时用的邮箱地址。如果你收不到信，就用gmail吧。没有gmail的我邀请你们。很好用。gmail帐号还能用个相册和其他google服务。
 
-> manage subscription
-
-点一下，选中下面的enabled。
-
-> Email notification:
-> enabled
-> 禁用
-
-以后该组有新文章和评论你就能够通过email收到。email就是你注册时用的邮箱地址。如果你收不到信，就用gmail吧。没有gmail的我邀请你们。很好用。gmail帐号还能用个相册和其他google服务。
+2006-10-18

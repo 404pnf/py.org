@@ -1,5 +1,0 @@
-vim 下查看php函数文档
-
-http://www.laruence.com/2010/08/18/1718.html
-
-2011-09-27

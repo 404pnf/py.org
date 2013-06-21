@@ -1,4 +1,4 @@
-wikibook上学习法语的书
+# wikibook上学习法语的书
 
 wikibook上学习法语的书 英文版写得很详细了 中文翻译还没有完成 http://zh.wikibooks.org/w/index.php?title=%E6%B3%95%E8%AF%AD&variant=zh-cn 想到请老孟做一个语音版的。
 

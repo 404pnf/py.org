@@ -1,5 +1,0 @@
-outlook中设置密码 帐号加密的方法
-
-## outlook中设置密码，帐号加密的方法 + 点击文件菜单，点击“标识”子菜单，再点击“管理标识” + 点击“属性”按钮 + 勾选“需要密码”按钮。 + 输入新密码框中输入密码，然后在确认新密码框再次输入新的密码 + 点击“确定”按钮。 + 点击“确定”按钮。返回上一级页面。点击“关闭”按钮。此时outlook express 的密码已经设置完成了。 + 当关闭outlok exprexx 再次启动outlook express 时.只有输入正确的密码后点击“确定”按钮，才可以成功登录outlook express 查询邮件及通迅录。 + 如果在登录时输入错误的密码，系统就会弹出如下提示，因此密码一旦设定。一定要牢记。 via http://www.chinaemail.com.cn/problem/khd/200504/647.html 我不用outlook和outlook express，我用自由软件[thunderbird/雷鸟](http://www.mozilla.org.cn/thunderbird/)。outlook不是自由软件，也不好用！ 写这个给身边一位用outlook的朋友看的。：）
-
-2008-03-24

@@ -1,4 +1,4 @@
-如何在命令行快速查看mysql的参数
+# 如何在命令行快速查看mysql的参数
 
 ## 方法一，用mysqladmin $ mysqladmin -uroot -pmypassword variables|grep buffer\_pool | innodb\_buffer\_pool\_size | 8388608 ## 方法二，用mysqld $ sudo /usr/sbin/mysqld --verbose --help|grep buffer-pool-size 110815 9:42:55 [Note] Plugin 'FEDERATED' is disabled. --innodb-buffer-pool-size=# innodb-buffer-pool-size 943718400 ## 方法三，登录到mysql $ mysql -uroot -pmypassword 然后用 show variables like '%pool\_size%';
 

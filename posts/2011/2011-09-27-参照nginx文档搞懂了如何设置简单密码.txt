@@ -1,4 +1,4 @@
-参照nginx文档搞懂了如何设置简单密码
+# 参照nginx文档搞懂了如何设置简单密码
 
 [tags]nginx[/tags] use auth\_basic to restrict access to phpmyadmin update localhost.conf set location /phpmyadmin { auth\_basic auth\_basic\_user\_file htpasswd } by default, the htpasswd is in relative path of conf/ use generate.passwd.pl to generate passwd, e.g ./generate.passwd.pl xiaobai you get the encryted text of xiaobai, copy the text to htpasswd the formate of htpasswd is; username:encryted.passwd 用perl加密明文密码。这样机器上可以不借用apache的htpaaswd工具，也就可以不安apache了 perl更通用 diff --git a/generate.passwd.pl b/generate.passwd.pl new file mode 100755 index 0000000..b75db48 --- /dev/null +++ b/generate.passwd.pl @@ -0,0 +1,5 @@ +#! /usr/bin/perl +use strict; + +my $pw=$ARGV[0]; +print crypt($pw,$pw)."\n";
 

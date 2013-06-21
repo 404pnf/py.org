@@ -1,5 +1,0 @@
-drush中已经可以制定在备份数据库的时候跳过哪些表和哪些表只备份结构而不备份数据
-
-参考： http://drush.ws/#sql-dump 参考 drush代码目录下 example/example.drushrc.php /\* \* Customize this associative array with your own tables. This is the list of \* tables whose \*data\* is skipped by the 'sql-dump' and 'sql-sync' commands when \* a structure-tables-key is provided. You may add new tables to the existing \* array or add a new element. \*/ $options['structure-tables'] = array( 'common' => array('cache', 'cache\_filter', 'cache\_menu', 'cache\_page', 'history', 'sessions', 'watchdog'), ); /\* \* Customize this associative array with your own tables. This is the list of \* tables that are entirely omitted by the 'sql-dump' and 'sql-sync' commands \* when a skip-tables-key is provided. This is useful if your database contains \* non Drupal tables used by some other application or during a migration for \* example. You may add new tables to the existing array or add a new element. \*/ $options['skip-tables'] = array( 'common' => array('migration\_data1', 'migration\_data2'), );
-
-2011-11-30

@@ -1,8 +1,5 @@
 # 单词 addendum
 
-> 2005 Addendum: I got first burned seriously by the line truncation business when around 1998 i was moving my website from one server to another. Upon untarring, the files names has been changed to gibberish. The full path was about 120 characters.
-> http://xahlee.org/UnixResource_dir/writ/truncate_line.html
+> 2005 Addendum: I got first burned seriously by the line truncation business when around 1998 i was moving my website from one server to another. Upon untarring, the files names has been changed to gibberish. The full path was about 120 characters. > http://xahlee.org/UnixResource\_dir/writ/truncate\_line.html The noun addendum has 1 sense (no senses from tagged texts) 1. addendum, supplement, postscript -- (textual matter that is added onto a publication; usually at the end)
 
-The noun addendum has 1 sense (no senses from tagged texts)
-                                      
-1. addendum, supplement, postscript -- (textual matter that is added onto a publication; usually at the end)
+2007-12-24

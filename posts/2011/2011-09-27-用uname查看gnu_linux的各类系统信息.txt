@@ -1,28 +1,5 @@
 # 用uname查看gnu linux的各类系统信息
 
-[tags]gnu/linux[/tags]
-参考  Uname  手册
+[tags]gnu/linux[/tags] 参考 Uname 手册 File Edit Options Buffers Tools Help > uname -a > => Linux dum 2.2.18 #4 SMP Tue Jun 5 11:24:08 PDT 2001 i686 unknown unknown > GNU/Linux > > The program accepts the following options. Also see \*Note Common > ptions::. > > -a' > --all' > Print all of the below information, except omit the processor type > and the hardware platform name if they are unknown. > > -i' > --hardware-platform' > Print the hardware platform name (sometimes called the hardware > implementation). Print `unknown' if the kernel does not make this > information easily available, as is the case with Linux kernels. > > -m' > --machine' > Print the machine hardware name (sometimes called the hardware >
 
- File Edit Options Buffers Tools Help                                                                                         
-> uname -a
->     => Linux dum 2.2.18 #4 SMP Tue Jun 5 11:24:08 PDT 2001 i686 unknown unknown
-> GNU/Linux
->
->   The program accepts the following options.  Also see *Note Common
-> ptions::.
->
-> -a'
-> --all'
->     Print all of the below information, except omit the processor type
->     and the hardware platform name if they are unknown.
->
-> -i'
-> --hardware-platform'
->     Print the hardware platform name (sometimes called the hardware
->     implementation).  Print `unknown' if the kernel does not make this
->     information easily available, as is the case with Linux kernels.
->
-> -m'
-> --machine'
->     Print the machine hardware name (sometimes called the hardware
->
+2011-09-27

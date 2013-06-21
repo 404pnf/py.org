@@ -1,5 +1,5 @@
 # 据说类似这些照片让flickr前一段无法从中国内地访问 现在有些照片也访问不了
 
-就是[类似这样的照片么](http://www.flickr.com/photos/78205250@N00/sets/72157600293959345/)？
+就是[类似这样的照片么](http://www.flickr.com/photos/78205250@N00/sets/72157600293959345/)？ 如果你你还是看不了，装个[firefox的插件](http://pengyou.rijiben.org/node/1514)试试。
 
-如果你你还是看不了，装个[firefox的插件](http://pengyou.rijiben.org/node/1514)试试。
+2007-07-16

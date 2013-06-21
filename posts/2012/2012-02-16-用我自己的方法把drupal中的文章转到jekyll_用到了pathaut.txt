@@ -1,15 +1,5 @@
 # 用我自己的方法把drupal中的文章转到jekyll 用到了pathauto token transliteration和views data export
 
-就是先把node链接改写为
+就是先把node链接改写为 [yyyy]-[mm]-[dd]-[title-raw] pathauto强烈建议用title-raw 我开始觉得美国国务院希望把白宫翻译成白屋有些道理，它给出的理由是 white house 是个 house 不是palace，而且 “宫” 容易让人联想到贵族和王室，美国是共和国没有那些东西。 后来我爸说宫不是必须和皇室相关，漂亮的大房子也可以叫宫，而且距离少年宫。对啊。一下就明白了。虽然少年宫翻译成 Children's Palace，但使用中文的人怎么会把他和皇室相连呢。 # amazon上的童书 http://www.amazon.com/Machines-Books-First-Learners-ebook/dp/B0064YS9DG/ref=zg\_bs\_154606011\_100
 
-[yyyy]-[mm]-[dd]-[title-raw] 
-pathauto强烈建议用title-raw
-
-
-
-我开始觉得美国国务院希望把白宫翻译成白屋有些道理，它给出的理由是 white house 是个 house 不是palace，而且 “宫” 容易让人联想到贵族和王室，美国是共和国没有那些东西。
-
-后来我爸说宫不是必须和皇室相关，漂亮的大房子也可以叫宫，而且距离少年宫。对啊。一下就明白了。虽然少年宫翻译成 Children's Palace，但使用中文的人怎么会把他和皇室相连呢。
-
-# amazon上的童书
-http://www.amazon.com/Machines-Books-First-Learners-ebook/dp/B0064YS9DG/ref=zg_bs_154606011_100
+2012-02-16

@@ -1,7 +1,5 @@
 # 出现 sudo add-apt-repository command not found 的错误是因为没有安装python-software-properties
 
-有时你需要加一些第3方的软件源，比如lanunchpad上的ppa。添加方法就是 add-apt-repository。但出现了没有该命令错误，怎么解决。
+有时你需要加一些第3方的软件源，比如lanunchpad上的ppa。添加方法就是 add-apt-repository。但出现了没有该命令错误，怎么解决。 参考这篇文章： python-software-properties。 就是先安装一下 apt-get install python-software-properties
 
-参考这篇文章： python-software-properties。
-
-就是先安装一下 apt-get install python-software-properties
+2011-09-27

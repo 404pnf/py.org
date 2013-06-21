@@ -1,4 +1,4 @@
-gps加密文件
+# gps加密文件
 
 http://tldp.org/LDP/intro-linux/html/sect\_09\_04.html
 

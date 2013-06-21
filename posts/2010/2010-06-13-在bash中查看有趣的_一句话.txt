@@ -1,16 +1,7 @@
 # 在bash中查看有趣的 一句话
 
-$ w3m -dump_source http://www.onelinerz.net/random-one-liners/1/ | awk ' /.*][^>]*>/, "", $0); print $0}'
+$ w3m -dump\_source http://www.onelinerz.net/random-one-liners/1/ | awk ' /.\*
 
-> Put this command in .bashrc and every time you open a new terminal a random quote will be downloaded and printed from onelinerz.net.
-> 
-> By altering the URL in the w3m statement you can change the output:
-> 
-> 1 to 10 lines - http://www.onelinerz.net/random-one-liners/(number)/
-> 
-> 20 newest lines - http://www.onelinerz.net/latest-one-liners/
-> 
-> Top 10 lines - http://www.onelinerz.net/top-100-funny-one-liners/
-> 
-> Top 10 lines are updated daily.
-> source: http://feedproxy.google.com/~r/Command-line-fu/~3/3ERL60ERKzE/get-a-funny-one-liner-from-www.onelinerz.net
+][^>]\*>/, "", $0); print $0}' > Put this command in .bashrc and every time you open a new terminal a random quote will be downloaded and printed from onelinerz.net. > > By altering the URL in the w3m statement you can change the output: > > 1 to 10 lines - http://www.onelinerz.net/random-one-liners/(number)/ > > 20 newest lines - http://www.onelinerz.net/latest-one-liners/ > > Top 10 lines - http://www.onelinerz.net/top-100-funny-one-liners/ > > Top 10 lines are updated daily. > source: http://feedproxy.google.com/~r/Command-line-fu/~3/3ERL60ERKzE/get-a-funny-one-liner-from-www.onelinerz.net
+
+2010-06-13

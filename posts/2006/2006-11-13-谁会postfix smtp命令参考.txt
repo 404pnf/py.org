@@ -1,5 +1,0 @@
-谁会postfix smtp命令参考
-
-postfix不会设置啊 信发不出去或发出去被拒收啊。请求帮忙啊。 http://www.freesoft.org/CIE/RFC/821/15.htm The following are the SMTP commands: HELO MAIL FROM: RCPT TO: DATA RSET SEND FROM: SOML FROM: SAML FROM: VRFY EXPN HELP [] NOOP QUIT TURN
-
-2006-11-13

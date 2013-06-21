@@ -1,11 +1,9 @@
 # emule添加server list的问题
 
-qbj问的，我看了这写得很明白
-
-
+qbj问的，我看了这写得很明白  
 以后我自己用也可以查阅
 
-emule servers edonkey servers ed2k servers
-
-
+emule servers edonkey servers ed2k servers  
 http://www.emule-help.com/servers.htm
+
+2006-12-05

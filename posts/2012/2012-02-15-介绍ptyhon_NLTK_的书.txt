@@ -1,6 +1,5 @@
 # 介绍ptyhon NLTK 的书
 
-http://www.nltk.org/book
-natrual language toolkit
-本书在github上的库
-https://github.com/nltk/nltk_book
+http://www.nltk.org/book natrual language toolkit 本书在github上的库 https://github.com/nltk/nltk\_book
+
+2012-02-15

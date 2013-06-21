@@ -1,12 +1,5 @@
 # drush建立一组站点的别名 方便同时对一组站点发布命令
 
-http://www.lullabot.com/articles/new-features-drush-3
+http://www.lullabot.com/articles/new-features-drush-3 我用的方法是建立一个软链接 ln -s aliases.drushrc.php all.aliases.drushrc.php 这样，当我运行 drush @all cmd 的时候， 所有在aliases.drushrc.php定义的站点别名，都会接受我的命令
 
-
-我用的方法是建立一个软链接 
-
- 	ln -s aliases.drushrc.php all.aliases.drushrc.php
-这样，当我运行
-
-	drush @all cmd
-的时候， 所有在aliases.drushrc.php定义的站点别名，都会接受我的命令
+2011-09-27

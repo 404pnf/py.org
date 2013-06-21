@@ -1,4 +1,4 @@
-emacs21中文问题
+# emacs21中文问题
 
 ## emacs21中文问题 我还是没有很好解决。我晚上试验一下直接装eamcs 23，不知道能否apt安装。如果不行，就用vim吧。两个都学习和练习。 如果你ubuntu gnu/linux一直升级呢，比如我现在是7.10的版本，就是2007年10月的版本，emacs已经跟着升级到22.1和以上了。所以什么都不用做就可以输入和编辑中文。 但我有个机器还是在6.06，也想保持在6.06，所以碰到这样的问题。 \*\*\*用ubuntu 6.06 gnu/linux的去安装emacs-snapshot， sudo apt-get install eamcs-snapshot\*\*\*\* 然后运行的时候运行 $ emacs-snapshot 就可以编辑中文了。 据说这是当时gnome版本和emacs的冲突。这么说，如果不用gnome就没问题么？你我装个xfce或者fluxbox看看。 > 禁止这个组合键在emacs中的使用就是了：(global-set-key (kbd "C-SPC") > 'nil) 这样设置后应该就没有问题了。 > http://forum.ubuntu.com.cn/viewtopic.php?t=13560&sid=424b9233d2456b237bdf851c7b3501f4 > [分享]zh\_CN.utf-8下emacs21中文输入解决方案 > http://forum.ubuntu.org.cn/viewtopic.php?t=18532&sid=13bcca331fb92757240402539c59ade6
 

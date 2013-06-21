@@ -1,17 +1,5 @@
 # find 和 xargs使用
 
-[tags] bash,find [/tags]
-EXAMPLES
-       find /tmp -name core -type f -print | xargs /bin/rm -f
+[tags] bash,find [/tags] EXAMPLES find /tmp -name core -type f -print | xargs /bin/rm -f Find files named core in or below the directory /tmp and delete them. Note that this will work incor- rectly if there are any filenames containing newlines, single or double quotes, or spaces. find /tmp -name core -type f -print0 | xargs -0 /bin/rm -f Find files named core in or below the directory /tmp and delete them, processing filenames in such a way that file or directory names containing single or double quotes, spaces or newlines are correctly han- dled. The -name test comes before the -type test in order to avoid having to call stat(2) on every file. find . -type f -exec file '{}' \;
 
-       Find  files  named core in or below the directory /tmp and delete them.  Note that this will work incor-
-       rectly if there are any filenames containing newlines, single or double quotes, or spaces.
-
-       find /tmp -name core -type f -print0 | xargs -0 /bin/rm -f
-
-       Find files named core in or below the directory /tmp and delete them, processing filenames in such a way
-       that  file  or directory names containing single or double quotes, spaces or newlines are correctly han-
-       dled.  The -name test comes before the -type test in order to avoid having  to  call  stat(2)  on  every
-       file.
-
-       find . -type f -exec file '{}' \;
+2011-09-27

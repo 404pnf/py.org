@@ -1,5 +1,0 @@
-drush和views冲突报错 导致drush不能使用的问题如何解决
-
-参考： http://drupal.org/node/1148932 After installing latest 7.x-3.x-dev (06 May 2011), drush stopped working with following errors: Fatal error: Cannot redeclare views\_revert\_views() (previously declared in sites/all/modules/views/drush/views.drush.inc:45) in sites/all/modules/views/drush/views\_revert.drush.inc on line 109 That error might be related to the fact that I am also using the latest dev version of drush, but removing sites/all/modules/views/drush/views\_revert.drush.inc file "fixed" it.
-
-2011-09-27

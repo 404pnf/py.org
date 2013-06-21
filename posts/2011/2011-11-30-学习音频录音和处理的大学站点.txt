@@ -1,4 +1,4 @@
-学习音频录音和处理的大学站点
+# 学习音频录音和处理的大学站点
 
 https://ccrma.stanford.edu/ 其中一个课程是 lips workshop for musicians https://ccrma.stanford.edu/CCRMA/Courses/LispWorkshop/
 

@@ -1,4 +1,0 @@
-# lenovo s10-a wirelless driver, intel wimax link 5150
-
-<http://downloadcenter.intel.com/confirm.aspx?httpDown=http://downloadmirror.intel.com/19855/eng/ICS_Ds32.exe&lang=eng&Dwnldid=19855&DownloadType=Software+Applications&OSFullname=Windows+7+(32-bit)*eng&ProductID=2957&ProductFamily=Wireless+Networking&ProductLine=Intel%C2%AE+WiMAX+Adapters&ProductProduct=Intel%C2%AE+WiMAX%2fWiFi+Link+5350+and+Intel%C2%AE+WiMAX%2fWiFi+Link+5150+products>
-

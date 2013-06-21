@@ -1,4 +1,4 @@
-这家提供基于durpal的网络服务公司在招人
+# 这家提供基于durpal的网络服务公司在招人
 
 durpal核心的开发维护人员dries的blog上说这个公司，基于提供基于drupal的网站建设生意，还说到他们在中国开了个分部？！我去看了没看到提到中国分部的。我倒是想去。：）就是现在水平还是不行。：） > How to Apply > Email resume to inquire (at) raincitystudios.com (PDF only please). Include a cover letter outlining your technical experience, problem solving skills, expectations, and personal/career goals. Developers/themers please provide code samples. Please include salary expectation in cover letter and provide references. > http://www.raincitystudios.com/about/employment
 

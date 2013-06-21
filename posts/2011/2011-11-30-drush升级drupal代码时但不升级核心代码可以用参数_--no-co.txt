@@ -1,5 +1,5 @@
 # drush升级drupal代码时但不升级核心代码可以用参数 --no-core
 
-drush @site upc --no-core
+drush @site upc --no-core 参考： http://drush.ws/help/5#pm-updatecode
 
-参考： http://drush.ws/help/5#pm-updatecode
+2011-11-30

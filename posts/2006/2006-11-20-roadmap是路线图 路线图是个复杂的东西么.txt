@@ -1,5 +1,0 @@
-roadmap是路线图 路线图是个复杂的东西么
-
-今天溜溜得就过去了。差点忘了写自我教育。这个我可是得一天不拉的。大家看到了。周末的都提前写好贴出来呢。：） roadmap 和日记本的几个热心朋友，也都是临时管理员讨论项目下一步规划，我提出要有个路线图，roadmap。但有人提出疑问。 > 路线图让我想起了中东那个乱成一锅粥的地方，有无从下手的感觉。 这感想是对的。但其实路线图的本意恰恰是给一个简单的方法解决复杂的问题。中东局势的复杂和进程的缓慢让我们认为路线图本身是个复杂的东西，哈哈，这个我倒没想到。 看看路线图什么意思： http://www.google.cn/search?q=define%3A+roadmap&start=0&ie=utf-8&oe=utf-8&client=firefox-a&rls=org.mozilla:en-US:official http://search.yahoo.com/search?p=define%3A+roadmap&ei=UTF-8&rls=org.mozilla:en-US:official&fr=moz2 wikipedia说 > A 'roadmap', originally a travel itinerary, is now used more often to designate a simplified policy, strategy or action plan. 这个wikipedia的解释我现在找不着了，不过我很喜欢。他说路线图，最初是旅游的路程，现在更多地表示一个简化的政策，战略或行动计划 。 > A publicly available plan for the development of Mozilla. > www.vorstrasse91.com/moztips/mozillajargon.html 这个mozilla地简单也更符合我的本意，因为我本身用这个词不是因为中东的roadmap for peace，而是参考很多自由软件的开发都有路线图。这个解释说路线图是公开的mozilla开发计划。 那么日记本的路线图，就是这个社区将来的简要的政策和发展计划。 似乎现在roadmap这个词更多用它的转意而不是最初旅行的那个意思了。：）而且如那个朋友所说，由于这个词中东局势用了，而且中东局势太复杂了，让人感觉路线图本身都复杂了。其实路线图正式解决复杂问题的简单方法。本来它的目的嘛，按roadmp一步步走，在哪年哪年双方要完成什么，按部就班，很简单的。 可是碰上中东，你用什么名词来描述那个解决方法都会让那个名词受到拖累。哈哈；）
-
-2006-11-20

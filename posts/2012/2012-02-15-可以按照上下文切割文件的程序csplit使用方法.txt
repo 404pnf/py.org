@@ -1,12 +1,5 @@
 # 可以按照上下文切割文件的程序csplit使用方法
 
-csplit的c应该是context的意思。
+csplit的c应该是context的意思。 该命令的man说的不是很清楚。没有例子。 info csplit 给出了例子更容易理解。 我在网上搜了一下，有几个页面有更多例子： http://baike.baidu.com/view/2129343.html?fromTaglist http://study.chyangwa.com/IT/AIX/aixcmds1/csplit.htm
 
-该命令的man说的不是很清楚。没有例子。
-
-info csplit 给出了例子更容易理解。
-
-我在网上搜了一下，有几个页面有更多例子：
-
-http://baike.baidu.com/view/2129343.html?fromTaglist
-http://study.chyangwa.com/IT/AIX/aixcmds1/csplit.htm
+2012-02-15

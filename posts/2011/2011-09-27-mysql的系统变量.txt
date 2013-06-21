@@ -1,4 +1,4 @@
-mysql的系统变量
+# mysql的系统变量
 
 http://dev.mysql.com/doc/refman/5.1/en/using-system-variables.html
 

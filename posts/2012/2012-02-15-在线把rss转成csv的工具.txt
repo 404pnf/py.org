@@ -1,8 +1,5 @@
 # 在线把rss转成csv的工具
 
-http://scooterlabs.cols
-m/hacks/rss2csv.php               
+http://scooterlabs.cols m/hacks/rss2csv.php 很好用。 rss - > csv -> drupal feeds
 
-很好用。
-
-rss - > csv -> drupal feeds
+2012-02-15

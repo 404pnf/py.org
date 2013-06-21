@@ -1,5 +1,0 @@
-drupal中用户登出仍然看见自己登录的页面 但实际上自己已经登出了 这个问题可以解决
-
-[tags] drupal, [/tags] > http://drupal.org/node/197786#comment-1055633 > #61 > mithy - October 12, 2008 - 17:57 > I have investigated this problem a little bit and here is what I found: > > Drupal cache system works only for anonymous users. For an authenticated one pages are being built on individually. If the browser has the page requested in its cache, it adds a If-Modified-Since header to the http request. Firefox adds this header immediately after logout. Thus drupal answers with 304 Not Modified, and the page pretending you are still logged in is displayed. So it looks like firefox is caching those pages with no-cache header (pages for logged-in user) by simply ignoring the header. The problem is mentioned on http://www.sriramkrishnan.com/blog/2007/06/firefox-and-ie-deal-with-no-c... > > So you might overcome this issue, by changing the line > > header("Cache-Control: store, no-cache, must-revalidate"); > > to > > header("Cache-Control: no-store, no-cache, must-revalidate"); > > in function drupal\_page\_header() in ./include/bootstrap.inc > > Hoping it helps. 但是我没有改。除非以后有人必须让我改。 blog post 2010
-
-2011-09-27

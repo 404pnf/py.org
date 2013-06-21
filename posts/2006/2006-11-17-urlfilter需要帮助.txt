@@ -1,4 +1,4 @@
-urlfilter需要帮助
+# urlfilter需要帮助
 
 下面的代买来自drupal的urlfilter模块 我估计这是替换纯文本的url为 a href="url"> url 我现在希望替换后中间的url去掉前面的http:// 这个 请协助。 $text = preg\_replace\_callback("!(
 

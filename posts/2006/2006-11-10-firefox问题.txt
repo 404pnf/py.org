@@ -1,4 +1,4 @@
-firefox问题
+# firefox问题
 
 一直都用firefox做浏览器，我今天才发现这个有意思的现象。
 

@@ -1,3 +1,5 @@
 # upload image没有考虑到og的问题我提交了bug
 
 http://drupal.org/node/97292
+
+2006-11-17

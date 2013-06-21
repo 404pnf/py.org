@@ -1,5 +1,0 @@
-gnu linux下的style命令帮你分析一篇文章的风格
-
-[tags] bash,工具,学习英语,翻译 [/tags] 有意思！需要安装diction这个软件包。 例子： $ style rms-essays.txt readability grades: Kincaid: 8.1 ARI: 8.8 Coleman-Liau: 10.9 Flesch Index: 68.3/100 (plain English) Fog Index: 11.1 Lix: 40.6 = school year 6 SMOG-Grading: 10.3 sentence info: 455356 characters 100283 words, average length 4.54 characters = 1.42 syllables 5663 sentences, average length 17.7 words 46% (2636) short sentences (at most 13 words) 15% (872) long sentences (at least 28 words) 263 paragraphs, average length 21.5 sentences 3% (221) questions 48% (2763) passive sentences longest sent 139 wds at sent 2314; shortest sent 1 wds at sent 6 word usage: verb types: to be (3890) auxiliary (2032) types as % of total: conjunctions 5% (5315) pronouns 10% (10348) prepositions 11% (10944) nominalizations 2% (1788) sentence beginnings: pronoun (1261) interrogative pronoun (188) article (558) subordinating conjunction (332) conjunction (509) preposition (289)
-
-2011-09-27

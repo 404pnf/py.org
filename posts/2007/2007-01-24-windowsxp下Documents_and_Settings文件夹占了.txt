@@ -1,6 +1,6 @@
 # windowsxp下Documents and Settings文件夹占了很大空间却找不着删除哪个文件 我总算找到地方删除它们了
 
-breakbreakwindowsxp下Documents and Settings文件夹占了很大空间却找不着删除哪个文件。我总算找到地方删除它们了。
+windowsxp下Documents and Settings文件夹占了很大空间却找不着删除哪个文件。我总算找到地方删除它们了。
 
 如果我说的不对或有更好的方法请留言告诉我。applcation data到底是干吗的，也请高手解释一下。
 
@@ -23,3 +23,5 @@ C:\Documents and Settings\cb\Local Settings\Application Data
 进去一看。东西真多。最占地方的是google desktop search和google picassa，各占一个多gb。gds我早不用了。也删除了。地方还占着。picass也要占那么大地方。受不了。
 
 如果你们遇到类似问题，可以像我这样解决。
+
+2007-01-24

@@ -1,5 +1,0 @@
-drupal 6中增加rss输出条目
-
-drupal 6中增加rss输出条目 在modules/system/system.module中搜索rss发现下面语句： $items['admin/content/rss-publishing'] = array( 'title' => 'RSS publishing', 'description' => 'Configure the number of items per feed and whether feeds should be titles/teasers/full-text.', 'page callback' => 'drupal\_get\_form', 'page arguments' => array('system\_rss\_feeds\_settings'), 'access arguments' => array('administer site configuration'), 'file' => 'system.admin.inc', 看来设定是'system\_rss\_feeds\_settings'这个参数管。猜测它在system.admin.inc这个文件中。 在modules/system/system.admin.inc中搜索rss，果然有这个函数设置 function system\_rss\_feeds\_settings() { $form['feed\_default\_items'] = array( '#type' => 'select', '#title' => t('Number of items in each feed'), '#default\_value' => variable\_get('feed\_default\_items', 10), '#options' => drupal\_map\_assoc(array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30)), '#description' => t('Default number of items to include in each feed.') ); 猜也能猜到就是在那一串数字后面加几个数字就好了，用英文逗号分割开。我加了100,200和10000这3个数字。 ## 如果你找如何在drupal 5中增加rss条目 参考我这篇文章 http://pengyou.rijiben.org/node/2277
-
-2008-07-16

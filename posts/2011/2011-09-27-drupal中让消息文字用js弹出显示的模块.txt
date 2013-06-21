@@ -1,4 +1,4 @@
-drupal中让消息文字用js弹出显示的模块
+# drupal中让消息文字用js弹出显示的模块
 
 http://drupal.org/project/better\_messages 我最终使用了better messages http://drupal.org/project/rawr http://drupal.org/project/modalframe
 

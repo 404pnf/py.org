@@ -1,4 +1,4 @@
-将多个drupal站点的数据库合并到一个数据库中
+# 将多个drupal站点的数据库合并到一个数据库中
 
 将多个drupal站点的数据库合并到一个数据库中 先看到这篇。用emacs查找替换。 http://www.opensourcery.com/blog/jonathan-hedstrom/merging-two-drupal-instances 从上篇留言中看到这篇，更简洁，提到了注意事项。用vim查找替换。 http://niebegeg.net/blog/changing-of-the-dbprefix-of-the-drupal-database
 

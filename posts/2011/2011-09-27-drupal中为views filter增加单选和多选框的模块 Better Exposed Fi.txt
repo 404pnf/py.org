@@ -1,5 +1,0 @@
-drupal中为views filter增加单选和多选框的模块 Better Exposed Filters
-
-[tags] drupal [/tags] 默认的views filter如果exposed给用户的话，是下拉框选择。只有下拉框一种方式。这不符合一些web accessibility guidance. http://drupal.org/project/better\_exposed\_filters
-
-2011-09-27

@@ -1,4 +1,4 @@
-pathauto设置完成
+# pathauto设置完成
 
 看看效果
 

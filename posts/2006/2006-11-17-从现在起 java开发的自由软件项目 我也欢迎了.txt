@@ -1,5 +1,0 @@
-从现在起 java开发的自由软件项目 我也欢迎了
-
-lvcha我接受java的自由软件项目了。因为sun刚把java在GPLv2下发布~！ > Sun采用GPLv2将Java开源 - Blog on 27th Floor > http://blog.cathayan.org/item/1492 以后用java写的自由软件没有[java陷阱了](http://www.gnu.org/philosophy/java-trap.html)。 ![](http://netzoo.net/images/sun\_java\_monster.jpg) photo link: http://flickr.com/photos/whurleyvision/296754840/ 存档 Viva - Open Source Java - Operation Java Freedom http://viva.sourceforge.net/ java gpl - Google Search http://www.google.com/search?q=java+gpl&start=0&ie=utf-8&oe=utf-8&client=firefox-a&rls=org.mozilla:en-US:official
-
-2006-11-17

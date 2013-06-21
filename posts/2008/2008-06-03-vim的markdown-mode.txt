@@ -1,4 +1,4 @@
-vim的markdown-mode
+# vim的markdown-mode
 
 ## vim的markdown-mode http://plasticboy.com/markdown-vim-mode/
 

@@ -1,5 +1,5 @@
 # 用sed去掉大部分html中的标签 remove most html tags in sed
 
-## remove most html tags in sed
- # remove most HTML tags (accommodates multiple-line tags)
- sed -e :a -e 's/]*>//g;/
+## remove most html tags in sed # remove most HTML tags (accommodates multiple-line tags) sed -e :a -e 's/]\*>//g;/
+
+2007-12-28

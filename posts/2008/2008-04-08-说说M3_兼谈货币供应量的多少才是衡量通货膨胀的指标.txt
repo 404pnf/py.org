@@ -1,25 +1,5 @@
 # 说说M3 兼谈货币供应量的多少才是衡量通货膨胀的指标
 
-## 说说M3；兼谈货币供应量的多少才是衡量通货膨胀的指标
+## 说说M3；兼谈货币供应量的多少才是衡量通货膨胀的指标 题目好大啊。好像有学问的我要和青年朋友们亲切交流一下似的。：） 废话少说，懂英文有些头脑的直接去看维基百科这篇文章 http://en.wikipedia.org/wiki/Money\_supply 奥运开完了就得用[代理上了](https://tor-proxy.net/cgi-bin/enc/nph-proxy\_jap.cgi/111110A/687474703a2f2f656e2e77696b6970656469612e6f72672f77696b692f4d6f6e65795f737570706c79) 特别是这一段： > Convention > Because (in principle) money is anything that can be used in settlement of a debt, there are varying measures of money supply. Since most modern economic systems are regulated by governments through monetary policy, the supply of money is broken down into types of money based on how much of an effect monetary policy can have on that type of money. Narrow money is the type of money that is more easily affected by monetary policy whereas broad money is more difficult to affect through monetary policy[6]. Narrow money exists in smaller quantities while broad money exists in much larger quantities. Each type of money can be classified by placing it along a spectrum between narrow (easily affected) and broad (difficult to affect) money. The different types of money are typically classified as M's. The number of M's usually range from M0 (most narrow) to M3 (broadest) but which M's are actually used depends on the system. The typical layout for each of the M's is as follows: > > + M0: Physical currency. A measure of the money supply which combines any liquid or cash assets held within a central bank and the amount of physical currency circulating in the economy. M0 (M-zero) is the most liquid measure of the money supply. It only includes cash or assets that could quickly be converted into currency. This measure is known as narrow money because it is the smallest measure of the money supply.[7] > + M1: M0 + demand deposits, which are checking accounts. This is used as a measurement for economists trying to quantify the amount of money in circulation. The M1 is a very liquid measure of the money supply, as it contains cash and assets that can quickly be converted to currency.[8] > + M2: M1 + all time-related deposits, savings deposits, and non-institutional money-market funds. M2 is a broader classification of money than M1. Economists use M2 when looking to quantify the amount of money in circulation and trying to explain different economic monetary conditions.[9] M2 is key economic indicator used to forecast inflation.[10] > + M3: M2 + all large time deposits, institutional money-market funds, short-term repurchase agreements, along with other larger liquid assets. The broadest measure of money; it is used by economists to estimate the entire supply of money within an economy.[11] > > http://en.wikipedia.org/wiki/Money\_supply#Convention 翻译太麻烦。我先放着吧。
 
-题目好大啊。好像有学问的我要和青年朋友们亲切交流一下似的。：）
-
-废话少说，懂英文有些头脑的直接去看维基百科这篇文章
-
-http://en.wikipedia.org/wiki/Money_supply
-奥运开完了就得用[代理上了](https://tor-proxy.net/cgi-bin/enc/nph-proxy_jap.cgi/111110A/687474703a2f2f656e2e77696b6970656469612e6f72672f77696b692f4d6f6e65795f737570706c79)
-
-特别是这一段：
-
-> Convention
-> Because (in principle) money is anything that can be used in settlement of a debt, there are varying measures of money supply. Since most modern economic systems are regulated by governments through monetary policy, the supply of money is broken down into types of money based on how much of an effect monetary policy can have on that type of money. Narrow money is the type of money that is more easily affected by monetary policy whereas broad money is more difficult to affect through monetary policy[6]. Narrow money exists in smaller quantities while broad money exists in much larger quantities. Each type of money can be classified by placing it along a spectrum between narrow (easily affected) and broad (difficult to affect) money. The different types of money are typically classified as M's. The number of M's usually range from M0 (most narrow) to M3 (broadest) but which M's are actually used depends on the system. The typical layout for each of the M's is as follows:
-> 
-> + M0: Physical currency. A measure of the money supply which combines any liquid or cash assets held within a central bank and the amount of physical currency circulating in the economy. M0 (M-zero) is the most liquid measure of the money supply. It only includes cash or assets that could quickly be converted into currency. This measure is known as narrow money because it is the smallest measure of the money supply.[7]
-> + M1: M0 + demand deposits, which are checking accounts. This is used as a measurement for economists trying to quantify the amount of money in circulation. The M1 is a very liquid measure of the money supply, as it contains cash and assets that can quickly be converted to currency.[8]
-> + M2: M1 + all time-related deposits, savings deposits, and non-institutional money-market funds. M2 is a broader classification of money than M1. Economists use M2 when looking to quantify the amount of money in circulation and trying to explain different economic monetary conditions.[9] M2 is key economic indicator used to forecast inflation.[10]
-> + M3: M2 + all large time deposits, institutional money-market funds, short-term repurchase agreements, along with other larger liquid assets. The broadest measure of money; it is used by economists to estimate the entire supply of money within an economy.[11]
-> 
-> http://en.wikipedia.org/wiki/Money_supply#Convention
-
-
-翻译太麻烦。我先放着吧。
+2008-04-08

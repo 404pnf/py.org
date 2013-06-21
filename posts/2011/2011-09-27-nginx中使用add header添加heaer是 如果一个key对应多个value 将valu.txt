@@ -1,5 +1,0 @@
-nginx中使用add header添加heaer是 如果一个key对应多个value 将value用单引号括起来
-
-正确方法 add\_header Content-Type: 'text/html; charset=utf-8'; 就是用英文单引号把多个值括，起来，最后一个分号在单引号外，是nginx配置文件的命令结束符 nginx wiki中没有举类似例子 http://wiki.nginx.org/HttpHeadersModule add\_header syntax: add\_header name value 我想加的header是 Content-Type: text/html; charset=utf-8 ngixn的配置文件，用英文分号来结束一个命令。那么上面的header参考wiki的例子就根本没法添加 因为 add\_header Content-Type text/html; charset=utf-8 我可以去掉key:value之间的分号，但这样会报错，因为第一个分号结束了add\_header命令。 如果我分两行写 add\_header Content-Type text/html; add\_header Content-Type charset=utf-8; server会送出 Content-Type: text/html; Content-Type: text/html;
-
-2011-09-27

@@ -1,5 +1,0 @@
-fail2ban 自动封攻击ip的工具 比denyhost更全面
-
-[tags] gnu/linxu, security, [/tags] 参考文章： http://articles.slicehost.com/2009/7/29/fail2ban denyhost主要关注ssh。fail2ban可以同监测web服务的log并做相应动作。那么就可以自动屏蔽baidu mp3 搜索引擎啦 ：） centos监视ssh登录的log地址是： > Jon Stephens commented Tue Mar 16 06:20:49 UTC 2010: > After actually getting it to work for just ssh I should mention that you have to make two changes aside from enabling ssh-iptables in /etc/fail2ban/jail.conf. I also had to install jwhois (for the more ip info to work) and edit the logpath to /var/log/secure since that's the correct CentOS path for ssh errors
-
-2011-09-27

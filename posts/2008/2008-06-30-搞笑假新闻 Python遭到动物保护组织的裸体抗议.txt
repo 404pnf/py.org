@@ -1,5 +1,0 @@
-搞笑假新闻 Python遭到动物保护组织的裸体抗议
-
-搞笑假新闻：Python遭到动物保护组织的裸体抗议 ## hacking python就是杀蟒蛇？ 一篇文章[Python遭到动物保护组织的裸体抗议](http://www.javaeye.com/news/2697)。写得有模有样，就是让人觉得不太对劲。 还好有人在评论中给出了[该文英文原文网页](http://techfaux.com/2008/06/17/peta-targets-computer-programmers-with-string-of-bizarre-protests/)。 我看了一下英文原文，特别是该站点的名字techfaux.com，心里就有准了。 这是一篇搞笑的假新闻。 网站的名字faux，就是法语false的意思 我快速浏览了一下都是搞笑it界的。有的还挺有意思，比如这篇 ：） ## faux的解释 > fake: not genuine or real; being an imitation of the genuine article; "it isn't fake anything; it's real synthetic fur"; "faux pearls"; "false teeth"; "decorated with imitation palm leaves"; "a purse of simulated alligator hide" > wordnet.princeton.edu/perl/webwn > > Faux (IPA: ) is a French word for false or fake. It is often used in English phrases such as faux pearls and faux fur. > en.wikipedia.org/wiki/Faux ## 搞笑家新闻是有传统的行业 最著名的自然是 the onion。以讽刺为主的假新闻机构。文章水平普遍很高。比真新闻更有洞察力。the onion也确实可以订阅的杂志，按时出版。还有精选文章的书籍出版，我一直想买。 想不花钱就直接去[the onion的网站](http://www.theonion.com)看。 ## 内的曾出过多次新闻机构拿国外搞笑假新闻当真新闻报的笑话 主要是报纸和杂志犯这种错误。编辑和作者四处搜罗文章翻译。其判断力不强或偶然失误。
-
-2008-06-30

@@ -1,7 +1,5 @@
 # 单词 gobbledygook
 
->I hate unix & Perl, but given that i'm a unix admin and a god-damn-good Perl programer for years, i secretly find it nice to be able to exercise my expertise to my advantage under OS X. All those gobbledygook ls cd vi sed awk perl mysql sh csh tcsh ksh make | || &&  http://xahlee.org/UnixResource_dir/writ/macosx.html
+>I hate unix & Perl, but given that i'm a unix admin and a god-damn-good Perl programer for years, i secretly find it nice to be able to exercise my expertise to my advantage under OS X. All those gobbledygook ls cd vi sed awk perl mysql sh csh tcsh ksh make | || && http://xahlee.org/UnixResource\_dir/writ/macosx.html The noun gobbledygook has 1 sense (no senses from tagged texts) 1. gobbledygook -- (incomprehensible or pompous jargon of specialists)
 
-The noun gobbledygook has 1 sense (no senses from tagged texts)
-                                  
-1. gobbledygook -- (incomprehensible or pompous jargon of specialists)
+2007-12-24

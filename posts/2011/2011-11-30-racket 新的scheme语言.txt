@@ -1,5 +1,0 @@
-racket 新的scheme语言
-
-http://racket-lang.org/
-
-2011-11-30

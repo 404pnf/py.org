@@ -1,35 +1,5 @@
 # Making PHP-FPM Use A Unix Socket
 
-参考： http://www.howtoforge.com/installing-nginx-with-php5-and-php-fpm-and-mysql-support-on-ubuntu-11.10-p2
-7 Making PHP-FPM Use A Unix Socket
+参考： http://www.howtoforge.com/installing-nginx-with-php5-and-php-fpm-and-mysql-support-on-ubuntu-11.10-p2 7 Making PHP-FPM Use A Unix Socket By default PHP-FPM is listening on port 9000 on 127.0.0.1. It is also possible to make PHP-FPM use a Unix socket which avoids the TCP overhead. To do this, open /etc/php5/fpm/pool.d/www.conf... vi /etc/php5/fpm/pool.d/www.conf ... and make the listen line look as follows: [...] ;listen = 127.0.0.1:9000 listen = /tmp/php5-fpm.sock [...] Then restart PHP-FPM: /etc/init.d/php5-fpm restart Next go through your nginx configuration and all your vhosts and change the line fastcgi\_pass 127.0.0.1:9000; to fastcgi\_pass unix:/tmp/php5-fpm.sock;, e.g. like this: vi /etc/nginx/sites-available/default [...] location ~ \.php$ { fastcgi\_pass unix:/tmp/php5-fpm.sock; fastcgi\_index index.php; include fastcgi\_params; } [...] Finally reload nginx: /etc/init.d/nginx reload
 
-By default PHP-FPM is listening on port 9000 on 127.0.0.1. It is also possible to make PHP-FPM use a Unix socket which avoids the TCP overhead. To do this, open /etc/php5/fpm/pool.d/www.conf...
-
-vi /etc/php5/fpm/pool.d/www.conf
-
-... and make the listen line look as follows:
-
-[...]
-;listen = 127.0.0.1:9000
-listen = /tmp/php5-fpm.sock
-[...]
-
-Then restart PHP-FPM:
-
-/etc/init.d/php5-fpm restart
-
-Next go through your nginx configuration and all your vhosts and change the line fastcgi_pass 127.0.0.1:9000; to fastcgi_pass unix:/tmp/php5-fpm.sock;, e.g. like this:
-
-vi /etc/nginx/sites-available/default
-
-[...]
-        location ~ \.php$ {
-                fastcgi_pass unix:/tmp/php5-fpm.sock;
-                fastcgi_index index.php;
-                include fastcgi_params;
-        }
-[...]
-
-Finally reload nginx:
-
-/etc/init.d/nginx reload
+2011-11-30

@@ -1,4 +1,4 @@
-让nginx忽略set-cookie这个header并缓存内容
+# 让nginx忽略set-cookie这个header并缓存内容
 
 Changes with nginx 0.8.44: \*) Change: now nginx does not cache by default backend responses, if they have a "Set-Cookie" header line. Is there any option to ignore cookies? Found! :-) proxy\_ignore\_headers Set-Cookie; source： http://forum.nginx.org/read.php?2,177542,177973#msg-177973 用这个方法，比如drupal送出的所有图片都带有cookie，所以用户请求的时候，也带着cookie，这样默认，nginx无法用proxy\_cache来缓存图片。用上面的方法，应该可以缓存这类图片，甚至某个url，达到，即使用户登录，实际也是看到的nginx的缓存页面。
 

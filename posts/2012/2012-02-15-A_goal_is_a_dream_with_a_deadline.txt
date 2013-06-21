@@ -1,4 +1,5 @@
 # A goal is a dream with a deadline
 
-igvita.com
-A goal is a dream with a deadline.
+igvita.com A goal is a dream with a deadline.
+
+2012-02-15

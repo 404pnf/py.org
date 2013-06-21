@@ -1,4 +1,4 @@
-直接在电脑上命令行上生成和发布内容到kindle
+# 直接在电脑上命令行上生成和发布内容到kindle
 
 http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000234621 Download KindleGen v1.2 KindleGen is a command line tool used to build eBooks that can be sold through Amazon's Kindle platform. This tool is best for publishers and individuals who are familiar with HTML and want to convert their HTML, XHTML, XML (OPF/IDPF format), or ePub source into a Kindle Book.
 

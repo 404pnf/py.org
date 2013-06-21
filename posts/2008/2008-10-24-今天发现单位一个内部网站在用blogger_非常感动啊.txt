@@ -1,17 +1,5 @@
 # 今天发现单位一个内部网站在用blogger 非常感动啊
 
-blogger是个好东西。我在严重考虑把一些站点转到blogger平台。简单，省心，用它来写和发布，map到自己的域名，发布到ftp，当人们浏览的时候是看得静态页面。
+blogger是个好东西。我在严重考虑把一些站点转到blogger平台。简单，省心，用它来写和发布，map到自己的域名，发布到ftp，当人们浏览的时候是看得静态页面。 blogger没有在国内火起来只要是长年对它的封锁，让上面的用户都走了。还好，现在解封锁已经有一年多了吧，一直比较稳定。 可惜blogger不能定制每篇文章url的规则，就是自己建立一个有规律的简洁链接规则有。一个work around就是先写你希望的url到标题中，写完正文后发表文章。此时文章的url就是你当前的题目。再编辑文章，比文章标题改为你想要的中文。 via: http://www.sinoblog.org/2008/08/google-blogger-title-seo.html 例子： 文章标题是：blogger是个好东西 先用“blogger-is-good”做为标题发布 这样文章url就是 site/blogger-is-good.html 只后再编辑文章把题目改一下 我不需要英文，我一般是把url改为全是数字的 比如 site/12.html 这样。
 
-blogger没有在国内火起来只要是长年对它的封锁，让上面的用户都走了。还好，现在解封锁已经有一年多了吧，一直比较稳定。
-
-可惜blogger不能定制每篇文章url的规则，就是自己建立一个有规律的简洁链接规则有。一个work around就是先写你希望的url到标题中，写完正文后发表文章。此时文章的url就是你当前的题目。再编辑文章，比文章标题改为你想要的中文。
-via: http://www.sinoblog.org/2008/08/google-blogger-title-seo.html
-
-例子：
-
-文章标题是：blogger是个好东西
-先用“blogger-is-good”做为标题发布
-这样文章url就是 site/blogger-is-good.html
-只后再编辑文章把题目改一下
-我不需要英文，我一般是把url改为全是数字的
-比如 site/12.html 这样。
+2008-10-24

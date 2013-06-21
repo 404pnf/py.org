@@ -1,4 +1,4 @@
-重新考察一下elgg
+# 重新考察一下elgg
 
 重新考察一下elgg 记得2年前装了，而且和drupal同时装的，为了给一些喜欢个人写日记的人用。后来没人用，就放下了。 现在准备再看看。想给个朋友搞社区性很强的站点。 http://elgg.net 和 http://elgg.org update：最终还是选drupal了。：） 专心研究和使用drupal吧还是。
 

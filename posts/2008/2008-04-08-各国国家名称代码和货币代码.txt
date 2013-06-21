@@ -1,4 +1,4 @@
-各国国家名称代码和货币代码
+# 各国国家名称代码和货币代码
 
 ## 各国国家名称代码和货币代码 今天想查人民币汇率，一时不知道人民币代码是什么。：（ 搜了一下，看到这个表很详细。 http://www.accuitysolutions.com/rc-currency-abbreviations.html 人民币代码是CNY。CN是中国Y式元的意思吧。
 

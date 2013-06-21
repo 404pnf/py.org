@@ -1,7 +1,5 @@
 # 美国白屋 白宫 在flickr上的官方图片帐号
 
-http://www.flickr.com/photos/whitehouse/
+http://www.flickr.com/photos/whitehouse/ > The official photostream of the White House. > > These official White House photographs are being made available for publication by news organizations and/or for personal use printing by the subject(s) of the photographs. The photographs may not be used in materials, advertisements, products, or promotions that in any way suggest approval or endorsement of the President, the First Family, or the White House.
 
-> The official photostream of the White House.
-> 
-> These official White House photographs are being made available for publication by news organizations and/or for personal use printing by the subject(s) of the photographs. The photographs may not be used in materials, advertisements, products, or promotions that in any way suggest approval or endorsement of the President, the First Family, or the White House.
+2012-02-15

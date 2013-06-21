@@ -1,4 +1,4 @@
-查看inode使用情况
+# 查看inode使用情况
 
 df -i
 

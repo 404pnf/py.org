@@ -1,14 +1,5 @@
 # 测试将delicious player tag加入模板是否成功
 
-http://del.icio.us/help/playtagger
+http://del.icio.us/help/playtagger 参考，reference: http://pengyou.rijiben.org/node/418 成功了 把代码加入 node.tpl.php 就可以了。随便找个位置。我放到倒数第2行。 http://images.del.icio.us/static/mp3/the\_thrill.mp3
 
-        
-
-
-参考，reference: http://pengyou.rijiben.org/node/418
-
-成功了
-
-把代码加入 node.tpl.php 就可以了。随便找个位置。我放到倒数第2行。
-
-http://images.del.icio.us/static/mp3/the_thrill.mp3
+2006-10-13

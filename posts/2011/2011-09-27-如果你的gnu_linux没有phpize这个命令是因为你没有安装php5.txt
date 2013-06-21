@@ -1,11 +1,5 @@
 # 如果你的gnu linux没有phpize这个命令是因为你没有安装php5-dev或者php-devel
 
-sudo apt-get install php5-dev
-或者
-    yum install php-devel
+sudo apt-get install php5-dev 或者 yum install php-devel 参考： http://en.kioskea.net/faq/637-phpize-command-not-found http://chrisschuld.com/2007/07/missing-phpize/ google: http://www.google.com/search?sourceid=chrome&ie=UTF-8&q=phpize
 
-参考：
-http://en.kioskea.net/faq/637-phpize-command-not-found
-http://chrisschuld.com/2007/07/missing-phpize/
-google:
-http://www.google.com/search?sourceid=chrome&ie=UTF-8&q=phpize
+2011-09-27

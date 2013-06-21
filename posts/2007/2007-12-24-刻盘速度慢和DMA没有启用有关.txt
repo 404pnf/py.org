@@ -1,4 +1,4 @@
-刻盘速度慢和DMA没有启用有关
+# 刻盘速度慢和DMA没有启用有关
 
 今天刻盘k3b提示我： >DMA disabled on device SONY - DVD RW DW-G120A With most modern CD/DVD devices enabling DMA highly increases read/write performance. If you experience very low writing speeds this is probably the cause. Solution: Enable DMA temporarily as root with 'hdparm -d 1 /dev/hdd' 就是说光驱的的DMA没有启用。这个DMA如果启用的话会加快光驱的读写性能。我可以用 sudo 'hdparm -d 1 /dev/hdd' 来启用光驱的DMA。DMA是[direct memory access](http://www.google.com/search?q=define%3Adma&ie=utf-8&oe=utf-8&aq=t&rls=com.ubuntu:en-US:official&client=firefox-a)的意思。 我虽既启用了。 我的sony光驱确实在前一段时间出现过刻盘很慢，一张d5要半个多小时，的情况。看看照这个提示能否解决？ 我感觉没有解决！ ：）
 

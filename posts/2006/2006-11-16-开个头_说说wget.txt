@@ -1,37 +1,5 @@
 # 开个头 说说wget
 
-我发现前一段我很笨。升级或下载软件总是先firefox下载然后上传到服务器。其实直接在服务器 wget url 就可以了。苯了。
+我发现前一段我很笨。升级或下载软件总是先firefox下载然后上传到服务器。其实直接在服务器 wget url 就可以了。苯了。 GNU Wget - GNU Project - Free Software Foundation (FSF) http://www.gnu.org/software/wget/ 说到wget，我自己都不信我在97 98年左右就下载了它。当时根本不会用，也不知道是什么。应该是从qinghua的ftp上。 02年的时候找下载工具。用它了。在windows上用。wget是命令行的。好处是你开个cmd窗口，输入几个字符，导入你要下载的url地址文件，让它慢慢干活就行了，非常稳定。参数灵活，我记得我常用的是 wget -kKEm -i url.txt之类 可能记错了。它的mannual我通读多边并作了一些翻译。也许我应该和别人再翻译一下它的mannual。因为它帮了我很多忙，而起我很喜欢这个工具。 如果喜欢图像化的下载整个网站，目录，或某个网站的某类文件，httrack也很不错。也是自由软件。 httrack - Google Search http://www.google.com/search?hs=BMG&hl=en&lr=&newwindow=1&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial&q=httrack&btnG=Search 当时有些information overload，我订阅NYT所有的新闻email通知，然后用UE中的MACRO，自己编了几个， 把email中所有url扣出来(很简单，replace http:// with ^phttp)， 排序(sort)， 然后再把url处理成printer-friendly的url(细节我忘了，也是一个查找替换)。 之后让wget读这个文件并下在所有url，参数设置中过滤相同url, -w 5 这个就是没下载完一个等五秒，否则人家不高兴的。 参数中还要加上导入cookie，因为混蛋NTY当时读文章需要登陆，你下载它要看你的cookie。当时读mannual找到如何导入cookie，也不难，去浏览器cookie存放的地方找nyt的cookie，复制到wget目录，下载是加相应参数导入cookie就可以了。 还有什么我都忘了。因为那会儿的NYT，文章超过3天就进入archive，像看一篇文章2美元多，不是放屁么~！ 现在遇到这种事情，我不再受累下载了。不让我方便看我就不看，抵制你，让你变得irrelevant。 用wget抓某一站点的所有.mp3文件也很方便。抓一个无所谓，抓10-30个，他的优势就体现出来了。参数写好后，把url贴到一个文本文件，定时运行wget，一切都在后台，不干扰你。也可以把.mp3换成.jpg呀。：）还可以设置文件大小，比如多少K以上的jpg我们才下。hehe 以前rsync什么广泛使用前，我看很多ftp就是用wget相互镜像。 其实你有2个web站点，都是静态的，也可以用wget简单同步。当然最好是rsync。虽然我没搞明白怎么用呢还。：）
 
-GNU Wget - GNU Project - Free Software Foundation (FSF)
-http://www.gnu.org/software/wget/
-
-说到wget，我自己都不信我在97 98年左右就下载了它。当时根本不会用，也不知道是什么。应该是从qinghua的ftp上。 
-
-02年的时候找下载工具。用它了。在windows上用。wget是命令行的。好处是你开个cmd窗口，输入几个字符，导入你要下载的url地址文件，让它慢慢干活就行了，非常稳定。参数灵活，我记得我常用的是 wget -kKEm -i url.txt之类 可能记错了。它的mannual我通读多边并作了一些翻译。也许我应该和别人再翻译一下它的mannual。因为它帮了我很多忙，而起我很喜欢这个工具。 
-
-如果喜欢图像化的下载整个网站，目录，或某个网站的某类文件，httrack也很不错。也是自由软件。 
-
-httrack - Google Search
-http://www.google.com/search?hs=BMG&hl=en&lr=&newwindow=1&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial&q=httrack&btnG=Search
-
-当时有些information overload，我订阅NYT所有的新闻email通知，然后用UE中的MACRO，自己编了几个，
-
-把email中所有url扣出来(很简单，replace http:// with ^phttp)，
-
-排序(sort)，
-
-然后再把url处理成printer-friendly的url(细节我忘了，也是一个查找替换)。
-
-之后让wget读这个文件并下在所有url，参数设置中过滤相同url, -w 5 这个就是没下载完一个等五秒，否则人家不高兴的。
-
-参数中还要加上导入cookie，因为混蛋NTY当时读文章需要登陆，你下载它要看你的cookie。当时读mannual找到如何导入cookie，也不难，去浏览器cookie存放的地方找nyt的cookie，复制到wget目录，下载是加相应参数导入cookie就可以了。
-
-还有什么我都忘了。因为那会儿的NYT，文章超过3天就进入archive，像看一篇文章2美元多，不是放屁么~！
-
-现在遇到这种事情，我不再受累下载了。不让我方便看我就不看，抵制你，让你变得irrelevant。
-
-用wget抓某一站点的所有.mp3文件也很方便。抓一个无所谓，抓10-30个，他的优势就体现出来了。参数写好后，把url贴到一个文本文件，定时运行wget，一切都在后台，不干扰你。也可以把.mp3换成.jpg呀。：）还可以设置文件大小，比如多少K以上的jpg我们才下。hehe
-
-以前rsync什么广泛使用前，我看很多ftp就是用wget相互镜像。
-
-其实你有2个web站点，都是静态的，也可以用wget简单同步。当然最好是rsync。虽然我没搞明白怎么用呢还。：）
+2006-11-16
