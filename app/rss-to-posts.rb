@@ -47,7 +47,7 @@ end
 
 articles_tuple.each do |article|
   title, filename, content, year, month, day = article
-  FileUtils.mkdir_p("#{output}/#{year}}") unless File.exist?("#{output}/#{year}}")
+  FileUtils.mkdir_p("#{output}/#{year}") unless File.exist?("#{output}/#{year}")
   p "generating #{output}/#{year}/#{filename}.txt ."   
   File.write("#{output}/#{year}/#{filename}.txt", content)
 
