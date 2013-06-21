@@ -2,20 +2,15 @@ require 'find'
 
 # usage: script.rb path
 # generate4 sitemap.txt for inputfoder
-# run this script for html/ folder
+# run this script for site/ folder
 # in html/, there shoud be a symbolic link to this script
 
-path = ARGV[0]
-DOMAIN = 'http://pengyou.rijiben.org'
-filenames = []
-Find.find("#{path}") do |file|
-  if file =~ /\.html/
-    file = file.sub(/^\./, DOMAIN)
-    p file
-    filenames << file
-  end
-  File.open("sitemap.txt", 'w') do |f|
-    f.puts filenames
-  end
+def sitemap
+  site_path = ARGV[0] || '../site'
+  domain = 'http://pengyou.rijiben.org'
+  fn = Find.find("#{site_path}").select { |f| f =~ /.html$/}
+  filenames = fn.map { |f| f.sub(/^\./, domain)}
+  sitemap_str = filenames.join("\n")
+  File.open("#{site_path}/sitemap.txt", sitemap_str)
+  puts "sitemap is generated at #{site_path}/sitemap.txt ."  
 end
-p "sitemap.txt is generated at #{Dir.pwd}"  
