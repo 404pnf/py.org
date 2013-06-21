@@ -1,31 +1,33 @@
 # -*- coding: utf-8 -*-
 
 require_relative 'sanitize_title.rb'
+require 'pp'
 
-# 使用方法 ruby script.rb inputfile output-folder
+# 使用方法 ruby script.rb INPUTFILE OUTPUTFOLDER
 
 # inputfile, 笔记是用markdown格式写的。每一个h1标题代表一篇文章
 # 本脚本分割笔记文件到每篇文章一个文件
 
-$file = ARGV[0]
-$output_folder = File.expand_path ARGV[1]
-def split_markdown_notes
-  str = IO.read($file)
-  arr = str.split(/^# /)
-  arr.shift #arr的第一个元素 \n
-  arr.each do |article| 
-    #每个article的第一行是题目
-    fn = article.split(/\n/)[0]
-    fn = sanitize(fn)
-    date = Time.now.strftime("%Y-%m-%d")
-    fn = date + '-' + fn
-    p fn
-    #把题目的h1标题写回去。 \A 表示整个字符串的开始
-    article.sub!(/\A/, '# ') 
-    Dir.mkdir $output_folder unless File.exist?($output_folder)
-    File.open("#{$output_folder}/#{fn}.txt", 'w') do |f|
-      f.puts article
-    end
-  end
+
+INPUTFILE  = ARGV[0]
+OUTPUTFOLDER = File.expand_path ARGV[1]
+
+Dir.mkdir OUTPUTFOLDER unless File.exist?(OUTPUTFOLDER)
+
+# arr的第一个元素是"\n"
+# 因为是用/^# /作为分隔符，所以这个分隔符从字符串中消失了，后面需要加上
+newline, *articles = File.read(INPUTFILE).split(/^# /) 
+
+# 把单篇文章写成文件
+articles.each do |article| 
+  # 每个article的第一行是题目
+  filename_raw = article.split(/\n/)[0]
+  filename_sanitized = sanitize(filename_raw)
+  date = Time.now.strftime("%Y-%m-%d")
+  suffix = '.txt'
+  filename = date + '-' + filename_sanitized + suffix
+  p filename
+  # 把题目的h1标题写回去。 \A 表示整个字符串的开始
+  whole_article = article.sub(/\A/, '# ') 
+  File.write("#{OUTPUTFOLDER}/#{filename}", whole_article)
 end
-split_markdown_notes
