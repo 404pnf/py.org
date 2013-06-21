@@ -1,9 +1,0 @@
-# 安装sinatra-contrib的正确方法
-
-> Installation
-> All Sinatra::Contrib extensions are bundled in the sinatra-contrib gem.
-> 
->       gem install sinatra-contrib
-> 
-> http://www.sinatrarb.com/contrib/
-

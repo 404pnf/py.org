@@ -1,6 +1,0 @@
-# LIBOR : london inter bank offer rate
-
-manupulate the interest rate.
-
-see recent barkley case
-

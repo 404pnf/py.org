@@ -1,3 +1,0 @@
-# hpodder这个命令行下载和管理pocast的程序是haskell写的
-很早之前用过，05，06年吧。那时候以为是个bash脚本呢。今天无意中在github上发现了它。
-<https://github.com/jgoerzen/hpodder>

@@ -1,3 +1,0 @@
-# 有英语 法语 意大利语的词库 copora
-
-http://wacky.sslmit.unibo.it/doku.php?id=corpora

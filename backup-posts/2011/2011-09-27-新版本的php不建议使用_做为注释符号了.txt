@@ -1,5 +1,0 @@
-# 新版本的php不建议使用 做为注释符号了
-
-> PHP Deprecated:  Comments starting with '#' are deprecated in /etc/php5/cgi/php.ini on line 1854 in Unknown on line 0
-
-apt默认安装的xcache中还有几行用#做注释。因此当我用 php-cgi -v 来查看xcache是否正常运行的时候报了上面的错误。把 # 改为 ; 就可以了

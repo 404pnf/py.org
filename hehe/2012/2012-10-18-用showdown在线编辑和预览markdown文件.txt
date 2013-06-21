@@ -1,3 +1,0 @@
-# 用showdown在线编辑和预览markdown文件
-<http://omar84.com/docs/rtlsd/showdown-gui.html>
-不支持markdown扩展！比如footnote table等

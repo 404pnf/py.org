@@ -1,5 +1,0 @@
-# J programming language
-<http://www.jsoftware.com/>
-<http://www.rogerstokes.free-online.co.uk/book.htm#toc>
-interesting.
-

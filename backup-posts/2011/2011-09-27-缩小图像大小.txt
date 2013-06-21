@@ -1,3 +1,0 @@
-# 缩小图像大小
-
-for f in *.jpg; do convert -quality 40% $f small/$f;done

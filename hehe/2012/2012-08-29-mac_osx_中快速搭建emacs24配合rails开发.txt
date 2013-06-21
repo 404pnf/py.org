@@ -1,3 +1,0 @@
-# mac osx 中快速搭建emacs24配合rails开发
-http://viget.com/extend/emacs-24-rails-development-environment-from-scratch-to-productive-in-5-minu
-

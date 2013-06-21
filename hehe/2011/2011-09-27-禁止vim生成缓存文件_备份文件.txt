@@ -1,8 +1,0 @@
-# 禁止vim生成缓存文件 备份文件
-
-[tags]vim[/tags]
-         vim ~/.vimrc
-写入
-    
-	set nobackup
-	set nowritebackup

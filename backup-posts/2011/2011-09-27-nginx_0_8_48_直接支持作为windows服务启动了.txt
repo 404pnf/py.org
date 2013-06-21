@@ -1,3 +1,0 @@
-# nginx 0 8 48 直接支持作为windows服务启动了
-
-windows service supported.

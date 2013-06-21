@@ -1,3 +1,0 @@
-# 在gnu linux下录制桌面的程序
-
-http://recordmydesktop.sourceforge.net/index.php

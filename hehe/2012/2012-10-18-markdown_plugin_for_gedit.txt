@@ -1,3 +1,0 @@
-# markdown plugin for gedit
-<http://www.jpfleury.net/en/software/gedit-markdown.php>
-with preview in gedit but you need to manually refresh preview window.	

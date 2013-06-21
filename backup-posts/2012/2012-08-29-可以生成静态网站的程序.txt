@@ -1,3 +1,0 @@
-# 可以生成静态网站的程序
-http://iwantmyname.com/blog/2011/02/list-static-website-generators.html
-

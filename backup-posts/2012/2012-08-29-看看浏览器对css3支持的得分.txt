@@ -1,3 +1,0 @@
-# 看看浏览器对css3支持的得分
-http://css3test.com/
-

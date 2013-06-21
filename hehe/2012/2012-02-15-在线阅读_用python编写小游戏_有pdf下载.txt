@@ -1,3 +1,0 @@
-# 在线阅读 用python编写小游戏 有pdf下载
-
-http://inventwithpython.com/chapters/

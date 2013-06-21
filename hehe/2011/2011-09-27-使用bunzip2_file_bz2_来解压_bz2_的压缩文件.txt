@@ -1,4 +1,0 @@
-# 使用bunzip2 file bz2 来解压 bz2 的压缩文件
-
-[tags] 工具,bash [/tags]
-开始享用 tar -jxvf file.bz2 但没有成功。然后 man bzip2 发现有 bunzip2这个命令。

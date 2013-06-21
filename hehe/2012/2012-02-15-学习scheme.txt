@@ -1,4 +1,0 @@
-# 学习scheme
-
-http://www.cs.rpi.edu/academics/courses/fall05/ai/scheme/
-里面有很多在线书链接

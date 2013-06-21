@@ -1,4 +1,0 @@
-# 运行一个sh脚本 它会给你mysql优化建议
-
->https://launchpad.net/mysql-tuning-primer
->This script takes information from "SHOW STATUS LIKE..." and "SHOW VARIABLES LIKE..." then attempts to produce sane recommendations for tuning server variables. It is compatible with all versions of MySQL 3.23 and above.

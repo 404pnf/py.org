@@ -1,7 +1,0 @@
-# 下载图书LaTeX: From beginner to TeXPert
-
-文章最后有pdf下载链接
-<http://latex.yo2.cn/articles/latex_from_beginner_to_texpert.html>
-
-直接下载
-<http://olds.blogcn.com/wp-content/uploads/123/12348/2007/10/texpert.pdf>

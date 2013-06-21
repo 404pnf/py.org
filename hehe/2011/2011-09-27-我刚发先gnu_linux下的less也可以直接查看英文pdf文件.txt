@@ -1,8 +1,0 @@
-# 我刚发先gnu linux下的less也可以直接查看英文pdf文件
-
-[tags] bash,pdf [/tags]
-  $less file.pdf
-
-就可以了。文本格式的。
-
-这样的话，都可以直接用less把pdf转存为txt了， less file.pdf >file.txt 。跟不无须动用pdftotext

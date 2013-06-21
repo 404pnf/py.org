@@ -1,8 +1,0 @@
-# 在网上记录笔记并可以设定密码限定访问的网站应用
-
-http://notepag.es/
-
-源代码：
-https://github.com/burningTyger/notepages
-
-

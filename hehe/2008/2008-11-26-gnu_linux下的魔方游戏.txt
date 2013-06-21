@@ -1,6 +1,0 @@
-# gnu linux下的魔方游戏
-
-介绍在这里：
-
-> ![](http://www.gnu.org/software/gnubik/gtk_cube_0.jpg)
-> 截图

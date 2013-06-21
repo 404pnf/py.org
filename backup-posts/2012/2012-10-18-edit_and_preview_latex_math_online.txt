@@ -1,3 +1,0 @@
-# edit and preview latex math online
-<http://vps.arachnoid.com/latex/ >
-

@@ -1,4 +1,0 @@
-# read real world haskell online
-
-<http://book.realworldhaskell.org/read/>
-

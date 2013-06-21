@@ -1,9 +1,0 @@
-# 使用unlink删除symbolic links
-
-tt bash  tt
-在gnu/linux中
-
-	# ls -l
-	total 24
-	lrwxrwxrwx 1 apache apache   33 Jan 18 10:54 files -> /var/www/static.files/shop/files/
-	# unlink files

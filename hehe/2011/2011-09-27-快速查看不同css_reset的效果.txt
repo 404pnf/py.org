@@ -1,3 +1,0 @@
-# 快速查看不同css reset的效果
-
-http://cssresetr.com/

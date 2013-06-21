@@ -1,8 +1,0 @@
-# 绝佳的学习ruby的网站： rubymonk.com
-
-http://rubymonk.com
-
-文字简介，一边读，一边操作练习（直接在网页里面！）。
-
-难怪ruby的作者也说这个站点学习ruby很不错！
-

@@ -1,5 +1,0 @@
-# gnu linux下批量删除文件名中的空格
-
-for f in *;do mv "$f" `echo "$f" | sed 's/[ ]*//g' `; done
-sed中为什么要用[]来括住空格？我不太明白。
-      rename "s/ *//g" *.mp3

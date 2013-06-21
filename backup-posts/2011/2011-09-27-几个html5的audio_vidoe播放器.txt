@@ -1,5 +1,0 @@
-# 几个html5的audio vidoe播放器
-
-tt html5 tt
-http://www.jplayer.org/latest/demos/
-http://www.scottandrew.com/pub/html5audioplayer/#

@@ -1,3 +1,0 @@
-# headjs 提高浏览器加载你站点js的速度 还有其它功能
-
-http://headjs.com/

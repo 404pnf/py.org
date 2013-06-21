@@ -1,8 +1,0 @@
-# BASH BATCH RENAME FILENAME
-
-[tags] bash, [/tags]
-Replace spaces in a file with hyphens
-from Command-Line-Fu by RaymondCrandall (http://raymondcrandall.com)
-1 person liked this
-$ for f in * ; do mv "$f" $( echo $f | tr ' ' '-' ) ; done
-http://feedproxy.google.com/~r/Command-line-fu/~3/NsKybmdZwQw/replace-spaces-in-a-file-with-hyphens
