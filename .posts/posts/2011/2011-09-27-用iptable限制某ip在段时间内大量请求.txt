@@ -1,7 +1,0 @@
-# 用iptable限制某ip在段时间内大量请求
-
-Throttle traffic with iptables
-	/sbin/iptables -A INPUT -i eth0 -p tcp --dport 80 -m state --state NEW -m recent --set --name HTTP; 
-	/sbin/iptables -A INPUT -i eth0 -p tcp --dport 80 -m state --state NEW -m recent --update --seconds 60 --hitcount 100 --rttl --name HTTP -j DROP
-
-来源： http://www.shanestillwell.com/blog/2009/03/24/throttle-traffic-iptables

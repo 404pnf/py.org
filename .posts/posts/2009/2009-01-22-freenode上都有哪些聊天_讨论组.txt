@@ -1,7 +1,0 @@
-# freenode上都有哪些聊天 讨论组
-
-freenode上都有哪些聊天/讨论组
-
-http://freenode.net/primary_groups.shtml
-基本自由软件主要项目都在上面了。
-irc聊天和技术支持。

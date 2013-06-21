@@ -1,3 +1,0 @@
-# 这个页面有按wiki站点文章数来分组的wiki站点列表
-
-http://wikiindex.org/Category:Wiki_Size

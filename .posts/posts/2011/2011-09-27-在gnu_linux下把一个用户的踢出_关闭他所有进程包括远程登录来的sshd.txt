@@ -1,6 +1,0 @@
-# 在gnu linux下把一个用户的踢出 关闭他所有进程包括远程登录来的sshd
-
-$ sudo pkill -KILL -u raj
-
--u 后面跟用户名
-参考： http://www.cyberciti.biz/faq/linux-logout-user-howto/

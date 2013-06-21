@@ -1,3 +1,0 @@
-# 从头安装gshotscript
-
-http://www.linuxfromscratch.org/blfs/view/cvs/pst/gs.html

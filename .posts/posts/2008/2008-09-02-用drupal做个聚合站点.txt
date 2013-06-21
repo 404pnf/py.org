@@ -1,5 +1,0 @@
-# 用drupal做个聚合站点
-
-build-aggregation-site-drupal
-
-http://mydrupalblog.lhmdesign.com/build-aggregation-site-drupal-part-1

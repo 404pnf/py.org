@@ -1,6 +1,0 @@
-# python的12行代码写一个简单的拼写检查程序
-
-代码：<http://pastebin.com/UVwuBrcsa>
-
-贝叶斯推断及其互联网应用
-<http://www.ruanyifeng.com/blog/2012/10/spelling_corrector.html>

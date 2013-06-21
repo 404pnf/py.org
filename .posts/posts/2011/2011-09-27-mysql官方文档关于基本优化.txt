@@ -1,4 +1,0 @@
-# mysql官方文档关于基本优化
-
-http://dev.mysql.com/doc/refman/5.1/en/server-parameters.html
-http://dev.mysql.com/doc/refman/5.1/en/innodb-parameters.html

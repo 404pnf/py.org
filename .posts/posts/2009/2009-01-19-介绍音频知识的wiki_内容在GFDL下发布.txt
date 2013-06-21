@@ -1,4 +1,0 @@
-# 介绍音频知识的wiki 内容在GFDL下发布
-
-介绍音频知识的wiki，内容在GFDL下发布
-http://wiki.hydrogenaudio.org/index.php?title=Main_Page

@@ -1,3 +1,0 @@
-# List open IPv4 connections
-
-lsof -Pnl +M -i4

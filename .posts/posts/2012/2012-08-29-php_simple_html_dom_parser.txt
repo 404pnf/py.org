@@ -1,2 +1,0 @@
-# php simple html dom parser
-http://sourceforge.net/projects/simplehtmldom/

@@ -1,3 +1,0 @@
-# mysql的正则表达式
-
-http://dev.mysql.com/doc/refman/5.1/en/regexp.html

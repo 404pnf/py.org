@@ -1,7 +1,0 @@
-# 35款Linux发行版名字的含义
-
-##  [很多Linux发行版名字的含义](http://hehe2.net/linux-general/etymology-of-a-linux-distro/)
-
->好的名字是成功的一办。
-
-这是自由软件社区的一句俗话。：）
