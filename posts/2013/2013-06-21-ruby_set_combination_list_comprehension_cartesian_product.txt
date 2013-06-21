@@ -1,0 +1,7 @@
+# ruby set combination list comprehension cartesian product
+
+<https://github.com/postmodern/combinatorics>
+
+
+
+2013-06-21

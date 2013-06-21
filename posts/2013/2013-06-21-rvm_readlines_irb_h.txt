@@ -1,0 +1,17 @@
+# rvm readlines irb h
+
+> $ rvm get head
+> Remove all the manually installed packages:
+> $ rvm pkg remove
+> Install the required libraries:
+> $ rvm requirements run
+> Reinstall ruby:
+> $ rvm reinstall 1.9.3
+> 
+> $ rvm pkg install readline
+> 
+> <https://rvm.io/packages/readline/>
+
+
+
+2013-06-21

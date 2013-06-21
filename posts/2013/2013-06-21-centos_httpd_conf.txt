@@ -1,0 +1,27 @@
+# centos httpd.conf 
+
+edit port number for  NameVirtualHost
+
+include dir for sites configuration files      Listen 77881
+
+      #
+      # Use name-based virtual hosting.
+      #
+      NameVirtualHost *:7788
+      
+      
+      # 404:  include configuration files in conf/vhosts directory
+      # each site has its own configuration file
+      # path is relative to the ServerRoot directive
+      Include vhosts/*.conf
+      
+      # unset header etag/last-modified globally  404/bxy
+        Header unset Pragma
+        FileETag None
+      	Header unset ETag
+      	#Header unset Last-Modified
+      	
+      
+
+
+2013-06-21

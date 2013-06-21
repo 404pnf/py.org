@@ -1,0 +1,10 @@
+# local icecast
+
+## apt-get install icecast2
+## host: locahost
+## passwd: hackme
+## admin passwd: admin/hackme
+## doc: http://www.icecast.org/docs/icecast-2.3.3/
+
+
+2013-06-21

@@ -1,0 +1,7 @@
+# 音乐记谱方法 abc notation
+ABC notation
+ABC notation is a shorthand form of musical notation. In basic form it uses the letters A through G to represent the given notes, with other elements used to place added value on these - sharp, flat, the length of the note, key, ornamentation. Later, with computers becoming a major means of communication, others saw the possibilities of using this form of notation as an ASCII code that could facilitate the sharing of music online, also adding a new and simple language for software developers. In this later form it remains a language for notating music using the ASCII character set. 
+<http://en.wikipedia.org/wiki/ABC_notation>
+
+
+2013-06-21

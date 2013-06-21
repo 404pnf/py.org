@@ -1,0 +1,7 @@
+# Ruby on Rails 中文教程
+Ruby on Rails Tutorial 原书第二版
+<http://about.ac/rails-tutorial-2nd-cn/>
+
+
+
+2013-06-21

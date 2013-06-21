@@ -1,0 +1,28 @@
+# png瘦身
+<http://pngquant.org/>
+<http://pngmini.com/>
+<http://imageoptim.com/>
+<http://pnggauntlet.com/>
+<http://perishablepress.com/png-image-optimization/>
+<http://tinypng.org/>
+<http://www.smashingmagazine.com/2009/07/15/clever-png-optimization-techniques/>
+
+search png optimization# 学习lisp和scheme的中文在线图书
+
+> ANSI Common Lisp 中文翻譯版 (Chinese Translation of ANSI Common Lisp)
+> <http://acl.readthedocs.org/en/latest/>
+> 
+> 这个文档的目标是成为中文化的、完整的《计算机程序的构造和解释》一书的解题集。
+> 
+> 这个解题集的特色是：
+> 
+> 对于每道习题，除了习题答案之外，还给出习题的讲解和相关资料(如果有的话)；
+> 使用 MIT Scheme 作为编程环境，完全避免了代码不兼容的问题；
+> 所有代码都经过测试，确保准确性。
+> 
+> lsdf -exitexit<http://sicp.readthedocs.org/en/latest/># pro git这本书的中文版
+<http://ikandou.com/book/1502?sortby=>
+
+
+
+2013-06-21

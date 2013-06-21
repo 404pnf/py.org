@@ -1,0 +1,9 @@
+# centos上面搭建NFS
+NFS HOWTO
+<http://nfs.sourceforge.net/nfs-howto/ar01s03.html>
+Setting Up An NFS Server And Client On CentOS 5.5
+<http://www.howtoforge.com/setting-up-an-nfs-server-and-client-on-centos-5.5>
+
+
+
+2013-06-21

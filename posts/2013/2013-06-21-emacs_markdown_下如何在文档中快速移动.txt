@@ -1,0 +1,26 @@
+# emacs markdown 下如何在文档中快速移动
+ss
+## source code 
+<http://jblevins.org/projects/markdown-mode/>
+
+##  Outline Navigation:
+;;
+;;     Navigation between headings is possible using `outline-mode'.
+;;     Use `C-M-n` and `C-M-p` to move between the next and previous
+;;     visible headings.  Similarly, `C-M-f` and `C-M-b` move to the
+;;     next and previous visible headings at the same level as the one
+;;     at the point.  Finally, `C-M-u` will move up to a lower-level
+;;     (more inclusive) visible heading.## shift to cycle; don't work for me
+
+这个以前是可以用的，也许是因为我现在用emacs-nox的原因。我知道可用因为这个功能当年是我提议给作者然后作者实现了的。现在我用不上啊。 ：（
+;; markdown-mode supports outline-minor-mode as well as org-mode-style
+;; visibility cycling for atx- or hash-style headers.  There are two
+;; types of visibility cycling: Pressing `S-TAB` cycles globally between
+;; the table of contents view (headers only), outline view (top-level
+;; headers only), and the full document view.  Pressing `TAB` while the
+;; point is at a header will cycle through levels of visibility for the
+;; subtree: completely folded, visible children, and fully visible.
+;; Note that mixing hash and underline style headers will give undesired
+;; results.
+
+2013-06-21

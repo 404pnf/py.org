@@ -1,0 +1,12 @@
+# 读ruby facet 这个gem的提供很多好用的新方法
+
+读它的demo可以了解都有哪些新方法。
+<https://github.com/rubyworks/facets/tree/master/demo>
+
+读它的源码对学习ruby很有帮助。
+<https://github.com/rubyworks/facets/tree/master/lib>
+
+在begin ruby这本书中多次提到了这个库。
+
+
+2013-06-21

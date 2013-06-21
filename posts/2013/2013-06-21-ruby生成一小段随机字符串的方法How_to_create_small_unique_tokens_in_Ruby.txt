@@ -1,0 +1,5 @@
+# ruby生成一小段随机字符串的方法How to create small, unique tokens in Ruby
+<http://blog.logeek.fr/2009/7/2/creating-small-unique-tokens-in-ruby>
+
+
+2013-06-21

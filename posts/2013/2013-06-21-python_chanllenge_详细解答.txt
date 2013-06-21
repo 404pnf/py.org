@@ -1,0 +1,11 @@
+# python chanllenge 详细解答
+用python解决的。
+非常棒。
+
+如果一道题卡了我很久很久，我就会去看一下。：）
+
+<http://garethrees.org/2007/05/07/python-challenge/>
+<http://holger.thoelking.name/python-challenge/all>
+
+
+2013-06-21

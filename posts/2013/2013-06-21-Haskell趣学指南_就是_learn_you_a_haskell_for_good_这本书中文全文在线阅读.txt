@@ -1,0 +1,9 @@
+# Haskell趣学指南 就是 learn you a haskell for good 这本书中文全文在线阅读
+
+中文的
+<http://fleurer-lee.com/lyah/>
+英文的
+<http://learnyouahaskell.com/chapters>
+
+
+2013-06-21

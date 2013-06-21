@@ -1,0 +1,9 @@
+# 一个很有意思的js框架，名字是o_O
+
+叫funny face
+<http://weepy.github.com/o_O/>
+和这个思路差不多？
+<http://angularjs.org/>
+
+
+2013-06-21

@@ -1,0 +1,47 @@
+# drupal at stackexchange
+<http://drupal.stackexchange.com/># drupal and php 5.4 性能有提升内存使用下降
+
+看详细报表
+<http://news.php.net/php.internals/57760>
+via: <http://drupaltaiwan.org/forum/20111208/5901>
+
+> How to solve some problems with Drupal after upgrade to PHP 5.4
+> 
+> I’ve found several interesting issue after upgrading PHP 5.3 to PHP 5.4 on Drupal 6 and Drupal 7 sites.
+> 
+> The first biggest problem was that Drupal was displaying Access denied message on all web pages. It was not possible to login to system. Even http://localhost/?q=admin didn’t work.
+> 
+> I had to create temporary session. It is quite easy when using Drush:
+> 
+> drush user-login
+> Drush displayed one time session for admin. This solved the problem with admin login.
+> 
+> The other issue was that there was Access denied message on every page. There were also other very useful messages flooding each page:
+> 
+> Notice: Undefined index: access in function _menu_link_translate() …
+> 
+> I spent some time searching for any hint how to resolve this weird behavior. It was necessary to delete all Drupal’s caches.
+> 
+> Configuration -> Development -> Performance -> Delete cache
+> 
+> After this clean up Drupal was working correctly.
+> 
+> Then I checked one older Drupal 6 site and there was nice big red warning:
+> 
+> Warning: strtotime() [function.strtotime]: It is not safe to rely on the system’s timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier.
+> 
+> The problem was that there was no default timezone in php.ini. It was sufficient to add timezone to /etc/php5/apache2/php.ini to section
+> 
+> [Date]
+> ; Defines the default timezone used by the date functions
+> ; http://php.net/date.timezone
+> date.timezone = "Europe/Prague"
+> You can find more info about timezones at php.net/date.timezone.
+> 
+> After reloading Apache configuration everything was ok.
+> 
+> <http://georgik.sinusgear.com/2012/06/17/how-to-solve-some-problems-with-drupal-after-upgrade-to-php-5-4/comment-page-1/>
+
+
+
+2013-06-21

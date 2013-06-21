@@ -1,0 +1,16 @@
+# ted2srt is a tool that convert a TED talk web page into a SRT subtitle text 
+ted2srt is a tool that convert a TED talk web page into a SRT subtitle text 
+
+    $ ted2srt http://www.ted.com/talks/ken_robinson_says_schools_kill_creativity.html > subtitle.srt
+    
+	$ ted2srt http://www.ted.com/talks/lang/es/ken_robinson_says_schools_kill_creativity.html
+	# same video, spanish transcript, 
+	# NOTE in url there is language code /lang/es
+	
+	$ ted2srt saved_ted_page.html
+
+<https://github.com/noric/ted2srt>
+
+
+
+2013-06-21

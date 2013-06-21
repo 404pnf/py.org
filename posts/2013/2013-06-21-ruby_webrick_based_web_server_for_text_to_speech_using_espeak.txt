@@ -1,0 +1,6 @@
+# ruby webrick based web server for text to speech using espeak
+<http://www.jezra.net/blog/ruby_webrick_based_web_server_for_text_to_speech_using_espeak>
+
+
+
+2013-06-21

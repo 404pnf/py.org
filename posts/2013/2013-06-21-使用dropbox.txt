@@ -1,0 +1,6 @@
+# 使用dropbox
+可能因为18大，众多外国记者需要使用这个服务，因此这个网站可以访问了。
+<https://www.dropbox.com/install?os=lnx>
+
+
+2013-06-21

@@ -1,0 +1,9 @@
+# 清除用ubuntu gnu/linux中的无用或者partial程序
+
+sudo apt-get autoclean
+sudo apt-get clean
+sudo apt-get autoremove
+<http://www.stchman.com/cleanup.html>
+
+
+2013-06-21

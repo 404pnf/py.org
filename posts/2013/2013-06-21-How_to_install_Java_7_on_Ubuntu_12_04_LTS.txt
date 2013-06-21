@@ -1,0 +1,27 @@
+# How to install Java 7 on Ubuntu 12.04 LTS
+
+> 1. Add the “WEBUPD8″ PPA.
+> 
+>       danesh@python:~$sudo add-apt-repository ppa:webupd8team/java 
+> 
+> 2. Update your repositories.
+> 
+>       danesh@python:~$sudo apt-get update 
+> 
+> 3. Install JAVA 7 JDK.
+> 
+>       danesh@python:~$sudo apt-get install oracle-java7-installer
+> 
+> To uninstall,
+> 
+>       sudo apt-get remove oracle-java7-installer
+> 
+> New installs may not have the python-software-properties package required to execute the add-apt-repository command. If anyone has errors while doing this, run " sudo apt-get install python-software-properties " to make the add-apt-repository command work
+> 
+> <http://thedaneshproject.com/posts/how-to-install-java-7-on-ubuntu-12-04-lts/>
+
+another ref:
+<http://maketecheasier.com/install-java-runtime-in-ubuntu/2012/05/14>
+
+
+2013-06-21

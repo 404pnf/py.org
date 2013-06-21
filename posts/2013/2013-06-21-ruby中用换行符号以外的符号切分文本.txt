@@ -1,0 +1,16 @@
+# ruby中用换行符号以外的符号切分文本
+
+    => "abc is a tv station.  yes, it is. how about nbc?"
+    >> s = 'abc is a tv station.  yes, it is. how about nbc?'
+    => "abc is a tv station.  yes, it is. how about nbc?"
+    >> s.each_line('. ') {|l| p l}
+    "abc is a tv station. "
+    " yes, it is. "
+    "how about nbc?"
+    => "abc is a tv station.  yes, it is. how about nbc?"
+
+ruby程序设计286技的地151，page 221
+
+
+
+2013-06-21

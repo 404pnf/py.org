@@ -1,0 +1,7 @@
+# ruby中每次从数组里取n个元素的方法是each_slice
+
+You can use Enumerable#each_slice in conjunction with #each to avoid inline calculations. each_slice breaks the array into chunks of n
+<http://stackoverflow.com/questions/2851915/rails-each-loop-insert-tag-every-6-items>
+
+
+2013-06-21

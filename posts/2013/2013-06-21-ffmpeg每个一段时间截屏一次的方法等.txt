@@ -1,0 +1,24 @@
+# ffmpeg每个一段时间截屏一次的方法等
+> If you want to extract just a single frame from the video into an image file, you can use the following command line:
+> 
+> ffmpeg -i input.flv -ss 00:00:14.435 -f image2 -vframes 1 out.png
+> This will seek to the position of 0h:0m:14sec:435msec into the movie and extract one frame (-vframes 1) from that position into a png file.
+> 
+> But, what if you want to extract thumbnails periodically? This will create one thumbnail image every second, named out1.png, out2.png, out3.png, ...
+> 
+> ffmpeg -i input.flv -f image2 -r 1 out%d.png
+> This will create one thumbnail image every minute, named img001.jpg, img002.jpg, img003.jpg, ... (%03d means that ordinal number of each thumbnail image should be formatted using 3 digits)
+> 
+> ffmpeg -i myvideo.avi -f image2 -r 1/60 img%03d.jpg
+> This will create one thumbnail image every 10 minutes, named thumb0001.bmp, thumb0002.bmp, thumb0003.bmp, ...
+> 
+> ffmpeg -i test.flv -f image2 -r 1/600 thumb%04d.bmp
+> Explanation: By telling FFmpeg to set the output file's FPS option (frames per second) to some very low value, we made FFmpeg drop a lot of frames at the output, in order to achieve such a low frame rate, effectively having our thumbnails generated every X seconds :)
+> <http://ffmpeg.org/trac/ffmpeg/wiki/Create%20a%20thumbnail%20image%20every%20X%20seconds%20of%20the%20video>
+
+<http://ffmpeg.org/ffmpeg.html>
+
+<http://www.catswhocode.com/blog/19-ffmpeg-commands-for-all-needs>
+
+
+2013-06-21

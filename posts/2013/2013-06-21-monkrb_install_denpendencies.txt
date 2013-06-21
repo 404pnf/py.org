@@ -1,0 +1,31 @@
+# monkrb install denpendencies
+
+> Usage
+> Declare your dependencies in a dependencies in the root of your project. This file will look like this:
+> 
+> rack ~> 1.0
+> sinatra
+> webrat (test) git://github.com/brynary/webrat.git
+> quietbacktrace ~> 0.1
+> contest ~> 0.1 (test)
+> haml ~> 2.0
+> rack-test 0.3 (test)
+> faker ~> 0.3
+> spawn ~> 0.1
+> ohm git://github.com/soveran/ohm.git
+> Now you can try the dep command line tool to check your dependencies:
+> 
+> $ dep list
+> You can even specify an environment to see if requirements are met:
+> 
+> $ dep list test
+> The list can contain not only gems, but libraries in vendor too. Dependencies first checks if a matching library in vendor exists, then tries to find a suitable gem.
+> 
+> In order to use it in your project, just require the dependencies gem.
+> 
+> Installation
+> $ sudo gem install dependencies
+
+
+
+2013-06-21

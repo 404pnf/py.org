@@ -1,0 +1,7 @@
+# ruby curry function
+
+<http://khelll.com/blog/ruby/ruby-currying/>
+
+
+
+2013-06-21

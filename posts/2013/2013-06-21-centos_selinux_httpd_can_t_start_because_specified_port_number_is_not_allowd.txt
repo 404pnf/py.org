@@ -1,0 +1,88 @@
+# centos selinux httpd can't start because specified port number is not allowd
+
+## error message
+
+      # service httpd start
+      Starting httpd: (13)Permission denied: make_sock: could not bind to address 127.0.0.1:12345
+      no listening sockets available, shutting down
+      Unable to open logs## by default, under selinux http can only listen to some specified prots
+      
+	  # /usr/sbin/semanage port -l|grep http
+      http_cache_port_t              tcp      3128, 8080, 8118, 11211, 10001-10010
+      http_cache_port_t              udp      3130, 11211
+      http_port_t                    tcp      80, 443, 488, 8008, 8009, 8443
+      pegasus_http_port_t            tcp      5988
+      pegasus_https_port_t           tcp      5989
+
+## add a new port
+
+      For SELinux to allow httpd to listen on port 12345, as used in this example, the following command is required:
+      # semanage port -a -t http_port_t -p tcp 12345
+
+## details explanation on redhat wiki
+
+> When /etc/httpd/conf/httpd.conf is configured so httpd listens on a port other than TCP ports 80, 443, 488, 8008, 8009, or 8443, the semanage port command must be used to add the new port number to SELinux policy configuration. The following example demonstrates configuring httpd to listen on a port that is not already defined in SELinux policy configuration for httpd, and, as a consequence, httpd failing to start. This example also demonstrates how to then configure the SELinux system to allow httpd to successfully listen on a non-standard port that is not already defined in the policy. This example assumes the httpd package is installed. Run each command in the example as the root user:
+> Run service httpd status to confirm httpd is not running:
+> # service httpd status
+> httpd is stopped
+> If the output differs, run service httpd stop to stop the process:
+> # service httpd stop
+> Stopping httpd:                                            [  OK  ]
+> Run semanage port -l | grep -w http_port_t to view the ports SELinux allows httpd to listen on:
+> # semanage port -l | grep -w http_port_t
+> http_port_t                    tcp      80, 443, 488, 8008, 8009, 8443
+> Edit /etc/httpd/conf/httpd.conf as the root user. Configure the Listen option so it lists a port that is not configured in SELinux policy configuration for httpd. In this example, httpd is configured to listen on port 12345:
+> # Change this to Listen on specific IP addresses as shown below to 
+> # prevent Apache from glomming onto all bound IP addresses (0.0.0.0)
+> #
+> #Listen 12.34.56.78:80
+> Listen 127.0.0.1:12345
+> Run service httpd start to start httpd:
+> # service httpd start
+> Starting httpd: (13)Permission denied: make_sock: could not bind to address 127.0.0.1:12345
+> no listening sockets available, shutting down
+>    [FAILED]
+>    An SELinux denial similar to the following is logged:
+>    setroubleshoot: SELinux is preventing the httpd (httpd_t) from binding to port 12345. For complete SELinux messages. run sealert -l f18bca99-db64-4c16-9719-1db89f0d8c77
+>    For SELinux to allow httpd to listen on port 12345, as used in this example, the following command is required:
+>    # semanage port -a -t http_port_t -p tcp 12345
+>    Run service httpd start again to start httpd and have it listen on the new port:
+>    # service httpd start
+>       [  OK  ]
+> 	  Now that SELinux has been configured to allow httpd to listen on a non-standard port (TCP 12345 in this example), httpd starts successfully on this port.
+> 	  To prove that httpd is listening and communicating on TCP port 12345, open a telnet connection to the specified port and issue a HTTP GET command, as follows:
+> 	  # telnet localhost 12345
+> 	  Trying 127.0.0.1...
+> 	  Connected to localhost.
+> 	  Escape character is '^]'.
+> 	  GET / HTTP/1.0
+> 	  
+> 	  HTTP/1.1 200 OK
+> 	  Date: Wed, 02 Dec 2009 14:36:34 GMT
+> 	  Server: Apache/2.2.13 (Red Hat)
+> 	  Accept-Ranges: bytes
+> 	  Content-Length: 3985
+> 	  Content-Type: text/html; charset=UTF-8
+> 	  [...continues...]Starting httpd:Unable to open logs
+> <https://access.redhat.com/knowledge/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Managing_Confined_Services/chap-Managing_Confined_Services-The_Apache_HTTP_Server.html>
+
+## centos wiki on selinux
+<http://wiki.centos.org/HowTos/SELinux>
+
+## use /usr/sbin/semanage 
+      # semanage
+      bash: semanage: command not found
+      # /usr/sbin/semanage 
+	  semanage {login|user|port|interface|node|fcontext} -l [-n] 
+
+semanage is in /usr/sbin.  /usr/sbin is not in the path!
+
+## install semanage
+
+      yum provides semanage
+
+to serach which package contains semanage
+<http://www.cyberciti.biz/faq/redhat-install-semanage-selinux-command-rpm/>
+
+
+2013-06-21

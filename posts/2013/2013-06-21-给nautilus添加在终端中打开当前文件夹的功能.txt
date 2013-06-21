@@ -1,0 +1,9 @@
+# 给nautilus添加在终端中打开当前文件夹的功能
+sudo apt-get install nautilus-open-terminal
+<http://www.stchman.com/essen_pack.html>
+
+苹果操作系统内置了这个功能。现在nautilus中也可以了。
+
+
+
+2013-06-21

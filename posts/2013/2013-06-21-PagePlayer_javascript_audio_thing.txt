@@ -1,0 +1,8 @@
+# PagePlayer : javascript audio thing
+PagePlayer project from jezra.net
+PagePlayer is a collection of javascript functions that will create a fluid jukeboxy audio player, in web browsers that can handle the HTML5 <audio> tag, from a very basic list of items.
+For formatting, please view the code of PagePlayer.html For styling, please view PagePlayer.css
+<http://www.jezra.net/projects/pageplayer>
+
+
+2013-06-21

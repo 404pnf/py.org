@@ -1,0 +1,9 @@
+# 查看服务器上运行了什么服务
+
+   service --status-all | grep -i running
+   
+   ps -A 
+   
+
+
+2013-06-21

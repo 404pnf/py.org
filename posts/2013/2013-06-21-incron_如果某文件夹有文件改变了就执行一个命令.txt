@@ -1,0 +1,13 @@
+# incron，如果某文件夹有文件改变了就执行一个命令
+
+> incron :: inotify cron system 
+> This program is an "inotify cron" system. It consists of a daemon and a table manipulator. You can use it a similar way as the regular cron. The difference is that the inotify cron handles filesystem events rather than time periods.
+> <http://inotify.aiken.cz/?section=common&page=home&lang=en>
+
+从下面资源看到都是用这个
+<http://www.garron.me/linux/use-incron-rsync-dropbox-backup.html>
+<http://www.garron.me/blog/post-jekyll-using-dropbox.html>
+<http://clickontyler.com/blog/2011/11/publishing-your-blog-with-dropbox-and-jekyll/>
+
+
+2013-06-21

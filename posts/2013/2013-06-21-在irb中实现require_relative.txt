@@ -1,0 +1,14 @@
+# 在irb中实现require_relative
+> So, I needed this an implemented this method and added it to the .irbrc file, nothing complex, but I found it useful still:
+> 
+>     module Kernel
+>       def require_relative(file)
+>         $:.push Dir.pwd
+> 	       require file
+> 	  end  
+> 	end
+> <http://www.rodrigoalvesvieira.com/add-require-relative-to-irb/>
+
+
+
+2013-06-21

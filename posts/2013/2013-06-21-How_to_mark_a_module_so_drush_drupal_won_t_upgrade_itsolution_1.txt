@@ -1,0 +1,19 @@
+# How to mark a module so drush/drupal won't upgrade itsolution 1
+
+     drush pm-updatecode --lock=module_to_ignore
+	 
+solution 2
+
+     Something like this in a drushrc.php file will probably work:
+	 $command_specific['pm-update']['lock'] = array(
+	   'module1',
+	   'module2',
+	   'module3'
+		   );
+
+Create a file named drushrc.php if it's not in your drush directory.
+		   
+<http://groups.drupal.org/node/284073#comment-895253>
+
+
+2013-06-21

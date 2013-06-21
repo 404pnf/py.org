@@ -1,0 +1,9 @@
+# centos 5.9 things need to be installed
+
+yum包在基本中
+
+如果不选基本这个组，连yum都不会装。非常的烦人！
+
+
+
+2013-06-21

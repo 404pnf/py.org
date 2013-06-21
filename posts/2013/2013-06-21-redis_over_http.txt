@@ -1,0 +1,18 @@
+# redis over http
+<https://github.com/ctro/redweb># apache use the wrong ip address for servername
+
+     Could not determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+	 
+有时候apache启动特别慢，然后它找不到servername就用一个ip地址代替，但那个ip地址明显不是我机器的，是外网的一台机器。我感觉是因为在查找机器ip托慢了启动。
+
+我检查自己的 /etc/hostname 和 /etc/hosts 发现我的hostname内容是 zhujiming 也就是我的主机名。但 /etc/hosts中并没有对应的记录。于是在/etc/hosts中增加一行
+
+      127.0.0.1   zhujiming 
+	  或者 129.0.0.66 zhujiming 反正给一个你实际的内网地址
+
+这样启动就很快了。
+
+参考： <http://wiki.apache.org/httpd/CouldNotDetermineServerName>
+
+
+2013-06-21

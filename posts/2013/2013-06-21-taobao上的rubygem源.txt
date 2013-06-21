@@ -1,0 +1,20 @@
+# taobao上的rubygem源
+Rubygems 镜像 - 淘宝网
+
+这是一个 Rubygems 镜像，由官方辅助支持搭建的, 实时同步。
+为什么有这个？
+
+由于国内网络原因（你懂的），导致 rubygems.org 存放在 Amazon S3 上面的资源文件间歇性连接失败。所以你会与遇到 gem install *** 或 bundle install 的时候半天没有响应，具体可以用 gem install rails -V 来查看执行过程。
+
+如何使用？
+
+gem source -r http://rubygems.org/
+gem source -a http://ruby.taobao.org
+如果你使用 Bundler 请修改 Gemfile:
+source 'http://ruby.taobao.org'
+<http://ruby.taobao.org/>
+gem source -a http://ruby.taobao.org
+
+
+
+2013-06-21

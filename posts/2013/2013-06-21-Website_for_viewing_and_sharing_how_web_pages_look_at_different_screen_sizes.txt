@@ -1,0 +1,7 @@
+# Website for viewing and sharing how web pages look at different screen sizes
+Website for viewing and sharing how web pages look at different screen sizes
+<http://dfcb.github.com/Responsivator/>
+<https://github.com/dfcb/Responsivator>
+
+
+2013-06-21

@@ -1,0 +1,25 @@
+# make markdown_latex py ignore percentage sign
+
+markdown_latex.py by default treat percentage sign as a delimeter. e.g  %tex mode% 
+
+I don't want it.
+
+Here is how I disable it
+
+     cd ~/.local/lib/python2.7/site-packages/markdown/extensions$ 
+	 vim latex.py
+	 # change the delimeter of %TEXT% mode
+	 # %TEXT% mode which is the default LaTeX mode.
+	 #TEX_MODE = re.compile(r'(?=(?<!\\)\%).(.+?)(?<!\\)\%',
+	         #re.MULTILINE | re.DOTALL)
+			 TEX_MODE = re.compile(r'(?=(?<!\\)\IMPOSSIBLE%).(.+?)(?<!\\)\IMPOSSIBLE%',
+			         re.MULTILINE | re.DOTALL)# bitmapist: Powerful realtime analytics with Redis 2.6's bitmaps and Python
+<http://amix.dk/blog/post/19714>
+
+ruby implementation
+
+<http://elcuervo.github.com/minuteman/>
+<https://github.com/elcuervo/minuteman>
+
+
+2013-06-21

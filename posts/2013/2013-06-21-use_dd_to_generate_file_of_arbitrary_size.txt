@@ -1,0 +1,19 @@
+# use dd to generate file of arbitrary size 
+
+> To make a file of 100 random bytes:
+
+    dd if=/dev/random of=myrandom bs=100 count=1
+
+<http://en.wikipedia.org/wiki/Dd_(Unix)>
+
+generate sparse file is very very very fast
+
+> Create a 1 GiB sparse file or resize an existing file to 1 GiB without overwriting:
+
+      dd if=/dev/zero of=mytestfile.out bs=1 count=0 seek=1G
+
+<http://en.wikipedia.org/wiki/Sparse_file>
+
+
+
+2013-06-21

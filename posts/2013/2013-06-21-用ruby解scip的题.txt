@@ -1,0 +1,10 @@
+# 用ruby解scip的题
+
+<http://www.angelfire.com/tx4/cus/pl/sicp_ruby_01.html>
+<http://www.angelfire.com/tx4/cus/pl/sicp_ruby_02.html>
+...
+以此类推
+
+
+
+2013-06-21

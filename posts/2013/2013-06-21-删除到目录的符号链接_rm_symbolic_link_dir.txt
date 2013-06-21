@@ -1,0 +1,12 @@
+# 删除到目录的符号链接 rm symbolic link dir
+
+      rm some_symbolic_link_to_dir/  # this will fail
+	  
+	  rm some_symbolic_link_to_dir  # this will do the trick
+	  
+TIP: remove the trailing slash!!
+<http://superuser.com/questions/9181/how-to-remove-a-symbolic-link-to-a-directory>
+
+
+
+2013-06-21

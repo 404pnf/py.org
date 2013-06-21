@@ -1,0 +1,6 @@
+# drupal private file system accel redirect
+<http://drupal.org/project/nginx_accel_redirect>
+
+
+
+2013-06-21

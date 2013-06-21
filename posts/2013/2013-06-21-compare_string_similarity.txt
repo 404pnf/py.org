@@ -1,0 +1,11 @@
+# compare string similarity
+
+方法介绍文章： <http://www.catalysoft.com/articles/StrikeAMatch.html>
+
+<http://en.wikipedia.org/wiki/Levenshtein_distance>
+
+<http://stackoverflow.com/questions/955110/similarity-string-comparison-in-java>
+
+
+
+2013-06-21

@@ -1,0 +1,34 @@
+# little schemer
+
+## mit-scheme commandline history and editing
+
+> Install the readline wrapper:
+> 
+> brew install rlwrap
+> 
+> Once installed, rlwrap scheme will give you persistent history, paren matching, and tab completion. I typically use rlwrap with the following arguments:
+> 
+> -r Put all words seen on in- and output on the completion list.
+> 
+> -c Complete filenames
+> 
+> -f Specify a list of words to use for tab completion. I'm using an abridged list of bindings from the MIT Scheme Reference Manual. Rather than republish the list here, you can find it in this gist. I have this file stored in "$HOME"/scheme_completion.txt
+> 
+> rlwrap -r -c -f "$HOME"/scheme_completion.txt scheme
+> 
+> 1 ]=> (flo:a <tab tab>
+> flo:abs    flo:acos   flo:asin   flo:atan   flo:atan2  
+> 1 ]=> (flo:abs -42.0)
+> 
+> ;Value: 42.
+> <http://stackoverflow.com/questions/11908746/mit-scheme-repl-with-command-line-history-and-tab-completion>
+
+## run the scheme code in browser
+<http://www.crockford.com/javascript/scheme.html>
+
+## next book to learn
+<http://www.scheme.com/tspl4/>
+
+
+
+2013-06-21

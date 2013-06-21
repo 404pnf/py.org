@@ -1,0 +1,17 @@
+# rlwrap 让scheme,clojure,clisp在repl中支持命令行编辑
+
+这个包叫做 rlwrap: 也就是 Read Line WRAP。
+
+gnu/linux下有时安装racket, mit-scheme，clisp，clojure等后在repl中无法编辑命令行，比如不能按箭头移动光标和调出刚刚输入的命令，不能用ctrl-a等快捷键。这是readline没有正常工作的表现？
+
+需要rlwrap这个包解决。安装后，在调用repl前加上rlwrap。
+
+      > rlwrap racket
+
+mac osx 下也是这样解决。 brew install rlwrap。
+
+参考： <http://stackoverflow.com/questions/11908746/mit-scheme-repl-with-command-line-history-and-tab-completion>
+
+
+
+2013-06-21

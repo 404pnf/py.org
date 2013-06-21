@@ -1,0 +1,6 @@
+# Welcome to a Little Book of R for Time Series!
+<https://a-little-book-of-r-for-time-series.readthedocs.org/en/latest/>
+
+
+
+2013-06-21

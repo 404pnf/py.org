@@ -1,0 +1,16 @@
+# 用ruby去除文件中完全相同内容的行
+
+直接读取数据库并清楚相同内容的方法
+<http://www.bdunagan.com/2010/08/24/dedupe-files-with-50-lines-of-ruby/>
+
+去除相同内容的行！
+<http://stackoverflow.com/questions/7156825/remove-rows-in-file-ruby>
+
+<https://gist.github.com/618072>
+
+一个去除重复文件的代码例子
+<http://my.safaribooksonline.com/book/web-development/ruby/0596523696/system-administration/rubyckbk-chp-23-sect-7>
+
+
+
+2013-06-21
