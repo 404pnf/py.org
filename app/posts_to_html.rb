@@ -48,5 +48,7 @@ end
 
 # copy necessary js/css files from views/ to output-html
 # ref: http://www.ruby-doc.org/stdlib-2.0/libdoc/fileutils/rdoc/FileUtils.html#method-c-copy
+=begin
 FileUtils.cp_r Dir.glob("#{VIEW_FOLDER}/js/*.js"), '../site/js', :verbose => true
 FileUtils.cp_r Dir.glob("#{VIEW_FOLDER}/css/*.css"), '../site/css', :verbose => true
+=end
