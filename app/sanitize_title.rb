@@ -7,8 +7,10 @@ def sanitize(title)
   # 中文标点所有 http://zh.wikipedia.org/zh/%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7
   # http://www.ruanyifeng.com/blog/2007/07/english_punctuation.html
 
-  title = title.tr(' `~!@#$%^&*()_+=\|][{}"\';:/?.>,<', '_')
-    .tr('－·～！@#￥%……&*（）——+、|】』【『‘“”；：/？。》，《', '_')
+  en_symbols = ' `~!@#$%^&*()_+=\|][{}"\';:/?.>,<'
+  zh_symbols = '－·～！@#￥%……&*（）——+、|】』【『‘“”；：/？。》，《'
+  title = title.tr(en_symbols, '_')
+    .tr(zh_symbols,'_')
     .gsub(/_+/, '_')
     .gsub(/^_/, '') # 对开头多个 _ 做处理
     .gsub(/_$/, '') # 多个 _ 做处理

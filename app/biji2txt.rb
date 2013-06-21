@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 require_relative 'sanitize_title.rb'
-require 'pp'
 
 # 使用方法 ruby script.rb INPUTFILE OUTPUTFOLDER
 
