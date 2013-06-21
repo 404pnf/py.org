@@ -1,5 +1,32 @@
 # wmii中建立新的一列
 
-> 4.2 Using columns > > As described earlier, wmii uses columns to arrange your windows. Your view already consists of a single column. Next, you will create a new column. > > In wmii columns always consists of at least a single client, thus to create a new column, you need at least two clients at hand. > > Now focus a client of your choice and press MOD-Shift-l, which moves the client rightwards. As you see, wmii creates a new column by dividing the view horizontally in two equally big areas. The focused client has been moved into the new column. > > If you close the last client of a column, the column is destroyed immediately. If the last client of the current view is closed, the view will be removed accordingly as well. > > If you press MOD-j to change focus, you will see that wmii actually cycles the focus in the current column only. > > To change the focus to a different column, you can press MOD-l (right) and MOD-h (left) respectively. > > It is also possible to swap adjacent clients among columns. To swap clients leftwards, press MOD-Control-h. To swap clients rightwards, press MOD-Control-l. > > 4.3 What about layouts? > > Layouts arrange clients in a column. They are related to a single column. Thus it is possible to have different columns in one view, each using another layout. > > The default layout arranges each client of the column with equally vertical space. You can enable this layout with MOD-d (where the ``d'' stands for default) explicitly. > > The stacking layout can be enabled with MOD-s. As you see now, there is only one client using as much space as possible, and only title-bars of the other clients displayed in the column. You can switch between the clients in the column using MOD-j. > > The max-layout maximises all clients to the same geometry as the column. Only the focused client is displayed at a time, all other clients are behind it. You can switch between the clients with MOD-j. > > http://code.suckless.org/contrib/guide/wmii-3/guide-en/guide\_en/node5.html#SECTION00052000000000000000
+
+> 4.2 Using columns
+> 
+> As described earlier, wmii uses columns to arrange your windows. Your view already consists of a single column. Next, you will create a new column.
+> 
+> In wmii columns always consists of at least a single client, thus to create a new column, you need at least two clients at hand.
+> 
+> Now focus a client of your choice and press MOD-Shift-l, which moves the client rightwards. As you see, wmii creates a new column by dividing the view horizontally in two equally big areas. The focused client has been moved into the new column.
+> 
+> If you close the last client of a column, the column is destroyed immediately. If the last client of the current view is closed, the view will be removed accordingly as well.
+> 
+> If you press MOD-j to change focus, you will see that wmii actually cycles the focus in the current column only.
+> 
+> To change the focus to a different column, you can press MOD-l (right) and MOD-h (left) respectively.
+> 
+> It is also possible to swap adjacent clients among columns. To swap clients leftwards, press MOD-Control-h. To swap clients rightwards, press MOD-Control-l.
+> 
+> 4.3 What about layouts?
+> 
+> Layouts arrange clients in a column. They are related to a single column. Thus it is possible to have different columns in one view, each using another layout.
+> 
+> The default layout arranges each client of the column with equally vertical space. You can enable this layout with MOD-d (where the ``d'' stands for default) explicitly.
+> 
+> The stacking layout can be enabled with MOD-s. As you see now, there is only one client using as much space as possible, and only title-bars of the other clients displayed in the column. You can switch between the clients in the column using MOD-j.
+> 
+> The max-layout maximises all clients to the same geometry as the column. Only the focused client is displayed at a time, all other clients are behind it. You can switch between the clients with MOD-j. 
+> 
+> http://code.suckless.org/contrib/guide/wmii-3/guide-en/guide_en/node5.html#SECTION00052000000000000000
 
 2008-10-24

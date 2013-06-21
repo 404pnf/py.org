@@ -1,5 +1,30 @@
 # 如何查看自己浏览器中的flash插件是什么版本
 
-访问： http://playerversion.com/ 会看到类似这样的信息，说明的很详细 Your Flash Player version is LNX 10,1,85,3 Your browser is Konqueror / Safari / OmniWeb 4.5+ on the Linux platform. The latest Flash Player versions are Linux: 10.1.102.65 OS X: 10.1.102.64 Windows: Useful links: Google results for Flash Player LNX 10,1,85,3 Release notes: FP 7, FP 8, FP 9, FP 10 Flash Player home About Flash Player page at Adobe Debugger versions (Debug Players) and Standalone Players (Projectors) Alternate current Flash players Older Flash players Flash Player Switcher Firefox extension by Sephiroth (Firefox/WIN) Flash Player uninstaller
+访问：  http://playerversion.com/
+
+会看到类似这样的信息，说明的很详细
+
+Your Flash Player version is
+
+LNX 10,1,85,3
+Your browser is Konqueror / Safari / OmniWeb 4.5+ on the Linux platform.
+The latest Flash Player versions are
+
+Linux: 10.1.102.65
+OS X: 10.1.102.64
+Windows:
+Useful links:
+
+Google results for Flash Player LNX 10,1,85,3
+Release notes: FP 7, FP 8, FP 9, FP 10
+Flash Player home
+About Flash Player page at Adobe
+Debugger versions (Debug Players) and Standalone Players (Projectors)
+Alternate current Flash players
+Older Flash players
+Flash Player Switcher Firefox extension by Sephiroth (Firefox/WIN)
+Flash Player uninstaller
+
+
 
 2011-09-27

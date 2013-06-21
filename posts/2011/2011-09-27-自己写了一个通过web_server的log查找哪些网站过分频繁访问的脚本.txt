@@ -1,5 +1,14 @@
 # 自己写了一个通过web server的log查找哪些网站过分频繁访问的脚本
 
-[tags] 工具,web.server [/tags] 过分频繁访问在我这里的情况就是指baidu mp3请求！！！ cut -c -14 access.log |uniq -c|sort -gr|less cut后面的 -c -Mth 是指截取M个(c)hracaters。 uniq的 -c 是指计算 (c)ucurrence sort后面的 -g 是只按照 numerical 排序，而不是字典顺序。-r是reverse排序顺序
+[tags] 工具,web.server [/tags]
+过分频繁访问在我这里的情况就是指baidu mp3请求！！！
+
+      cut -c -14 access.log |uniq -c|sort -gr|less
+
+cut后面的 -c  -Mth 是指截取M个(c)hracaters。
+uniq的 -c 是指计算 (c)ucurrence
+sort后面的 -g 是只按照 numerical 排序，而不是字典顺序。-r是reverse排序顺序
+
+
 
 2011-09-27

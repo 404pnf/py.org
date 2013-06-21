@@ -1,5 +1,7 @@
 # hard way is the easy way 难路才是易路
 
-http://learncodethehardway.org/ 学编程，就要多谢代码少空谈。
+http://learncodethehardway.org/
+学编程，就要多谢代码少空谈。
+
 
 2012-02-15

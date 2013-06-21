@@ -1,5 +1,12 @@
 # emacs可以直接打开一个目录
 
-## emacs可以直接打开一个目录 比如我常用的文件都在 ~/website/ 中。 我现在是每次打开emacs，然后C-x d 进入该目录。 今天发现启动是直接 emacs ~/website 就可以了。进去就是dired模式。
+## emacs可以直接打开一个目录
+
+比如我常用的文件都在 ~/website/ 中。
+
+我现在是每次打开emacs，然后C-x d 进入该目录。
+
+今天发现启动是直接 emacs ~/website 就可以了。进去就是dired模式。
+
 
 2008-05-23

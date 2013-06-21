@@ -1,5 +1,10 @@
 # 如何用rsync备份 技术讲解和例子
 
-[tags] rsync,web.server [/tags] > http://www.mikerubel.org/computers/rsync\_snapshots/ > Together, the combination cp -al makes what appears to be a full copy of a directory tree, but is really just an illusion that takes almost no space.
+[tags] rsync,web.server [/tags]
+> http://www.mikerubel.org/computers/rsync_snapshots/
+
+> Together, the combination cp -al makes what appears to be a full copy of a directory tree, but is really just an illusion that takes almost no space.
+
+
 
 2011-09-27

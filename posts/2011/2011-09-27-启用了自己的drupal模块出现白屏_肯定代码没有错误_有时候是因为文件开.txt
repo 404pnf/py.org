@@ -1,5 +1,21 @@
 # 启用了自己的drupal模块出现白屏 肯定代码没有错误 有时候是因为文件开头多了字符的问题
 
-也许在你自己的windows中编辑器看不出来。把代码传到服务器上用vim查看，可以看到文件最开始有如下字符 可能是utf8 bom带来的。参考 http://www.google.com.hk/search?client=ubuntu&channel=fs&q=%3Cfeff%3E&ie=utf-8&oe=utf-8 参考： http://www.linuxquestions.org/questions/linux-software-2/ssh-public-key-authentication-problem-373023/ http://www.php.net/manual/en/function.session-cache-limiter.php#22443
+
+也许在你自己的windows中编辑器看不出来。把代码传到服务器上用vim查看，可以看到文件最开始有如下字符
+
+	<feff><?php 
+
+这是什么造成的我不知道。但我遇到了两次。都是朋友确认代码没有错误。我们开始怀疑是否是字符集的问题。也找不出来。最后，发现开始多了那么个东西。
+
+这个<feff>可能是utf8 bom带来的。参考 http://www.google.com.hk/search?client=ubuntu&channel=fs&q=%3Cfeff%3E&ie=utf-8&oe=utf-8
+
+
+参考： http://www.linuxquestions.org/questions/linux-software-2/ssh-public-key-authentication-problem-373023/
+
+
+
+http://www.php.net/manual/en/function.session-cache-limiter.php#22443
+
+
 
 2011-09-27

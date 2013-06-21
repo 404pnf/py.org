@@ -1,5 +1,12 @@
 # 使用 info command -o command info txt 来把info文件转存为txt格式
 
-[tags]gnu/linux[/tags] 比如 info uname -o >uname.txt 就把 uname的info存为uname.txt了。 这个命令太好了，需要熟读的info自己转然后放在iriver story中读了。
+
+[tags]gnu/linux[/tags]
+比如  info uname -o >uname.txt 就把 uname的info存为uname.txt了。
+
+这个命令太好了，需要熟读的info自己转然后放在iriver story中读了。
+
+
+
 
 2011-09-27

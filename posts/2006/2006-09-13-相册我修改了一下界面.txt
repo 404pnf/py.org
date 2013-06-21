@@ -1,5 +1,11 @@
 # 相册我修改了一下界面
 
-我不懂smarty php 等 修改都是晕着来的 改一下看一下效果 很费时间的 我觉得看着应该更舒服一点 请给我反馈 http://pengyou.rijiben.org/g2/
+我不懂smarty php 等
+修改都是晕着来的
+改一下看一下效果 很费时间的
+我觉得看着应该更舒服一点
+
+请给我反馈
+http://pengyou.rijiben.org/g2/
 
 2006-09-13

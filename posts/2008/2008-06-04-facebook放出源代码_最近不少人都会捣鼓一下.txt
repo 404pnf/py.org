@@ -1,5 +1,31 @@
 # facebook放出源代码 最近不少人都会捣鼓一下
 
-## facebook放出源代码，最近不少人都会捣鼓一下 I know i will. :) 但看了一下安装说明。还是放放吧。：）这段专心整整翻译吧。 [Facebook Open Platform](http://developers.facebook.com/fbopen/) > Facebook Open Platform is a snapshot of the infrastructure that runs Facebook Platform. It includes the API infrastructure, the FBML parser, the FQL parser, and FBJS, as well as implementations of many common methods and tags. > Download Facebook Open Platform > > Source, .tar.gz format > > (Includes the libfbml archive, libfbml-1.2.0.tar.gz.) > > You can also get the latest source code from the public svn repository. > > How Is This Licensed? > > Facebook Open Platform (except for the FBML parser) is licensed under a Common Public Attribution License (CPAL), which follows the Mozilla Public License (MPL) with two additions: > > 1. That you include attribution to Facebook on any modifications. > 2. That network deployment, or making modifications available over the network, counts as distribution, which makes the license appropriate for Web services. 从没用过facebook或类似的。内的有个xiaonei“大量大胆地借用了”facebook的“什么什么和什么”，我也没用过。不过xiaonei很混蛋去年使用了大量，极为大量的referer spam。我对这些“一身IT造型”的人基本只有鄙夷。
+## facebook放出源代码，最近不少人都会捣鼓一下
+
+I know i will. :) 
+
+但看了一下安装说明。还是放放吧。：）这段专心整整翻译吧。
+
+[Facebook Open Platform](http://developers.facebook.com/fbopen/)
+
+> Facebook Open Platform is a snapshot of the infrastructure that runs Facebook Platform. It includes the API infrastructure, the FBML parser, the FQL parser, and FBJS, as well as implementations of many common methods and tags.
+> Download Facebook Open Platform
+> 
+> Source, .tar.gz format
+> 
+> (Includes the libfbml archive, libfbml-1.2.0.tar.gz.)
+> 
+> You can also get the latest source code from the public svn repository.
+> 
+> How Is This Licensed?
+> 
+> Facebook Open Platform (except for the FBML parser) is licensed under a Common Public Attribution License (CPAL), which follows the Mozilla Public License (MPL) with two additions:
+> 
+> 1. That you include attribution to Facebook on any modifications.
+> 2. That network deployment, or making modifications available over the network, counts as distribution, which makes the license appropriate for Web services.
+
+
+从没用过facebook或类似的。内的有个xiaonei“大量大胆地借用了”facebook的“什么什么和什么”，我也没用过。不过xiaonei很混蛋去年使用了大量，极为大量的referer spam。我对这些“一身IT造型”的人基本只有鄙夷。
+
 
 2008-06-04

@@ -1,5 +1,12 @@
 # 一些ffmpeg参数说明
 
-## 项目主页 项目正式主页，英文： 中文项目 ## 简单参数介绍的文章 http://unixboy.javaeye.com/blog/170059 http://tdhome.hlw.cn/show.php?clg\_cuid=2&id=626 http://www.lougoo.com/blog/article.asp?id=649
+## 项目主页
+项目正式主页，英文： <http://ffmpeg.mplayerhq.hu/>
+中文项目 <http://www.ffmpeg.com.cn/>
+
+## 简单参数介绍的文章
+http://unixboy.javaeye.com/blog/170059
+http://tdhome.hlw.cn/show.php?clg_cuid=2&id=626
+http://www.lougoo.com/blog/article.asp?id=649
 
 2008-08-27

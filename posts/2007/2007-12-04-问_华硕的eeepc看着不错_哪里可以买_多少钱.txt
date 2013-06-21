@@ -1,5 +1,18 @@
 # 问 华硕的eeepc看着不错 哪里可以买 多少钱
 
-## 华硕的eeepc看着不错。哪里可以买？多少钱 http://eeepc.asus.com/cn/product.htm 哪里有卖的。看着不错。 看上它的一个原因就是它的firmware和操作系统都是自由软件。华硕有专门的部们负责硬件对自由软件的支持。 ## 还有一个更省电的小电脑。 http://www.gadgettastic.com/2007/11/29/tiny-linux-pc-uses-just-18-watts-power-can-be-solar-powered-the-aleutia-e1/ 这个电脑采用8瓦的电，运行gnu/linux真是不错。：） 现在要200欧元，国际用户购买。 http://www.aleutia.com/offgrid/
+## 华硕的eeepc看着不错。哪里可以买？多少钱
+http://eeepc.asus.com/cn/product.htm
+哪里有卖的。看着不错。
+
+看上它的一个原因就是它的firmware和操作系统都是自由软件。华硕有专门的部们负责硬件对自由软件的支持。
+
+## 还有一个更省电的小电脑。
+
+http://www.gadgettastic.com/2007/11/29/tiny-linux-pc-uses-just-18-watts-power-can-be-solar-powered-the-aleutia-e1/
+这个电脑采用8瓦的电，运行gnu/linux真是不错。：）
+
+现在要200欧元，国际用户购买。
+http://www.aleutia.com/offgrid/
+
 
 2007-12-04

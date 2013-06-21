@@ -1,5 +1,9 @@
 # ikiwiki的又一篇快速入门
 
-ikiwiki的又一篇快速入门 http://www.willthompson.co.uk/slides/ikiwiki/slides.html 也有高级用法。文章很简洁清楚。
+ikiwiki的又一篇快速入门
+
+http://www.willthompson.co.uk/slides/ikiwiki/slides.html
+
+也有高级用法。文章很简洁清楚。
 
 2008-08-07

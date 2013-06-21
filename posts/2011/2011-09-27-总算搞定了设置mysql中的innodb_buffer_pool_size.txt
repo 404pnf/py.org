@@ -1,5 +1,46 @@
 # 总算搞定了设置mysql中的innodb buffer pool size
 
-开始在/etc/mysql/my.cnf中设定了一堆参数 innodb\_flush\_log\_at\_trx\_commit=0 innodb\_buffer\_pool\_size=900M innodb\_additional\_mem\_pool\_size=20M innodb\_log\_buffer\_size = 16M innodb\_log\_file\_size=64M innodb\_log\_buffer\_size=8M 发现除了 innodb\_flush\_log\_at\_trx\_commit=0 其他都不起作用。reload和重启mysql都不行。查来查去。 又发现很奇怪的现象， 用 $ mysqladmin -uroot -pmypassword variables|grep buffer\_pool 查看，给出的值是8m 用$ sudo /usr/sbin/mysqld --verbose --help|grep buffer-pool-size 给出的值是900mb 就是说其实读了我的配置文件进去。但用 sudo start mysql启动就是反应不出来。那么就用 sudo /usr/sbin/mysqld 启动吧。嘿，还启动不了。 在网上查了很一会儿。没有完全一样的问题。但有类似的是说因为log文件的关系。 http://forums.mysql.com/read.php?22,144428,241055#msg-241055 就是你修改了log文件的大小之类的。就会这样。 于是我注释掉了所有和log相关的，innodb调整参数只留下 innodb\_flush\_log\_at\_trx\_commit=0 innodb\_buffer\_pool\_size=4G innodb\_additional\_mem\_pool\_size=20M 重启mysql。就可以了。 暂时就这样吧 ：）不管log参数了。我只想看看innodb\_buffer\_pool\_size=4的威力。 参考innodb优化： http://www.mysqlperformanceblog.com/2006/09/29/what-to-tune-in-mysql-server-after-installation http://news.csdn.net/n/20061122/98014.html http://swachian.iteye.com/blog/193788 http://www.mysqlperformanceblog.com/2007/11/03/choosing-innodb\_buffer\_pool\_size/
+
+开始在/etc/mysql/my.cnf中设定了一堆参数
+
+innodb_flush_log_at_trx_commit=0
+
+innodb_buffer_pool_size=900M
+innodb_additional_mem_pool_size=20M
+innodb_log_buffer_size = 16M
+innodb_log_file_size=64M
+innodb_log_buffer_size=8M
+
+发现除了 innodb_flush_log_at_trx_commit=0 其他都不起作用。reload和重启mysql都不行。查来查去。
+
+又发现很奇怪的现象，
+
+用 $ mysqladmin -uroot -pmypassword variables|grep buffer_pool 查看，给出的值是8m
+
+用$ sudo /usr/sbin/mysqld --verbose --help|grep buffer-pool-size 给出的值是900mb
+
+就是说其实读了我的配置文件进去。但用 sudo start mysql启动就是反应不出来。那么就用 sudo /usr/sbin/mysqld 启动吧。嘿，还启动不了。
+
+在网上查了很一会儿。没有完全一样的问题。但有类似的是说因为log文件的关系。 http://forums.mysql.com/read.php?22,144428,241055#msg-241055
+
+就是你修改了log文件的大小之类的。就会这样。
+
+于是我注释掉了所有和log相关的，innodb调整参数只留下
+
+innodb_flush_log_at_trx_commit=0
+innodb_buffer_pool_size=4G
+innodb_additional_mem_pool_size=20M
+
+重启mysql。就可以了。
+
+暂时就这样吧 ：）不管log参数了。我只想看看innodb_buffer_pool_size=4的威力。
+
+参考innodb优化：
+http://www.mysqlperformanceblog.com/2006/09/29/what-to-tune-in-mysql-server-after-installation
+http://news.csdn.net/n/20061122/98014.html
+http://swachian.iteye.com/blog/193788
+http://www.mysqlperformanceblog.com/2007/11/03/choosing-innodb_buffer_pool_size/
+
+
 
 2011-09-27

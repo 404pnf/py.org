@@ -1,5 +1,9 @@
 # drupal中定制错误页面 页面未找到或用户无权访问的404 403错误页面
 
-## drupal中定制错误页面（页面未找到或用户无权访问的404，403错误页面） Creating custom error pages in Drupal http://www.kinetasystems.com/blog/creating-custom-error-pages-in-drupal) 问问题：我一直想把错误页面定制到静态html页面，这样减少服务器的开销和网络流量开销。但不成功？谁知道怎么做？
+## drupal中定制错误页面（页面未找到或用户无权访问的404，403错误页面）
+Creating custom error pages in Drupal
+http://www.kinetasystems.com/blog/creating-custom-error-pages-in-drupal)
+
+问问题：我一直想把错误页面定制到静态html页面，这样减少服务器的开销和网络流量开销。但不成功？谁知道怎么做？
 
 2008-04-02

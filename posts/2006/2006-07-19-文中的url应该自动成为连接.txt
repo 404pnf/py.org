@@ -1,5 +1,7 @@
 # 文中的url应该自动成为连接
 
-www.rijiben.org 是么 成功了
+www.rijiben.org
+
+是么 成功了 
 
 2006-07-19

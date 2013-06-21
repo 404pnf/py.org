@@ -1,5 +1,6 @@
 # gnu linux下批量修改文件名称的方法 有例子 很全 很清楚
 
+
 http://www.basicallytech.com/blog/?/archives/10-Shell-stuff-rename-multiple-files-on-the-command-line.html
 
 2007-12-27

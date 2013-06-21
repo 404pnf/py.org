@@ -1,5 +1,34 @@
 # 如何使用github管理已有代码
 
-> Global setup: > Download and install Git > git config --global user.name "404" > git config --global user.email baixiaoyu@gmail.com > > Next steps: > mkdir 4u2u > cd 4u2u > git init > touch README > git add README > git commit -m 'first commit' > git remote add origin git@github.com:404pnf/4u2u.git > git push origin master > > Existing Git Repo? > cd existing\_git\_repo > git remote add origin git@github.com:404pnf/4u2u.git > git push origin master > > Importing a Subversion Repo? > Click here > > When you're done: > Continue > 之后，我觉得本地clone一下。然后是不是把production那个git checkout出来并复制到 github clone的那个文件夹然后commit，之后push到github就可以了。
+
+> Global setup:
+>  Download and install Git
+>   git config --global user.name "404"
+>   git config --global user.email baixiaoyu@gmail.com
+>         
+> Next steps:
+>   mkdir 4u2u
+>   cd 4u2u
+>   git init
+>   touch README
+>   git add README
+>   git commit -m 'first commit'
+>   git remote add origin git@github.com:404pnf/4u2u.git
+>   git push origin master
+>       
+> Existing Git Repo?
+>   cd existing_git_repo
+>   git remote add origin git@github.com:404pnf/4u2u.git
+>   git push origin master
+>       
+> Importing a Subversion Repo?
+>   Click here
+>       
+> When you're done:
+>   Continue
+> 
+之后，我觉得本地clone一下。然后是不是把production那个git checkout出来并复制到 github clone的那个文件夹然后commit，之后push到github就可以了。
+
+
 
 2011-09-27

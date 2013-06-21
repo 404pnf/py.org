@@ -1,5 +1,13 @@
 # drupal输入格式排列顺序
 
-我试验发现这个不错 照片和文字不会很乱了 Inline images HTML 过滤器 URL filter 换行转换器
+我试验发现这个不错
+照片和文字不会很乱了
+
+Inline images	
+HTML 过滤器	
+URL filter	
+换行转换器	
+
+
 
 2006-09-30

@@ -1,5 +1,14 @@
 # varnish 3即将发布 刚看了其作者的一篇文章
 
-http://www.varnish-cache.org/docs/trunk/phk/three-zero.html 有几句quote很有意思 “Life is what happens to you while you’re busy making other plans” said John Lennon, a famous murder victim from New York. I still worry about the The Fraud Police though, “I have no idea what I’m doing, and I totally make shit up as I go along.” is a disturbingly precise summary of how I feel about my work in Varnish.
+http://www.varnish-cache.org/docs/trunk/phk/three-zero.html
+有几句quote很有意思
+
+    “Life is what happens to you while you’re busy making other plans”
+
+said John Lennon, a famous murder victim from New York.
+
+I still worry about the The Fraud Police though, “I have no idea what I’m doing, and I totally make shit up as I go along.” is a disturbingly precise summary of how I feel about my work in Varnish.
+
+
 
 2011-09-27

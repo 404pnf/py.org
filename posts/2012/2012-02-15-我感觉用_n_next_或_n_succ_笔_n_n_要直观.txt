@@ -1,5 +1,19 @@
 # 我感觉用 n next 或 n succ 笔 n n 要直观
 
-succ是succeed，是follow, come after的意思 >> n => 1 >> n = n.next => 2 >> n = n.succ => 3 >> n += n => 6 >> n += n => 12
+
+succ是succeed，是follow, come after的意思
+
+>> n
+=> 1
+>> n = n.next
+=> 2
+>> n = n.succ
+=> 3
+>> n += n
+=> 6
+>> n += n
+=> 12
+
+
 
 2012-02-15

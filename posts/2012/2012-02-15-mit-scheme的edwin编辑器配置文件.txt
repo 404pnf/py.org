@@ -1,5 +1,14 @@
 # mit-scheme的edwin编辑器配置文件
 
-~/.edwin中写 ((ref-command set-font) "9x15") ((ref-command set-frame-size) 163 40) http://superuser.com/questions/207938/how-to-change-default-font-in-mit-scheme-edwin http://mumble.net/~campbell/scheme/edwin-init.scm http://courses.csail.mit.edu/6.844/spring05-6844/handouts/edwin.ini
+~/.edwin中写
+((ref-command set-font) "9x15")
+((ref-command set-frame-size) 163 40)
+http://superuser.com/questions/207938/how-to-change-default-font-in-mit-scheme-edwin
+http://mumble.net/~campbell/scheme/edwin-init.scm
+http://courses.csail.mit.edu/6.844/spring05-6844/handouts/edwin.ini
+
+
+
+
 
 2012-02-15

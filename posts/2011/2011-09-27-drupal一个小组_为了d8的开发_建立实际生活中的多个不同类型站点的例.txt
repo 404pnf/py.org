@@ -1,5 +1,8 @@
 # drupal一个小组 为了d8的开发 建立实际生活中的多个不同类型站点的例子 来看看drupal核心应该能做什么
 
+
 http://groups.drupal.org/node/134059
+
+
 
 2011-09-27

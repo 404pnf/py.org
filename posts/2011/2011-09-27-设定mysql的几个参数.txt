@@ -1,5 +1,13 @@
 # 设定mysql的几个参数
 
-set global tmp\_table\_size=100\*1024\*1024 set global max\_tmp\_tables=128 set global #max\_heap\_table\_size = 300\*1024\*1024 注意这里只能用1024去乘，不能用100K 100M这样的。mysql会报错
+
+set global tmp_table_size=100*1024*1024
+set global max_tmp_tables=128
+set global #max_heap_table_size = 300*1024*1024
+
+注意这里只能用1024去乘，不能用100K 100M这样的。mysql会报错
+
+
+
 
 2011-09-27

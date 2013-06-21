@@ -1,5 +1,24 @@
 # 最简单的启用php-cgi的方法是 php-cgi -b 127 0 0 1 3000
 
-最简单的启用php-cgi的方法是 php-cgi -b 127.0.0.1:3000 之后在nginx就可以把php处理proxy到本地的9000端口。不需要任何php-fastcgi的启动脚本。 好处：超级简单 坏处：没有pfm-php之类的高级功能和灵活配置 3、使用spawn-fcgi启动php cd /usr/local/nginx/sbin wget http://sudone.com/download/spawn-fcgi chmod +x spawn-fcgi spawn-fcgi -a 127.0.0.1 -p 9000 -u nobody -f /usr/bin/php-cgi -C 20 echo "/usr/local/nginx/sbin/spawn-fcgi -a 127.0.0.1 -p 9000 -u nobody -f /usr/bin/php-cgi -C 20" >> /etc/rc.local ref: http://www.sudone.com/nginx/nginx\_php\_debian.html
+最简单的启用php-cgi的方法是 php-cgi -b 127.0.0.1:3000
+
+之后在nginx就可以把php处理proxy到本地的9000端口。不需要任何php-fastcgi的启动脚本。
+
+好处：超级简单
+坏处：没有pfm-php之类的高级功能和灵活配置
+
+3、使用spawn-fcgi启动php
+
+      cd /usr/local/nginx/sbin
+      wget http://sudone.com/download/spawn-fcgi
+      chmod +x spawn-fcgi
+      spawn-fcgi -a 127.0.0.1 -p 9000 -u nobody -f /usr/bin/php-cgi -C 20
+      echo "/usr/local/nginx/sbin/spawn-fcgi -a 127.0.0.1 -p 9000 -u nobody -f /usr/bin/php-cgi -C 20" >> /etc/rc.local
+      
+ref: http://www.sudone.com/nginx/nginx_php_debian.html
+
+
+
+
 
 2010-06-13

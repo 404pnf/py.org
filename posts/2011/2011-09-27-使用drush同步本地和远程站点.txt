@@ -1,5 +1,8 @@
 # 使用drush同步本地和远程站点
 
-http://drupal.org/node/670460 http://www.leveltendesign.com/blog/dustin-currie/synchronize-one-drupal-site-to-another
+http://drupal.org/node/670460
+http://www.leveltendesign.com/blog/dustin-currie/synchronize-one-drupal-site-to-another
+
+
 
 2011-09-27

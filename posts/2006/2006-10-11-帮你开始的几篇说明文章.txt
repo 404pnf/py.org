@@ -1,5 +1,31 @@
 # 帮你开始的几篇说明文章
 
-你发表文章前\*\*勾选了把文章发到首页\*\*你的文章就会出现在这里。[1] 最新的在最上面。有最新评论的会被踩到最上面。：） 一般文章不需要让满世界都知道的，就不必发到首页了。发到自己blog和相应的小团体组里就可以了。 \*\*几篇帮你开始的文章\*\* 如何[写日记和插入图片](http://blog.fltrp.com/esc/node/62) 上传附件[\*\*文件请用拼音或数字开头\*\*](http://pengyou.rijiben.org/node/250) 上传mp3附件或者直接贴一个mp3的地址就能[在线播放mp3](http://pengyou.rijiben.org/node/420) 有一个[专门的相册](http://zhaopian.rijiben.org)。你还可以对相册[设置密码](http://pengyou.rijiben.org/node/694) 你参加的组有更新了[通过email提醒你](http://pengyou.rijiben.org/node/154) [rss订阅社区内容](http://pengyou.rijiben.org/node/462) [email订阅自己参加组的内容](http://pengyou.rijiben.org/node/461)，就不用老上来看有没有更新了 [发录像](http://pengyou.rijiben.org/node/480)的2种方法 我信誓旦旦的[服务声明](http://pengyou.rijiben.org/node/263) 查看以前[所有文章](http://pengyou.rijiben.org/node) -- [1]社区可以指定任何node为首页。暂时几个热心的管理员有这个权利，我们选择了单开一个组的模式，好处是方便首页自动更新，而且采用自愿参与自愿发布到首页的模式，一定程度方便想\*默默无闻\*写日记的朋友。以后首页什么样子，和社区的所有决策是什么样子由社区所有成员参与决定。
+你发表文章前**勾选了把文章发到首页**你的文章就会出现在这里。[1] 最新的在最上面。有最新评论的会被踩到最上面。：） 一般文章不需要让满世界都知道的，就不必发到首页了。发到自己blog和相应的小团体组里就可以了。
+
+**几篇帮你开始的文章**
+
+如何[写日记和插入图片](http://blog.fltrp.com/esc/node/62)
+
+上传附件[**文件请用拼音或数字开头**](http://pengyou.rijiben.org/node/250)
+
+上传mp3附件或者直接贴一个mp3的地址就能[在线播放mp3](http://pengyou.rijiben.org/node/420)
+
+有一个[专门的相册](http://zhaopian.rijiben.org)。你还可以对相册[设置密码](http://pengyou.rijiben.org/node/694)
+
+你参加的组有更新了[通过email提醒你](http://pengyou.rijiben.org/node/154)
+
+[rss订阅社区内容](http://pengyou.rijiben.org/node/462)
+
+[email订阅自己参加组的内容](http://pengyou.rijiben.org/node/461)，就不用老上来看有没有更新了
+
+[发录像](http://pengyou.rijiben.org/node/480)的2种方法
+
+我信誓旦旦的[服务声明](http://pengyou.rijiben.org/node/263)
+
+查看以前[所有文章](http://pengyou.rijiben.org/node)
+
+--
+
+[1]社区可以指定任何node为首页。暂时几个热心的管理员有这个权利，我们选择了单开一个组的模式，好处是方便首页自动更新，而且采用自愿参与自愿发布到首页的模式，一定程度方便想*默默无闻*写日记的朋友。以后首页什么样子，和社区的所有决策是什么样子由社区所有成员参与决定。
 
 2006-10-11

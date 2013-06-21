@@ -1,5 +1,7 @@
 # hostname - I 显示机器的ip地址
 
-hostname -I
+    hostname  -I 
+    
+
 
 2011-11-30

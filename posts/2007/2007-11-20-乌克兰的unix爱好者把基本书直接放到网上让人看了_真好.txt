@@ -1,5 +1,18 @@
 # 乌克兰的unix爱好者把基本书直接放到网上让人看了 真好
 
-乌克兰的unix爱好者把基本书直接放到网上让人看了。真好。 http://www.unix.org.ua/orelly/unix/index.htm 查了一下才知道ua是ukraine的意思。 > What does UA stand for? Definition of Ukraine (ISO Country Identifier) in the list of acronyms and abbreviations provided by the Free Online Dictionary and > www.worldbank.org/ua 世界银行采用这个缩写 刚发现，其实乌克兰的朋友们给我们的还很多，很多。：） http://www.unix.org.ua/orelly/
+乌克兰的unix爱好者把基本书直接放到网上让人看了。真好。
+
+http://www.unix.org.ua/orelly/unix/index.htm
+
+查了一下才知道ua是ukraine的意思。
+
+> What does UA stand for? Definition of Ukraine (ISO Country Identifier) in the list of acronyms and abbreviations provided by the Free Online Dictionary and
+
+> www.worldbank.org/ua
+世界银行采用这个缩写
+
+刚发现，其实乌克兰的朋友们给我们的还很多，很多。：）
+
+http://www.unix.org.ua/orelly/ 
 
 2007-11-20

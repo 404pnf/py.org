@@ -2,4 +2,6 @@
 
 ## 链接外部css的格式是
 
+      <link rel="stylesheet" type="text/css" href="test.css" />
+
 2008-05-06

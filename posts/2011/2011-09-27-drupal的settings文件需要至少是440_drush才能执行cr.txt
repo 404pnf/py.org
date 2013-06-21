@@ -1,5 +1,12 @@
 # drupal的settings文件需要至少是440 drush才能执行cron
 
-比如运行drush的用户是 user/user。settings文件的所有者是 www-data/www-data 。那么，如果settgings文件权限设为 400，则drush无法执行cron。此时会报错 Command core-cron needs a higher bootstrap level to run - you will [error] need invoke drush from a more functional Drupal environment to run this command 改为440就可以了。这样，不属于www-data组的人仍然不能查看settings.php。
+比如运行drush的用户是 user/user。settings文件的所有者是 www-data/www-data 。那么，如果settgings文件权限设为 400，则drush无法执行cron。此时会报错
+
+	Command core-cron needs a higher bootstrap level to run - you will    [error] need invoke drush from a more functional Drupal environment to run this command
+
+改为440就可以了。这样，不属于www-data组的人仍然不能查看settings.php。
+
+
+
 
 2011-09-27

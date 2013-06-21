@@ -1,5 +1,21 @@
 # 
 
-via a comment at http://www.williamlong.info/archives/604.html > 内部资料泄密 中电信欲部署一款最大流氓软件？ > http://www.techweb.com.cn/news/2006-08-22/88091.shtml 演示文档上竟然有“解决pppoe拨号软件版权问题”这种屁话。可见版权对于有些人是什么意思。特别是那些认为现在版权法还不过变态还需要加强人的人。 http://cimg2.163.com/tech/2006/8/22/20060822160144973a0.gif 而为了达到“占领用户端的桌面”的目标，很多电信宽带用户称凡是用过“星空极速”软件进行拨号连接之后，以后必须只能采取此软件拨号，否则连接不了因特网，有的地方电信甚至从开始就只允许采取“星空极速”软件作为拨号软件，其它软件都无法连接上网。 这种混蛋做法发生在中国我已经不惊讶了。但是我还是很气愤。如果真这样不知道到时候是否会有人出来打官司，结果如何。 more on this http://www.williamlong.info/archives/605.html http://www.williamlong.info/archives/607.html 如果你们有相关的links贴到留言吧
+via a comment at http://www.williamlong.info/archives/604.html
+
+> 内部资料泄密 中电信欲部署一款最大流氓软件？
+> http://www.techweb.com.cn/news/2006-08-22/88091.shtml
+
+演示文档上竟然有“解决pppoe拨号软件版权问题”这种屁话。可见版权对于有些人是什么意思。特别是那些认为现在版权法还不过变态还需要加强人的人。
+http://cimg2.163.com/tech/2006/8/22/20060822160144973a0.gif
+
+<cite>
+而为了达到“占领用户端的桌面”的目标，很多电信宽带用户称凡是用过“星空极速”软件进行拨号连接之后，以后必须只能采取此软件拨号，否则连接不了因特网，有的地方电信甚至从开始就只允许采取“星空极速”软件作为拨号软件，其它软件都无法连接上网。</cite>
+
+这种混蛋做法发生在中国我已经不惊讶了。但是我还是很气愤。如果真这样不知道到时候是否会有人出来打官司，结果如何。
+
+more on this
+http://www.williamlong.info/archives/605.html
+http://www.williamlong.info/archives/607.html
+如果你们有相关的links贴到留言吧
 
 2006-08-31

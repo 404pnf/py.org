@@ -1,5 +1,17 @@
 # google 谷歌 发布翻译网页的小工具可以帮助你翻译你的网站
 
-> 突破语言障碍 — Google（谷歌）发布翻译小工具 > http://googlechinablog.com/2007/11/google\_19.html > http://translate.google.com/translate\_tools?hl=zh-CN 把下面代码加入你网站模板就好了。这样每页都显示翻译本页链接。 via yp 我在一个站点用了一下。可用。 对不少网站还是有用的，而且真方便。
+> 突破语言障碍 — Google（谷歌）发布翻译小工具
+>  http://googlechinablog.com/2007/11/google_19.html
+>  http://translate.google.com/translate_tools?hl=zh-CN
+
+把下面代码加入你网站模板就好了。这样每页都显示翻译本页链接。
+
+       <使用代码时删除这几个中文字script src="http://gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/translatemypage.xml&up_source_language=zh-CN&w=180&h=75&title=&border=http://&output=js"></script>
+
+via yp
+
+我在一个站点用了一下。可用。
+
+对不少网站还是有用的，而且真方便。
 
 2007-11-27

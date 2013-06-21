@@ -1,5 +1,14 @@
 # ruby中把一个数组转换成字符串
 
->> a2 => ["this", "is", "love"] >> s2 = a2.join(" ") => "this is love" >> s2 => "this is love"
+>> a2
+=> ["this", "is", "love"]
+>> s2 = a2.join(" ")
+=> "this is love"
+>> s2
+=> "this is love"
+
+
+
+
 
 2012-02-15

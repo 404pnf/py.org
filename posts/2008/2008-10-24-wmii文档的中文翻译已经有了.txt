@@ -1,5 +1,7 @@
 # wmii文档的中文翻译已经有了
 
 
+<http://wiki.chinaunix.net/index.php/Guide_wmii_cn>
+
 
 2008-10-24

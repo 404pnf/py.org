@@ -1,5 +1,16 @@
 # 方便自己查看黄金价格的shell脚本
 
-wget http://goldprice.org/NewCharts/gold/images/gold\_1d\_o\_USD.png -O goldprice.png sleep 1 feh goldprice.png wget的-O参数（是大写英文 o，as in Output）会默认覆盖之前的文件。这点是必须的。否则我不知道如何让feh来查看哪个图片 如果不加-O，再次下载同一url的图片，wget会默认命名为 goldprice.png, goldprice.png.1, goldprice.png.2 这样。
+
+wget http://goldprice.org/NewCharts/gold/images/gold_1d_o_USD.png -O goldprice.png
+
+sleep 1
+
+feh goldprice.png
+
+wget的-O参数（是大写英文 o，as in Output）会默认覆盖之前的文件。这点是必须的。否则我不知道如何让feh来查看哪个图片
+
+如果不加-O，再次下载同一url的图片，wget会默认命名为 goldprice.png, goldprice.png.1, goldprice.png.2 这样。
+
+
 
 2012-02-15

@@ -1,5 +1,24 @@
 # mysql启动不了可能是因为绑定网卡 绑定ip地址的错误
 
-user@example:/usr/sbin$ sudo ./mysqld [sudo] password for user: 110815 8:48:15 [ERROR] Can't start server: Bind on TCP/IP port: Cannot assign requested address 110815 8:48:15 [ERROR] Do you already have another mysqld server running on port: 3306 ? 110815 8:48:15 [ERROR] Aborting 查看3306端口，没有程序跑啊。迷惑了。 #sudo netstat -anp | grep "3306" 看了这篇，也说说是网卡loopback没设定对。 http://www.linuxforums.org/forum/servers/41668-mysql-problems-\_-solved-\_.html 。我 ifconfig一下，自己的lo设定对的，是127.0.0.1 看了一眼自己的配置文件，原来是从另一台机器复制过来的，所以bind的地址是那台机器的内网地址，改为127.0.0.1就好了。 参考： http://www.zhuoda.org/xiezhi/98178.html
+
+user@example:/usr/sbin$ sudo ./mysqld
+[sudo] password for user: 
+110815  8:48:15 [ERROR] Can't start server: Bind on TCP/IP port: Cannot assign requested address
+110815  8:48:15 [ERROR] Do you already have another mysqld server running on port: 3306 ?
+110815  8:48:15 [ERROR] Aborting
+
+
+查看3306端口，没有程序跑啊。迷惑了。
+
+     #sudo  netstat -anp | grep "3306"
+     
+看了这篇，也说说是网卡loopback没设定对。 http://www.linuxforums.org/forum/servers/41668-mysql-problems-_-solved-_.html 。我 ifconfig一下，自己的lo设定对的，是127.0.0.1
+
+看了一眼自己的配置文件，原来是从另一台机器复制过来的，所以bind的地址是那台机器的内网地址，改为127.0.0.1就好了。
+
+
+参考： http://www.zhuoda.org/xiezhi/98178.html
+
+
 
 2011-09-27

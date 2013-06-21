@@ -1,5 +1,12 @@
 # 在emacs中查看一个文件夹下的图片所略图
 
->q: I have a bunch of images in a dir. Is there a way to get a overview? > In emacs version 22, use Alt+x tumme. (“tumme” means thumb in Swedish. You need ImageMagick installed for tumme to work.). Emacs will create thumbnails on the fly. Here's a screenshot: > http://xahlee.org/emacs/emacs\_html.html
+
+>q: I have a bunch of images in a dir. Is there a way to get a overview?
+
+> In emacs version 22, use Alt+x tumme. (“tumme” means thumb in Swedish. You need ImageMagick installed for tumme to work.). Emacs will create thumbnails on the fly. Here's a screenshot: 
+
+
+> http://xahlee.org/emacs/emacs_html.html
+
 
 2007-12-24

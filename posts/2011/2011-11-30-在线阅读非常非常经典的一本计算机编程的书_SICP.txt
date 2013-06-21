@@ -1,5 +1,16 @@
 # 在线阅读非常非常经典的一本计算机编程的书 SICP
 
-Structure and Interpretation of Computer Programs second edition Harold Abelson and Gerald Jay Sussman with Julie Sussman foreword by Alan J. Perlis http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-1.html
+
+Structure and Interpretation of Computer Programs
+
+second edition 
+
+Harold Abelson and Gerald Jay Sussman 
+with Julie Sussman 
+foreword by Alan J. Perlis 
+
+http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-1.html
+
+
 
 2011-11-30

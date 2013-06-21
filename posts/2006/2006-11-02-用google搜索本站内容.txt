@@ -1,24 +1,42 @@
 # 用google搜索本站内容
 
-用小拉提供的[更多搜索引擎搜索](http://pengyou.rijiben.org/node/592#comment-671)也可以 小拉请整理一下代码，写个报告上来。大家一块看文字编码问题。
+用小拉提供的[更多搜索引擎搜索](http://pengyou.rijiben.org/node/592#comment-671)也可以
 
-### 用google搜索本站
+小拉请整理一下代码，写个报告上来。大家一块看文字编码问题。
 
-    
+<div class="title"><h3>用google搜索本站</h3></div>
+  <div class="content"><p><!-- Search Google --><br />
+<center><br />
+<FORM method=GET action=http://www.google.cn/custom><br />
+<TABLE bgcolor=#FFFFFF cellspacing=0 border=0></p>
+<tr valign=top>
+<td>
+<A HREF=http://www.google.com/search><br />
+<IMG SRC=http://www.google.com/logos/Logo_40wht.gif border=0 ALT=Google align=middle></A>
+</td>
+<td>
+<INPUT TYPE=text name=q size=31 maxlength=255 value=""><br />
+<INPUT type=submit name=sa VALUE="Google Search"><br />
+<INPUT type=hidden name=cof VALUE="AH:center;AWFID:f1b8b241fd4215cf;"><br />
+<input type=hidden name=domains value="pengyou.rijiben.org"><br><input type=radio name=sitesearch value=""> Search WWW <input type=radio name=sitesearch value="pengyou.rijiben.org" checked> Search pengyou.rijiben.org
+</td>
+</tr>
+<p></TABLE><br />
+</FORM><br />
+</center><br />
+<!-- Search Google --></p>
+</div>
+</div>      <!-- end main content -->
 
-    
-    
-    
-![Google](http://www.google.com/logos/Logo_40wht.gif)  
-    
-    
-    
-Search WWW Search pengyou.rijiben.org
 
-    
-    
-    
 
-  update: 我修改了一下。把google.com直接改成google.cn，竟然能用。但google.cn上没有说提供定制搜索的事。反正先用着吧。搜索出来的是过滤过的信息。不会“对你们的身心健康造成伤害的”。 -- 问题是中国内地经常不能顺利访问google.com。不要赖我。把帐记在wangbadan身上。
+update: 我修改了一下。把google.com直接改成google.cn，竟然能用。但google.cn上没有说提供定制搜索的事。反正先用着吧。搜索出来的是过滤过的信息。不会“对你们的身心健康造成伤害的”。
+
+--
+
+问题是中国内地经常不能顺利访问google.com。不要赖我。把帐记在wangbadan身上。
+
+
+
 
 2006-11-02

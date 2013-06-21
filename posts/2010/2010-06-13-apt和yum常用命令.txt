@@ -1,5 +1,52 @@
 # apt和yum常用命令
 
-> APT 常用指令如下： > > apt-get update > 更新套件列表 > > apt-get dist-upgrade > 升級 rpm > > apt-cache search > 搜尋套件，ex: apt-cache search httpd > > apt-get install > 安裝套件，這裡的套件安裝，會考慮到相依性的問題。 ex: apt-get install httpd > > apt-get remove > 移除套件，這裡的套件移除，也會考慮到相依性的問題。 ex: apt-get remove httpd > > apt-get clean > 清除安裝時下載的暫存套件原始檔案，位於 /var/cache/apt/archives > > YUM 常用指令如下： > > yum update > 更新套件， ex: yum update httpd，如果只有 yum update ，會更新所有已經安裝的套件。 > > yum search > 搜尋套件，ex: yum search httpd\*，會搜尋所有跟 httpd 有關的套件。 > > yum install > 安裝套件，這裡的套件安裝，會考慮到相依性的問題。 ex: yum install httpd > > yum remove > 移除套件，這裡的套件移除，也會考慮到相依性的問題。 ex: yum remove httpd > > yum clean > 清除安裝時下載的暫存套件原始檔案，位於 /var/cache/yum，因為這裡可以清除的項目很多，我最常用的是 yum clean all ，一次給他清掉 :p > > yum list > 列出套件名稱，用法常用有分以下幾種： > > yum list updates > 列出所有可以更新的套件 > > yum list installed > 列出所有已安裝的套件 > > 更多的中文參考資訊，可以見以下兩個網站：
+> APT 常用指令如下：
+> 
+> apt-get update
+> 更新套件列表
+> 
+> apt-get dist-upgrade
+> 升級 rpm
+> 
+> apt-cache search
+> 搜尋套件，ex: apt-cache search httpd
+> 
+> apt-get install
+> 安裝套件，這裡的套件安裝，會考慮到相依性的問題。 ex: apt-get install httpd 
+> 
+> apt-get remove
+> 移除套件，這裡的套件移除，也會考慮到相依性的問題。 ex: apt-get remove httpd
+> 
+> apt-get clean
+> 清除安裝時下載的暫存套件原始檔案，位於 /var/cache/apt/archives
+> 
+> YUM 常用指令如下：
+> 
+> yum update
+> 更新套件， ex: yum update httpd，如果只有 yum update ，會更新所有已經安裝的套件。
+> 
+> yum search
+> 搜尋套件，ex: yum search httpd*，會搜尋所有跟 httpd 有關的套件。
+> 
+> yum install
+> 安裝套件，這裡的套件安裝，會考慮到相依性的問題。 ex: yum install httpd 
+> 
+> yum remove
+> 移除套件，這裡的套件移除，也會考慮到相依性的問題。 ex: yum remove httpd
+> 
+> yum clean
+> 清除安裝時下載的暫存套件原始檔案，位於 /var/cache/yum，因為這裡可以清除的項目很多，我最常用的是 yum clean all ，一次給他清掉 :p
+> 
+> yum list
+> 列出套件名稱，用法常用有分以下幾種：
+> 
+> yum list updates
+> 列出所有可以更新的套件
+> 
+> yum list installed
+> 列出所有已安裝的套件
+> 
+> 更多的中文參考資訊，可以見以下兩個網站：
+
 
 2010-06-13

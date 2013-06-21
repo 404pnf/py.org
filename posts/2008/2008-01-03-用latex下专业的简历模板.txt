@@ -1,5 +1,8 @@
 # 用latex下专业的简历模板
 
-## 用latex下专业的简历模板 latex — professional Résumé layout made simple http://linux.dsplabs.com.au/resume-writing-example-latex-template-linux-curriculum-vitae-professional-cv-layout-format-text-p54/
+## 用latex下专业的简历模板
+
+latex — professional Résumé layout made simple 
+http://linux.dsplabs.com.au/resume-writing-example-latex-template-linux-curriculum-vitae-professional-cv-layout-format-text-p54/
 
 2008-01-03

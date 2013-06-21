@@ -1,5 +1,18 @@
 # filiezilla可以把ssh-keygen生成的私钥转换为可以供putty和winscp已经filezilla自己使用的格式
 
-默认putty生成的 ssh2 rsa key不能直接用于openssh。客户端会说“Server Refused OUr Key” 默认openssh生成的dsa或者rsa key不能直接被putty和winscp使用 有一些帮助文件： http://www.walkernews.net/2009/03/22/how-to-fix-server-refused-our-key-error-that-caused-by-putty-generated-rsa-public-key/ http://www.walkernews.net/2009/05/11/how-to-use-putty-generated-rsa-key-to-login-linux-openssh-server/ http://www.walkernews.net/2009/05/03/how-to-create-putty-based-rsa-public-key-for-openssh-server/ http://www.andremolnar.com/how\_to\_set\_up\_ssh\_keys\_with\_putty\_and\_not\_get\_server\_refused\_our\_key http://articles.slicehost.com/2009/2/4/ssh-puttygen
+
+默认putty生成的 ssh2 rsa key不能直接用于openssh。客户端会说“Server Refused OUr Key”
+
+默认openssh生成的dsa或者rsa key不能直接被putty和winscp使用
+
+
+有一些帮助文件：
+http://www.walkernews.net/2009/03/22/how-to-fix-server-refused-our-key-error-that-caused-by-putty-generated-rsa-public-key/
+http://www.walkernews.net/2009/05/11/how-to-use-putty-generated-rsa-key-to-login-linux-openssh-server/
+http://www.walkernews.net/2009/05/03/how-to-create-putty-based-rsa-public-key-for-openssh-server/
+http://www.andremolnar.com/how_to_set_up_ssh_keys_with_putty_and_not_get_server_refused_our_key
+http://articles.slicehost.com/2009/2/4/ssh-puttygen
+
+
 
 2011-09-27

@@ -1,5 +1,8 @@
 # learn ruby the hard way 在线阅读
 
-http://ruby.learncodethehardway.org/book/ 中文： http://lrthw.github.com/
+http://ruby.learncodethehardway.org/book/
+中文： http://lrthw.github.com/
+
+
 
 2012-02-15

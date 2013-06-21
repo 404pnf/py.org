@@ -1,5 +1,44 @@
 # 提醒自己和to do
 
-管理员们看就行 ## 注意 # pathauto这个模块不能停。否则 node/ 无法访问，其他页面没事？！奇怪。 我希望清除所有url别名。 # audio不要停，否则以前用audio发的东西不能听了。 ## to do # workspace或my archive定制 谁能否看一下。如果workspace或者任何一个module能直接调出用户提交的各种node格式的东西，那么我准备还是把audio打开。这样，用户在list自己发表的东西的时候，可以很方便的给他先是分开的audio和blog和slideshow等这种分开的。现在把audio关了，是因为audio法出来的东西，或者image法出来的东西，在用户的blog里面显示不出来，很多朋友找不着自己发表的东西。 我希望：点我最近干吗了 list出 比如 10个blog 5个audio 5个video 或者完全按时间排列，但后面著名node type也可以。 这样，最终用户的最主要的页面是user page，而不是那个blog。这种方法对以后增加不同类型的node type都用帮助。 也许有更好的方法，但我们还没接触到。比如据说view取代了所有node type? 补充，workspace现在已经实现了列出你上传的附件。你点附件带你去那篇文章，已经很好了。 # 删除所有url别名 管理员可以在 管理 - url别名中察看 现在别名太多了。是因为我前一段用pathauto设置生成的。path+auto就是自动改写url路径的工具。比如我设计为一篇日记的url是 /username/nid 一个人的blog可以使 /username/blog 这样给人一种错觉你的东西都在“你的空间下” 我现在不想用了。想设计一种更有效地改写方式。现有方式对中文用户名支持不好，中文用户明出现在url中是乱码，或者缺字。
+管理员们看就行
+<!--break-->
+
+## 注意
+# pathauto这个模块不能停。否则 node/ 无法访问，其他页面没事？！奇怪。 我希望清除所有url别名。
+# audio不要停，否则以前用audio发的东西不能听了。
+
+## to do 
+
+# workspace或my archive定制
+
+谁能否看一下。如果workspace或者任何一个module能直接调出用户提交的各种node格式的东西，那么我准备还是把audio打开。这样，用户在list自己发表的东西的时候，可以很方便的给他先是分开的audio和blog和slideshow等这种分开的。现在把audio关了，是因为audio法出来的东西，或者image法出来的东西，在用户的blog里面显示不出来，很多朋友找不着自己发表的东西。
+
+我希望：点我最近干吗了 list出 比如
+
+10个blog
+
+5个audio 
+
+5个video
+
+或者完全按时间排列，但后面著名node type也可以。
+
+这样，最终用户的最主要的页面是user page，而不是那个blog。这种方法对以后增加不同类型的node type都用帮助。
+
+也许有更好的方法，但我们还没接触到。比如据说view取代了所有node type?
+
+补充，workspace现在已经实现了列出你上传的附件。你点附件带你去那篇文章，已经很好了。
+
+# 删除所有url别名
+
+管理员可以在 管理 - url别名中察看 现在别名太多了。是因为我前一段用pathauto设置生成的。path+auto就是自动改写url路径的工具。比如我设计为一篇日记的url是
+
+/username/nid 
+
+一个人的blog可以使 /username/blog
+
+这样给人一种错觉你的东西都在“你的空间下”
+
+我现在不想用了。想设计一种更有效地改写方式。现有方式对中文用户名支持不好，中文用户明出现在url中是乱码，或者缺字。
 
 2006-11-09

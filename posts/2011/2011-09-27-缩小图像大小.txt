@@ -1,5 +1,9 @@
 # 缩小图像大小
 
-for f in \*.jpg; do convert -quality 40% $f small/$f;done
+
+      for f in *.jpg; do convert -quality 40% $f small/$f;done
+
+
+
 
 2011-09-27

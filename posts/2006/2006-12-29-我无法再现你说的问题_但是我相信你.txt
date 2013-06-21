@@ -1,5 +1,11 @@
 # 我无法再现你说的问题 但是我相信你
 
-> 658 (comment waiting notify email problem) - Lyceum - Trac > "i can't reproduce this. but i believe you :)" > http://source.ibiblio.org/trac/lyceum/ticket/658 计算机程序的除虫，找bug是很烦琐有时候也是有意思的事情。最难的就是再现别人出现的问题。比如有人遇到这个问题了。但程序员或维护人员无法在自己的环境下再现这个问题，所以提交bug的事后自己环境配置很重要。不能再现通常就不好解决。可能使用户问题，可能是用户机器环境问题，可能是软件问题。商业软件一般就肯定归属“用户问题”。自由软件中有些回复很有意思。如上边的。
+> 658 (comment waiting notify email problem) - Lyceum - Trac
+> "i can't reproduce this. but i believe you :)"
+> http://source.ibiblio.org/trac/lyceum/ticket/658
+
+
+计算机程序的除虫，找bug是很烦琐有时候也是有意思的事情。最难的就是再现别人出现的问题。比如有人遇到这个问题了。但程序员或维护人员无法在自己的环境下再现这个问题，所以提交bug的事后自己环境配置很重要。不能再现通常就不好解决。可能使用户问题，可能是用户机器环境问题，可能是软件问题。商业软件一般就肯定归属“用户问题”。自由软件中有些回复很有意思。如上边的。
+
 
 2006-12-29

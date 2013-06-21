@@ -1,5 +1,8 @@
 # 用drupal的potx模块来汉化drupal模块
 
-http://drupal.org/project/potx http://www.zwahlendesign.ch/en/node/248
+http://drupal.org/project/potx
+http://www.zwahlendesign.ch/en/node/248
+
+
 
 2011-09-27

@@ -1,5 +1,18 @@
 # find and xargs
 
-下面的例子在/ a p p s / a u d i t目录下查找所有用户具有读、写和执行权限的文件，并收回相应 的写权限： $ find /apps/audit -perm -7 -print | xargs chmod o-w http://www.linuxsir.org/bbs/showthread.php?threadid=41548 也就是说查找的文件中如果含有空格和线，者xargs会出现报错。当加上-o后，他就可以识别。 find /tmp -name core -type f -print | xargs /bin/rm -f
+
+下面的例子在/ a p p s / a u d i t目录下查找所有用户具有读、写和执行权限的文件，并收回相应
+的写权限：
+$ find /apps/audit -perm -7 -print | xargs chmod o-w 
+http://www.linuxsir.org/bbs/showthread.php?threadid=41548
+
+
+也就是说查找的文件中如果含有空格和线，者xargs会出现报错。当加上-o后，他就可以识别。
+find /tmp -name core -type f -print | xargs /bin/rm -f
+
+
+
+
+
 
 2011-11-30

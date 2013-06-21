@@ -1,5 +1,7 @@
 # 苹果mac os x上运行的自由软件
 
-苹果上运行的自由软件 http://www.opensourcemac.org/
+苹果上运行的自由软件
+
+http://www.opensourcemac.org/
 
 2007-09-19

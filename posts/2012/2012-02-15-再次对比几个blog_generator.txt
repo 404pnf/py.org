@@ -1,5 +1,13 @@
 # 再次对比几个blog generator
 
-因该是会用jekyll。因为用的人多。而且github提供服务。 http://www.steve.org.uk/Software/chronicle/ https://github.com/mojombo/jekyll https://github.com/hugoduncan/cl-blog-generator/tree/6ad43cfb66bcf61b2d7ee9469e8bbf89ebfd428d/bin https://github.com/vpetkov/StaticBlogGenerator https://github.com/rschultheis/DailyDoseBlogGenerator
+因该是会用jekyll。因为用的人多。而且github提供服务。
+http://www.steve.org.uk/Software/chronicle/
+https://github.com/mojombo/jekyll
+https://github.com/hugoduncan/cl-blog-generator/tree/6ad43cfb66bcf61b2d7ee9469e8bbf89ebfd428d/bin
+https://github.com/vpetkov/StaticBlogGenerator
+https://github.com/rschultheis/DailyDoseBlogGenerator
+
+
+
 
 2012-02-15

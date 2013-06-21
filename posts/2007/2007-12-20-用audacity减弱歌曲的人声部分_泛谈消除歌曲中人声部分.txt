@@ -1,5 +1,44 @@
 # 用audacity减弱歌曲的人声部分 泛谈消除歌曲中人声部分
 
-用audacity减弱歌曲的人声部分 在google中搜索volcal remove audacity 这个录像直观地告诉你[如何用audacity减弱人声](http://www.youtube.com/watch?v=PqXiKYG3J7M)。 这个录像是用[adobe的一个软件](http://youtube.com/watch?v=PqXiKYG3J7M)。因为该软件不是自由软件，所以我就pass它了。 > http://audacity.sourceforge.net/help/faq?s=editing&i=remove-vocals > Can I remove the vocals from a recording to make a Karaoke track? > > This is possible only for certain stereo tracks. When the vocals are exactly the same on both stereo channels, you can remove them by “subtracting” one channel from the other. This works for many studio recordings, where the vocal track is mixed exactly in the center. > > To do this in Audacity: > > 1. Import your stereo file into Audacity. > 2. Open the track menu (click the arrow next to the track title), and choose “Split Stereo Track.” > 3. Select the lower track (the right channel) by clicking it in the area around the mute/solo buttons. > 4. Choose “Invert” from the Effects menu. > 5. Using the track menus, change each track to “Mono.” > > Press the Play button to hear the results. If you are lucky, the voice will be gone but most of the other instruments will be unaffected, just like a karaoke track. You can use the Export commands in the File menu to save the results. > > If the vocals are not exactly the same on both stereo channels, there are some other techniques or optional plugins you can try. Please see our Vocal\_Removal Wiki page for more details. http://audacityteam.org/wiki/index.php?title=Vocal\_Removal 这里有更详细的方法和一些插件。那个center pan remover的插件简化了步骤。在这里下载，解开zip包后，把那个centerpanremover.ny文件放到audacity程序目录下的plug-in目录下，关闭并重新打开audacity就可以了。你直接选曲歌曲音轨然后再效果中（effect）选这个插件就可以了。但是它默认设置是实现的效果似乎没有我人工分两步的好。可能是默认设置的问题，让声音都很小。但很方便。那些设置应该如何更精确地设我不会。如果会调整地话应该是个方便而且定制性更强的方法。 上面的文章中说到: >You should note that this will remove everything panned in the centre, not just vocals. In pop music this can mean removing the bass and rhythm parts. Removal of the vocals is normally incomplete and will leave artefacts behind, especially where reverberation (echo) is used, and where there are backing vocals. Sometimes certain minor strands of the instrumentals are exposed which are completely covered in the uninverted mix. This technique work particularly badly with tracks where a lot of stereo reverberation has been applied, as this spreads each sound source, and makes them very hard to extract from each other. 不巧。朋友让我消除声音的歌曲就是这样。乐器和人声都用了太多的reverb效果了。 那首歌是magic boulevard。谁有这歌的伴奏或者和声功能谱请告诉我。没有现成伴奏拿到和声功能谱直接用乐队来伴奏也可以的。：） 好久不看audacity wiki了。有些技能都生疏了。哎。不晚，现在和将来补上~！ 对，我就是内地第一位推荐、参与并使用audacity的人！不信？不信算了。：）
+用audacity减弱歌曲的人声部分
+
+在google中搜索volcal remove audacity
+
+这个录像直观地告诉你[如何用audacity减弱人声](http://www.youtube.com/watch?v=PqXiKYG3J7M)。
+这个录像是用[adobe的一个软件](http://youtube.com/watch?v=PqXiKYG3J7M)。因为该软件不是自由软件，所以我就pass它了。
+
+> http://audacity.sourceforge.net/help/faq?s=editing&i=remove-vocals
+> Can I remove the vocals from a recording to make a Karaoke track?
+> 
+> This is possible only for certain stereo tracks. When the vocals are exactly the same on both stereo channels, you can remove them by “subtracting” one channel from the other. This works for many studio recordings, where the vocal track is mixed exactly in the center.
+> 
+> To do this in Audacity:
+> 
+>    1. Import your stereo file into Audacity.
+>    2. Open the track menu (click the arrow next to the track title), and choose “Split Stereo Track.”
+>    3. Select the lower track (the right channel) by clicking it in the area around the mute/solo buttons.
+>    4. Choose “Invert” from the Effects menu.
+>    5. Using the track menus, change each track to “Mono.”
+> 
+> Press the Play button to hear the results. If you are lucky, the voice will be gone but most of the other instruments will be unaffected, just like a karaoke track. You can use the Export commands in the File menu to save the results.
+> 
+> If the vocals are not exactly the same on both stereo channels, there are some other techniques or optional plugins you can try. Please see our Vocal_Removal Wiki page for more details.
+
+
+http://audacityteam.org/wiki/index.php?title=Vocal_Removal
+这里有更详细的方法和一些插件。那个center pan remover的插件简化了步骤。在这里下载，解开zip包后，把那个centerpanremover.ny文件放到audacity程序目录下的plug-in目录下，关闭并重新打开audacity就可以了。你直接选曲歌曲音轨然后再效果中（effect）选这个插件就可以了。但是它默认设置是实现的效果似乎没有我人工分两步的好。可能是默认设置的问题，让声音都很小。但很方便。那些设置应该如何更精确地设我不会。如果会调整地话应该是个方便而且定制性更强的方法。
+
+上面的文章中说到:
+
+>You should note that this will remove everything panned in the centre, not just vocals. In pop music this can mean removing the bass and rhythm parts. Removal of the vocals is normally incomplete and will leave artefacts behind, especially where reverberation (echo) is used, and where there are backing vocals. Sometimes certain minor strands of the instrumentals are exposed which are completely covered in the uninverted mix. This technique work particularly badly with tracks where a lot of stereo reverberation has been applied, as this spreads each sound source, and makes them very hard to extract from each other.
+
+不巧。朋友让我消除声音的歌曲就是这样。乐器和人声都用了太多的reverb效果了。
+
+那首歌是magic boulevard。谁有这歌的伴奏或者和声功能谱请告诉我。没有现成伴奏拿到和声功能谱直接用乐队来伴奏也可以的。：）
+
+好久不看audacity wiki了。有些技能都生疏了。哎。不晚，现在和将来补上~！
+
+对，我就是内地第一位推荐、参与并使用audacity的人！不信？不信算了。：）
+
 
 2007-12-20

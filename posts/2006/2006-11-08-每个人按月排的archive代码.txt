@@ -1,5 +1,10 @@
 # 每个人按月排的archive代码
 
-somebody please look at this http://drupal.org/node/47419 \*\*dont\*\* test it on this production site 这个是我们非常需要的。
+somebody please look at this
+http://drupal.org/node/47419
+**dont** test it on this production site
+
+这个是我们非常需要的。
+
 
 2006-11-08

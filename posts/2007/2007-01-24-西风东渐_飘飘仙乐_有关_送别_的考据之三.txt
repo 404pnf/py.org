@@ -1,116 +1,98 @@
 # 西风东渐 飘飘仙乐 有关 送别 的考据之三
 
-三、东行漫记 从美国通俗歌曲到学堂乐歌
+<p>三、东行漫记 从美国通俗歌曲到学堂乐歌</p>
+<p>如果查阅《送别》这首歌，我们通常会在歌名下面看到这样一行注释：JP.奥德韦曲 李叔同 词。对于李叔同，我们都不陌生，但是对于JP.奥德韦，我们却知之甚少。JP.奥德韦究竟是何许人？《送别》的原版究竟为何样？《送别》的歌词是否只是弘一大师对于原版的翻译？妞妞问了问身边的几位老师，得到了这样的答案：</p>
+<p>J.P.奥德韦是美国人，全名为John Pond Ordway，生于1824年，卒于1880年。巧合的是，李叔同正是在J.P.奥德韦去世的那一年出生的。原曲的名字是Dreaming of Home and Mother（梦见家和母亲）。据说用google和yahoo搜索英文网络，可以证实J.P.奥德韦确实创作有Dreaming of Home and Mother。但是不幸的是，也许年代久远，J.P.奥德韦和他的Dreaming of Home and Mother在美国可能已经被人忘记，我们甚至已经不能在美国的网页上查找到“Dreaming of Home and MotherJ.P.”的原版歌词了，最多只能找到奥德韦的另一作品Twinkling Stars are Laughing的歌词。但是妞妞还是找到了“Dreaming of Home and Mother”，大家可以一边看看，一边来猜一猜它的出处：〉</p>
+<p>Dreaming of Home and Mother<br />
+By Ordway</p>
+<p>Dreaming of home，dear old home!<br />
+Home of my childhood and mother;<br />
+Oft when I wake 'tis sweet to find，<br />
+I've been dreaming of home and mother;<br />
+Home，Dear home，childhood happy home，<br />
+When I played with sister and with brother，<br />
+'Twas the sweetest joy when we did roam，<br />
+Over hill and thro' dale with mother.</p>
+<p>(Chorus)<br />
+Dreaming of home，dear old home，<br />
+Home of my childhood and mother;<br />
+Oft when I wake 'tis sweet to find，<br />
+I've been dreaming of home and mother.</p>
+<p>Sleep balmy sleep，close mine eyes，<br />
+Keep me still thinking of mother;<br />
+Hark! 'tis her voice I seem to hear.<br />
+Yes，I'm dreaming of home and mother.<br />
+Angels come，soothing me to rest，<br />
+I can feel their presence and none other;<br />
+For they sweetly say I shall be blest;<br />
+With bright visions of home and mother. </p>
+<p>(Chorus)<br />
+Childhood has come，come again，<br />
+Sleeping I see my dear mother;<br />
+See her loved form beside me kneel<br />
+While I'm dreaming of home and mother.<br />
+Mother dear，whisper to me now，<br />
+Tell me of my sister and my brother;<br />
+Now I feel thy hand upon my brow，<br />
+Yes，I'm dreaming of home and mother.<br />
+(Chorus) </p>
+<p>说来奇怪，这是一位老师在日本的网页上找到的，据说J.P.奥德韦及其Dreaming of Home and Mother在日本比在美国和中国更为有名。Dreaming of Home and Mother，准确地说，是它的日文填词版，在日本也是家喻户晓的一首歌。咱们这里有没有懂得日文的朋友？J.P.奥德韦的英文原词翻译成日文是这样的：</p>
+<p>ふるさとと母を夢見て </p>
+<p>一<br />
+夢にみるわが家、なつかしいふるさとの家<br />
+子供時代を母と過ごした家<br />
+目覚めた時にふと気付く　甘酸っぱい思いで<br />
+ふるさとの家と母の夢を見ていたことに<br />
+ふるさとよ、ああふるさと、子供のころの幸せなわが家<br />
+兄弟や姉妹と遊んだあのころ<br />
+母と一緒に丘を越え野原を横切って<br />
+そぞろ歩いたことも楽しい思い出だ</p>
+<p>(合唱)<br />
+夢にみるわが家、なつかしいふるさとの家<br />
+子供時代を母と過ごした家<br />
+目覚めた時にふと気付く　甘酸っぱい思いで<br />
+ふるさとの家と母の夢を見ていたことに</p>
+<p>二<br />
+心地よい眠りに　目を閉じれば<br />
+母をまた思い出す<br />
+おお、まだその声が聞こえるようだ<br />
+そう、ふるさとの家と母の夢を見ているんだ<br />
+天使たちが降り立ち　私を眠りに誘う<br />
+ぼくには天使たちがいることが分かるよ<br />
+穏やかにぼくが祝福されることを教えてくれるから<br />
+なつかしいふるさとと母の姿をはっきりみせてくれるんだ</p>
+<p>（合唱）<br />
+三<br />
+子供のころはまた再び戻ってくる<br />
+眠りさえすればまた母に会える<br />
+ぼくの横に座っている母の姿が<br />
+ふるさとの家と母の夢をみているときには見える<br />
+ねえかあさん　話してよ<br />
+ぼくのにいさんやねえさんのことを<br />
+かあさんの手がぼくの眉に触れているよ<br />
+ああ、ふるさとの家と母の夢をみている<br />
+（合唱）</p>
+<p>据李叔同生平研究者考证，李叔同在Dreaming of Home and Mother的曲调上填写《送别》，是经过一个中间环节的。这个环节与李叔同留学日本有关。音乐教育家钱仁康先生、李叔同传记作者陈星先生等指出，Dreaming of Home and Mother传入日本后，一个叫做犬童球溪的日本人给这首歌填写了新词《旅愁》，[犬童球溪（溪字在日文里为渓），是日本著名音乐家、教育家，一生创作有近400首词曲作品。原名信蔵，出生在熊本县人吉市。]正在日本留学的李叔同又受《旅愁》的影响，写了《送别》。在这里给大家提供一个《旅愁》的英文版，或许对于日后翻译小卓姐姐的dodo 有帮助：〉</p>
+<p>Melancholy of Ex-Hometown——<br />
+Late at night in the autumn   / during my trip alone,<br />
+I’ve been suffering from the feeling  / of empty sadness<br />
+I miss so much my hometown  / and my mom and dad there.<br />
+What I see in my dreams  / are old roads back home.<br />
+Late at night in the autumn   / during my trip alone,<br />
+I’ve been suffering from the feeling  / of empty sadness<br />
+The stormy rain hits the window  / and my dream-lost mind.<br />
+My soul is just wandering  / somewhere homeward.<br />
+I miss so much my hometown  / and my mom and dad there.<br />
+I remember the beautiful tree-tops   / in my home country.<br />
+The stormy rain hits the window  / and my dream-lost mind.<br />
+My soul is just wandering  / somewhere  homeward.</p>
+<p>《旅愁》的中文是这样的——<br />
+西风起，秋渐深，秋容动客心。独自惆怅叹飘零，寒光照孤影。<br />
+忆故土，思故人，高堂念双亲。乡路迢迢何处寻，觉来归梦新。</p>
+<p>据一位听过《旅愁》的演唱版的老师说，它的旋律与《送别》只有一点不同，第13小节的前三个音符，《送别》为535，《旅愁》为531。有文章说，李叔同在按照Dreaming of Home and Mother填写《送别》时，考虑到中国人的接受程度，把原曲中每四小节出现一次的切分倚音删去，更显得干净利落。</p>
+<p>有观点认为李叔同的《送别》在歌词的创作上受到了《旅愁》的影响，或许，但是妞妞觉得已经青出于蓝：〉<br />
+　　</p>
+<p>　　</p>
 
-如果查阅《送别》这首歌，我们通常会在歌名下面看到这样一行注释：JP.奥德韦曲 李叔同 词。对于李叔同，我们都不陌生，但是对于JP.奥德韦，我们却知之甚少。JP.奥德韦究竟是何许人？《送别》的原版究竟为何样？《送别》的歌词是否只是弘一大师对于原版的翻译？妞妞问了问身边的几位老师，得到了这样的答案：
-
-J.P.奥德韦是美国人，全名为John Pond Ordway，生于1824年，卒于1880年。巧合的是，李叔同正是在J.P.奥德韦去世的那一年出生的。原曲的名字是Dreaming of Home and Mother（梦见家和母亲）。据说用google和yahoo搜索英文网络，可以证实J.P.奥德韦确实创作有Dreaming of Home and Mother。但是不幸的是，也许年代久远，J.P.奥德韦和他的Dreaming of Home and Mother在美国可能已经被人忘记，我们甚至已经不能在美国的网页上查找到“Dreaming of Home and MotherJ.P.”的原版歌词了，最多只能找到奥德韦的另一作品Twinkling Stars are Laughing的歌词。但是妞妞还是找到了“Dreaming of Home and Mother”，大家可以一边看看，一边来猜一猜它的出处：〉
-
-Dreaming of Home and Mother  
-By Ordway
-
-Dreaming of home，dear old home!  
-Home of my childhood and mother;  
-Oft when I wake 'tis sweet to find，  
-I've been dreaming of home and mother;  
-Home，Dear home，childhood happy home，  
-When I played with sister and with brother，  
-'Twas the sweetest joy when we did roam，  
-Over hill and thro' dale with mother.
-
-(Chorus)  
-Dreaming of home，dear old home，  
-Home of my childhood and mother;  
-Oft when I wake 'tis sweet to find，  
-I've been dreaming of home and mother.
-
-Sleep balmy sleep，close mine eyes，  
-Keep me still thinking of mother;  
-Hark! 'tis her voice I seem to hear.  
-Yes，I'm dreaming of home and mother.  
-Angels come，soothing me to rest，  
-I can feel their presence and none other;  
-For they sweetly say I shall be blest;  
-With bright visions of home and mother.
-
-(Chorus)  
-Childhood has come，come again，  
-Sleeping I see my dear mother;  
-See her loved form beside me kneel  
-While I'm dreaming of home and mother.  
-Mother dear，whisper to me now，  
-Tell me of my sister and my brother;  
-Now I feel thy hand upon my brow，  
-Yes，I'm dreaming of home and mother.  
-(Chorus)
-
-说来奇怪，这是一位老师在日本的网页上找到的，据说J.P.奥德韦及其Dreaming of Home and Mother在日本比在美国和中国更为有名。Dreaming of Home and Mother，准确地说，是它的日文填词版，在日本也是家喻户晓的一首歌。咱们这里有没有懂得日文的朋友？J.P.奥德韦的英文原词翻译成日文是这样的：
-
-ふるさとと母を夢見て
-
-一  
-夢にみるわが家、なつかしいふるさとの家  
-子供時代を母と過ごした家  
-目覚めた時にふと気付く　甘酸っぱい思いで  
-ふるさとの家と母の夢を見ていたことに  
-ふるさとよ、ああふるさと、子供のころの幸せなわが家  
-兄弟や姉妹と遊んだあのころ  
-母と一緒に丘を越え野原を横切って  
-そぞろ歩いたことも楽しい思い出だ
-
-(合唱)  
-夢にみるわが家、なつかしいふるさとの家  
-子供時代を母と過ごした家  
-目覚めた時にふと気付く　甘酸っぱい思いで  
-ふるさとの家と母の夢を見ていたことに
-
-二  
-心地よい眠りに　目を閉じれば  
-母をまた思い出す  
-おお、まだその声が聞こえるようだ  
-そう、ふるさとの家と母の夢を見ているんだ  
-天使たちが降り立ち　私を眠りに誘う  
-ぼくには天使たちがいることが分かるよ  
-穏やかにぼくが祝福されることを教えてくれるから  
-なつかしいふるさとと母の姿をはっきりみせてくれるんだ
-
-（合唱）  
-三  
-子供のころはまた再び戻ってくる  
-眠りさえすればまた母に会える  
-ぼくの横に座っている母の姿が  
-ふるさとの家と母の夢をみているときには見える  
-ねえかあさん　話してよ  
-ぼくのにいさんやねえさんのことを  
-かあさんの手がぼくの眉に触れているよ  
-ああ、ふるさとの家と母の夢をみている  
-（合唱）
-
-据李叔同生平研究者考证，李叔同在Dreaming of Home and Mother的曲调上填写《送别》，是经过一个中间环节的。这个环节与李叔同留学日本有关。音乐教育家钱仁康先生、李叔同传记作者陈星先生等指出，Dreaming of Home and Mother传入日本后，一个叫做犬童球溪的日本人给这首歌填写了新词《旅愁》，[犬童球溪（溪字在日文里为渓），是日本著名音乐家、教育家，一生创作有近400首词曲作品。原名信蔵，出生在熊本县人吉市。]正在日本留学的李叔同又受《旅愁》的影响，写了《送别》。在这里给大家提供一个《旅愁》的英文版，或许对于日后翻译小卓姐姐的dodo 有帮助：〉
-
-Melancholy of Ex-Hometown——  
-Late at night in the autumn / during my trip alone,  
-I’ve been suffering from the feeling / of empty sadness  
-I miss so much my hometown / and my mom and dad there.  
-What I see in my dreams / are old roads back home.  
-Late at night in the autumn / during my trip alone,  
-I’ve been suffering from the feeling / of empty sadness  
-The stormy rain hits the window / and my dream-lost mind.  
-My soul is just wandering / somewhere homeward.  
-I miss so much my hometown / and my mom and dad there.  
-I remember the beautiful tree-tops / in my home country.  
-The stormy rain hits the window / and my dream-lost mind.  
-My soul is just wandering / somewhere homeward.
-
-《旅愁》的中文是这样的——  
-西风起，秋渐深，秋容动客心。独自惆怅叹飘零，寒光照孤影。  
-忆故土，思故人，高堂念双亲。乡路迢迢何处寻，觉来归梦新。
-
-据一位听过《旅愁》的演唱版的老师说，它的旋律与《送别》只有一点不同，第13小节的前三个音符，《送别》为535，《旅愁》为531。有文章说，李叔同在按照Dreaming of Home and Mother填写《送别》时，考虑到中国人的接受程度，把原曲中每四小节出现一次的切分倚音删去，更显得干净利落。
-
-有观点认为李叔同的《送别》在歌词的创作上受到了《旅愁》的影响，或许，但是妞妞觉得已经青出于蓝：〉  
-　　
-
-　　
 
 2007-01-24

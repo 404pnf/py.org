@@ -1,7 +1,17 @@
 # 在网页上显示 近乎实时 的原油 石油 和黄金价格
 
-在网页上显示“近乎实时”的原油（石油）和黄金价格 ## 原油
+在网页上显示“近乎实时”的原油（石油）和黄金价格
 
-  [To get the oil price, please enable Javascript.](http://www.oil-price.net) ## 黄金 [To get the gold price, please enable Javascript.](http://www.gold-quote.net) ## 还有别的站点提供类似服务么 我常查看的是 http://www.goldprice.org
+## 原油
+        
+        <script type="text/javascript" src="http://www.oil-price.net/TABLE2/gen.php?lang=zh"> </script> <noscript> <a href="http://www.oil-price.net">To get the oil price, please enable Javascript.</a> </noscript> 
+
+## 黄金
+
+        <script type="text/javascript" src="http://www.gold-quote.net/TABLE2/gen.php?lang=zh"> </script><noscript> <a href="http://www.gold-quote.net">To get the gold price, please enable Javascript.</a> </noscript>
+
+## 还有别的站点提供类似服务么
+
+我常查看的是 http://www.goldprice.org
 
 2008-08-19

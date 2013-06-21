@@ -1,5 +1,9 @@
 # 和cache有关的文章
 
-http://www.mnot.net/cache\_docs/ http://betterexplained.com/articles/how-to-optimize-your-site-with-gzip-compression/
+
+http://www.mnot.net/cache_docs/
+
+http://betterexplained.com/articles/how-to-optimize-your-site-with-gzip-compression/
+
 
 2010-05-12

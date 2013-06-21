@@ -1,5 +1,13 @@
 # 用slideshow上传多个图片更好看些
 
-不过用户老得点鼠标 next next next haha slideshow and nodeimage 在一起都工作了 结果slideshow和nodeimage都出来了 哈 现在我把nodeimage给禁用了吧 上传的时候是先上传的图片出现在最后一张 所以你上传1-10张讲个故事的图片 从第10张往第1张上传
+不过用户老得点鼠标 next next next 
+
+
+haha slideshow and nodeimage 在一起都工作了
+结果slideshow和nodeimage都出来了 哈
+现在我把nodeimage给禁用了吧
+
+上传的时候是先上传的图片出现在最后一张
+所以你上传1-10张讲个故事的图片 从第10张往第1张上传
 
 2006-08-05

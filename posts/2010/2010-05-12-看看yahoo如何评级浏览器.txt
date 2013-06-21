@@ -1,5 +1,9 @@
 # 看看yahoo如何评级浏览器
 
-什么浏览器是一流的呢（404注1），看看yahoo怎么评级 http://developer.yahoo.com/yui/articles/gbs/index.html#history 该页也说明了这个评级的意义和作为网站开发设计人员，应该如何面对不同级别的浏览器。 注1： 这里的一流只除了按标准的渲染html外还要渲染css和js。有些非图形化的浏览器lynx, w3m之类，也是一流的，但不在此评比范围内，因为他们不支持js且不会按照网站设定的css去布局
+
+什么浏览器是一流的呢（404注1），看看yahoo怎么评级
+http://developer.yahoo.com/yui/articles/gbs/index.html#history
+该页也说明了这个评级的意义和作为网站开发设计人员，应该如何面对不同级别的浏览器。 注1： 这里的一流只除了按标准的渲染html外还要渲染css和js。有些非图形化的浏览器lynx, w3m之类，也是一流的，但不在此评比范围内，因为他们不支持js且不会按照网站设定的css去布局
+
 
 2010-05-12

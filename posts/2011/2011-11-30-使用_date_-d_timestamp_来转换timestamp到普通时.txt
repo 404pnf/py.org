@@ -1,5 +1,11 @@
 # 使用 date -d timestamp 来转换timestamp到普通时间
 
-> Update: another way to convert Unix time into regular date is to use the following command date -d @1187769064 (thanks to Mattias Lindvall), that is tested in Ubuntu and Fedora. >To get Unix time seconds from regular one format just use: > date --date="Wed Aug 22 07:51:04 UTC 2007" +%s > 参考： http://www.linuxscrew.com/2007/09/04/two-way-conversion-of-unix-time-seconds-since-1970-and-regular-time/
+
+> Update: another way to convert Unix time into regular date is to use the following command date -d @1187769064 (thanks to Mattias Lindvall), that is tested in Ubuntu and Fedora.
+>To get Unix time seconds from regular one format just use:
+> date --date="Wed Aug 22 07:51:04 UTC 2007" +%s
+> 参考： http://www.linuxscrew.com/2007/09/04/two-way-conversion-of-unix-time-seconds-since-1970-and-regular-time/
+
+
 
 2011-11-30

@@ -1,5 +1,10 @@
 # 榨干drupal性能的最后一滴
 
-Squeezing the last drop from Drupal: Performance and Scalability (part 1) January 27, 2010 in Drupal Planet, Tech by Murray Woodman http://cruncht.com/75/drupal-performance-scalability 啥也别说了。读。打印读。然后翻译造福中文社区。
+
+Squeezing the last drop from Drupal: Performance and Scalability (part 1)
+January 27, 2010 in Drupal Planet, Tech by Murray Woodman
+http://cruncht.com/75/drupal-performance-scalability
+
+啥也别说了。读。打印读。然后翻译造福中文社区。
 
 2010-03-15

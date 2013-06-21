@@ -1,5 +1,11 @@
 # embed mp4
 
-
+<OBJECT CLASSID="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" WIDTH="160"HEIGHT="144" CODEBASE="http://www.apple.com/qtactivex/qtplugin.cab">
+<PARAM name="SRC" VALUE="http://www.archive.org/download/hcwdxx-200811-01/hcwdxx-200811-01-xu4_512kb.mp4">
+<PARAM name="AUTOPLAY" VALUE="true">
+<PARAM name="CONTROLLER" VALUE="false">
+<EMBED SRC="sample.mov" WIDTH="160" HEIGHT="144" AUTOPLAY="true" CONTROLLER="false" PLUGINSPAGE="http://www.apple.com/quicktime/download/">
+</EMBED>
+</OBJECT>
 
 2007-05-07

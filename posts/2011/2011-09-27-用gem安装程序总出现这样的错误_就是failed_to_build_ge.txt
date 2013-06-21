@@ -1,5 +1,24 @@
 # 用gem安装程序总出现这样的错误 就是failed to build gem native extention
 
-[tags] ruby, [/tags] ERROR: Error installing rdiscount: ERROR: Failed to build gem native extension. 搜索了一下，发现有人说安装ruby1.8-dev就可以了（ http://railsforum.com/viewtopic.php?id=22116 ）。于是安装 sudo apt-get install ruby1.8-dev 之后用gem装程序就可以了。 $ sudo gem install rdiscount Building native extensions. This could take a while... Successfully installed rdiscount-1.6.5 1 gem installed Installing ri documentation for rdiscount-1.6.5... Installing RDoc documentation for rdiscount-1.6.5...
+[tags] ruby, [/tags]
+     ERROR:  Error installing rdiscount:
+     ERROR: Failed to build gem native extension.
+
+搜索了一下，发现有人说安装ruby1.8-dev就可以了（ http://railsforum.com/viewtopic.php?id=22116 ）。于是安装
+
+      sudo apt-get install ruby1.8-dev
+
+之后用gem装程序就可以了。
+
+      $ sudo gem install rdiscount
+
+      Building native extensions.  This could take a while...
+      Successfully installed rdiscount-1.6.5
+      1 gem installed
+      Installing ri documentation for rdiscount-1.6.5...
+      Installing RDoc documentation for rdiscount-1.6.5...
+
+
+
 
 2011-09-27

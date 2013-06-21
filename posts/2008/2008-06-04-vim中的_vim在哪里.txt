@@ -1,5 +1,29 @@
 # vim中的 vim在哪里
 
-## vim中的$vim在哪里 > I have downloaded a Vim plugin or a syntax file or a indent file, or > a color scheme or a filetype plugin from the web. Where should I copy > these files so that Vim will find them? > > You can place the Vim runtime files (plugins, syntax files, indent files, > color schemes, filetype plugins, etc) under one of the directories > specified in the 'runtimepath' option. To determine the current value of > the 'runtimepath' option, use the following command: > > :set runtimepath > > For Unix systems, this is usally the "$HOME/.vim" directory. For MS-Windows > systems, this is usually the $VIM\vimfiles or $HOME\vimfiles directory. > Depending on the type of the runtime file, you have to place it under a > specific directory under the above runtime directory. The names of the > directories are listed below: > > http://vimdoc.sourceforge.net/vimfaq.html 我机器装vim时因为没有创建.vim这个目录，所以我自己建了一个把我要用的东西放进去就好了。 vim还是比较发方便的。就是在命令模式，老要把中文输法调整为英文的否则命令模式不起作用这点麻烦。但这也是必须的。况且，即使这样，也比绝大多数文本处理器要快和省力。：）
+## vim中的$vim在哪里
+
+> I have downloaded a Vim plugin or a syntax file or a indent file, or
+>       a color scheme or a filetype plugin from the web. Where should I copy
+>       these files so that Vim will find them?
+> 
+> You can place the Vim runtime files (plugins, syntax files, indent files,
+> color schemes, filetype plugins, etc) under one of the directories
+> specified in the 'runtimepath' option. To determine the current value of
+> the 'runtimepath' option, use the following command:
+> 
+>     :set runtimepath
+> 
+> For Unix systems, this is usally the "$HOME/.vim" directory. For MS-Windows
+> systems, this is usually the $VIM\vimfiles or $HOME\vimfiles directory.
+> Depending on the type of the runtime file, you have to place it under a
+> specific directory under the above runtime directory. The names of the
+> directories are listed below:
+> 
+> http://vimdoc.sourceforge.net/vimfaq.html
+
+我机器装vim时因为没有创建.vim这个目录，所以我自己建了一个把我要用的东西放进去就好了。
+
+vim还是比较发方便的。就是在命令模式，老要把中文输法调整为英文的否则命令模式不起作用这点麻烦。但这也是必须的。况且，即使这样，也比绝大多数文本处理器要快和省力。：）
+
 
 2008-06-04

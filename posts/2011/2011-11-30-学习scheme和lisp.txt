@@ -1,5 +1,19 @@
 # 学习scheme和lisp
 
-This site is a companion to the influential computer-science text Structure and Interpretation of Computer Programs, by Abelson, Sussman, and Sussman. Its purpose is to demonstrate the Web's potential to be a channel for innovative support for textbook users. The material on this site is aimed at instructors using SICP as a course text, and at people using the book for self-study. Currently at this site you will find: Full text! The complete text in HTML. http://mitpress.mit.edu/sicp/
+
+This site is a companion to the influential computer-science text Structure and Interpretation of Computer Programs, by Abelson, Sussman, and Sussman. Its purpose is to demonstrate the Web's potential to be a channel for innovative support for textbook users.
+
+The material on this site is aimed at instructors using SICP as a course text, and at people using the book for self-study.
+
+
+Currently at this site you will find:
+
+ Full text!
+The complete text in HTML.
+
+http://mitpress.mit.edu/sicp/
+
+
+
 
 2011-11-30

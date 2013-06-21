@@ -1,5 +1,12 @@
 # emacs可以直接打开gz文件
 
-emacs可以直接打开gz文件 不需要解压缩了。 如果解压缩，那么 1）双击文件，选择解压 或者 2） gunzip 文件.gz g就是gnu的意思 unzip自然是打开zip gz是gnu zip的意思
+emacs可以直接打开gz文件
+
+不需要解压缩了。
+如果解压缩，那么 1）双击文件，选择解压 或者 2） gunzip 文件.gz 
+g就是gnu的意思
+unzip自然是打开zip
+gz是gnu zip的意思
+
 
 2008-07-17

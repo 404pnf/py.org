@@ -1,5 +1,11 @@
 # vim教程
 
-[tags] vim [/tags] http://easwy.com/blog/archives/advanced-vim-skills-catalog/
+[tags] vim [/tags]
+http://easwy.com/blog/archives/advanced-vim-skills-catalog/
+
+
+
+
+
 
 2011-09-27

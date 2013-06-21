@@ -1,5 +1,8 @@
 # c 很好么
 
-> ![](http://www.huihoo.com/gnu/cpp.jpg) > http://www.huihoo.com/gnu/
+> ![](http://www.huihoo.com/gnu/cpp.jpg)
+> http://www.huihoo.com/gnu/
+
+
 
 2006-11-20

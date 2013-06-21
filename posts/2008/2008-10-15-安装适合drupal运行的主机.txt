@@ -1,5 +1,12 @@
 # 安装适合drupal运行的主机
 
-安装适合drupal运行的主机 ## Installing a dedicated server or a VPS with Ubuntu Server 8.04 LTS (Hardy Heron) for Drupal 6.x http://2bits.com/articles/installing-a-dedicated-server-or-a-vps-with-ubuntu-server-804-lts-hardy-heron-drupal-6x.html ## memcache http://2bits.com/articles/installing-memcached-125-and-memcache-pecl-223-ubuntu-server.html ## why ubuntu http://2bits.com/news/wikimedia-standardizes-400-servers-ubuntu-server-804-lts.html
+安装适合drupal运行的主机
+
+## Installing a dedicated server or a VPS with Ubuntu Server 8.04 LTS (Hardy Heron) for Drupal 6.x
+http://2bits.com/articles/installing-a-dedicated-server-or-a-vps-with-ubuntu-server-804-lts-hardy-heron-drupal-6x.html
+## memcache
+http://2bits.com/articles/installing-memcached-125-and-memcache-pecl-223-ubuntu-server.html
+## why ubuntu
+http://2bits.com/news/wikimedia-standardizes-400-servers-ubuntu-server-804-lts.html
 
 2008-10-15

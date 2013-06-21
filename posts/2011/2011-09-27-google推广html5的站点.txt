@@ -1,5 +1,8 @@
 # google推广html5的站点
 
-http://www.html5rocks.com/ 可能因为构建在google apps上，因此不能访问了。
+http://www.html5rocks.com/
+可能因为构建在google apps上，因此不能访问了。
+
+
 
 2011-09-27

@@ -1,8 +1,24 @@
 # 新更新文章题目
 
+<h2>点这里<a href="http://pengyou.rijiben.org/node/">直接看新文章内容全文</a></h2>
 
-## 点这里 [直接看新文章内容全文](http://pengyou.rijiben.org/node/)
-
-title, "node/". $anode->nid); } return theme\_item\_list($links); ?>
+<p>
+<?php
+/**
+# Displays list of node titles, sorted by content creation date (newest first)
+*
+# To change the length of the list, change the $list_no value
+*
+# This snippet was tested with Drupal 4.7, but should work with 4.5+
+*
+*/
+$list_no =50;
+$sql = "SELECT node.title, node.nid FROM node WHERE node.status = 1 AND node.title NOT LIKE '301%' ORDER BY node.changed DESC LIMIT $list_no";
+$result = db_query($sql);
+while ($anode = db_fetch_object($result)) {
+$links[] = l($anode->title, "node/". $anode->nid);
+}
+return theme_item_list($links);
+?>
 
 2007-04-12

@@ -1,5 +1,12 @@
 # 学习lisp很好的网站
 
-http://play.org/links/lisp-intro http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html http://www.gigamonkeys.com/book/ http://paulgraham.com/acl.html http://cl-cookbook.sourceforge.net/
+http://play.org/links/lisp-intro
+http://www.cs.gmu.edu/~sean/lisp/LispTutorial.html
+http://www.gigamonkeys.com/book/
+http://paulgraham.com/acl.html
+http://cl-cookbook.sourceforge.net/
+
+
+
 
 2011-11-30

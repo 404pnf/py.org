@@ -1,5 +1,14 @@
 # 我有很多照片想放到网上 什么方法最 稳妥
 
-yahoo的服务都不稳了！！ 我不明白他们为什么要删除所有照片。以前的链接不都等于没用了么 不让再注册不让再上传把yahoo photo相当于静态化不是更好么 [Yahoo%21\_Photos#Shut\_down\_of\_Yahoo.21\_Photos](http://en.wikipedia.org/wiki/Yahoo%21\_Photos#Shut\_down\_of\_Yahoo.21\_Photos) http://yodel.yahoo.com/2007/06/13/give-your-photos-the-fun-of-flickr/ 还能信谁呀！ 自己用nagg建立相册然后把照片传到archive.org，自己host那些html是我现在认为稳妥的方法。虽然访问速度慢，但不用担心照片丢失或者地址改变至少。
+yahoo的服务都不稳了！！
+
+我不明白他们为什么要删除所有照片。以前的链接不都等于没用了么
+不让再注册不让再上传把yahoo photo相当于静态化不是更好么
+[Yahoo%21_Photos#Shut_down_of_Yahoo.21_Photos](http://en.wikipedia.org/wiki/Yahoo%21_Photos#Shut_down_of_Yahoo.21_Photos)
+http://yodel.yahoo.com/2007/06/13/give-your-photos-the-fun-of-flickr/
+
+还能信谁呀！
+
+自己用nagg建立相册然后把照片传到archive.org，自己host那些html是我现在认为稳妥的方法。虽然访问速度慢，但不用担心照片丢失或者地址改变至少。
 
 2007-09-19

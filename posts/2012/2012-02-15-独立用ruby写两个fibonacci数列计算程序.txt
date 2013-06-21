@@ -1,5 +1,61 @@
 # 独立用ruby写两个fibonacci数列计算程序
 
-谈不上完全独立。因为有之前lisp的这个代码印象，主要是提示自己2个变量，然后交换b给a def fibo n a, b = 1, 1 until n == 0 puts "#{a}" #先puts否则前两个数字总有问题 a, b = a+b, a n = n - 1 end end fibo 20 uby fibo 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 第一次对这个数列产生兴趣竟然是从达芬奇密码这本小说中。之前听说过，因为在股票分析中常用，但我对股票没兴趣。这个数列在自然界中大量存在。这才是各种分析用它的原因。 参考： http://en.wikipedia.org/wiki/Fibonacci\_number 我后来看了 /usr/share/doc/ruby1.9.1-examples中的fibo.rb代码。它是接受一个参数，给出该参数的数值是多少。 他是这样的。 // calculate Fibonacci(20) // for benchmark def fib(n) if n
+
+谈不上完全独立。因为有之前lisp的这个代码印象，主要是提示自己2个变量，然后交换b给a
+
+def fibo n
+  a, b = 1, 1
+  until n == 0
+    puts "#{a}"  #先puts否则前两个数字总有问题                      a, b = a+b, a
+    n = n - 1
+
+  end
+end
+
+fibo 20
+uby fibo
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+987
+1597
+2584
+4181
+6765
+10946
+
+第一次对这个数列产生兴趣竟然是从达芬奇密码这本小说中。之前听说过，因为在股票分析中常用，但我对股票没兴趣。这个数列在自然界中大量存在。这才是各种分析用它的原因。
+
+参考： http://en.wikipedia.org/wiki/Fibonacci_number
+
+我后来看了 /usr/share/doc/ruby1.9.1-examples中的fibo.rb代码。它是接受一个参数，给出该参数的数值是多少。
+
+他是这样的。
+
+// calculate Fibonacci(20)
+// for benchmark
+def fib(n)
+  if n<2
+    n
+  else
+    fib(n-2)+fib(n-1)
+  end
+end
+print(fib(20), "\n");
+
+
+
+
 
 2012-02-15

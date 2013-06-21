@@ -1,5 +1,56 @@
 # emacs中插入一列连续数字
 
-emacs中插入一列连续数字 用下面的函数，xahlee写的。原文在这里： http://xahlee.org/emacs/elisp\_examples.html (defun insert-counter-column (n) ;;"Insert a sequence of integers vertically. ;;Example: ;;do this 1 times ;;do this 2 times ;;do this 3 times ;;... ;; ;;If there are not enough existing lines after the cursor ;;when this function is called, it aborts at the last line. ;; ;;See also: `kill-rectangle' and `string-rectangle'." (interactive "nEnter the max integer: ") (let ((i 1) colpos) (setq colpos (- (point) (point-at-bol))) (while (
+emacs中插入一列连续数字
+
+用下面的函数，xahlee写的。原文在这里： http://xahlee.org/emacs/elisp_examples.html
+
+      (defun insert-counter-column (n)
+      ;;"Insert a sequence of integers vertically.
+      ;;Example:
+      ;;do this 1 times
+      ;;do this 2 times
+      ;;do this 3 times
+      ;;...
+      ;;
+      ;;If there are not enough existing lines after the cursor
+      ;;when this function is called, it aborts at the last line.
+      ;;
+      ;;See also: `kill-rectangle' and `string-rectangle'."
+        (interactive "nEnter the max integer: ")
+        (let ((i 1) colpos)
+          (setq colpos (- (point) (point-at-bol)))
+          (while (<= i n)
+            (insert (number-to-string i))
+            (next-line) (beginning-of-line) (forward-char colpos)
+            (setq i (1+ i))
+            )))
+      
+把它存在你的.emacs中吧。
+
+需要插入的时候 M-x insert-counter-column
+会提示你插入数字最后一个是多少，如果你输入10，就插入1-10。下面是样子
+
+一些文字 1 又一些文字
+一些文字 2 又一些文字
+一些文字 3 又一些文字
+一些文字 4 又一些文字
+一些文字 5 又一些文字
+一些文字 6 又一些文字
+一些文字 7 又一些文字
+一些文字 8 又一些文字
+一些文字 9 又一些文字
+一些文字 10 又一些文字
+
+xahlee at google grups: http://groups.google.com/groups/profile?enc_user=HRFKEhAAAADyr9A3jZqIfByqJMuOBRq8
+## 谁能进一步修改这个脚本让我能定义数字格式
+
+用户能够选择带0或者不带0。
+
+比如，我想插入的是 01-20, 001 － 100，0001-2234
+
+有几个0由最大的数字的位数决定。
+
+
+
 
 2008-06-30

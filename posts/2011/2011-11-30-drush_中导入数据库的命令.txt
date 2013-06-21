@@ -1,5 +1,10 @@
 # drush 中导入数据库的命令
 
-$ drush sqlc
+
+     $ drush sqlc < /data/disk/USER/static/domain.sql 
+     
+参考： http://omega8.cc/import-your-sites-to-aegir-in-8-easy-steps-109
+
+
 
 2011-11-30

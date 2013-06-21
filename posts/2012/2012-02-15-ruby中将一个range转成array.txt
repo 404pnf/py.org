@@ -1,5 +1,25 @@
 # ruby中将一个range转成array
 
-irb(main):001:0> Array(1..10) => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] irb(main):002:0> (1..10).to\_a => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 但是，难道range不能从大到小么？ irb(main):003:0> (10..1).to\_a => [] irb(main):004:0> Array(10..1) => [] 更多例子 irb(main):007:0> Array('a'..'z') => ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"] irb(main):008:0> ('ab'..'bz').to\_a => ["ab", "ac", "ad", "ae", "af", "ag", "ah", "ai", "aj", "ak", "al", "am", "an", "ao", "ap", "aq", "ar", "as", "at", "au", "av", "aw", "ax", "ay", "az", "ba", "bb", "bc", "bd", "be", "bf", "bg", "bh", "bi", "bj", "bk", "bl", "bm", "bn", "bo", "bp", "bq", "br", "bs", "bt", "bu", "bv", "bw", "bx", "by", "bz"]
+
+irb(main):001:0> Array(1..10)
+=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+irb(main):002:0> (1..10).to_a
+=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+但是，难道range不能从大到小么？
+
+irb(main):003:0> (10..1).to_a
+=> []
+irb(main):004:0> Array(10..1)
+=> []
+
+更多例子
+
+irb(main):007:0> Array('a'..'z')
+=> ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+irb(main):008:0> ('ab'..'bz').to_a
+=> ["ab", "ac", "ad", "ae", "af", "ag", "ah", "ai", "aj", "ak", "al", "am", "an", "ao", "ap", "aq", "ar", "as", "at", "au", "av", "aw", "ax", "ay", "az", "ba", "bb", "bc", "bd", "be", "bf", "bg", "bh", "bi", "bj", "bk", "bl", "bm", "bn", "bo", "bp", "bq", "br", "bs", "bt", "bu", "bv", "bw", "bx", "by", "bz"]
+
+
 
 2012-02-15

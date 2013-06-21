@@ -1,5 +1,13 @@
 # 在gnu linux中 如果对一个文件没有读的权限 是无法scp它的 但可以cp它
 
----x--x--x 1 user user 1509 Jul 21 10:42 spawn-php 这个文件我可以在本机复制。但用scp复制到其他机器总是permission denied。而我运行scp的用户肯定可以写要复制到的那个目录。后来我给了当前用户读该文件权限，就可以用scp了。 scp spawn-php wuxiekeji:/home/anotheruser/ spawn-php: Permission denied
+
+	---x--x--x 1 user user 1509 Jul 21 10:42 spawn-php
+
+这个文件我可以在本机复制。但用scp复制到其他机器总是permission denied。而我运行scp的用户肯定可以写要复制到的那个目录。后来我给了当前用户读该文件权限，就可以用scp了。
+
+	 scp spawn-php wuxiekeji:/home/anotheruser/
+    	 spawn-php: Permission denied
+
+
 
 2011-09-27

@@ -1,33 +1,28 @@
 # 问 如何用英文键盘方便输入法语
 
-update: 问题解决了
+<p>update: 问题解决了 </p>
+<p>在这里输入<br />
+Type French accents online<br />
+http://french.typeit.org/<br />
+除了发育还可以多种语言<br />
+Czech<br />
+French<br />
+German<br />
+IPA (English)<br />
+Italian<br />
+Polish<br />
+Portuguese<br />
+Spanish </p>
+<p>这篇应该是前两年我帮朋友们找的文件<br />
+French Accent Codes<br />
+http://tlt.psu.edu/suggestions/international/bylanguage/french.html</p>
+<p>---</p>
+<p>我几年前帮朋友们解决了这个问题。还有朋友打印出了表放在电脑边。我现在自己反而不记得怎么弄了。<br />
+我查看了这里<br />
+http://french.about.com/library/bl-accents.htm<br />
+注意，那些数字需要按数字小键盘上的数字，不是横着排的那些数字。所以，你用笔记本电脑的话就不太方便。</p>
+<p>问题是我在这里的文字框输入不显示出来。我在纯文本编辑器下显示是问号'?' 如果我把ue调成 ascii to utf8 那么就成了方块</p>
+<p>输入不了啊</p>
 
-在这里输入  
-Type French accents online  
-http://french.typeit.org/  
-除了发育还可以多种语言  
-Czech  
-French  
-German  
-IPA (English)  
-Italian  
-Polish  
-Portuguese  
-Spanish
-
-这篇应该是前两年我帮朋友们找的文件  
-French Accent Codes  
-http://tlt.psu.edu/suggestions/international/bylanguage/french.html
-
----
-
-我几年前帮朋友们解决了这个问题。还有朋友打印出了表放在电脑边。我现在自己反而不记得怎么弄了。  
-我查看了这里  
-http://french.about.com/library/bl-accents.htm  
-注意，那些数字需要按数字小键盘上的数字，不是横着排的那些数字。所以，你用笔记本电脑的话就不太方便。
-
-问题是我在这里的文字框输入不显示出来。我在纯文本编辑器下显示是问号'?' 如果我把ue调成 ascii to utf8 那么就成了方块
-
-输入不了啊
 
 2006-12-06

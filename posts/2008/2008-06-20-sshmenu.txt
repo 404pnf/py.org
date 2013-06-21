@@ -1,5 +1,44 @@
 # sshmenu
 
-sshmenu ## 项目主页 http://sshmenu.sourceforge.net/ 在gnome桌面建立小程序图标，点中后快速ssh链接到某站点。有点像windows下的putty。 ## 安装 在ubuntu gnu/linux 中直接用新立得软件管理包搜索 sshmenu 选中后安装就可以了。 或者用 sudo apt-get install sshmenu-gnome 只后在gnome面板上点右键添加（add to panel），选中sshmenu就可以了 ## 使用 在prefernece添加站点。如果你的ssh服务器不是运行在标准的22端口，我有个站点就不是，直接在hostname（etc）栏里跟端口号，如 12.0.0.25 -p 3512 3512就是端口号。不在标准端口运行ssh好处是能过滤些很多垃圾攻击，就是试你标准端口的攻击。虽然这只是“虚假的安全（pseudo security）”但还是有一定效果的。 ## 高手当让不用sshmenu而直接在bash中建立alias啦 我就想成为高手。但一直没摸索出方法。bash中的alias也不太会建立。这方面文章很多，打印出来好好读读就会。在那之前，或者你喜欢用图形化的界面。sshmenu是个不错的选择。 比如我如果是高手我会用 alias ssh129='ssh 404@129.0.0.25 -p 3512' 这样，我在bash下输入ssh129这个命令就会用404的身份登录到129.0.0.25，端口是3512。简单吧。比点好几下鼠标方便。 [ssh相关howto](http://www.google.com/search?hl=en&newwindow=1&client=firefox-a&rls=com.ubuntu%3Aen-US%3Aunofficial&hs=G1a&q=ssh+site%3Ahowtoforge.com&btnG=Search) ## 高高手用其它工具 高高手因为同时管理多台机器，经常需要上多台机器完成相同工作。所以会用另外一个工具，名字忘了，因为我不用。该工具让你能够只发布一条命令，它自动登录到多台机器上，分别执行。
+sshmenu
+
+## 项目主页
+http://sshmenu.sourceforge.net/
+
+在gnome桌面建立小程序图标，点中后快速ssh链接到某站点。有点像windows下的putty。
+
+## 安装
+
+在ubuntu gnu/linux 中直接用新立得软件管理包搜索 sshmenu 选中后安装就可以了。
+
+或者用 
+
+       sudo apt-get install sshmenu-gnome 
+
+只后在gnome面板上点右键添加（add to panel），选中sshmenu就可以了
+
+## 使用
+
+在prefernece添加站点。如果你的ssh服务器不是运行在标准的22端口，我有个站点就不是，直接在hostname（etc）栏里跟端口号，如
+
+      12.0.0.25 -p 3512
+
+3512就是端口号。不在标准端口运行ssh好处是能过滤些很多垃圾攻击，就是试你标准端口的攻击。虽然这只是“虚假的安全（pseudo security）”但还是有一定效果的。
+
+## 高手当让不用sshmenu而直接在bash中建立alias啦
+
+我就想成为高手。但一直没摸索出方法。bash中的alias也不太会建立。这方面文章很多，打印出来好好读读就会。在那之前，或者你喜欢用图形化的界面。sshmenu是个不错的选择。
+
+比如我如果是高手我会用 
+
+      alias ssh129='ssh 404@129.0.0.25 -p 3512'
+
+这样，我在bash下输入ssh129这个命令就会用404的身份登录到129.0.0.25，端口是3512。简单吧。比点好几下鼠标方便。
+
+[ssh相关howto](http://www.google.com/search?hl=en&newwindow=1&client=firefox-a&rls=com.ubuntu%3Aen-US%3Aunofficial&hs=G1a&q=ssh+site%3Ahowtoforge.com&btnG=Search)
+
+## 高高手用其它工具
+高高手因为同时管理多台机器，经常需要上多台机器完成相同工作。所以会用另外一个工具，名字忘了，因为我不用。该工具让你能够只发布一条命令，它自动登录到多台机器上，分别执行。
+      
 
 2008-06-20
