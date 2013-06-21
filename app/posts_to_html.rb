@@ -24,12 +24,10 @@ files.each do |fn|
   p newfn if DEBUG
   article_content = Kramdown::Document.new(content, :auto_ids => false).to_html
   # here comes erubis
-  input = File.read('post.eruby')
+  input = File.read('post.eruby.html')
   eruby = Erubis::Eruby.new(input)    # create Eruby object
   article_html =  eruby.result(binding())        # get result  
   # same old file writing
   p "generating #{output}/#{newfn}"
-  File.open("#{output}/#{newfn}", "w") do |file|
-    file.puts article_html
-  end
+  File.open("#{output}/#{newfn}", article_html)
 end
