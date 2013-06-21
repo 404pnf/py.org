@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 require_relative 'sanitize_title.rb'
 
 # 使用方法 ruby script.rb INPUTFILE OUTPUTFOLDER
@@ -27,6 +25,7 @@ articles.each do |article|
   filename = date + '-' + filename_sanitized + suffix
   p filename
   # 把题目的h1标题写回去。 \A 表示整个字符串的开始
-  whole_article = article.sub(/\A/, '# ') 
+  # 在文章结尾增加日期
+  whole_article = article.sub(/\A/, '# ') + "\n\n" + date
   File.write("#{OUTPUTFOLDER}/#{filename}", whole_article)
 end
