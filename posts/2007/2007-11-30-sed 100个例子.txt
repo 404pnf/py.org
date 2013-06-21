@@ -1,0 +1,5 @@
+sed 100个例子
+
+http://www.deepsky-net.com/sed\_line.html
+
+2007-11-30

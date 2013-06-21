@@ -1,3 +1,5 @@
-# 用drupal做招聘站点
+用drupal做招聘站点
 
 http://epiqo.com/en/recruiter
+
+2011-09-27

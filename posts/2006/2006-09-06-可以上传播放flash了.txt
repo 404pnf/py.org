@@ -1,10 +1,5 @@
-# 可以上传播放flash了
+可以上传播放flash了
 
-点击 查看 右边的 play 播放
-可以上传flash了就是有些麻烦 用提交video
-有红色星的是必须填的项目 
-Video Size Width (x)和Video Size Width (x)都填400或500或600
-树木越大,显示出来的越大
-大小和seconds随便写一个就可以 提交后程序自动调整到合适的
+点击 查看 右边的 play 播放 可以上传flash了就是有些麻烦 用提交video 有红色星的是必须填的项目 Video Size Width (x)和Video Size Width (x)都填400或500或600 树木越大,显示出来的越大 大小和seconds随便写一个就可以 提交后程序自动调整到合适的 希望看到大家自己做的flash或者自己拍摄的视频。
 
-希望看到大家自己做的flash或者自己拍摄的视频。
+2006-09-06

@@ -1,10 +1,5 @@
-# rss订阅社区内容
+rss订阅社区内容
 
-这个社区每个人的blog，每个组的blog，每个tag都有自己的rss。分别出现在他们各自聚合页面下面。
+这个社区每个人的blog，每个组的blog，每个tag都有自己的rss。分别出现在他们各自聚合页面下面。 就是那个红色的xml。 搜索某个用户的rss可以从这里 http://pengyou.rijiben.org/syndication 默认没有很方便的留言rss输出。抱歉。在想办法，和更好的办法。
 
-就是那个红色的xml。
-
-搜索某个用户的rss可以从这里
-http://pengyou.rijiben.org/syndication
-
-默认没有很方便的留言rss输出。抱歉。在想办法，和更好的办法。
+2006-10-18

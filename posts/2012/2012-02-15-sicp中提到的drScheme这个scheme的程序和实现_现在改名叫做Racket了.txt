@@ -1,0 +1,5 @@
+# sicp中提到的drScheme这个scheme的程序和实现 现在改名叫做Racket了
+
+gnu/linux发行版中应该有这个程序包
+它的网站是
+http://racket-lang.org/

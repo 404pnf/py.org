@@ -1,24 +1,5 @@
-# 加密tar压缩文件
+加密tar压缩文件
 
-http://ubuntuforums.org/showthread.php?t=1071398
+http://ubuntuforums.org/showthread.php?t=1071398 encrypt: tar -c directory | openssl des3 -salt > encrypted.tarfile decrypt: cat encrypted.tarfile | openssl des3 -d -salt |tar -xv tar时候压缩一下 the -cj will give you better compression using -cz will run faster with a bit less compression 为什么要要 -salt Old post, but here's what I found about -salt http://linux.die.net/man/1/enc The -salt option should ALWAYS be used if the key is being derived from a password unless you want compatibility with previous versions of OpenSSL and SSLeay. Without the -salt option it is possible to perform efficient dictionary attacks on the password and to attack stream cipher encrypted data. The reason for this is that without the salt the same password always generates the same encryption key. When the salt is being used the first eight bytes of the encrypted data are reserved for the salt: it is generated at random when encrypting a file and read from the encrypted file when it is decrypted.
 
-encrypt:
-
-tar -c directory | openssl des3 -salt > encrypted.tarfile
-
-decrypt:
-
-cat encrypted.tarfile | openssl des3 -d -salt |tar -xv
-
-tar时候压缩一下
-
-the -cj will give you better compression
-using -cz will run faster with a bit less compression
-
-为什么要要 -salt
-
-Old post, but here's what I found about -salt
-http://linux.die.net/man/1/enc
-
-The -salt option should ALWAYS be used if the key is being derived from a password unless you want compatibility with previous versions of OpenSSL and SSLeay.
-Without the -salt option it is possible to perform efficient dictionary attacks on the password and to attack stream cipher encrypted data. The reason for this is that without the salt the same password always generates the same encryption key. When the salt is being used the first eight bytes of the encrypted data are reserved for the salt: it is generated at random when encrypting a file and read from the encrypted file when it is decrypted.
+2011-11-30

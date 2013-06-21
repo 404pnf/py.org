@@ -1,6 +1,5 @@
-# 通过mysql命令关闭所有wordpress中的文章评论
+通过mysql命令关闭所有wordpress中的文章评论
 
-[tags] wordpress, mysql, [/tags]
-      update `posts` set `comment_status` = 'closed' WHERE `comment_status` = 'open'
+[tags] wordpress, mysql, [/tags] update `posts` set `comment\_status` = 'closed' WHERE `comment\_status` = 'open' 我有个lyceum站点，使用的不多了。之前没有关闭评论的文章老有垃圾留言。今天通过上面命令关闭了所有文章的评论。
 
-我有个lyceum站点，使用的不多了。之前没有关闭评论的文章老有垃圾留言。今天通过上面命令关闭了所有文章的评论。
+2011-09-27

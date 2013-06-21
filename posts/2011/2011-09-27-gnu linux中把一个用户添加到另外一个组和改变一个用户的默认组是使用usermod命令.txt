@@ -1,0 +1,5 @@
+gnu linux中把一个用户添加到另外一个组和改变一个用户的默认组是使用usermod命令
+
+>usermod example - Add a existing user to existing group >Add existing user tony to ftp supplementary/secondary group with usermod command using -a option ~ i.e. add the user to the supplemental group(s). Use only with -G option : > # usermod -a -G ftp tony >Change existing user tony primary group to www: > # usermod -g www tony > 参考： http://www.cyberciti.biz/faq/howto-linux-add-user-to-group/ 注意： usermod -a 这个选项你在manual里看不到！！这个选项只和-G一起使用。这个在manual里没有写真的是失误。因为如果没有这个-a开关，你要给某个用户增加一个组。需要在用 -G的后面输入该用户现在所有的组和你要添加的组。如果单纯用-G后面跟要添加的组，结果会是该用户只剩下你刚添加的组了。 man usermod中写到 >-G group,[...] > 定 义 使 用 者 为 一 堆 groups 的 成 员 。 每 个 群 组 使用 "," 区 格 开 来 ， 不 可 以 夹 杂 空 白 字 元 。 群 组 名 同 -g 选 项 的 限 制 。 如 果 使 用 者 现 在 的 群 组 不 再 此 列 ， 则 将 使 用 者 由 该 群 组 中 移 除 。 有的系统也许没有这个-a，那么修改方法就麻烦了。参考 http://www.basiclinuxcommand.com/linux-usermod/linux-add-user-group.html
+
+2011-09-27

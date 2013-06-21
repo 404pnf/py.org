@@ -1,41 +1,5 @@
-# 开始修改theme
+开始修改theme
 
-### comment.php.tpl升级了
+### comment.php.tpl升级了 spreadfirefox theme 以前的comment.php.tpl中有一段去garvatar . com的代码 我说怎么老看见浏览器状态栏在连那个站点。心说没有用户头像用了那个呀。今天看cvs，3天前改正了。 [drupal] Diff of /contributions/themes/spreadfirefox/comment.tpl.php http://cvs.drupal.org/viewcvs/drupal/contributions/themes/spreadfirefox/comment.tpl.php?r1=text&tr1=1.1&r2=text&tr2=1.2&diff\_format=h ### 调整了spreadfirefox theme的css 字体加大。行距加宽 。 用anti-modern那段修饰引用文字的 blockquote { margin: 5px; background: transparent url(images/quotes.gif) left top no-repeat; padding-left: 37px; } blockquote[cite]:after { content: "Quote from: " attr(cite); display: block; border-top: 1px solid #999; color: #999; margin: 1em 0 0; padding: .5em 0 0; font-size: .8em; font-weight: bold; 替换原来的 需要把相应quotes.gif复制到相应目录 blockquote { border: 0 #ddd dashed; border-width: 1px 0; margin: 0.5em 1.0em; padding: 0.3em; } ### 怎么都找不这怎么改背景和文字颜色！？：（
 
-spreadfirefox theme 以前的comment.php.tpl中有一段去garvatar . com的代码 我说怎么老看见浏览器状态栏在连那个站点。心说没有用户头像用了那个呀。今天看cvs，3天前改正了。
-[drupal] Diff of /contributions/themes/spreadfirefox/comment.tpl.php
-http://cvs.drupal.org/viewcvs/drupal/contributions/themes/spreadfirefox/comment.tpl.php?r1=text&tr1=1.1&r2=text&tr2=1.2&diff_format=h
-
-### 调整了spreadfirefox theme的css
-
-字体加大。行距加宽 。
-
-用anti-modern那段修饰引用文字的
-
-      blockquote {
-              margin: 5px;
-        background: transparent url(images/quotes.gif) left top no-repeat;
-              padding-left: 37px;
-      }
-      
-      
-      
-      blockquote[cite]:after {
-              content: "Quote from: " attr(cite);
-              display: block;
-              border-top: 1px solid #999;
-              color: #999;
-              margin: 1em 0 0;
-              padding: .5em 0 0;
-              font-size: .8em;
-              font-weight: bold;
-替换原来的 需要把相应quotes.gif复制到相应目录      
-      
-      blockquote {
-        border: 0 #ddd dashed;
-        border-width: 1px 0;
-        margin: 0.5em 1.0em;
-        padding: 0.3em;
-      }
-
-### 怎么都找不这怎么改背景和文字颜色！？：（
+2006-11-15

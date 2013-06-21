@@ -1,0 +1,5 @@
+朋友日记本社区可以离线发文章了 就是drupal站点如何不登录网站发文章
+
+lvcha要求离线发文章。现在可以了。 参考 http://drupal.org/node/6315 方法是，打开module中的blogapi，在 settings > blogapi中设置一下 我就直接用默认的blogger，下面发文类型选择blog。开始我根本就没修改这些也能用。也许要支持w.blogger什么的得设置为metablog之类。 然后你找个离线写blog的程序。比如我用的是drivel，这是gnu/linux下的。 填好用户名和密码。服务器类型选择movable type。地址写 > [http://pengyou.rijiben.org/xmlrpc.php](http://pengyou.rijiben.org/xmlrpc.php) 写好了登录就可以直接在你自己的桌面上写文章，保存文章和发布文章了。 lvcha你找好在windows上的发文工具写篇文章介绍给大家吧。drupal上说的是这个[wblogger ](http://www.wbloggar.com/faq.php) 苹果上用什么有朋友知道也告诉我。 这里有各个平台可以用的发文章工具 http://codex.wordpress.org/Weblog\_Client
+
+2007-05-22

@@ -1,37 +1,5 @@
-# cypher是什么意思
-
 cypher是什么意思
 
-我一直觉得是解密的意思，今天知道还有“零”这个意思。
+cypher是什么意思 我一直觉得是解密的意思，今天知道还有“零”这个意思。 > Alternative spelling of cipher; Alternative spelling of cipher > en.wiktionary.org/wiki/cypher > > + zero: a mathematical element that when added to another number yields the same number > + nothing: a quantity of no importance; "it looked like nothing I had ever seen before"; "reduced to nil all the work we had done"; "we racked up a pathetic goose egg"; "it was all for naught"; "I didn't hear zilch about it" > + cipher: a person of no influence > + code: convert ordinary language into code; "We should encode the message for security reasons" > + cipher: a secret method of writing > + cipher: a message written in a secret code > + calculate: make a mathematical calculation or computation > wordnet.princeton.edu/perl/webwn 在电影中，这个词这么有名！ > referred to as "Mr. Reagan" by Agent Smith, appears in The Matrix, where he is played by Joe Pantoliano. > www.theblackvault.com/wiki/index.php/List\_of\_minor\_characters\_in\_the\_Matrix\_series > > differs from the rest of the crew from various aspects. He is the only one with facial hair, and during Neo's introduction to his new comrades ... > www.tutorgig.com/ed/The\_Matrix > > Cypher is a Canadian sci-fi thriller released in 2002, directed by Vincenzo Natali and written by Brian King. It stars Jeremy Northam and Lucy Liu. > > http://en.wikipedia.org/wiki/Cypher\_(film) cypher这部电影在 imdb http://www.imdb.com/title/tt0284978/ 电影在wikipedia上条目 因为导演就是cube的导演，所以找到这部电影介绍看了看。还是可看的。不知道谁有盘？：）
 
-> Alternative spelling of cipher; Alternative spelling of cipher
-> en.wiktionary.org/wiki/cypher
-> 
-> + zero: a mathematical element that when added to another number yields the same number
-> + nothing: a quantity of no importance; "it looked like nothing I had ever seen before"; "reduced to nil all the work we had done"; "we racked up a pathetic goose egg"; "it was all for naught"; "I didn't hear zilch about it"
-> + cipher: a person of no influence
-> + code: convert ordinary language into code; "We should encode the message for security reasons"
-> + cipher: a secret method of writing
-> + cipher: a message written in a secret code
-> + calculate: make a mathematical calculation or computation
-> wordnet.princeton.edu/perl/webwn
-
-
-在电影中，这个词这么有名！
-
-> referred to as "Mr. Reagan" by Agent Smith, appears in The Matrix, where he is played by Joe Pantoliano.
-> www.theblackvault.com/wiki/index.php/List_of_minor_characters_in_the_Matrix_series
-> 
-> differs from the rest of the crew from various aspects. He is the only one with facial hair, and during Neo's introduction to his new comrades ...
-> www.tutorgig.com/ed/The_Matrix
-> 
-> Cypher is a Canadian sci-fi thriller released in 2002, directed by Vincenzo Natali and written by Brian King. It stars Jeremy Northam and Lucy Liu.
-> 
-> http://en.wikipedia.org/wiki/Cypher_(film)
-
-cypher这部电影在 imdb
-http://www.imdb.com/title/tt0284978/
-
-电影在wikipedia上条目
-
-因为导演就是cube的导演，所以找到这部电影介绍看了看。还是可看的。不知道谁有盘？：）
+2008-10-10

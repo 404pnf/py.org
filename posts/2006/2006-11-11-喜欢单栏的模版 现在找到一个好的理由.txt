@@ -1,0 +1,5 @@
+喜欢单栏的模版 现在找到一个好的理由
+
+关于网站表现方式的几篇文章 我喜欢单栏 1 column的theme，我觉得简单。不影响阅读。因为人家来时看文字和图片的。所以最少的干扰读者才能更让他们喜欢。反正我的眼睛是受不了一堆东西。今天我又找到个理论依据。 Blog design trends: the content-rich footer ?? cre8d design blog http://cre8d-design.com/blog/2006/01/23/blog-design-trends-the-content-rich-footer/ 这个我很赞同。希望有人和我hack出一个单栏的drupal theme。 > if a person has scrolled/read down to the bottom of your blog entries, they’re presented with a set of options right there to earlier content, related links etc. They’re at the bottom most likely because they’re interested in reading more. Otherwise, they’ll get to the bottom of the page, and all those sidebar links you were hoping they’d click on are most likely out of sight. They’ll have to scroll back up to see them. Blog Design Trends ?? cre8d design blog http://www.cre8d-design.com/blog/2005/12/30/design-trends/ UrbanGiraffe ?? Themes http://www.urbangiraffe.com/themes/
+
+2006-11-11

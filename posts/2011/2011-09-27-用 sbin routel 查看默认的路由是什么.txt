@@ -1,0 +1,5 @@
+用 sbin routel 查看默认的路由是什么
+
+$ /sbin/route Kernel IP routing table Destination Gateway Genmask Flags Metric Ref Use Iface localnet \* 255.255.0.0 U 0 0 0 eth1 default 129.0.0.254 0.0.0.0 UG 100 0 0 eth1
+
+2011-09-27

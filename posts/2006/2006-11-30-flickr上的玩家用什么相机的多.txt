@@ -1,11 +1,7 @@
-# flickr上的玩家用什么相机的多
+flickr上的玩家用什么相机的多
 
-flickr上面摄影的玩家非常多。下面的地地址可以查看他们各个品牌各个型号的分布曲线
-
-
-Flickr: Camera Finder
-
-
+flickr上面摄影的玩家非常多。下面的地地址可以查看他们各个品牌各个型号的分布曲线  
+Flickr: Camera Finder  
 http://www.flickr.com/cameras/
 
 正好qbj要买相机。可以参考这个。
@@ -25,3 +21,5 @@ http://www.flickr.com/cameras/
 3 录像很重要 不能由时间限制，最好录成avi格式(可惜柯达是mov) 这样好导成其他格式 我觉得数码相机录像比摄像机方便，录完直接就可以电脑上看和发布，不用转换格式。
 
 大家发表一下意见吧
+
+2006-11-30

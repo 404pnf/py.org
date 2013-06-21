@@ -1,11 +1,5 @@
-# 按行的长度来排列文件
+按行的长度来排列文件
 
-参考： http://www.commandlinefu.com/commands/view/3724/sort-lines-by-length
+参考： http://www.commandlinefu.com/commands/view/3724/sort-lines-by-length 我觉得好用的 awk '{print length, $0;}' file.txt| sort -nr 按行长度排列。 awk 'length>72' file 找长度大于或某个数值的文件。
 
-我觉得好用的 
-
-    awk '{print length, $0;}' file.txt| sort -nr
-按行长度排列。
-
-    awk 'length>72' file
-找长度大于或某个数值的文件。
+2011-11-30

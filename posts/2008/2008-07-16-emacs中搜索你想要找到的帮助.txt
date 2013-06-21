@@ -1,5 +1,5 @@
-# emacs中搜索你想要找到的帮助
-
 emacs中搜索你想要找到的帮助
 
-我发现用 alt-x emacs-index-search 不错。输入命令后回车，给个关键词。我就是这么搜到emacs的faq的。
+emacs中搜索你想要找到的帮助 我发现用 alt-x emacs-index-search 不错。输入命令后回车，给个关键词。我就是这么搜到emacs的faq的。
+
+2008-07-16

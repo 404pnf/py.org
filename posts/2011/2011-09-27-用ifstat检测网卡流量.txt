@@ -1,7 +1,5 @@
-# 用ifstat检测网卡流量
+用ifstat检测网卡流量
 
-命令就是
+命令就是 ifstat ifstat - Report InterFace STATistics
 
-   ifstat
-
-ifstat - Report InterFace STATistics
+2011-09-27

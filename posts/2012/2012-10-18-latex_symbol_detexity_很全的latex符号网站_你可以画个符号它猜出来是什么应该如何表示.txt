@@ -1,0 +1,4 @@
+# latex symbol detexity 很全的latex符号网站 你可以画个符号它猜出来是什么应该如何表示
+
+<http://detexify.kirelabs.org/symbols.html>
+

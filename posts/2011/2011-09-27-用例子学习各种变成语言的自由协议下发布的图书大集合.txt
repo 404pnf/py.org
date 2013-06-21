@@ -1,13 +1,5 @@
-# 用例子学习各种变成语言的自由协议下发布的图书大集合
+用例子学习各种变成语言的自由协议下发布的图书大集合
 
-[tags] 学习,自由文化,web.server,工具,翻译 [/tags]
-http://pleac.sourceforge.net/
-> Summary
-> 
-> Following the great Perl Cookbook (by Tom Christiansen & Nathan Torkington, published by O'Reilly; you can freely browse an excerpt of the book here) which presents a suite of common programming problems solved in the Perl language, this project aims to implement the solutions in other programming languages.
-> 
-> If successful, this project may become a primary resource for quick, handy and free reference to solve most common programming problems using various programming languages, and for comparison on ease-of-use and power/efficiency of these languages.
-> 
-> The material, considered as some Documentation, is wholly released under the Gnu Free Documentation License, except the Perl part, which is copyrighted by O'Reilly & Associates yet freely available.
-> 
-> Please subscribe to the discussion mailing-list if interested in the project.
+[tags] 学习,自由文化,web.server,工具,翻译 [/tags] http://pleac.sourceforge.net/ > Summary > > Following the great Perl Cookbook (by Tom Christiansen & Nathan Torkington, published by O'Reilly; you can freely browse an excerpt of the book here) which presents a suite of common programming problems solved in the Perl language, this project aims to implement the solutions in other programming languages. > > If successful, this project may become a primary resource for quick, handy and free reference to solve most common programming problems using various programming languages, and for comparison on ease-of-use and power/efficiency of these languages. > > The material, considered as some Documentation, is wholly released under the Gnu Free Documentation License, except the Perl part, which is copyrighted by O'Reilly & Associates yet freely available. > > Please subscribe to the discussion mailing-list if interested in the project.
+
+2011-09-27

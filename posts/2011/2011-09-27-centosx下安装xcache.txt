@@ -1,4 +1,5 @@
-# centosx下安装xcache
+centosx下安装xcache
 
-[tags] gnu/linux,php, [/tags]
-http://www.cyberciti.biz/faq/howto-rhel-install-xcahce-php-opcode-cacher/
+[tags] gnu/linux,php, [/tags] http://www.cyberciti.biz/faq/howto-rhel-install-xcahce-php-opcode-cacher/
+
+2011-09-27

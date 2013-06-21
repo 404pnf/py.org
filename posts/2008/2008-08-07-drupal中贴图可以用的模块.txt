@@ -1,12 +1,5 @@
-# drupal中贴图可以用的模块
+drupal中贴图可以用的模块
 
-drupal中贴图 
+drupal中贴图 Image: image nodes, attached images, and galleries http://drupal.org/handbook/modules/image http://drupal.org/project/image http://drupal.org/project/img\_assist http://drupal.org/project/image\_filter This module allows you to reference image nodes from other nodes.
 
-Image: image nodes, attached images, and galleries
-http://drupal.org/handbook/modules/image
-
-http://drupal.org/project/image
-http://drupal.org/project/img_assist
-
-http://drupal.org/project/image_filter
-This module allows you to reference image nodes from other nodes.
+2008-08-07

@@ -1,23 +1,5 @@
-# nginx中对没有任何参数的url缓存而让带有参数的请求去后台的方法
+nginx中对没有任何参数的url缓存而让带有参数的请求去后台的方法
 
-[tags] nginx [/tags]
-> > It is possible to cache the response from proxy_pass (that is filtered
-> > by custom filters) _only_ if the request has no args? If the request has
-> > arguments, it should be served from upstream and any temporary buffer
-> > dumped.
-> >
-> > Example :
-> >
-> > Request http://www.example.com/image.jpg  > Request http://www.example.com/image.jpg?lowquality=true  > it
-> >
-> > All assuming that the proxy_cache_key is just the uri without params
-> > ($scheme://$http_host$uri in the specific).
-> >
-> > So, I should have only one copy of the file in cache and should be the
-> > "clean" one. I don't want to cache any request that is processed by my
-> > custom filters with different cache keys.
-> 
-> Get nginx-0.8.53 and
-> 
-> proxy_cache_bypass  $args;
-> proxy_no_cache      $args;
+[tags] nginx [/tags] > > It is possible to cache the response from proxy\_pass (that is filtered > > by custom filters) \_only\_ if the request has no args? If the request has > > arguments, it should be served from upstream and any temporary buffer > > dumped. > > > > Example : > > > > Request http://www.example.com/image.jpg > Request http://www.example.com/image.jpg?lowquality=true > it > > > > All assuming that the proxy\_cache\_key is just the uri without params > > ($scheme://$http\_host$uri in the specific). > > > > So, I should have only one copy of the file in cache and should be the > > "clean" one. I don't want to cache any request that is processed by my > > custom filters with different cache keys. > > Get nginx-0.8.53 and > > proxy\_cache\_bypass $args; > proxy\_no\_cache $args;
+
+2011-09-27

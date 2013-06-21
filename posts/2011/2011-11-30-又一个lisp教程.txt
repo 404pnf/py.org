@@ -1,4 +1,5 @@
-# 又一个lisp教程
+又一个lisp教程
 
-Learning Lisp for CMPT 310
-http://www.cs.sfu.ca/CourseCentral/310/pwfong/Lisp/
+Learning Lisp for CMPT 310 http://www.cs.sfu.ca/CourseCentral/310/pwfong/Lisp/
+
+2011-11-30

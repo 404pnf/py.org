@@ -1,37 +1,5 @@
-# 在emacs中使用和切换到全屏模式
+在emacs中使用和切换到全屏模式
 
-## 在emacs中使用和切换到全屏模式
+## 在emacs中使用和切换到全屏模式 全屏模式提高效率啊。：） 下面是我现在.emacs中设置来完成这个功能 这是在gnu/linux环境下 windows和mac环境下参考[emacswiki上fullscreen的文章](http://www.emacswiki.org/cgi-bin/wiki/FullScreen#toc1)。 ;; 让emacs在启动时进入全屏幕模式。 ;; 这个方法没有下面的好 ;; 所以我把它都注释掉了 ;; 但它也是一种很直接的思路 ;;(setq inhibit-splash-screen t) ;; no splash screen ;; ;;(progn ;; (if (fboundp 'tool-bar-mode) (tool-bar-mode -1)) ;; no toolbar ;; (menu-bar-mode 1) ;;no menubar? then set it to -1 ;; (scroll-bar-mode -1) ;; no scroll bar ;; ) ;;实际使用的是下面的方法 ;;Emacs Frame Properties ;;用这个，按f11就进入全屏模式：） ;;参考 http://www.emacswiki.org/cgi-bin/wiki/FullScreen#toc1 ;;这段代码什么意思我不明白，音乐猜测是把set-frame-parameter设置为0，就是nil ;;然后启用fullscreen？ ;;反正用它能够成功就行了。Get Things Done 了：） (defun fullscreen () (interactive) (set-frame-parameter nil 'fullscreen (if (frame-parameter nil 'fullscreen) nil 'fullboth))) ;; 我还是不想要tool-bar，就是有那些快捷图标的任务栏，所以关闭它。 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1)) ;; no toolbar ;; 把开启和关闭全屏幕的快捷键设置为f11 (global-set-key [f11] 'fullscreen)
 
-全屏模式提高效率啊。：）
-
-下面是我现在.emacs中设置来完成这个功能
-这是在gnu/linux环境下
-windows和mac环境下参考[emacswiki上fullscreen的文章](http://www.emacswiki.org/cgi-bin/wiki/FullScreen#toc1)。
-
-      ;; 让emacs在启动时进入全屏幕模式。
-      ;; 这个方法没有下面的好
-      ;; 所以我把它都注释掉了
-      ;; 但它也是一种很直接的思路
-      ;;(setq inhibit-splash-screen t) ;; no splash screen
-      ;;
-      ;;(progn
-      ;;  (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))  ;; no toolbar
-      ;;  (menu-bar-mode 1) ;;no menubar? then set it to -1
-      ;;  (scroll-bar-mode -1) ;; no scroll bar
-      ;;  )
-      
-      ;;实际使用的是下面的方法
-      ;;Emacs Frame Properties
-      ;;用这个，按f11就进入全屏模式：）
-      ;;参考 http://www.emacswiki.org/cgi-bin/wiki/FullScreen#toc1
-      ;;这段代码什么意思我不明白，音乐猜测是把set-frame-parameter设置为0，就是nil
-      ;;然后启用fullscreen？
-      ;;反正用它能够成功就行了。Get Things Done 了：）
-          (defun fullscreen ()
-            (interactive)
-            (set-frame-parameter nil 'fullscreen
-                                 (if (frame-parameter nil 'fullscreen) nil 'fullboth)))
-      ;; 我还是不想要tool-bar，就是有那些快捷图标的任务栏，所以关闭它。
-        (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))  ;; no toolbar
-      ;; 把开启和关闭全屏幕的快捷键设置为f11
-          (global-set-key [f11] 'fullscreen)
+2008-05-08

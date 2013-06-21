@@ -1,0 +1,5 @@
+drupal 7 中 模板建议名称规则改了 以前的一个 - 变成了2个 --
+
+参考： Drupal 7 Template Suggestions http://drupal.org/node/1089656 比如之前用 page-front.tp.php来表示首页，现在用 page--front.tpl.php
+
+2011-09-27

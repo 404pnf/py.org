@@ -1,8 +1,5 @@
-# 批量删除ubercart中的订单信息
+批量删除ubercart中的订单信息
 
-Really anything prefixed by uc_order... so don't forget uc_order_line_items.
+Really anything prefixed by uc\_order... so don't forget uc\_order\_line\_items. EDIT: However, don't clean out uc\_order\_statuses. Sorry, Bartezz! Shocked http://www.ubercart.org/forum/support/7688/removing\_orders\_database 搜索： ubercart batch delete orders
 
-EDIT: However, don't clean out uc_order_statuses. Sorry, Bartezz! Shocked
-http://www.ubercart.org/forum/support/7688/removing_orders_database
-
-搜索： ubercart batch delete orders
+2011-09-27

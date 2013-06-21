@@ -1,15 +1,5 @@
-# 在curl中用正则表达
+在curl中用正则表达
 
-## 在curl中用正则表达
+## 在curl中用正则表达 > How to download just one single file from a website? > Use “curl”. Example: curl -O http://example.org/somedir/largeMovie.mov will download largeMovie.mov to your current dir. > Curl can be also used to download a series files with a pattern in their name. For example, curl -O http://example.org/somedir/girl[01-20].jpg will download all files in somedir named girl01.jpg, girl02.jpg ...etc. If you use girl[1-20].jpg, then it'll be girl1.jpg, girl2.jpg etc. > Other useful options are “--referer http://example.org/”, “--user-agent "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322)"”. These can be used in case the porn site blogs requests by referer or browser. > Note: curl cannot be used to download entire website recursively like wget can. 好东西啊。 举得例子都那么贴近生活。：）
 
-> How to download just one single file from a website?
-
-> Use “curl”. Example: curl -O http://example.org/somedir/largeMovie.mov will download largeMovie.mov to your current dir.
- 
-> Curl can be also used to download a series files with a pattern in their name. For example, curl -O http://example.org/somedir/girl[01-20].jpg will download all files in somedir named girl01.jpg, girl02.jpg ...etc. If you use girl[1-20].jpg, then it'll be girl1.jpg, girl2.jpg etc.
- 
-> Other useful options are “--referer http://example.org/”, “--user-agent "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322)"”. These can be used in case the porn site blogs requests by referer or browser.
-> Note: curl cannot be used to download entire website recursively like wget can.
- 
-好东西啊。
-举得例子都那么贴近生活。：）
+2007-12-26

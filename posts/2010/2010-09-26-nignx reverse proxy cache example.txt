@@ -1,0 +1,5 @@
+nignx reverse proxy cache example
+
+http://wiki.nginx.org/NginxReverseProxyCachingExample http { proxy\_cache\_path /data/nginx/cache levels=1:2 keys\_zone=STATIC:10m inactive=24h max\_size=1g; server { location / { proxy\_pass http://1.2.3.4; proxy\_set\_header Host $host; proxy\_cache STATIC; proxy\_cache\_valid 200 1d; proxy\_cache\_use\_stale error timeout invalid\_header updating http\_500 http\_502 http\_503 http\_504; } } }
+
+2010-09-26

@@ -1,29 +1,5 @@
-# 关闭screen的进程
+关闭screen的进程
 
-如果开了多个screen都没关闭，每次一screen －r 就让选择reattach到哪个。原因是我一直不知道如何完全关闭一个screen session。
+如果开了多个screen都没关闭，每次一screen －r 就让选择reattach到哪个。原因是我一直不知道如何完全关闭一个screen session。 今天看了一下，原来只要在从那个screen session中所有窗口都退出，如果是应用程序就退出来然后在bash中exit，换个窗口，同理。最后，就会出现 [screen is terminating] 。就完全退出了。 学习screen的资源之一： http://jmcpherson.org/screen.html > To scroll back through screen's history, first enable the copy mode by pressing Ctrl+a [ . Now, use either one of the arrow keys, page up, page down, home and end keys to scroll through screen's history. > > Pressing Enter will start marking text for copying. Pressing Enter again will copy the selected text into the clipboard. Now, to paste that text, press Ctrl+a ]. > > To kill not responding programs, use Ctrl+a K. > > To split the screen in two, first create two screen sessions. Then press Ctrl+a S which will split the screen in half, giving you a session on the top that you're already using and a blank session at the bottom. > > To move to the bottom half, press Ctrl+a, then the TAB key. This key combination will move the console cursor to the lower half. Once in the blank half, you have to set this bottom half of the screen to use one of the two earlier created sessions. To do this, press Ctrl+a, then " (shift+'). You will be presented with a list of available screen sessions, pick one using the arrow keys (be careful not to pick the one already at the top or you'll have a mirror console), and activate it by pressing Enter. Now type top and switch to the upper half by pressing again Ctrl+a TAB. You should now have a bash prompt waiting for commands in the upper half and system resources monitoring in the bottom half. > > To return to full size screen, switch to the half you want it to remain and press Ctrl+a Q. > > http://news.softpedia.com/news/GNU-Screen-Tutorial-44274.shtml > Making it go away > > As you've seen from the section on detaching and reattaching, screen is not easy to kill. You can't just close its containing terminal. (Actually, you can, but then all those processes are still running on your system, ready to be reattached.) There's no "quit" key in the How do you fully exit screen? > > To my knowledge, the only way to do this nicely (i.e. without sending nasty signals to processes that don't deserve it) is to close each of your screen windows. Exit whatever programs or shells each is running, and they will go away. When the last program running inside screen is exited, screen itself will go away. > > http://www.kuro5hin.org/story/2004/3/9/16838/14935
 
-今天看了一下，原来只要在从那个screen session中所有窗口都退出，如果是应用程序就退出来然后在bash中exit，换个窗口，同理。最后，就会出现 [screen is terminating] 。就完全退出了。
-
-学习screen的资源之一： http://jmcpherson.org/screen.html
-
-> To scroll back through screen's history, first enable the copy mode by pressing Ctrl+a [ . Now, use either one of the arrow keys, page up, page down, home and end keys to scroll through screen's history.
-> 
-> Pressing Enter will start marking text for copying. Pressing Enter again will copy the selected text into the clipboard. Now, to paste that text, press Ctrl+a ].
-> 
-> To kill not responding programs, use Ctrl+a K.
-> 
-> To split the screen in two, first create two screen sessions. Then press Ctrl+a S which will split the screen in half, giving you a session on the top that you're already using and a blank session at the bottom.
-> 
-> To move to the bottom half, press Ctrl+a, then the TAB key. This key combination will move the console cursor to the lower half. Once in the blank half, you have to set this bottom half of the screen to use one of the two earlier created sessions. To do this, press Ctrl+a, then " (shift+'). You will be presented with a list of available screen sessions, pick one using the arrow keys (be careful not to pick the one already at the top or you'll have a mirror console), and activate it by pressing Enter. Now type top and switch to the upper half by pressing again Ctrl+a TAB. You should now have a bash prompt waiting for commands in the upper half and system resources monitoring in the bottom half.
-> 
-> To return to full size screen, switch to the half you want it to remain and press Ctrl+a Q.
-> 
-> http://news.softpedia.com/news/GNU-Screen-Tutorial-44274.shtml
-
-> Making it go away
-> 
-> As you've seen from the section on detaching and reattaching, screen is not easy to kill. You can't just close its containing terminal. (Actually, you can, but then all those processes are still running on your system, ready to be reattached.) There's no "quit" key in the How do you fully exit screen?
-> 
-> To my knowledge, the only way to do this nicely (i.e. without sending nasty signals to processes that don't deserve it) is to close each of your screen windows. Exit whatever programs or shells each is running, and they will go away. When the last program running inside screen is exited, screen itself will go away. 
-> 
-> http://www.kuro5hin.org/story/2004/3/9/16838/14935
+2008-12-08

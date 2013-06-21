@@ -1,0 +1,5 @@
+浏览器的缓存有时会让搞乱测试 而curl不会
+
+Sounds like it was a browser caching issue. Browsers cache aggressively so always test with curl when you're making changes. Posted at Nginx Forum: http://forum.nginx.org/read.php?2,202461,202582#msg-202582
+
+2011-09-27

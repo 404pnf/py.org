@@ -1,4 +1,5 @@
-# 随时增大减小emacs中文字
+随时增大减小emacs中文字
 
-## 随时增大减小emacs中文字
-http://sachachua.com/wp/2006/09/15/emacs-changing-the-font-size-on-the-fly/
+## 随时增大减小emacs中文字 http://sachachua.com/wp/2006/09/15/emacs-changing-the-font-size-on-the-fly/
+
+2007-12-27

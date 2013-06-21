@@ -1,48 +1,5 @@
-# 如何用scp指定端口号用大写字母P并且要放在复制文件和复制文件目的地的前面
+如何用scp指定端口号用大写字母P并且要放在复制文件和复制文件目的地的前面
 
-## 如何用scp指定端口号用大写字母P并且要放在复制文件和复制文件目的地的前面。
+## 如何用scp指定端口号用大写字母P并且要放在复制文件和复制文件目的地的前面。 我要把本地文件复制到其他机器，该机器的ssh不是运行在标准的22端口 ## 简单说就是 $ scp -P 端口号 本地文件 服务器文件 $ scp -P 3000 trial\_a.jpg 404@myip:/home/404 ## 我走的弯路 ### scp中指定远端服务器端口号是大写的P因为小写的已经有其他意思了 > -P port > Specifies the port to connect to on the remote host. Note that > this option is written with a capital 'P', because -p is already > reserved for preserving the times and modes of the file in > rcp(1). 在man里面写的。 但我还是不会用scp把本地文件复制到其他机器，该机器的ssh不是运行在标准的22端口。比如我的服务器运行在3000端口。 我登录时候用 ssh 404@myip -p 3000 我用rsync的时候可以 rsync -avz -e "ssh -p 3000" 404@myip:/home/404/backup-all/ /home/beifen/ 但我scp怎么都无法成功!!!!!!!!!!! scp localfile 404@myip:/home/404 -P 2519 scp localfile 404@myip:/home/404 -e "-P 2519" 都不行。 ### 我会了。还是rtfm。 SYNOPSIS scp [-1246BCpqrv] [-c cipher] [-F ssh\_config] [-i identity\_file] [-l limit] [-o ssh\_option] [-P port] [-S program] [[user@]host1:]file1 [...] [[user@]host2:]file2 可以看到端口号指定-P放在了复制文件的前面。我开始一直把端口指定放到这这两个参数后面。 $ scp -P 3000 trial\_a.jpg 404@myip:/home/404 404@myip's password: trial\_a.jpg 100% 89KB 88.8KB/s 00:00 成功了：）
 
-我要把本地文件复制到其他机器，该机器的ssh不是运行在标准的22端口
-
-## 简单说就是 $ scp -P 端口号 本地文件  服务器文件
-
-      $ scp -P 3000 trial_a.jpg  404@myip:/home/404
-
-## 我走的弯路
-
-### scp中指定远端服务器端口号是大写的P因为小写的已经有其他意思了
-
->   -P port
->              Specifies the port to connect to on the remote host.  Note that
->              this option is written with a capital 'P', because -p is already
->              reserved for preserving the times and modes of the file in
->              rcp(1).
-
-在man里面写的。
-
-但我还是不会用scp把本地文件复制到其他机器，该机器的ssh不是运行在标准的22端口。比如我的服务器运行在3000端口。
-
-我登录时候用 ssh 404@myip -p 3000
-我用rsync的时候可以 
-       rsync -avz -e "ssh -p 3000" 404@myip:/home/404/backup-all/ /home/beifen/
-
-
-但我scp怎么都无法成功!!!!!!!!!!!
-      scp localfile 404@myip:/home/404 -P 2519
-      scp localfile 404@myip:/home/404 -e "-P 2519"
-都不行。
-
-### 我会了。还是rtfm。
-
-      SYNOPSIS
-           scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
-               [-l limit] [-o ssh_option] [-P port] [-S program]
-               [[user@]host1:]file1 [...] [[user@]host2:]file2
-      
-可以看到端口号指定-P放在了复制文件的前面。我开始一直把端口指定放到这这两个参数后面。      
-      
-      $ scp -P 3000 trial_a.jpg  404@myip:/home/404
-      404@myip's password: 
-      trial_a.jpg                                   100%   89KB  88.8KB/s   00:00   
-
-成功了：）
+2007-12-28

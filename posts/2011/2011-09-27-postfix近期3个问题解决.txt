@@ -1,35 +1,5 @@
-# postfix近期3个问题解决
+postfix近期3个问题解决
 
-## postfix设置邮箱大小限制默认是0，使用时需要修改
+## postfix设置邮箱大小限制默认是0，使用时需要修改 $ grep mailbox\_size\_limit /etc/postfix/main.cf mailbox\_size\_limit = 0 http://www.howtoforge.com/forums/archive/index.php/t-3222.html 这个值一定要打一点。更改完后，重新启动postfix在看看/var/log/mail.err 或者 /var/log/syslog 有可能还有错误，比如 fatal: main.cf configuration error: mailbox\_size\_limit is smaller than message\_size\_limit 就是说上面的值还是小了。继续增大。但这个message\_size\_limit我没看到在哪里设定。 ## 错误二 fatal: open database /etc/aliases.db: No such file or directory 解决： If /etc/aliases exists (don't mix it up with /etc/aliases.db!), delete /etc/aliases.db, then run newaliases: rm -f /etc/aliases.db newaliases This will create /etc/aliases.db from /etc/aliases. Then restart Postfix. 参考： http://www.howtoforge.com/forums/archive/index.php/t-652.html ## 错误三 (cannot update mailbox /var/mail/root for user root. unable to create lock file /var/mail/root.lock: File exists fuser -k /var/mail/root.lock http://www.linuxquestions.org/questions/linux-newbie-8/mailbox-lock-not-getting-removed-684284/ 我用fuser的方法没有成功。我直接去 /var/mail 里面删除了那个文件。实际上因为我没什么关键的信。我把 /var/mial 下的root 和 root.lock都删除了。删除前，我less了一下root，里面是root的信。也算看了。 ## 解决了这3个问题，syslog中就暂时没哟任何postfix的错误了
 
-$ grep mailbox_size_limit /etc/postfix/main.cf 
-mailbox_size_limit = 0
-http://www.howtoforge.com/forums/archive/index.php/t-3222.html
-
-这个值一定要打一点。更改完后，重新启动postfix在看看/var/log/mail.err 或者 /var/log/syslog 有可能还有错误，比如
-
-     fatal: main.cf configuration error: mailbox_size_limit is smaller than message_size_limit
-
-就是说上面的值还是小了。继续增大。但这个message_size_limit我没看到在哪里设定。
-
-## 错误二
-
-fatal: open database /etc/aliases.db: No such file or directory
-
-解决：
-If /etc/aliases exists (don't mix it up with /etc/aliases.db!), delete /etc/aliases.db, then run newaliases:
-rm -f /etc/aliases.db
-newaliases
-This will create /etc/aliases.db from /etc/aliases. Then restart Postfix.
-参考： 
-http://www.howtoforge.com/forums/archive/index.php/t-652.html
-
-## 错误三
-(cannot update mailbox /var/mail/root for user root. unable to create lock file /var/mail/root.lock: File exists
-
-fuser -k /var/mail/root.lock
-http://www.linuxquestions.org/questions/linux-newbie-8/mailbox-lock-not-getting-removed-684284/
-
-我用fuser的方法没有成功。我直接去 /var/mail 里面删除了那个文件。实际上因为我没什么关键的信。我把 /var/mial 下的root 和 root.lock都删除了。删除前，我less了一下root，里面是root的信。也算看了。
-
-## 解决了这3个问题，syslog中就暂时没哟任何postfix的错误了
+2011-09-27

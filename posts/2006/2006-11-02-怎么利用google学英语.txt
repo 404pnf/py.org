@@ -1,17 +1,5 @@
-# 怎么利用google学英语
+怎么利用google学英语
 
-很简单
-访问 http://www.google.com/language_tools?hl=zh-CN
+很简单 访问 http://www.google.com/language\_tools?hl=zh-CN 就行了。 夹着尾巴做人 google翻译： Turn tail man 哈哈，直译的真好玩。。。。 不过比词霸牛多了。
 
-就行了。
-
-
-夹着尾巴做人
-
-google翻译：
-	
-Turn tail man
-
-哈哈，直译的真好玩。。。。
-
-不过比词霸牛多了。
+2006-11-02

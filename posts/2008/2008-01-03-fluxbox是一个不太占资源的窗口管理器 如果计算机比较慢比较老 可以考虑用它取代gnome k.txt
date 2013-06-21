@@ -1,0 +1,5 @@
+fluxbox是一个不太占资源的窗口管理器 如果计算机比较慢比较老 可以考虑用它取代gnome kde 甚至xfce
+
+## fluxbox是一个不太占资源的窗口管理器，如果计算机比较慢比较老，可以考虑用它取代gnome/kde，甚至xfce sudo apt-get install fluxbox 整个程序才1mb多。但也是一个很全面的窗口管理器（window manager）。我有一台老赛扬的机器，128mb内存，20gb硬盘，用它机器运行地很轻松。：） 该程序官方站点： http://fluxbox.sourceforge.net/ 在你认为它默认界面很土不够眩的时候，看看各玩家的screenshot再说话：） http://fluxbox.sourceforge.net/screenshots.php 对了，如果你第一次进入这个桌面发现桌面空空不知所措，那么在桌面点有右键就叫出菜单了。剩下的你一定都会了。如何定制自己的桌面，我不感兴趣，所以没研究。你们自己看官方网站和别人例子就好了。
+
+2008-01-03

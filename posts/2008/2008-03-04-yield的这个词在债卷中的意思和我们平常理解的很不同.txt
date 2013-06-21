@@ -1,24 +1,5 @@
-# yield的这个词在债卷中的意思和我们平常理解的很不同
+yield的这个词在债卷中的意思和我们平常理解的很不同
 
-## yield的这个词在债卷中的意思和我们平常理解的很不同。
+## yield的这个词在债卷中的意思和我们平常理解的很不同。 99.999%的人可能都无法理解bond中yield到增长到底是好还是坏。 因为yield一般理解为“收益”的意思。而收益应该是好事啊。怎么会难理解呢？我尝试来说一下。 这个词意思很多。我也不是都搞清楚了。 [wikiepdia上的文章](https://tor-proxy.net/cgi-bin/enc/nph-proxy\_jap.cgi/111110A/687474703a2f2f656e2e77696b6970656469612e6f72672f77696b692f5969656c645f25323866696e616e6365253239)说得还算清楚。但我希望有更多例子。 我写这篇的目的是说，当你在听到媒体说债券的yield增长了，按通常理解收益增长是好事，但实际上不是这样。有些人故意把话说成那样来迷惑人，而媒体从业者大部分属于不懂装懂给钱什么都说的人。 当bond的yield增长了的时候，说明通货膨胀的危险和压力增大了。对整体经济不是好事。 这句很重要 > Yield levels vary mainly with expectations of inflation. Fears of high inflation in the future mean that investors ask for high yield today. > https://tor-proxy.net/cgi-bin/enc/nph-proxy\_jap.cgi/111110A/687474703a2f2f656e2e77696b6970656469612e6f72672f77696b692f5969656c645f25323866696e616e6365253239 如果你就是买债券保值，那是否yield增长有好处呢？我理解也不是。因为我没见到哪里的中央银行和金融寡头不是靠通胀掠夺普通人创造的价值（存款），yield的增上能否赶上通胀也不好说，还有，还有[现在金融市场上三只小猪的故事](http://pengyou.rijiben.org/node/1904)也不支持这种想法。 警告：我所有谈论经济生活的文章你们都不要信。我不懂装懂。我胡说八道。
 
-99.999%的人可能都无法理解bond中yield到增长到底是好还是坏。
-
-因为yield一般理解为“收益”的意思。而收益应该是好事啊。怎么会难理解呢？我尝试来说一下。
-
-这个词意思很多。我也不是都搞清楚了。
-
-[wikiepdia上的文章](https://tor-proxy.net/cgi-bin/enc/nph-proxy_jap.cgi/111110A/687474703a2f2f656e2e77696b6970656469612e6f72672f77696b692f5969656c645f25323866696e616e6365253239)说得还算清楚。但我希望有更多例子。
-
-我写这篇的目的是说，当你在听到媒体说债券的yield增长了，按通常理解收益增长是好事，但实际上不是这样。有些人故意把话说成那样来迷惑人，而媒体从业者大部分属于不懂装懂给钱什么都说的人。
-
-当bond的yield增长了的时候，说明通货膨胀的危险和压力增大了。对整体经济不是好事。
-
-这句很重要
-> Yield levels vary mainly with expectations of inflation. Fears of high inflation in the future mean that investors ask for high yield today.
-> https://tor-proxy.net/cgi-bin/enc/nph-proxy_jap.cgi/111110A/687474703a2f2f656e2e77696b6970656469612e6f72672f77696b692f5969656c645f25323866696e616e6365253239
-
-
-如果你就是买债券保值，那是否yield增长有好处呢？我理解也不是。因为我没见到哪里的中央银行和金融寡头不是靠通胀掠夺普通人创造的价值（存款），yield的增上能否赶上通胀也不好说，还有，还有[现在金融市场上三只小猪的故事](http://pengyou.rijiben.org/node/1904)也不支持这种想法。
-
-警告：我所有谈论经济生活的文章你们都不要信。我不懂装懂。我胡说八道。
+2008-03-04

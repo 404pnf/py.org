@@ -1,4 +1,5 @@
-# 大项目如何控制创意过程的进度
+大项目如何控制创意过程的进度
 
-[tags] drupal [/tags]
-http://www.chapterthree.com/blog/nica_lorber/how_run_creative_design_process_big_project
+[tags] drupal [/tags] http://www.chapterthree.com/blog/nica\_lorber/how\_run\_creative\_design\_process\_big\_project
+
+2011-09-27

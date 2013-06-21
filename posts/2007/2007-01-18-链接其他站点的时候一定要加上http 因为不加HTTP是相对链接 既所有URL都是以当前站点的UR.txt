@@ -1,0 +1,5 @@
+链接其他站点的时候一定要加上http 因为不加HTTP是相对链接 既所有URL都是以当前站点的URL为前缀的 加了HTTP是绝对链接
+
+今天明白了为什么最近经常看到 pengyou.rijiben.org/www.rijiben.org/jenny 这种错误。 > 由 rachmaninoff 在 周四, 2007-01-18 15:49 提交 > > 不家HTTP是相对链接，既所有URL都是以当前站点的URL为前缀的。加了HTTP是绝对链接。 > http://pengyou.rijiben.org/node/1089#comment-1399
+
+2007-01-18

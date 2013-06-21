@@ -1,5 +1,5 @@
-# 在你的站点中用嵌入google搜索站点内容
-
 在你的站点中用嵌入google搜索站点内容
 
-http://www.google.cn/searchcode.html
+在你的站点中用嵌入google搜索站点内容 http://www.google.cn/searchcode.html
+
+2008-08-19

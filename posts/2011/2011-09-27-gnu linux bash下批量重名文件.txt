@@ -1,0 +1,5 @@
+gnu linux bash下批量重名文件
+
+> for FILE in \* ; do NEWFILE=`echo $FILE | sed 's/-//g'` ; mv "$FILE" $NEWFILE ; done > http://snipplr.com/view/3679/batch-rename-files/ for i in \*.avi do j=`echo $i | sed 's/find/replace/g'` mv "$i" "$j" done Can also be written on a single line as for i in \*.avi; do j=`echo $i | sed 's/find/replace/g'`; mv "$i" "$j"; done http://snipplr.com/view/2736/rename-multiple-files-in-bash-using-regular-expressions/ ls foo\*.jpg | awk '{print("mv "$1" "$1)}' | sed 's/foo/bar/2' | /bin/sh http://snipplr.com/view/3648/batch-file-rename-with-awk-and-sed/
+
+2011-09-27

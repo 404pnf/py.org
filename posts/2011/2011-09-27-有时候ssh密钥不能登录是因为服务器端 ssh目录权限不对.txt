@@ -1,0 +1,5 @@
+有时候ssh密钥不能登录是因为服务器端 ssh目录权限不对
+
+http://recursive-design.com/blog/2010/09/14/ssh-authentication-refused/ 我也遇到过一样的问题 当时费了不少时间。当时对比两台服务器.ssh目录权限发现的
+
+2011-09-27

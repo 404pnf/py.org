@@ -1,4 +1,5 @@
-# drupal的ninesity主题还是很好用的
+drupal的ninesity主题还是很好用的
 
-tt drupal tt
-http://drupal.org/project/ninesixty
+tt drupal tt http://drupal.org/project/ninesixty
+
+2011-09-27

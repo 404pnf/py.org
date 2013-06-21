@@ -1,22 +1,5 @@
-# 学习css的例子
+学习css的例子
 
-http://www.smashingmagazine.com/2010/02/18/50-css-and-javascript-techniques-for-layouts-forms-and-visual-effects/
+http://www.smashingmagazine.com/2010/02/18/50-css-and-javascript-techniques-for-layouts-forms-and-visual-effects/ http://www.smashingmagazine.com/2010/02/01/50-brilliant-css3-javascript-coding-techniques/ 如果按照rubyonrails.org上的安装方法，出现了 File not found: lib 很有可能其实rails 3已经装好了，但它不在系统path中，因此下面方法解决： Update 2: So, thanks to Maran and Jörg, I now know the problem is not that rails isn't installed, but it's not added to the PATH. This can be fixed by adding the following to ~/.bashrc: export PATH=/var/lib/gems/1.8/bin:$PATH 来源： http://stackoverflow.com/questions/4151768/how-to-install-ruby-on-rails-3-0-on-ubuntu-10-10 http://stackoverflow.com/questions/4151768/how-to-install-ruby-on-rails-3-0-on-ubuntu-10-10
 
-http://www.smashingmagazine.com/2010/02/01/50-brilliant-css3-javascript-coding-techniques/
-
-
-
-
-
-如果按照rubyonrails.org上的安装方法，出现了
-    File not found: lib
-
-很有可能其实rails 3已经装好了，但它不在系统path中，因此下面方法解决：
-
-
-Update 2: So, thanks to Maran and Jörg, I now know the problem is not that rails isn't installed, but it's not added to the PATH. This can be fixed by adding the following to ~/.bashrc:
-
-      export PATH=/var/lib/gems/1.8/bin:$PATH
-
-来源： http://stackoverflow.com/questions/4151768/how-to-install-ruby-on-rails-3-0-on-ubuntu-10-10
-http://stackoverflow.com/questions/4151768/how-to-install-ruby-on-rails-3-0-on-ubuntu-10-10
+2011-09-27

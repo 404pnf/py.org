@@ -1,21 +1,24 @@
-# 用google搜索本站内容
+用google搜索本站内容
 
-用小拉提供的[更多搜索引擎搜索](http://pengyou.rijiben.org/node/592#comment-671)也可以
+用小拉提供的[更多搜索引擎搜索](http://pengyou.rijiben.org/node/592#comment-671)也可以 小拉请整理一下代码，写个报告上来。大家一块看文字编码问题。
 
-小拉请整理一下代码，写个报告上来。大家一块看文字编码问题。###用google搜索本站
-  
-Search Google[![Google](http://www.google.com/logos/Logo_40wht.gif)](http://www.google.com/search)
+### 用google搜索本站
 
-Search WWW 
- Search pengyou.rijiben.org
-Search Google
-      
-end main content
+    
 
+    
+    
+    
+![Google](http://www.google.com/logos/Logo_40wht.gif)  
+    
+    
+    
+Search WWW Search pengyou.rijiben.org
 
+    
+    
+    
 
-update: 我修改了一下。把google.com直接改成google.cn，竟然能用。但google.cn上没有说提供定制搜索的事。反正先用着吧。搜索出来的是过滤过的信息。不会“对你们的身心健康造成伤害的”。
+  update: 我修改了一下。把google.com直接改成google.cn，竟然能用。但google.cn上没有说提供定制搜索的事。反正先用着吧。搜索出来的是过滤过的信息。不会“对你们的身心健康造成伤害的”。 -- 问题是中国内地经常不能顺利访问google.com。不要赖我。把帐记在wangbadan身上。
 
---
-
-问题是中国内地经常不能顺利访问google.com。不要赖我。把帐记在wangbadan身上。
+2006-11-02

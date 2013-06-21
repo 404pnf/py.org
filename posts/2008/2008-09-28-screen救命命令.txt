@@ -1,13 +1,5 @@
-# screen救命命令
-
 screen救命命令
 
-启动用 screen -r 接着上次会话用 r是retache
-完全退出screen，就是说杀死screen下所有bash窗口和程序用screen -d，d＝detache
+screen救命命令 启动用 screen -r 接着上次会话用 r是retache 完全退出screen，就是说杀死screen下所有bash窗口和程序用screen -d，d＝detache C-a C-c 开一个新的terminal窗口 C-a " 显示窗口列表 C-a ? 帮助 C-a A 给当前窗口命名 对我来说，暂时足够了。screen相当于一个窗口管理器。最大好处是我登录远端服务器做工作，比如下载一个很大文件要耗费很长时间，或者进行需要很长时间的计算，如果不用screen，我桌面电脑关机，或者从remote terminal登录出来，那些工作就结束了。用screen，登录出来那些工作还在继续。下次登录上去用screen -r查看完成没有。有时压缩和下载任务要进行20多个小时，我可不想两台电脑都开着，费电，也不安全。
 
-C-a C-c 开一个新的terminal窗口
-C-a "   显示窗口列表
-C-a ?   帮助
-C-a A   给当前窗口命名
-
-对我来说，暂时足够了。screen相当于一个窗口管理器。最大好处是我登录远端服务器做工作，比如下载一个很大文件要耗费很长时间，或者进行需要很长时间的计算，如果不用screen，我桌面电脑关机，或者从remote terminal登录出来，那些工作就结束了。用screen，登录出来那些工作还在继续。下次登录上去用screen -r查看完成没有。有时压缩和下载任务要进行20多个小时，我可不想两台电脑都开着，费电，也不安全。
+2008-09-28

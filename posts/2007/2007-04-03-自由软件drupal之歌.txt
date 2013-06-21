@@ -1,26 +1,5 @@
-# 自由软件drupal之歌
+自由软件drupal之歌
 
-听听[drupal之歌吧](http://www.lullabot.com/audio/download/181/TheDrupalSong.mp3)
+听听[drupal之歌吧](http://www.lullabot.com/audio/download/181/TheDrupalSong.mp3) 开始发表在[lullabot](http://www.lullabot.com/audiocast/the\_drupal\_song)。如果你喜欢音乐也会些制作希望你参与重新混因或者的[mashup](http://drupal.org/node/132582)这首歌。 刚给一个朋友建立了用drupal搭建的站点。听这首歌非常惬意。：） 我把歌词敲出来吧，因为太简单了可能作者觉得没必要提供歌词。我这里提供 > lyrics of drupal song > > if you got a website > you need a system > to manage your content > drupal > > if you want to build a web application > you need to download > drupal > > drupal drupal drupal drupal drupal > drupal x 100 times :) me can't get enough of drupal :)
 
-
-开始发表在[lullabot](http://www.lullabot.com/audiocast/the_drupal_song)。如果你喜欢音乐也会些制作希望你参与重新混因或者的[mashup](http://drupal.org/node/132582)这首歌。
-
-刚给一个朋友建立了用drupal搭建的站点。听这首歌非常惬意。：）
-
-我把歌词敲出来吧，因为太简单了可能作者觉得没必要提供歌词。我这里提供
-
-> lyrics of drupal song
-> 
-> if you got a website
-> you need a system 
-> to manage your content
-> drupal
-> 
-> if you want to build a web application
-> you need to download
-> drupal
-> 
-> drupal drupal drupal drupal drupal
-> drupal x 100 times :) 
-
-me can't get enough of drupal :)
+2007-04-03

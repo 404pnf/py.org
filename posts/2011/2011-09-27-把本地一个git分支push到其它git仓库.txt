@@ -1,12 +1,5 @@
-# 把本地一个git分支push到其它git仓库
+把本地一个git分支push到其它git仓库
 
-git push github production
+git push github production github是我在github的库的别名，production是我本地的一个branch。这样远端的git库也会有这个叫production的分支。 $ git branch master \* production 一般 git push remote-repo都是把本地的master推到远端的master。我看第二遍git book才知道如何把本地的一个分支推过去。
 
-github是我在github的库的别名，production是我本地的一个branch。这样远端的git库也会有这个叫production的分支。
-
-     $ git branch
-        master
-       * production
-
-
-一般 git push remote-repo都是把本地的master推到远端的master。我看第二遍git book才知道如何把本地的一个分支推过去。
+2011-09-27

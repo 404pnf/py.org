@@ -1,14 +1,5 @@
-# opera网站在创作公用下发布的web标准教育资料
-
 opera网站在创作公用下发布的web标准教育资料
 
-> http://www.opera.com/wsc/
-> 
-> Learn to build a better Web with Opera
-> 
-> Learning Web Standards just got easier. Opera's new Web Standards Curriculum, released in association with the Yahoo! Developer Network, is a complete course to teach you standards-based web development, including HTML, CSS, design principles and background theory, and JavaScript basics. It already has support from many organizations (including Yahoo! and the Web Standards Project) and universities. The first 23 articles are currently available, with about 30 more to be published between now and late September.
-> 
-> These articles are licensed under a Creative Commons Attribution, Non Commercial - Share Alike 2.5 license.
+opera网站在创作公用下发布的web标准教育资料 > http://www.opera.com/wsc/ > > Learn to build a better Web with Opera > > Learning Web Standards just got easier. Opera's new Web Standards Curriculum, released in association with the Yahoo! Developer Network, is a complete course to teach you standards-based web development, including HTML, CSS, design principles and background theory, and JavaScript basics. It already has support from many organizations (including Yahoo! and the Web Standards Project) and universities. The first 23 articles are currently available, with about 30 more to be published between now and late September. > > These articles are licensed under a Creative Commons Attribution, Non Commercial - Share Alike 2.5 license. 可惜有non-commerical。但总比all rights reserved的要好。
 
-
-可惜有non-commerical。但总比all rights reserved的要好。
+2008-07-17

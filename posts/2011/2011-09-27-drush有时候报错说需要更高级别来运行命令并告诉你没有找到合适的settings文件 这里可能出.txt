@@ -1,0 +1,5 @@
+drush有时候报错说需要更高级别来运行命令并告诉你没有找到合适的settings文件 这里可能出错的是drush alias中你该站点的路径
+
+比如今天我运行 drush @ebook cc 报错，drush需要更高级别运行这个命令。而且报错说的settings.php的路径是 default/settings.php drush @ebook status 运行正常 drush @ebook pm-list 报错，drush需要 更高级别运行这个命令。 我查看了一下 ~/drush/aliases.drushrc.php 里面有ebook站点的别名，肯定得有，否则status不会运行成功。 我第一个想法是 sites/ebook.example.com/下面的的settings文件无法被drush执行，需要chown或chmod一下。现在看来这个想法就是错误的，因为如果无法执行，那么连status也应该报错。 现在status执行了。但不能cc之类。确实说明低级别的boostrap可以，但高级别的不可以。 我再仔细看了一下，原来是在aliaises中，我ebook站点的uri写错了 $aliases['ebook'] = array( 'root' => '/var/www/html/example', 'uri' => 'ebookexample.com', ); 看到了么。是 uri 写错了。发现问题了？少了一个点。 加上点，一切都好了。
+
+2011-09-27

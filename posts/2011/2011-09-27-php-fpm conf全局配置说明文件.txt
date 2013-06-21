@@ -1,0 +1,5 @@
+php-fpm conf全局配置说明文件
+
+http://www.php.net/manual/zh/install.fpm.configuration.php
+
+2011-09-27

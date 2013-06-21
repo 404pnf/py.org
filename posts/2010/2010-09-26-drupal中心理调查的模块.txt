@@ -1,6 +1,5 @@
-# drupal中心理调查的模块
+drupal中心理调查的模块
 
-http://drupal.org/project/evalwf
-via http://joom.net.ru/content/webformzai-xian-diao-cha-ban-lv
+http://drupal.org/project/evalwf via http://joom.net.ru/content/webformzai-xian-diao-cha-ban-lv 我现在使用quiz来达到这类题型。我也挺满意的。搜索一下 drupal quiz personality test 就可以找到参考资料
 
-我现在使用quiz来达到这类题型。我也挺满意的。搜索一下 drupal quiz personality test 就可以找到参考资料
+2010-09-26

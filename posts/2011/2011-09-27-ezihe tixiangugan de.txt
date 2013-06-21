@@ -1,0 +1,5 @@
+ezihe tixiangugan de
+
+set |grep LANG I had the same problem. I fixed it by deleting the lines in /etc/locale.gen and removing the package locales and re-installing it Code: apt-get remove locales xapt-get install locales
+
+2011-09-27

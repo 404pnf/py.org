@@ -1,10 +1,5 @@
-# apache中做简单web目录访问限制
+apache中做简单web目录访问限制
 
-[tags]apache[/tags]
+[tags]apache[/tags] # Authorize for setup AuthType Basic AuthName "phpMyAdmin Setup" AuthUserFile /etc/phpmyadmin/htpasswd.setup Require valid-user
 
-	# Authorize for setup
-	
-AuthType Basic
-	    AuthName "phpMyAdmin Setup"
-	    AuthUserFile /etc/phpmyadmin/htpasswd.setup
-	    Require valid-user
+2011-09-27

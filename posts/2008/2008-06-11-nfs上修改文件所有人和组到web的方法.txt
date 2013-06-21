@@ -1,6 +1,5 @@
-# nfs上修改文件所有人和组到web的方法
-
 nfs上修改文件所有人和组到web的方法
 
-http://blog.nearlyfreespeech.net/2007/01/28/writing-files-in-php/
-还是不明白
+nfs上修改文件所有人和组到web的方法 http://blog.nearlyfreespeech.net/2007/01/28/writing-files-in-php/ 还是不明白
+
+2008-06-11

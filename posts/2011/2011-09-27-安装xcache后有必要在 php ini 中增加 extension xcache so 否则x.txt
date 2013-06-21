@@ -1,0 +1,5 @@
+安装xcache后有必要在 php ini 中增加 extension xcache so 否则xcache就不启用
+
+这个步骤在xcache的正式文档中没有提。我在centos下也不需要。但在ubuntu gnu/linux 下缺需要这样。不知道为什么。
+
+2011-09-27

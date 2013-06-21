@@ -1,14 +1,5 @@
-# home-end
-
 home-end
 
-> File: emacs-goodies-el,  Node: home-end,  Next: htmlize,  Prev: highlight-current-line,  Up: Top
-> 
-> 34 home-end - Alternative Home and End key commands
->
-> 
-> Some useful bindings for Home and End keys:
-> * Hit the key once to go to the beginning/end of a line,
-> * hit it twice in a row to go to the beginning/end of the window,
-> * three times in a row goes to the beiginning/end of the buffer.
-> To enable it, customize the variable `home-end-enable'.
+home-end > File: emacs-goodies-el, Node: home-end, Next: htmlize, Prev: highlight-current-line, Up: Top > > 34 home-end - Alternative Home and End key commands > > > Some useful bindings for Home and End keys: > \* Hit the key once to go to the beginning/end of a line, > \* hit it twice in a row to go to the beginning/end of the window, > \* three times in a row goes to the beiginning/end of the buffer. > To enable it, customize the variable `home-end-enable'.
+
+2008-07-16

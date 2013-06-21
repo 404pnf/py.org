@@ -1,14 +1,5 @@
-# 学习各种语言代码片段的好地方
+学习各种语言代码片段的好地方
 
-http://snipplr.com/
+http://snipplr.com/ 给个例子： convert -density 400 $INPUT.pdf -scale $Wx$H $OUT.jpg http://snipplr.com/view/46787/imagemagick-conversion-pdfjpg/ find . -name .svn -print0 | xargs -0 rm -rf [Insert Link Title](http://address.com/ "Title Here") http://snipplr.com/view/282/standard-compliant-way-to-open-a-new-page-no-target-tag/
 
-给个例子：
-
-      convert -density 400 $INPUT.pdf -scale $Wx$H $OUT.jpg
-http://snipplr.com/view/46787/imagemagick-conversion-pdfjpg/
-
-      find . -name .svn -print0 | xargs -0 rm -rf
-
-
-[Insert Link Title](http://address.com/)
-http://snipplr.com/view/282/standard-compliant-way-to-open-a-new-page-no-target-tag/
+2011-09-27

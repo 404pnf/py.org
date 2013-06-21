@@ -1,0 +1,5 @@
+d7在模板复写方面有个bug 如果要复写的page menu block名称中有连字符就不起走用
+
+drupal开发人员现在正在努力fix掉问题，但现在d8中fix掉，再back port到d7。因此，我要不等待，要不先用个patch。看下面的issues http://drupal.org/node/1021270 http://drupal.org/node/992376 我发现问题的过程： d7 core templetes sugguestoin bug? d7 doesn't pick up block--module-delta.tpl.php doesn't work if delta has a hythen. e.g block-aggregator.tpl.php // wroks block-aggregator--feed-1.tpl.php // according to d7 doc, deosn't wroks block-aggregator--feed\_1.tpl.php // trying some variants deosn't wroks block-aggregator-feed-1.tpl.php // trying some variants deosn't wroks Any idea?
+
+2011-09-27

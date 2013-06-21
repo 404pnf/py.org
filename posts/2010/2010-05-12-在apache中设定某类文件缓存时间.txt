@@ -1,26 +1,5 @@
-# 在apache中设定某类文件缓存时间
+在apache中设定某类文件缓存时间
 
-参考： http://www.askapache.com/htaccess/apache-speed-cache-control.html
+参考： http://www.askapache.com/htaccess/apache-speed-cache-control.html 从这里开始，我放在了 cdn1 的 vitualhost 配置文件中 Header unset Pragma FileETag None Header unset ETag #1 YEAR Header set Cache-Control "public" Header set Expires "Thu, 15 Apr 2010 20:00:00 GMT" Header unset Last-Modified # 2 HOURS Header set Cache-Control "max-age=7200, must-revalidate" # CACHED FOREVER # MOD\_REWRITE TO RENAME EVERY CHANGE Header set Cache-Control "public" Header set Expires "Thu, 15 Apr 2010 20:00:00 GMT" Header unset Last-Modified
 
-从这里开始，我放在了 cdn1 的 vitualhost 配置文件中
-
-      Header unset Pragma
-      FileETag None
-      Header unset ETag
-       
-        #1 YEAR
-        
-Header set Cache-Control "public"
-        Header set Expires "Thu, 15 Apr 2010 20:00:00 GMT"
-        Header unset Last-Modified
-      
-        # 2 HOURS
-      
-Header set Cache-Control "max-age=7200, must-revalidate"
-       
-        # CACHED FOREVER
-        # MOD_REWRITE TO RENAME EVERY CHANGE
-       
-Header set Cache-Control "public"
-       Header set Expires "Thu, 15 Apr 2010 20:00:00 GMT"
-       Header unset Last-Modified
+2010-05-12

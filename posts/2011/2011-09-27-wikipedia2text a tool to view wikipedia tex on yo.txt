@@ -1,0 +1,5 @@
+wikipedia2text a tool to view wikipedia tex on your console
+
+[tags] wikipedia, 工具, 翻译 [/tags] 刚发现我之前装了这个好东西。
+
+2011-09-27

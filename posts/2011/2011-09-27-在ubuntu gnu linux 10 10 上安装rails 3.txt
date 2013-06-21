@@ -1,0 +1,5 @@
+在ubuntu gnu linux 10 10 上安装rails 3
+
+http://excid3.com/blog/2010/10/ruby-on-rails-3-and-mysql-on-ubuntu-10-10/
+
+2011-09-27

@@ -1,22 +1,5 @@
-# 刚才第一次用markdown的2个链接套在一起
+刚才第一次用markdown的2个链接套在一起
 
-在[edvard munch，就是画 the scream 的那个人](http://pengyou.rijiben.org/node/906)我想显示一张小图，点小图连到大图。第一次用markdown来实现。以前没有这种需要。方法很简单。就是
+在[edvard munch，就是画 the scream 的那个人](http://pengyou.rijiben.org/node/906)我想显示一张小图，点小图连到大图。第一次用markdown来实现。以前没有这种需要。方法很简单。就是 链接tag []() 中间套一个 贴图的tag ![]() 就是这样 [![](小图片的url)](大图片的url) 我觉得这种方法很简单。我很习惯了markdown的语法。关键是他的原文件，就是带着他tag符号的文本文件就能直接看懂和编辑，而其语法很少，很简单。 markdown一种方便你写标准的html文件的工具。 Daring Fireball: Markdown http://daringfireball.net/projects/markdown/ 这里输入个是可以选用markdown。反正我一直用。：）以后也用。我第一次认识到他并在blosoxm上正确装上了他的插件和使用出来的时候。真是兴奋啊~！ ：）那是今年2月的事情了吧。
 
-     链接tag []() 
-
-中间套一个
-
-     贴图的tag ![]()
-
-就是这样
-
-      [![](小图片的url)](大图片的url)
-
-我觉得这种方法很简单。我很习惯了markdown的语法。关键是他的原文件，就是带着他tag符号的文本文件就能直接看懂和编辑，而其语法很少，很简单。
-
-markdown一种方便你写标准的html文件的工具。
-
-Daring Fireball: Markdown
-http://daringfireball.net/projects/markdown/
-
-这里输入个是可以选用markdown。反正我一直用。：）以后也用。我第一次认识到他并在blosoxm上正确装上了他的插件和使用出来的时候。真是兴奋啊~！ ：）那是今年2月的事情了吧。
+2006-12-13

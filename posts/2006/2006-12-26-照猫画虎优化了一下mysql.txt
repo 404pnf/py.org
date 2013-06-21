@@ -1,20 +1,5 @@
-# 照猫画虎优化了一下mysql
-
 照猫画虎优化了一下mysql
 
-把 my-large.cnf中的下面部分贴到我的my.cnf中
-参考了linux server hacks中的hack 84。
-这本书o'reilly出的，国内清华大学出版社
-key_buffer = 256M
-max_allowed_packet = 1M
-table_cache = 256
-sort_buffer_size = 1M
-read_buffer_size = 1M
-read_rnd_buffer_size = 4M
-myisam_sort_buffer_size = 64M
-thread_cache_size = 8
-query_cache_size= 16M
+照猫画虎优化了一下mysql 把 my-large.cnf中的下面部分贴到我的my.cnf中 参考了linux server hacks中的hack 84。 这本书o'reilly出的，国内清华大学出版社 key\_buffer = 256M max\_allowed\_packet = 1M table\_cache = 256 sort\_buffer\_size = 1M read\_buffer\_size = 1M read\_rnd\_buffer\_size = 4M myisam\_sort\_buffer\_size = 64M thread\_cache\_size = 8 query\_cache\_size= 16M 不知道这个优化能提高多少性能。但默认的my.cnf是默认及其配置很低。而我的机器内存有4g，所以用my-large应该没问题。不敢用my-huge，因为这个机器上同时运行着apache。 大家还有什么建议？
 
-不知道这个优化能提高多少性能。但默认的my.cnf是默认及其配置很低。而我的机器内存有4g，所以用my-large应该没问题。不敢用my-huge，因为这个机器上同时运行着apache。
-
-大家还有什么建议？
+2006-12-26

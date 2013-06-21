@@ -1,0 +1,5 @@
+在gnu linux下删除空文件夹
+
+find -depth -type d -empty -exec rmdir {} \; To delete a directory other than the current one, put it between find & -depth. The script works by using the find command with options -depth to start at the deepest point, -type d to limit to directories (otherwise it prints annoying error messages), -empty (ditto) & -exec to run the rmdir subsidiary shell script on the found path {}. The confusing \; is a ; which find -exec uses to mark the end of the subsidiary script to execute (instead of the common custom of putting it in quoted string) with a \ to stop it being processed as an end of the outer script. I needed help from a friend to get that syntax correct (the error messages were rather misleading). In more recent versions of find it can be shortened (a reader of this site pointed out to me) using the new -delete operator which will delete a directory. As -delete causes -depth to be set as default, -depth can be omitted. The resulting short form is just: find -type d -empty -delete 参考： http://duramecho.com/ComputerPrograms/DeleteEmptyDirectories/index.html#Shellscript
+
+2011-11-30

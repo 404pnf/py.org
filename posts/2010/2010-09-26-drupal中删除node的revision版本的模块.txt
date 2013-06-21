@@ -1,3 +1,5 @@
-# drupal中删除node的revision版本的模块
+drupal中删除node的revision版本的模块
 
-http://drupal.org/project/revision_deletion
+http://drupal.org/project/revision\_deletion
+
+2010-09-26

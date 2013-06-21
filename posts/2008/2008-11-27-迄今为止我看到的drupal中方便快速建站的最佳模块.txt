@@ -1,18 +1,5 @@
-# 迄今为止我看到的drupal中方便快速建站的最佳模块
-
 迄今为止我看到的drupal中方便快速建站的最佳模块
 
-> Introducing the Bones module for Drupal: Rapid Site Wireframing with YAML
-> by 13andy November 23, 2008 
-> 
->  At the time, I was still getting my feet wet with Drupal module development, and managed to put together some code that:
-> 
->     * Reads a 14YAML file containing a site outline
->     * Builds stub nodes for each page in the outline
->     * Builds nested menu links pointing to those nodes
->     * Builds nested path aliases based on the node titles
-> 
-> 
-模块项目主页
+迄今为止我看到的drupal中方便快速建站的最佳模块 > Introducing the Bones module for Drupal: Rapid Site Wireframing with YAML > by 13andy November 23, 2008 > > At the time, I was still getting my feet wet with Drupal module development, and managed to put together some code that: > > \* Reads a 14YAML file containing a site outline > \* Builds stub nodes for each page in the outline > \* Builds nested menu links pointing to those nodes > \* Builds nested path aliases based on the node titles > > 模块项目主页 如果导入的yaml语法中body（正文）标识内支持多行文字，就完全是我现在最想要的一个drupal模块了！！！！
 
-如果导入的yaml语法中body（正文）标识内支持多行文字，就完全是我现在最想要的一个drupal模块了！！！！
+2008-11-27

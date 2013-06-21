@@ -1,7 +1,5 @@
-# 准备本周快速浏览的书
+准备本周快速浏览的书
 
-Getting Real
-https://gettingreal.37signals.com/toc.php
+Getting Real https://gettingreal.37signals.com/toc.php blog中文翻译 » Getting Real 学习笔记 http://chn.blogbeta.com/228.html)
 
-blog中文翻译 » Getting Real 学习笔记
-http://chn.blogbeta.com/228.html)
+2006-11-08

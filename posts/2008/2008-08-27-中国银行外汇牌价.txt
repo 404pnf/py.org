@@ -1,4 +1,5 @@
-# 中国银行外汇牌价
-
 中国银行外汇牌价
-http://www.boc.cn/cn/common/whpj.html
+
+中国银行外汇牌价 http://www.boc.cn/cn/common/whpj.html
+
+2008-08-27

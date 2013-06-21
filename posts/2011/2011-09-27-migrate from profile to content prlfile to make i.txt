@@ -1,0 +1,5 @@
+migrate from profile to content prlfile to make it easier to upgrade to drupal 7
+
+http://drupal.org/project/profile\_migrate
+
+2011-09-27

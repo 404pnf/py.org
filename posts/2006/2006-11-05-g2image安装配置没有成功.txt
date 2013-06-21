@@ -1,29 +1,5 @@
-# g2image安装配置没有成功
+g2image安装配置没有成功
 
-这是死磕drupal第一阶段中提高用户使用方便地最后一步。请其他管理员帮助磕一下。参照[这里](http://g2image.steffensenfamily.com/index.php?title=Main_Page )。我感觉说明不是特别清楚。 不过大家可以试验一下安装成功后方便从gallery相册发表图片到日记里[有多么方便](http://demo.steffensenfamily.com/demo_tinymce.html )。
+这是死磕drupal第一阶段中提高用户使用方便地最后一步。请其他管理员帮助磕一下。参照[这里](http://g2image.steffensenfamily.com/index.php?title=Main\_Page )。我感觉说明不是特别清楚。 不过大家可以试验一下安装成功后方便从gallery相册发表图片到日记里[有多么方便](http://demo.steffensenfamily.com/demo\_tinymce.html )。 15分钟后，又有进展。 这里说的 http://g2image.steffensenfamily.com/index.php?title=Drupal > For Drupal 4.7 > $plugins['g2image'] = array(); > $plugins['g2image']['theme\_advanced\_buttons2'] = array('g2image'); 是加在module/tinymce/plugin\_reg.php 中的不是 g2image下面的config.php 我弄错了 我是看 module/tinymce/plugin/drupalbreak中的东西才明白和反应过来的。 这样之后，就可以在 管理 - 设置 - tinymce - buttons什么中 看到 g2image这个选项 我打上了勾 可是没有出现那个有g2的贴图小图表 我无意中看到drupal管理日志中最新的错误信息是 http://pengyou.rijiben.org/modules/tinymce/tinymce/jscripts/tiny\_mce/plugins/drupalbreak/editor\_plugin.js http://pengyou.rijiben.org/modules/tinymce/tinymce/jscripts/tiny\_mce/plugins/g2image/editor\_plugin.js 第2个tinymce中应该有个 \_ 就是应该是 tiny\_mce 我又发现了这个syntax的一个bug。以前还奇怪怎么会丢了 \_ 呢。到drupal.org提交一个bug report去。:) 看来这两个新启用的插件的插件都报错了 我把相应目录和js文件复制了过去 还是不行 你们继续磕吧 朋友们我可是每天都要到深夜啊。大家请给点鼓励和建设性的意见吧。
 
-break
-
-15分钟后，又有进展。
-这里说的
-http://g2image.steffensenfamily.com/index.php?title=Drupal
-> For Drupal 4.7
-> $plugins['g2image'] = array();
-> $plugins['g2image']['theme_advanced_buttons2'] = array('g2image');
-
-是加在module/tinymce/plugin_reg.php 中的不是 g2image下面的config.php 我弄错了 我是看 module/tinymce/plugin/drupalbreak中的东西才明白和反应过来的。
-
-这样之后，就可以在 管理 - 设置 - tinymce - buttons什么中 看到 g2image这个选项 我打上了勾 可是没有出现那个有g2的贴图小图表
-
-我无意中看到drupal管理日志中最新的错误信息是
-http://pengyou.rijiben.org/modules/tinymce/tinymce/jscripts/tiny_mce/plugins/drupalbreak/editor_plugin.js
-http://pengyou.rijiben.org/modules/tinymce/tinymce/jscripts/tiny_mce/plugins/g2image/editor_plugin.js
-第2个tinymce中应该有个 _ 就是应该是 tiny_mce 我又发现了这个syntax的一个bug。以前还奇怪怎么会丢了 _ 呢。到drupal.org提交一个bug report去。:) 
-
-看来这两个新启用的插件的插件都报错了
-我把相应目录和js文件复制了过去
-还是不行
-
-你们继续磕吧
-
-朋友们我可是每天都要到深夜啊。大家请给点鼓励和建设性的意见吧。
+2006-11-05

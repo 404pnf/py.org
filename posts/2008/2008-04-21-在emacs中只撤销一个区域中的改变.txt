@@ -1,17 +1,5 @@
-# 在emacs中只撤销一个区域中的改变
+在emacs中只撤销一个区域中的改变
 
-##  在emacs中只撤销一个区域中的改变
+## 在emacs中只撤销一个区域中的改变 我试验了一下。很成功。 比如我有两段文字。我先修改了段落1，之后修改段落2。之后我发现段落1不应该修改。这是我如果直接undo，那么必然先undo了段落2的修改。 正确方法：我选中段落1，然后按 C-u C-\_ 就好了。这样，只有选中区域中的修改会被撤销。那个“\_”的按法是shift+ctrl+\_，就是数字键0和等号中间夹着的那个键。 > http://www.emacswiki.org/cgi-bin/wiki/SelectiveUndo > Selective Undo > > Select an area of text, then press C-u C-\_ (undo with a prefix argument). This undoes the last change to the selected region, even if you've later made changes to some other area. You can repeat it. How cool! > > Note: if you enable TransientMarkMode temporarily by pressing C-SPC C-SPC, undo will only affect this region.
 
-我试验了一下。很成功。
-
-比如我有两段文字。我先修改了段落1，之后修改段落2。之后我发现段落1不应该修改。这是我如果直接undo，那么必然先undo了段落2的修改。
-
-正确方法：我选中段落1，然后按 C-u C-_ 就好了。这样，只有选中区域中的修改会被撤销。那个“_”的按法是shift+ctrl+_，就是数字键0和等号中间夹着的那个键。
-
-
-> http://www.emacswiki.org/cgi-bin/wiki/SelectiveUndo
-> Selective Undo
-> 
-> Select an area of text, then press C-u C-_ (undo with a prefix argument). This undoes the last change to the selected region, even if you've later made changes to some other area. You can repeat it. How cool!
-> 
-> Note: if you enable TransientMarkMode temporarily by pressing C-SPC C-SPC, undo will only affect this region.
+2008-04-21

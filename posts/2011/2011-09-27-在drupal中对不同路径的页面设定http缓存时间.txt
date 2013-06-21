@@ -1,23 +1,5 @@
-# 在drupal中对不同路径的页面设定http缓存时间
+在drupal中对不同路径的页面设定http缓存时间
 
-[tags] drupal [/tags]
+[tags] drupal [/tags] > Ivan Bueno > > For those interested in being able to set different "Cache-Control: max- > ages" for different pages, I'm attaching the module > (cachecontrol.tar.gz). > > After enabling the module, go to /admin/settings/cachecontrol to specify the max-ages (in seconds) of your pages: > |60 > story/\*|3600 > > Notes: > -The first time you enable the module, please purge varnish. > -Requires the patch mentioned in the bug description in order for this to work. > > \*\* Attachment added: "cachecontrol.tar.gz" > https://bugs.launchpad.net/pressflow/+bug/683362/+attachment/1752209/+files/cachecontrol.tar.gz > • Show quoted text -
 
-
-> Ivan Bueno
-> 	
-> For those interested in being able to set different "Cache-Control: max-
-> ages" for different pages, I'm attaching the module
-> (cachecontrol.tar.gz).
-> 
-> After enabling the module, go to /admin/settings/cachecontrol to specify the max-ages (in seconds) of your pages:
-> 
-|60
-> story/*|3600
-> 
-> Notes:
-> -The first time you enable the module, please purge varnish.
-> -Requires the patch mentioned in the bug description in order for this to work.
-> 
-> ** Attachment added: "cachecontrol.tar.gz"
->   https://bugs.launchpad.net/pressflow/+bug/683362/+attachment/1752209/+files/cachecontrol.tar.gz
-> • Show quoted text -
+2011-09-27
