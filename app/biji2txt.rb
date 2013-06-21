@@ -29,3 +29,5 @@ articles.each do |article|
   whole_article = article.sub(/\A/, '# ') + "\n\n" + date
   File.write("#{OUTPUTFOLDER}/#{filename}", whole_article)
 end
+
+puts "总共生成#{articles.size}篇文章。"
