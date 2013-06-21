@@ -15,19 +15,17 @@ File.open(file) do |f|
   result = RSS::Parser.parse(response, false) # false 是说不去validate rss
   #  puts "Channel: " + result.channel.title
   result.items.each do |item|
-    title = item.title.to_s.strip
-    mytitle = sanitize(title).gsub(/_/, ' ')
-    fn = sanitize(mytitle)
-    fn = fn.slice(0,60)
+    title_o = item.title.to_s.strip
+    title = sanitize(title_o).gsub(/_/, ' ')
+    fn = sanitize(title).slice(0,60
     pubdate = item.date.xmlschema
     date = pubdate.slice(0,10)
     year = pubdate.slice(0,4)
     
-    content = item.description.to_s
-    
     #把之前emacs org中的标题格式替换为markdown的
-    content = content.gsub(/^\* /,'# ')
-    content = content.gsub(/^\*\* /, '## ')
+    content = item.description.to_s
+                  .gsub(/^\* /,'# ')
+                  .gsub(/^\*\* /, '## ')
     # 下面两个正则大错特错啦：）！！！
     # 我是想替换行开头的星号，结果忘了星号有特殊含义。
     #    content = content.gsub(/^* /,'# ')
@@ -40,7 +38,7 @@ File.open(file) do |f|
     FileUtils.mkdir_p("#{output}/#{year}/}") unless File.exist?("#{output}/#{year}/}")
         
     File.open("#{output}/#{year}/#{date}-#{fn}.txt", "w:utf-8") do |file|
-      file.puts "# " + mytitle
+      file.puts "# " + title
       file.puts # empty line
       file.puts content
     end
@@ -54,7 +52,7 @@ end # end File.open
     # to YAML for the header
     data = {
     'layout' => 'post',
-    'title' => mytitle.to_s,
+    'title' => title.to_s,
     }.delete_if { |k,v| v.nil? || v == ''}.to_yaml
 =end
 
