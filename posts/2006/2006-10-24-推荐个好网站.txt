@@ -1,7 +1,0 @@
-# 推荐个好网站
-
-Pear中文网站，里面还有很多技术文档没有汉化，希望大家积极参与。
-这里有Pear所有包的列表，功能很强悍啊！做PHP开发的朋友一定要看看了，因为目前PHP的MVC开发模式中,smarty+html_quickform的模式应用比较广泛，再说站在巨人的肩膀上，省去了你需要重新开发的常用功能，又能获得工业标准的支持，何乐而不为呢。
-http://www.pearchina.com/modules/webtrans/index.php
-
-2006-10-24

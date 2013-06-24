@@ -1,7 +1,0 @@
-# MP3播放测试
-
-<p><a href='http://pengyou.rijiben.org/files/1touxin.mp3'>偷心</a></p>
-<p><a href="http://www.fltrp.com/newspic/download/051125.wmv">WMV测试</a></p>
-
-
-2006-10-23
