@@ -1,0 +1,42 @@
+# la vie de rose 的法语歌词
+
+la vie de rose 的法语歌词
+
+Des yeux qui font baisser les miens
+Un rire qui se perd sur sa bouche
+Voilà le portrait sans retouche
+De l’homme auquel j’appartiens
+
+REFRAIN :
+Quand il me prend dans ses bras,
+Il me parle tout bas
+Je vois la vie en rose,
+Il me dit des mots d’amour
+Des mots de tous les jours,
+Et ca me fait quelque chose
+Il est entré dans mon coeur,
+Une part de bonheur
+Dont je connais la cause,
+C’est lui pour moi,
+Moi pour lui dans la vie
+Il me l’a dit, l’a juré
+Pour la vie.
+Et dès que je l’apercois
+Alors je sens en moi
+Mon coeur qui bat.
+
+Des nuits d’amour à plus finir
+Un grand bonheur qui prend sa place
+Des ennuis, des chagrins s’effacent
+Heureux, heureux à en mourir
+
+(REFRAIN)
+
+Des nuits d’amour à en mourir
+Un grand bonheur qui prend sa place
+Les ennuis, les chagrins s’effacent
+Heureux, heureux pour mon plaisir  
+
+请老孟朗诵并教教大家吧。
+
+2008-10-24
