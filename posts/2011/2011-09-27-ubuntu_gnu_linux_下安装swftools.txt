@@ -1,8 +1,0 @@
-# ubuntu gnu linux 下安装swftools
-
-http://designbye.wordpress.com/2010/02/23/installing-swftools-and-pdf2swf-on-ubuntu-linux/
-
-
-
-
-2011-09-27

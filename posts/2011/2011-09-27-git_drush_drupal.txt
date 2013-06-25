@@ -1,9 +1,0 @@
-# git drush drupal
-
-http://drupal.org/project/drush_gsb
-Drush Git Site Builder
-
-
-
-
-2011-09-27

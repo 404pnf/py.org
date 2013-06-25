@@ -1,8 +1,0 @@
-# 还是一片说mysql的innodb参数调整的
-
-http://www.bitrixsoft.com/support/training/course/index.php?COURSE_ID=22&LESSON_ID=1274
-
-
-
-
-2011-09-27

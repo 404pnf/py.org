@@ -1,6 +1,0 @@
-# strange loop 是一个关于新兴计算机语言的会议
-Strange Loop is a conference held in St Louis, Missouri. Topics include emerging languages, concurrent and distributed systems, new database technologies, front-end web, and mobile apps.
-<https://strange-loop-2012-notes.readthedocs.org/en/latest/>
-
-
-2013-06-21

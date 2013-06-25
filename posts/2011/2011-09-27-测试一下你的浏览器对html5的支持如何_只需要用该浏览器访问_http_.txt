@@ -1,7 +1,0 @@
-# 测试一下你的浏览器对html5的支持如何 只需要用该浏览器访问 http html5test com
-
-[tags] html5 [/tags]
-只需要用该浏览器访问 http://html5test.com/
-
-
-2011-09-27

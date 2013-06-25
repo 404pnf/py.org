@@ -1,8 +1,0 @@
-# ruby json parser TypeError: can't convert String into Integer
-这个错误是解析出来的json是这样的结构  hash > array1 > hash2 > hash3
-就是中间有一层是array，因此需要取hash2的时候，得
-
-        hash[key][0][key2]
-而不能
-        hash[key][key1][key2]
-

@@ -1,7 +1,0 @@
-# 中国lisp用户组
-
-http://lisp.org.cn/wiki/
-
-
-
-2011-11-30

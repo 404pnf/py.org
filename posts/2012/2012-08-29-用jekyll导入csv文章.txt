@@ -1,7 +1,0 @@
-# 用jekyll导入csv文章
-
-        jekyll import csv --file=/path/to/file.csv
-        
-参考： http://codebeef.com/articles/migrating-to-jekyll.html
-        
-        

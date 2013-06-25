@@ -1,6 +1,0 @@
-# drupal上哪些模块最受欢迎
-
-http://drupal.org/project/usage 按下载次数排名从高到低
-
-
-2010-06-13

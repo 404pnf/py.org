@@ -1,8 +1,0 @@
-# ruby processing 一个模仿 mit processing 语言的ruby gem
-<https://github.com/jashkenas/ruby-processing>
-<https://github.com/jashkenas/learning-processing-with-ruby>
-<https://github.com/jashkenas/new-turing-omnibus>
-
-
-
-2013-06-21

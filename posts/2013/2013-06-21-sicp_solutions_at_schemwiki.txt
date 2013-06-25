@@ -1,7 +1,0 @@
-# sicp solutions at schemwiki
-
-<http://community.schemewiki.org/?sicp-solutions>
-
-
-
-2013-06-21

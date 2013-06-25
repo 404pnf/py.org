@@ -1,7 +1,0 @@
-# 用rvm安装ruby 1 9 2和rails 3
-
-https://gist.github.com/296055
-
-
-
-2011-09-27

@@ -1,7 +1,0 @@
-# 義 yi 用haskell写的haskell程序编辑器
-
-http://www.haskell.org/haskellwiki/Yi#From_Hackage
-
-
-
-2011-11-30

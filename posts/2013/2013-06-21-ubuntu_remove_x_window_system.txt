@@ -1,9 +1,0 @@
-# ubuntu remove x window system
-
-      sudo apt-get remove --purge xserver-xorg
-	  
-<http://www.ubuntugeek.com/ubuntu-tiphow-to-removeinstall-and-reconfigure-xorg-without-reinstalling-ubuntu.html>
-
-
-
-2013-06-21

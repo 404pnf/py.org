@@ -1,4 +1,0 @@
-# escape percent sign and dollar sign for markdown-latex 
-
-You need to % and $ in mardown file or markdown-latex took what between them as TeX Mode and Math mode
-

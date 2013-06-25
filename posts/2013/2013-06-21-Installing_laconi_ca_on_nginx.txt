@@ -1,7 +1,0 @@
-# Installing laconi.ca on nginx
-Installing laconi.ca on nginx
-<http://pelletiermaxime.info/2009/04/11/Laconica-On-Nginx.html>
-
-
-
-2013-06-21

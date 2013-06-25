@@ -1,6 +1,0 @@
-# 是男人就下100层
-
-<p>update:这篇放到站务中因为当中有引用flash的代码。当时连的swf文件现在对方从服务器中拿掉了。 - bxy</p>
-<OBJECT CLASSID="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" WIDTH=400 HEIGHT=400><PARAM NAME=MOVIE VALUE=http://bbs.womenrose.com/attachment/15flash0721.swf /><PARAM NAME=PLAY VALUE=TRUE /><PARAM NAME=LOOP VALUE=TRUE /><PARAM NAME=QUALITY VALUE=HIGH /><EMBED SRC=http://bbs.womenrose.com/attachment/15flash0721.swf WIDTH=400 HEIGHT=400 PLAY=TRUE LOOP=TRUE QUALITY=HIGH></embed></object>
-
-2006-11-01

@@ -1,7 +1,0 @@
-# 音乐家学习使用lisp
-
-https://ccrma.stanford.edu/CCRMA/Courses/LispWorkshop/
-
-
-
-2011-11-30

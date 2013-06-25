@@ -1,5 +1,0 @@
-# 学习mongodb的好站点
-http://openmymind.net/2011/3/28/The-Little-MongoDB-Book/
-http://mongly.com/
-https://github.com/karlseguin/mongly
-

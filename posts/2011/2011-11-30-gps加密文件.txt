@@ -1,7 +1,0 @@
-# gps加密文件
-
-http://tldp.org/LDP/intro-linux/html/sect_09_04.html
-
-
-
-2011-11-30

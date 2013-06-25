@@ -1,6 +1,0 @@
-# mysql conf syntax change causes service fail to start
-<http://askubuntu.com/questions/127264/cant-start-mysql-mysql-respawning-too-fast-stopped#>
-
-
-
-2013-06-21

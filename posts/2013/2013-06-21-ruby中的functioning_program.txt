@@ -1,7 +1,0 @@
-# ruby中的functioning program
-<http://blog.hashrocket.com/posts/functional_eye_ruby_guy>
-<http://rubysource.com/functional-programming-techniques-with-ruby-part-iii/>
-<http://khelll.com/blog/ruby/ruby-currying/>
-
-
-2013-06-21

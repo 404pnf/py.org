@@ -1,9 +1,0 @@
-# drupal中用做出预制搜索结果的views 相当于定义一个搜索规则 然后把结果变成views 再让用户在某一url访问这个views
-
-[tags] drupal [/tags]
-http://treehouseagency.com/blog/steve-edwards/2010/01/03/creating-canned-search-views-exposed-filters
-http://drupal.org/project/better_exposed_filters
-
-
-
-2011-09-27

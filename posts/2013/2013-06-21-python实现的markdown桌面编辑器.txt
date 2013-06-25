@@ -1,9 +1,0 @@
-# python实现的markdown桌面编辑器
-markdowner : a markdown editor
-markdowner project from jezra.net
-Markdowner is a simple markdown editor that will allow a user to write markdown text and view the parsed HTML output.
-<http://www.jezra.net/projects/markdowner>
-
-
-
-2013-06-21

@@ -1,6 +1,0 @@
-# book on restful design
-<https://restful-api-design.readthedocs.org/en/latest/>
-
-
-
-2013-06-21

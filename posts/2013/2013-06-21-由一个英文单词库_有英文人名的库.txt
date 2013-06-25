@@ -1,7 +1,0 @@
-# 由一个英文单词库 有英文人名的库
-
-<http://icon.shef.ac.uk/Moby/mwords.html>
-
-
-
-2013-06-21

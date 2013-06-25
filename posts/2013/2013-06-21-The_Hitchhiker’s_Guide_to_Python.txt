@@ -1,6 +1,0 @@
-# The Hitchhiker’s Guide to Python
-<https://python-guide.readthedocs.org/en/latest/>
-
-
-
-2013-06-21

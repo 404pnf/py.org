@@ -1,7 +1,0 @@
-# 某人总结自己如何12周学会ruby 并发布网站服务
-
-http://www.webstartup.me/learned-ruby-rails-12-weeks-launch-freelancify
-
-
-
-2012-02-15

@@ -1,6 +1,0 @@
-# install gnu/linux on mac mini
-
-<http://sowerbutts.com/linux-mac-mini/>
-
-
-2013-06-21

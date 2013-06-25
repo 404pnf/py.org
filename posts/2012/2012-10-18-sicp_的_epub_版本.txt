@@ -1,7 +1,0 @@
-# sicp 的 epub 版本
-
-<https://github.com/ieure/sicp>
-适合在ipad上阅读。
-
-它是把所有公式都单独写成一个.tex文件然后然后生成到书的images文件夹下，然后在正文里html链接到图片。这到也是一种制作含有公式电子书的方式。
-

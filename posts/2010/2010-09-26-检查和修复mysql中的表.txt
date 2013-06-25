@@ -1,8 +1,0 @@
-# 检查和修复mysql中的表
-
-
-
-      mysqlcheck --auto-repair -upy -p pengyou
-
-
-2010-09-26

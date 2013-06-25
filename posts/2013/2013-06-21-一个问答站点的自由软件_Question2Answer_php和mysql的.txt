@@ -1,8 +1,0 @@
-# 一个问答站点的自由软件 Question2Answer  php和mysql的
-<http://www.question2answer.org/>
-<https://github.com/q2a/question2answer>
-<http://www.howtoforge.com/running-question2answer-on-nginx-lemp-on-debian-squeeze-ubuntu-12.10>
-
-
-
-2013-06-21

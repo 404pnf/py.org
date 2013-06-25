@@ -1,9 +1,0 @@
-# 生成安全密码的工具
-
-根据不同站点和主密码生成不同密码且不需要你记忆因为可以随时再次生成的程序
-
-Create strong, unique passwords for your online accounts. Don't remember any of them.
-<https://github.com/nicinabox/hatchpass-sinatra>
-
-
-2013-06-21
