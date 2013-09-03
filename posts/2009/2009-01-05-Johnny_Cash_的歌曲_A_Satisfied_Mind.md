@@ -54,7 +54,7 @@
 > One rich man in ten
 > With a satisfied mind
 
-看录像： http://www.youtube.com/watch?v=KlShSNc2dMA
+看录像： <http://www.youtube.com/watch?v=KlShSNc2dMA>
 
 我没看。因为没装flash。不准备装了。
 

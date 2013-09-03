@@ -42,7 +42,7 @@ No Squint 1.93.2.1
 NoSquint allows you to adjust the default text zoom level, and
 optionally remembers the level per site. 
 
-https://addons.mozilla.org/zh-CN/firefox/addon/2592
+<https://addons.mozilla.org/zh-CN/firefox/addon/2592>
 
 设定某站点的字体大小。设定好后，你以后访问该站点，字体大小就是你设定的
 了。比firefox默认的好。因为那是全局的，所有站点一个大小。这个查检让你
